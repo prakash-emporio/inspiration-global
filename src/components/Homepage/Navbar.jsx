@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/logo.png";
-import Phone from "../../assets/phone.png";
+import phone from "../../assets/phone.png";
 import { NavLink } from "react-router-dom";
 
 const navItems = [
@@ -27,7 +27,7 @@ export default function Navbar() {
             {item.label}
           </NavLink>
         ))}
-        <img className="w-5 h-5 mt-10" src={Phone} alt="mobile-phone-logo" />
+        <img className="w-5 h-5 mt-10" src={phone} alt="mobile-phone-logo" />
         <a
           href="#"
           className="px-5 py-10 font-semibold text-white uppercase hover:text-lime-300"
