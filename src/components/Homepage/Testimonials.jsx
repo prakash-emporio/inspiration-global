@@ -1,9 +1,9 @@
 import React from "react";
-import aramaco from "../../assets/aramco.png";
-import datacore from "../../assets/datacore.png";
-import delaware from "../../assets/delaware.png";
-import maryland from "../../assets/maryland.jpg";
-import pennselvania from "../../assets/pennselvania.png";
+import aramaco from "/aramco.png";
+import datacore from "/datacore.png";
+import delaware from "/delaware.png";
+import maryland from "/maryland.jpg";
+import pennselvania from "/pennselvania.png";
 
 export default function Testimonials() {
   return (

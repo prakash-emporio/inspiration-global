@@ -1,8 +1,7 @@
-import React from "react";
-import content1 from "../../assets/content1.jpg";
-import content2 from "../../assets/content2.jpg";
-import CommonCardComp from "./CommonCardComp";
-import ExtraCard from "./ExtraCard";
+import content1 from "/content1.jpg";
+import content2 from "/content2.jpg";
+import CommonCardComp from "../Homepage/CommonCardComp.jsx";
+import ExtraCard from "../Homepage/ExtraCard.jsx";
 
 export default function Content() {
   return (

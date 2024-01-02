@@ -1,5 +1,5 @@
 import React from "react";
-import industryCardImage from "../../assets/industryCardImage.jpg";
+import industryCardImage from "/industryCardImage.jpg";
 
 export default function IndustryCard() {
   return (

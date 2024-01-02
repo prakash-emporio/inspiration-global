@@ -1,6 +1,5 @@
-import React from "react";
-import content3 from "../../assets/content3.jpg";
-import content4 from "../../assets/content4.jpg";
+import content3 from "/content3.jpg";
+import content4 from "/content4.jpg";
 
 export default function CommonCardComp() {
   return (

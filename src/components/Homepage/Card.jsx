@@ -1,8 +1,7 @@
-import React from "react";
-import content1 from "../../assets/content1.jpg";
-import content2 from "../../assets/content2.jpg";
-import content3 from "../../assets/content3.jpg";
-import content4 from "../../assets/content4.jpg";
+import content1 from "/content1.jpg";
+import content2 from "/content2.jpg";
+import content3 from "/content3.jpg";
+import content4 from "/content4.jpg";
 
 export default function Card() {
   return (

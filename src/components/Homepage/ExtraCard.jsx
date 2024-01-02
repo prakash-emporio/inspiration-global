@@ -1,9 +1,7 @@
-import React from "react";
-
-import content5 from "../../assets/content5.jpg";
-import content6 from "../../assets/content6.jpg";
-import content7 from "../../assets/content7.jpg";
-import content8 from "../../assets/content8.jpg";
+import content5 from "/content5.jpg";
+import content6 from "/content6.jpg";
+import content7 from "/content7.jpg";
+import content8 from "/content8.jpg";
 
 export default function ExtraCard() {
   return (

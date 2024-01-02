@@ -1,5 +1,5 @@
 import React from "react";
-import talentPageMainImage from "../../assets/talentMainImage.jpg";
+import talentPageMainImage from "/talentMainImage.jpg";
 import { Navbar } from "../Homepage/index.js";
 
 export default function TalentHero() {

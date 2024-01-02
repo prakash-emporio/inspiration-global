@@ -1,5 +1,5 @@
 import React from "react";
-import industryPageMainImage from "../../assets/industryPageMainImage.jpg";
+import industryPageMainImage from "/industryPageMainImage.jpg";
 import { Navbar } from "../Homepage/index.js";
 
 export default function IndustryHero() {
