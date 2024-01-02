@@ -53,11 +53,11 @@ const services = [
 
 export default function ServiceCard() {
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="flex flex-wrap justify-center mb-10">
       {services.map((service) => (
-        <div key={service.id} className="w-1/4 p-4">
-          <h1 className="text-xl text-purple-800 font-black p-3">{service.header}</h1>
-          <p className="text-balance">{service.detail}</p>
+        <div key={service.id} className="w-1/4 p-3">
+          <h1 className="text-xl text-purple-800 font-black p-5">{service.header}</h1>
+          <p className="text-balance text-left p-5">{service.detail}</p>
         </div>
       ))}
     </div>

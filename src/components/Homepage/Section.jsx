@@ -39,24 +39,30 @@ export default function Section() {
           that your business gains the most value from the capabilities we
           provide.
         </div>
-        <form
+        <div
           className="justify-center items-center shadow-sm bg-lime-300 self-center flex gap-3 mt-11 mb-10 pl-6 pr-4 py-3 rounded-3xl max-md:mt-10 max-md:pl-5"
           aria-label="Learn More Form"
         >
-          <a
+          <button
             href="..."
-            className="text-violet-700 text-sm font-bold leading-6 tracking-widest grow whitespace-nowrap my-auto"
+            className="flex gap-3 text-violet-700 text-sm font-bold leading-6 tracking-widest grow whitespace-nowrap my-auto"
             aria-label="Learn More Link"
           >
             LEARN MORE
-          </a>
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/78ee4f49de15d69162c7e355219820504282367467a8c9c2c6e09ab3b14bf24e?apiKey=8e82500553ca48b393fa7f9343c196cd&"
-            className="aspect-square object-contain object-center w-5 overflow-hidden self-stretch shrink-0 max-w-full"
-            alt="Learn More Image"
-          />
-        </form>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="w-5 h-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   );

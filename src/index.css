@@ -5,4 +5,9 @@
 
 body {
   font-family: "Hanken Grotesk", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

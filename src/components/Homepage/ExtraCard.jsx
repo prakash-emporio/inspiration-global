@@ -22,7 +22,7 @@ export default function ExtraCard() {
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/4c94ea7aef55ab0dc144d43bef6719b845652b71e87fe53b4ae1ea3c35ac0f21?apiKey=8e82500553ca48b393fa7f9343c196cd&"
-                  className="aspect-square object-contain object-center w-[262px] justify-center items-center overflow-hidden self-center max-w-full mt-5"
+                  className="aspect-square object-contain object-center w-[262px] justify-center items-center overflow-hidden self-center max-w-full mt-5 cursor-pointer"
                 />
               </div>
             </div>
@@ -42,14 +42,17 @@ export default function ExtraCard() {
                   <span className="text-4xl">Meet Team Member </span>
                 </div>
                 <div className="flex items-center self-start justify-center gap-3 py-3 pl-6 pr-4 mt-20 shadow-sm bg-lime-300 rounded-3xl max-md:mt-10 max-md:pl-5">
-                  <button className="my-auto text-sm font-bold leading-6 tracking-widest text-violet-700">
+                  <button className="flex gap-3 my-auto text-sm font-bold leading-6 tracking-widest text-violet-700">
                     MEET
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="w-5 h-5"
+                    >
+                      <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06l7.22 7.22H6.75a.75.75 0 0 0 0 1.5h7.5a.747.747 0 0 0 .75-.75v-7.5a.75.75 0 0 0-1.5 0v5.69L6.28 5.22Z" />
+                    </svg>
                   </button>
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/4d93ad42c76f40cb3f46df636eaa8763a861acb9b5c532eb97892da88288b23b?apiKey=8e82500553ca48b393fa7f9343c196cd&"
-                    className="self-stretch object-contain object-center w-5 max-w-full overflow-hidden aspect-square shrink-0"
-                  />
                 </div>
               </div>
             </div>
@@ -73,14 +76,21 @@ export default function ExtraCard() {
                   Leveraging GenAI in your company
                 </div>
                 <div className="flex items-center self-start justify-center gap-3 py-3 pl-6 pr-4 mt-20 shadow-sm bg-lime-300 rounded-3xl max-md:mt-10 max-md:pl-5">
-                  <div className="my-auto text-sm font-bold leading-6 tracking-widest text-violet-700">
+                  <button className="flex gap-3 my-auto text-sm font-bold leading-6 tracking-widest text-violet-700">
                     READ MORE
-                  </div>
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc87f189b5d1f1b890dca7db547ab662594a2a01d2fafa4cf8d90dc10ee30639?apiKey=8e82500553ca48b393fa7f9343c196cd&"
-                    className="self-stretch object-contain object-center w-5 max-w-full overflow-hidden aspect-square shrink-0"
-                  />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="w-5 h-5"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M14.78 14.78a.75.75 0 0 1-1.06 0L6.5 7.56v5.69a.75.75 0 0 1-1.5 0v-7.5A.75.75 0 0 1 5.75 5h7.5a.75.75 0 0 1 0 1.5H7.56l7.22 7.22a.75.75 0 0 1 0 1.06Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -100,14 +110,21 @@ export default function ExtraCard() {
                   How does AI help the Public Sector
                 </div>
                 <div className="flex items-center self-start justify-center gap-3 py-3 pl-6 pr-4 mt-20 shadow-sm bg-lime-300 rounded-3xl max-md:mt-10 max-md:pl-5">
-                  <div className="my-auto text-sm font-bold leading-6 tracking-widest text-violet-700">
+                  <button className="flex gap-3 my-auto text-sm font-bold leading-6 tracking-widest text-violet-700">
                     READ MORE
-                  </div>
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/b1593ec13bc37955077e678f43e931973f6b3428f359659ba6a241aceae3f288?apiKey=8e82500553ca48b393fa7f9343c196cd&"
-                    className="self-stretch object-contain object-center w-5 max-w-full overflow-hidden aspect-square shrink-0"
-                  />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="w-5 h-5"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>

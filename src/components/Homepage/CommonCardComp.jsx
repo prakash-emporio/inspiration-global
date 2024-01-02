@@ -20,14 +20,21 @@ export default function CommonCardComp() {
                 To the Cloud in 24 Hours
               </div>
               <div className="flex items-center self-start justify-center gap-3 py-3 pl-6 pr-4 mt-20 shadow-sm bg-lime-300 rounded-3xl max-md:mt-10 max-md:pl-5">
-                <button className="my-auto text-sm font-bold leading-6 tracking-widest text-violet-700">
+                <button className="flex gap-3 my-auto text-sm font-bold leading-6 tracking-widest text-violet-700">
                   READ MORE
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="w-5 h-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
                 </button>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/78ee4f49de15d69162c7e355219820504282367467a8c9c2c6e09ab3b14bf24e?apiKey=8e82500553ca48b393fa7f9343c196cd&"
-                  className="self-stretch object-contain object-center w-5 max-w-full overflow-hidden aspect-square shrink-0"
-                />
               </div>
             </div>
           </div>
@@ -47,14 +54,21 @@ export default function CommonCardComp() {
                 Value Based Hiring
               </div>
               <div className="flex items-center self-start justify-center gap-3 py-3 pl-6 pr-4 mt-20 shadow-sm bg-lime-300 rounded-3xl max-md:mt-10 max-md:pl-5">
-                <button className="my-auto text-sm font-bold leading-6 tracking-widest text-violet-700">
+                <button className="flex gap-3 my-auto text-sm font-bold leading-6 tracking-widest text-violet-700">
                   READ MORE
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="w-5 h-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
                 </button>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/78ee4f49de15d69162c7e355219820504282367467a8c9c2c6e09ab3b14bf24e?apiKey=8e82500553ca48b393fa7f9343c196cd&"
-                  className="self-stretch object-contain object-center w-5 max-w-full overflow-hidden aspect-square shrink-0"
-                />
               </div>
             </div>
           </div>
