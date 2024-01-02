@@ -6,7 +6,6 @@ import {
   Services,
   Section,
   CustomForm,
-  Footer,
 } from "./Homepage/index.js";
 
 export default function Homepage() {

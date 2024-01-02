@@ -1,6 +1,6 @@
 import React from "react";
 import heroImage from "../../assets/heroImage.png";
-import Navbar from "./Navbar/Navbar";
+import Navbar from "./Navbar.jsx";
 
 export default function Hero() {
   return (

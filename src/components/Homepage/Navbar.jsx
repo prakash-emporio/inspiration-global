@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../../../assets/logo.png";
-import Phone from "../../../assets/phone.png";
+import logo from "../../assets/logo.png";
+import Phone from "../../assets/phone.png";
 import { NavLink } from "react-router-dom";
 
 const navItems = [
