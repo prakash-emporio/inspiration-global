@@ -11,7 +11,7 @@ const navItems = [
   { id: 5, label: "Company", href: "#" },
 ];
 
-export default function Navbar() {
+export default function Header() {
   return (
     <nav className="flex bg-transparent">
       <NavLink to="/">

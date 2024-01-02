@@ -1,12 +1,15 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
-import { Footer } from "./components/Homepage/index.js";
+import Footer  from "./components/footer/Footer.jsx";
 
 export default function Layout() {
   return (
-    <>
-      <Outlet />
-      <Footer />
-    </>
+    <div className="flex flex-wrap content-between min-h-screen">
+      <div className="block w-full">
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
+    </div>
   );
 }

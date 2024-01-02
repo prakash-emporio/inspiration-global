@@ -1,6 +1,5 @@
-import React from "react";
 import industryPageMainImage from "/industryPageMainImage.jpg";
-import { Navbar } from "../Homepage/index.js";
+import { Header } from "../home/index.js";
 
 export default function IndustryHero() {
   return (
@@ -11,7 +10,7 @@ export default function IndustryHero() {
         alt="industry-page-main-image"
       />
       <div className="absolute top-0 w-full">
-        <Navbar />
+        <Header />
       </div>
       <h1 className="absolute w-2/4 p-10 mt-32 font-bold text-white text-7xl top-20 left-10">
         Public Sector

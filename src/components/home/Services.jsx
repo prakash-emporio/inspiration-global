@@ -1,21 +1,20 @@
-import React from "react";
 import ServiceCard from "./ServiceCard";
 
 export default function Services() {
   return (
     <div className="mb-10">
-      <h1 className="text-5xl font-black text-center mt-10 py-10">
+      <h1 className="py-10 mt-10 text-5xl font-black text-center">
         Our Services
       </h1>
       <ServiceCard />
       <div className="flex justify-center m-5">
         <div
-          className="justify-center items-center shadow-sm bg-lime-300 self-center flex gap-3 mt-11 mb-10 pl-6 pr-4 py-3 rounded-3xl max-md:mt-10 max-md:pl-5"
+          className="flex items-center self-center justify-center gap-3 py-3 pl-6 pr-4 mb-10 shadow-sm bg-lime-300 mt-11 rounded-3xl max-md:mt-10 max-md:pl-5"
           aria-label="Learn More Form"
         >
           <button
             href="..."
-            className="flex gap-3 text-violet-700 text-sm font-bold leading-6 tracking-widest grow whitespace-nowrap my-auto"
+            className="flex gap-3 my-auto text-sm font-bold leading-6 tracking-widest text-violet-700 grow whitespace-nowrap"
             aria-label="Learn More Link"
           >
             LEARN MORE

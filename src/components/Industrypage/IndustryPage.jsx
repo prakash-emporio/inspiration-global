@@ -1,8 +1,6 @@
-import React from "react";
 import IndustryHero from "./IndustryHero";
 import IndustryCard from "./IndustryCard";
-import CustomForm from "../Homepage/CustomForm.jsx";
-import Footer from "../Homepage/Footer.jsx";
+import Form from "../home/Form.jsx";
 import TalentTestimonial from "../Talentpage/TalentTestimonial.jsx";
 import IndustrySecondCard from "./IndustrySecondCard.jsx";
 
@@ -13,7 +11,7 @@ export default function IndustryPage() {
       <IndustryCard />
       <IndustrySecondCard />
       <TalentTestimonial />
-      <CustomForm />
+      <Form />
     </div>
   );
 }

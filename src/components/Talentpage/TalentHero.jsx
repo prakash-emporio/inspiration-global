@@ -1,6 +1,6 @@
 import React from "react";
 import talentPageMainImage from "/talentMainImage.jpg";
-import { Navbar } from "../Homepage/index.js";
+import { Header } from "../home/index.js";
 
 export default function TalentHero() {
   return (
@@ -11,7 +11,7 @@ export default function TalentHero() {
         alt="talent-page-main-image"
       />
       <div className="absolute top-0 w-full">
-        <Navbar />
+        <Header />
       </div>
       <h1 className="absolute w-2/4 p-10 mt-32 font-bold text-white text-7xl top-20 left-10">
         Talent Procurement and Professional Services

@@ -1,7 +1,7 @@
 import content3 from "/content3.jpg";
 import content4 from "/content4.jpg";
 
-export default function CommonCardComp() {
+export default function CommonCard() {
   return (
     <div className="w-full max-md:max-w-full">
       <div className="flex max-md:flex-col max-md:items-stretch max-md:gap-0">

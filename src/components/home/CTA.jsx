@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Section() {
+export default function CTA() {
   return (
     <div className="container">
       {" "}
-      <div className="bg-white flex flex-col items-stretch pb-12">
+      <div className="flex flex-col items-stretch pb-12 bg-white">
         <header className="bg-violet-700 flex w-full flex-col items-center pt-12 px-16 border-t-[10px] border-t-lime-300 border-solid max-md:max-w-full max-md:px-5">
           <div
             className="z-[1] flex w-[940px] max-w-full flex-col items-center mt-12 -mb-7 max-md:mt-10 max-md:mb-2.5"
@@ -40,12 +40,12 @@ export default function Section() {
           provide.
         </div>
         <div
-          className="justify-center items-center shadow-sm bg-lime-300 self-center flex gap-3 mt-11 mb-10 pl-6 pr-4 py-3 rounded-3xl max-md:mt-10 max-md:pl-5"
+          className="flex items-center self-center justify-center gap-3 py-3 pl-6 pr-4 mb-10 shadow-sm bg-lime-300 mt-11 rounded-3xl max-md:mt-10 max-md:pl-5"
           aria-label="Learn More Form"
         >
           <button
             href="..."
-            className="flex gap-3 text-violet-700 text-sm font-bold leading-6 tracking-widest grow whitespace-nowrap my-auto"
+            className="flex gap-3 my-auto text-sm font-bold leading-6 tracking-widest text-violet-700 grow whitespace-nowrap"
             aria-label="Learn More Link"
           >
             LEARN MORE

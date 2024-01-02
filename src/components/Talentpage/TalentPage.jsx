@@ -1,5 +1,4 @@
-import React from "react";
-import { CustomForm, Footer } from "../../components/Homepage/index.js";
+import { Form } from "../../components/home/index.js";
 import TalentCard from "./TalentCard";
 import CTACard from "./CTACard";
 import TalentTestimonial from "./TalentTestimonial";
@@ -12,7 +11,7 @@ export default function TalentPage() {
       <TalentCard />
       <CTACard />
       <TalentTestimonial />
-      <CustomForm />
+      <Form />
     </div>
   );
 }

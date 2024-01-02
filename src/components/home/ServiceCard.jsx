@@ -1,5 +1,3 @@
-import React from "react";
-
 const services = [
   {
     id: 1,
@@ -56,8 +54,8 @@ export default function ServiceCard() {
     <div className="flex flex-wrap justify-center mb-10">
       {services.map((service) => (
         <div key={service.id} className="w-1/4 p-3">
-          <h1 className="text-xl text-purple-800 font-black p-5">{service.header}</h1>
-          <p className="text-balance text-left p-5">{service.detail}</p>
+          <h1 className="p-5 text-xl font-black text-purple-800">{service.header}</h1>
+          <p className="p-5 text-left text-balance">{service.detail}</p>
         </div>
       ))}
     </div>

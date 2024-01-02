@@ -1,7 +1,5 @@
 import content1 from "/content1.jpg";
 import content2 from "/content2.jpg";
-import CommonCardComp from "../Homepage/CommonCardComp.jsx";
-import ExtraCard from "../Homepage/ExtraCard.jsx";
 
 export default function Content() {
   return (
@@ -46,8 +44,6 @@ export default function Content() {
         </div>
         <img src={content2} loading="lazy" className="w-8/12" />
       </div>
-      <CommonCardComp />
-      <ExtraCard />
     </div>
   );
 }

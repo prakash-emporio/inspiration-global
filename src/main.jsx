@@ -8,7 +8,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Layout from "./Layout.jsx";
-import Homepage from "./components/HomePage.jsx";
+import Homepage from "./components/pages/Homepage.jsx";
 import TalentPage from "./components/Talentpage/TalentPage.jsx";
 import IndustryPage from "./components/Industrypage/IndustryPage.jsx";
 

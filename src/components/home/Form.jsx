@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CustomForm() {
+export default function Form() {
   return (
     <div className="container flex justify-between bg-purple-700">
       <div className="px-24 py-36">
@@ -9,7 +9,7 @@ export default function CustomForm() {
       <form className="px-16 py-10 max-md:px-5">
         <div className="">
           <input
-            className="px-5 py-5 m-5 font-bold text-white bg-transparent border-b border-dotted placeholder:text-white  "
+            className="px-5 py-5 m-5 font-bold text-white bg-transparent border-b border-dotted placeholder:text-white "
             type="text"
             name="name"
             id="name"

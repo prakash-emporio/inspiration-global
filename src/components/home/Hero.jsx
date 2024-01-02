@@ -1,6 +1,5 @@
-import React from "react";
 import heroImage from "/heroImage.png";
-import Navbar from "./Navbar.jsx";
+import Header from "../header/Header.jsx";
 
 export default function Hero() {
   return (
@@ -17,7 +16,7 @@ export default function Hero() {
         />
       </div>
       <div className="absolute top-0 max-sm:hidden">
-        <Navbar />
+        <Header />
       </div>
       <div className="absolute bottom-60 left-10 max-sm:hidden">
         <button className="flex gap-3 px-8 py-2 font-semibold text-center uppercase bg-purple-800 rounded-full text-lime-300">
@@ -25,7 +24,7 @@ export default function Hero() {
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/60e7be539a67367dc533c887d71fc67fec82919cfdcc8681266516f8e8fabda8?apiKey=8e82500553ca48b393fa7f9343c196cd&"
-            className="aspect-square object-contain object-center w-5 overflow-hidden self-stretch shrink-0 max-w-full"
+            className="self-stretch object-contain object-center w-5 max-w-full overflow-hidden aspect-square shrink-0"
             alt="Image description"
             role="img"
           />
