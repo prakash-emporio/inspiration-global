@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center px-16 pb-4 bg-gray-900 pt-11 max-md:px-5">
+    <div className="container flex flex-col items-center px-16 pb-4 bg-gray-900 pt-11 max-md:px-5">
       <header className="flex w-full max-w-[1230px] flex-col items-stretch max-md:max-w-full">
         <div className="flex items-center justify-between gap-5 max-md:max-w-full max-md:flex-wrap">
           <div

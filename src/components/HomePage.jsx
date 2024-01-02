@@ -10,7 +10,7 @@ import {
 
 export default function Homepage() {
   return (
-    <div className="container overflow-hidden">
+    <div className="container">
       <Hero />
       <Testimonials />
       <Content />
