@@ -3,11 +3,26 @@ import Header from "../header/Header.jsx";
 
 export default function Hero() {
   return (
-    <div className="container">
+    <div className="">
       <div className="flex justify-between bg-gray-900 max-md:w-full max-sm:w-full max-lg:max-w-full">
         <h1 className="px-10 pt-56 text-5xl text-white text-nowrap max-sm:text-center max-lg:w-full">
           <span className="font-bold text-lime-300">We Live</span> at the
           intersection <br /> of technology, talent & <br /> tomorrow...
+          <button className="flex gap-3 px-8 py-2 text-sm font-semibold text-center uppercase bg-purple-800 rounded-full my-14 text-lime-300">
+          Let's Go
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="w-5 h-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
+                clipRule="evenodd"
+              />
+            </svg>
+        </button>
         </h1>
         <img
           className="relative max-w-screen-md max-sm:hidden max-lg:w-full"
@@ -19,16 +34,7 @@ export default function Hero() {
         <Header />
       </div>
       <div className="absolute bottom-60 left-10 max-sm:hidden">
-        <button className="flex gap-3 px-8 py-2 font-semibold text-center uppercase bg-purple-800 rounded-full text-lime-300">
-          Let's Go
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/60e7be539a67367dc533c887d71fc67fec82919cfdcc8681266516f8e8fabda8?apiKey=8e82500553ca48b393fa7f9343c196cd&"
-            className="self-stretch object-contain object-center w-5 max-w-full overflow-hidden aspect-square shrink-0"
-            alt="Image description"
-            role="img"
-          />
-        </button>
+        
       </div>
     </div>
   );

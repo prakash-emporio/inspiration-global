@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CTA() {
   return (
-    <div className="container">
+    <div className="">
       {" "}
       <div className="flex flex-col items-stretch pb-12 bg-white">
         <header className="bg-violet-700 flex w-full flex-col items-center pt-12 px-16 border-t-[10px] border-t-lime-300 border-solid max-md:max-w-full max-md:px-5">

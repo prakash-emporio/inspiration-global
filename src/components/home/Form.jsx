@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Form() {
   return (
-    <div className="container flex justify-between bg-purple-700">
+    <div className="flex justify-between bg-purple-700 ">
       <div className="px-24 py-36">
         <h1 className="mt-10 font-black text-lime-300 text-7xl">Let’s Talk</h1>
       </div>

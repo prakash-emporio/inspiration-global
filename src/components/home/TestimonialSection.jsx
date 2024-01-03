@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TestimonialSection() {
   return (
-    <div className="container">
+    <div className="">
       <div className="mt-28">
         <h1 className="p-5 m-5 text-5xl font-black text-center">What We Do</h1>
         <p className="text-center">
@@ -13,7 +13,7 @@ export default function TestimonialSection() {
         </p>
       </div>
       {/* lower section */}
-      <div className="container flex justify-center p-10 gap-52">
+      <div className="flex justify-center p-10 gap-52">
         <div>
           <h1 className="font-extrabold text-center text-purple-800 text-7xl">
             24

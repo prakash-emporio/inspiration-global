@@ -5,7 +5,7 @@ import content8 from "/content8.jpg";
 
 export default function ExtraCard() {
   return (
-    <div className="container">
+    <div className="">
       <div className="w-full max-md:max-w-full">
         <div className="flex max-md:flex-col max-md:items-stretch max-md:gap-0">
           <div className="flex flex-col items-stretch w-[72%] max-md:w-full max-md:ml-0">

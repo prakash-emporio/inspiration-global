@@ -3,11 +3,12 @@ import datacore from "/datacore.png";
 import delaware from "/delaware.png";
 import maryland from "/maryland.jpg";
 import pennselvania from "/pennselvania.png";
+import "../css/CompanySection.css";
 
 export default function CompanySection() {
   return (
-    <div className="container">
-      <div className="container absolute flex justify-between w-4/5 p-10 mb-10 bg-white border border-white shadow-md left-32 -bottom-60">
+    <div className="">
+      <div className="company-section">
         <img
           loading="lazy"
           width={120}

@@ -12,6 +12,7 @@ const navItems = [
 ];
 
 export default function Header() {
+  
   return (
     <nav className="flex bg-transparent">
       <NavLink to="/">
