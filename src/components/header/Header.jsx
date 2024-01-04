@@ -14,7 +14,7 @@ const navItems = [
 export default function Header() {
   
   return (
-    <nav className="flex bg-transparent">
+    <nav className="flex justify-around bg-transparent">
       <NavLink to="/">
         <img className="px-10 py-10" src={logo} alt="company-logo" />
       </NavLink>  

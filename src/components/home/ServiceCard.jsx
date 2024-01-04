@@ -51,13 +51,15 @@ const services = [
 
 export default function ServiceCard() {
   return (
-    <div className="flex flex-wrap justify-center mb-10">
+    <div className="max-w-2xl mx-auto mt-16 sm:mt-20 lg:mt-10 lg:max-w-full">
+    <dt className="flex flex-wrap justify-center mb-10">
       {services.map((service) => (
         <div key={service.id} className="w-1/4 p-3">
           <h1 className="p-5 text-xl font-black text-purple-800">{service.header}</h1>
           <p className="p-5 text-left text-balance">{service.detail}</p>
         </div>
       ))}
+    </dt>
     </div>
   );
 }

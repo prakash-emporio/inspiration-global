@@ -5,12 +5,12 @@ export default function Hero() {
   return (
     <div className="">
       <div className="flex justify-between bg-gray-900 max-md:w-full max-sm:w-full max-lg:max-w-full">
-        <h1 className="px-10 pt-56 text-5xl text-white text-nowrap max-sm:text-center max-lg:w-full">
-          <span className="font-bold text-lime-300">We Live</span> at the
+        <h1 className="px-10 pt-56 text-5xl font-light text-white text-nowrap max-sm:text-center max-lg:w-full">
+          <span className="font-black text-lime-300">We Live</span> at the
           intersection <br /> of technology, talent & <br /> tomorrow...
           <button className="flex gap-3 px-8 py-2 text-sm font-semibold text-center uppercase bg-purple-800 rounded-full my-14 text-lime-300">
-          Let's Go
-          <svg
+            Let's Go
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
@@ -22,7 +22,7 @@ export default function Hero() {
                 clipRule="evenodd"
               />
             </svg>
-        </button>
+          </button>
         </h1>
         <img
           className="relative max-w-screen-md max-sm:hidden max-lg:w-full"
@@ -33,9 +33,7 @@ export default function Hero() {
       <div className="absolute top-0 max-sm:hidden">
         <Header />
       </div>
-      <div className="absolute bottom-60 left-10 max-sm:hidden">
-        
-      </div>
+      <div className="absolute bottom-60 left-10 max-sm:hidden"></div>
     </div>
   );
 }

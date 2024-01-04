@@ -10,7 +10,7 @@ export default function Content() {
           <h1 className="px-5 pt-10 font-black text-white text-7xl">
             Lead With Impact
           </h1>
-          <button className="flex gap-2 px-5 py-2 font-bold text-purple-700 rounded-full my-72 bg-lime-300">
+          <button className="flex gap-2 px-5 py-2 mx-5 font-bold text-purple-700 rounded-full my-72 bg-lime-300">
             DIVE IN
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ export default function Content() {
       <div className="flex justify-between h-dvh">
         <div className="w-4/12 p-5 bg-lime-300">
           <h1 className="px-5 pt-10 font-black text-7xl">All About Talent</h1>
-          <button className="flex gap-2 px-5 py-2 font-bold bg-purple-700 rounded-full text-lime-300 my-72">
+          <button className="flex gap-2 px-5 py-2 mx-5 font-bold bg-purple-700 rounded-full text-lime-300 my-72">
             LEARN MORE
             <svg
               xmlns="http://www.w3.org/2000/svg"

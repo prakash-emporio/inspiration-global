@@ -6,6 +6,7 @@
 body {
   font-family: "Hanken Grotesk", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* ::-webkit-scrollbar {

@@ -7,41 +7,41 @@ import "../css/CompanySection.css";
 
 export default function CompanySection() {
   return (
-    <div className="">
+    <div className="company-section-wrapper">
       <div className="company-section">
         <img
           loading="lazy"
           width={120}
           src={aramaco}
-          className="m-1 max-w-none"
+          className=""
           alt="aramaco"
         />
         <img
           loading="lazy"
           width={150}
           src={datacore}
-          className="m-1 max-w-none"
+          className=""
           alt="datacore"
         />
         <img
           loading="lazy"
           width={100}
           src={maryland}
-          className="m-1 max-w-none"
+          className=""
           alt="dhs"
         />
         <img
           loading="lazy"
           width={200}
           src={pennselvania}
-          className="m-1 max-w-none"
+          className=""
           alt="pensslyvania"
         />
         <img
           loading="lazy"
           width={150}
           src={delaware}
-          className="m-1 max-w-none"
+          className=""
           alt="revenue"
         />
       </div>

@@ -1,3 +1,4 @@
+import DummyHero from "../home/DummyHero.jsx";
 import {
   Hero,
   CompanySection,
@@ -13,7 +14,8 @@ import {
 export default function Homepage() {
   return (
     <div className="">
-      <Hero />
+      {/* <Hero /> */}
+      <DummyHero />
       <CompanySection/>
       <TestimonialSection />
       <Content />

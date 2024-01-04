@@ -1,27 +1,15 @@
-@media screen and (min-width: 1024px) {
-  .company-section {
-    bottom: -28%;
-  }
-}
-
-@media screen and (min-width: 1537px) {
-  .company-section {
-    bottom: 0;
-  }
+.company-section-wrapper {
+  margin: -50px;
 }
 
 .company-section {
-  position: absolute;
   margin: auto;
   height: auto;
-  padding: 40px;
-  left: 0;
-  right: 0;
+  padding: 60px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
   border: 1px solid white;
   background: white;
   width: 80%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: 0px 20px 30px 0px #0000001A;
 }
