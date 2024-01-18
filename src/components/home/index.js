@@ -1,4 +1,3 @@
-import Header from "../header/Header.jsx";
 import MegaHeader from "../header/MegaHeader.jsx";
 import Hero from "./Hero.jsx";
 import CompanySection from "./CompanySection.jsx";
@@ -14,7 +13,6 @@ import Form from "./Form.jsx";
 import Footer from "../footer/Footer.jsx";
 
 export {
-  Header,
   MegaHeader,
   Hero,
   CompanySection,
