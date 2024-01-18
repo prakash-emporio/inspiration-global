@@ -1,12 +1,13 @@
-import DummyHero from "../home/DummyHero.jsx";
 import {
   Hero,
   CompanySection,
   TestimonialSection,
-  Content,
+  FirstContent,
+  SecondContent,
   CommonCard,
+  ThirdContent,
   ExtraCard,
-  Services,
+  ServiceCard,
   CTA,
   Form,
 } from "../home/index.js";
@@ -14,15 +15,16 @@ import {
 export default function Homepage() {
   return (
     <div className="">
-      {/* <Hero /> */}
-      <DummyHero />
-      <CompanySection/>
+      <Hero />
+      <CompanySection />
       <TestimonialSection />
-      <Content />
+      <FirstContent />
+      <SecondContent />
       <CommonCard />
+      <ThirdContent />
       <ExtraCard />
-      <Services />
-      <CTA />
+      <ServiceCard/>
+      <CTA />       
       <Form />
     </div>
   );

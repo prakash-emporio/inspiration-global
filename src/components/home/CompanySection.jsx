@@ -7,7 +7,7 @@ import "../css/CompanySection.css";
 
 export default function CompanySection() {
   return (
-    <div className="company-section-wrapper">
+    <div className="company-section-wrapper mx-5">
       <div className="company-section">
         <img
           loading="lazy"

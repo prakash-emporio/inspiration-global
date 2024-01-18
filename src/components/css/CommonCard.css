@@ -1,0 +1,35 @@
+.common-card-btn {
+  background-color: #a1f157;
+  color: #5912e4;
+}
+
+.btn:hover {
+  background-color: #85c54a;
+  color: white;
+}
+
+.img-fluid {
+  max-height: 600px !important;
+  min-height: 600px;
+  object-fit: cover;
+  width: 100%;
+  object-position: center;
+}
+
+.dynamic-content {
+  color: #A1F157;
+  font-weight: 700;
+  padding: 10px;
+  margin: 10px;
+  letter-spacing: 1.4px;
+  background: #5912e4;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.custom-image {
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+

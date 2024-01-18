@@ -1,14 +1,17 @@
+import "../css/Testimonial.css";
+
+const statsData = [
+  { index: 0, value: 24, label: "Years in Business" },
+  { index: 1, value: 650, label: "Successful Projects", sup: true },
+  { index: 2, value: 15, label: "Countries Served" },
+];
+
 export default function TestimonialSection() {
-  const statsData = [
-    { value: 24, label: "Years in Business" },
-    { value: 650, label: "Successful Projects", sup: true },
-    { value: 15, label: "Countries Served" },
-  ];
   return (
-    <div className="">
-      <div className="mt-28">
-        <h1 className="p-5 m-5 text-5xl font-black text-center">What We Do</h1>
-        <p className="text-center">
+    <div className="mb-5 testimonial-wrapper">
+      <div className="">
+        <h1 className="p-3 text-center testimonial-heading">What We Do</h1>
+        <p className="text-center testimonial-text p-3">
           Inspiration Global is a premier talent and engineering company that
           offers <br /> comprehensive technology partnership services, spanning
           consulting, talent, <br /> solution development, and end- to- end
@@ -16,25 +19,13 @@ export default function TestimonialSection() {
         </p>
       </div>
       {/* lower section */}
-      <div className="flex justify-center p-10 gap-52">
-        <div>
-          <h1 className="font-black text-center text-purple-800 text-7xl">
-            24
-          </h1>
-          <p className="p-2 font-bold text-center">Years in Business</p>
-        </div>
-        <div>
-          <h1 className="font-black text-center text-purple-800 text-7xl">
-            650<sup>+</sup>
-          </h1>
-          <p className="p-2 font-bold text-center">Successful Projects</p>
-        </div>
-        <div>
-          <h1 className="font-black text-center text-purple-800 text-7xl">
-            15
-          </h1>
-          <p className="p-2 font-bold text-center">Countries Served</p>
-        </div>
+      <div className="d-flex justify-content-around">
+        {statsData.map((data) => (
+          <div key={data.index}>
+            <h1 className="text-center testimonial-number">{data.value}{data.sup && <sup className="testimonial-plus">+</sup>}</h1>
+            <p className="p-2 text-center testimonial-last-text">{data.label}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

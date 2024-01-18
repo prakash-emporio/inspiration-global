@@ -1,0 +1,60 @@
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-around;
+}
+.navbar-expand-lg .nav-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: white !important;
+}
+
+.navbar-brand {
+  margin-left: 5rem;
+}
+
+.navbar {
+  padding: 0px 15px !important;
+  position: absolute;
+  width: 100%;
+  z-index: 1000 !important;
+}
+
+.nav-link:hover {
+  color: #A1F157 !important;
+}
+
+.dropdown-menu {
+  border-bottom: 4px solid #A1F157;
+}
+
+.dropdown-heading {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.card {
+  border: none;
+}
+
+.subMenuItems{
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1.8px;
+  color: black;
+  text-decoration: none;
+}
+
+.subMenuItems:hover {
+  color: #5912E4;
+}
+
+.megamenu-sidebar {
+  background-color: #f3f4f6;
+}
+
+@media only screen and (max-width: 767px) {
+  .megamenu-sidebar {
+    width: 100%; 
+    text-align: center; 
+  }
+}

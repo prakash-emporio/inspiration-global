@@ -1,24 +1,30 @@
 import Header from "../header/Header.jsx";
+import MegaHeader from "../header/MegaHeader.jsx";
 import Hero from "./Hero.jsx";
 import CompanySection from "./CompanySection.jsx";
 import TestimonialSection from "./TestimonialSection.jsx";
-import Content from "./Content.jsx";
+import FirstContent from "./FirstContent.jsx";
+import SecondContent from "./SecondContent.jsx";
+import ThirdContent from "./ThirdContent.jsx";
 import CommonCard from "./CommonCard.jsx";
 import ExtraCard from "./ExtraCard.jsx";
-import Services from "./Services.jsx";
+import ServiceCard from "./ServiceCard.jsx";
 import CTA from "./CTA.jsx";
 import Form from "./Form.jsx";
 import Footer from "../footer/Footer.jsx";
 
 export {
   Header,
+  MegaHeader,
   Hero,
   CompanySection,
   TestimonialSection,
-  Content,
+  FirstContent,
+  SecondContent,
+  ThirdContent,
   CommonCard,
   ExtraCard,
-  Services,
+  ServiceCard,
   CTA,
   Form,
   Footer,

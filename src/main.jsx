@@ -9,15 +9,19 @@ import {
 } from "react-router-dom";
 import Layout from "./Layout.jsx";
 import Homepage from "./components/pages/Homepage.jsx";
-import TalentPage from "./components/Talentpage/TalentPage.jsx";
-import IndustryPage from "./components/Industrypage/IndustryPage.jsx";
+import SoftwarePage from "./components/pages/SoftwarePage.jsx";
+import ServicePage from "./components/pages/ServicePage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Homepage />} />
-      <Route path="talent" element={<TalentPage />} />
-      <Route path="industry" element={<IndustryPage />} />
+      <Route path="software/aws" element={<SoftwarePage />} />
+      <Route path="software/oracle" element={<SoftwarePage />} />
+      <Route path="software/salesforce" element={<SoftwarePage />} />
+      <Route path="software/azure" element={<SoftwarePage />} />
+      <Route path="software/shopify" element={<SoftwarePage />} />
+      <Route path="services" element={<ServicePage />} />
     </Route>
   )
 );

@@ -1,0 +1,35 @@
+.card-section-card-box {
+  margin-right: -10rem;
+}
+
+.card-section-card-box-2 {
+  margin-left: -23rem;
+}
+
+.card-section-title {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.card-section-text {
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.translate-middle-card-section {
+  transform: translate(50%, -50%) !important;
+}
+
+.content-card-section {
+  z-index: 2;
+}
+
+.img-card-section {
+  z-index: 1;
+}
+
+.software-btn {
+  background: #a1f157;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  color: #5912e4;
+}

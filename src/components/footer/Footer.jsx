@@ -1,107 +1,91 @@
+import "../css/Footer.css";
+import { NavLink } from "react-router-dom";
+import logo from "/logo.png";
+import facebook from "/facebook.png";
+import linkedin from "/linkedin.png";
+
+const footerData = [
+  { id: 1, label: "Software & Services", link: "" },
+  { id: 2, label: "Talent", link: "" },
+  { id: 3, label: "Industries", link: "" },
+  { id: 4, label: "Insights", link: "" },
+  { id: 5, label: "Company", link: "" },
+];
+
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center px-16 pb-4 bg-gray-900 pt-11 max-md:px-5">
-      <header className="flex w-full max-w-[1230px] flex-col items-stretch max-md:max-w-full">
-        <div className="flex items-center justify-between gap-5 max-md:max-w-full max-md:flex-wrap">
-          <div
-            className="my-auto text-sm font-bold leading-7 tracking-widest text-white uppercase"
-            aria-label="Software & Services"
-          >
-            Software & Services
+    <footer className="d-grid py-5 main-footer ">
+      <div className="container">
+        <div className="row justify-content-between">
+          <div className="mb-3 col-6 col-md-2">
+            <ul className="nav flex-column">
+              {footerData.map((item) => (
+                <li key={item.id} className="mb-2 nav-item">
+                  <NavLink href={item.link} className="p-2 nav-link">
+                    {item.label}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
           </div>
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/4c0f3754665ba9472868774f3429396dc58acdc4069c6fa0fa6aba509938b0d2?apiKey=8e82500553ca48b393fa7f9343c196cd&"
-            className="aspect-[2.7] object-contain object-center w-[170px] justify-center items-center overflow-hidden self-stretch shrink-0 max-w-full"
-            alt=""
-          />
-        </div>
-        <div className="flex items-stretch justify-between gap-5 mt-5 max-md:max-w-full max-md:flex-wrap">
-          <div className="flex flex-col items-stretch">
-            <div
-              className="text-sm font-bold leading-7 tracking-widest text-white uppercase"
-              aria-label="Talent"
-            >
-              Talent
+
+          <div className="mb-3 col-md-6">
+            <div className="d-flex justify-content-end">
+              <img className="footer-main-logo" src={logo} alt="company-logo" />
             </div>
-            <div
-              className="text-sm font-bold leading-7 tracking-widest text-white uppercase whitespace-nowrap mt-11 max-md:mt-10"
-              aria-label="Industries"
-            >
-              Industries
-            </div>
-            <div
-              className="text-sm font-bold leading-7 tracking-widest text-white uppercase whitespace-nowrap mt-11 max-md:mt-10"
-              aria-label="Insights"
-            >
-              Insights
-            </div>
-            <div
-              className="text-sm font-bold leading-7 tracking-widest text-white uppercase whitespace-nowrap mt-11 max-md:mt-10"
-              aria-label="Company"
-            >
-              Company
-            </div>
-          </div>
-          <div
-            className="self-start mt-5 text-5xl font-black leading-10 tracking-tighter text-right text-purple-900 bg-clip-text grow shrink basis-auto max-md:max-w-full max-md:text-4xl max-md:leading-10"
-            aria-label="From Concept to Completion with Optimal Solutions"
-          >
-            From Concept to Completion
-            <br /> with Optimal Solutions
+            <p className="footer-main-text">
+              From Concept to Completion <br /> with Optimal Solutions
+            </p>
           </div>
         </div>
-      </header>
-      <div className="mt-5 max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col max-md:items-stretch max-md:gap-0">
-          <div className="flex flex-col items-stretch w-[44%] max-md:w-full max-md:ml-0">
-            <div
-              className="my-auto text-xs tracking-wider text-gray-500 uppercase max-md:max-w-full max-md:mt-10"
-              aria-label="Copyright © 2023 Inspiration Global | All rights reserved"
-            >
-              Copyright © 2023 Inspiration Global | All rights reserved
-            </div>
-          </div>
-          <div className="flex flex-col items-stretch w-[34%] ml-5 max-md:w-full max-md:ml-0">
-            <div className="flex items-stretch justify-between gap-5 px-px grow max-md:mt-10">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/81d5af016ba582b9290d64cfb7e0ced57006e15c2c862775a5c2fbaf76af8ad2?apiKey=8e82500553ca48b393fa7f9343c196cd&"
-                className="aspect-[1.01] object-contain object-center w-[130px] overflow-hidden shrink-0 max-w-full"
-                alt=""
-              />
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/37efb43a42aa62fd13c41d9d22bdcd4819a3eb9732525cf99b6a52ce6942ed6d?apiKey=8e82500553ca48b393fa7f9343c196cd&"
-                className="self-center object-contain object-center w-6 max-w-full my-auto overflow-hidden aspect-square shrink-0"
-                alt=""
-              />
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/7aa4dbc5fdafcb38d43c2015f18de2eb9aac4b9118be62118f483a49a8d770c2?apiKey=8e82500553ca48b393fa7f9343c196cd&"
-                className="items-center self-center justify-center object-contain object-center w-6 max-w-full my-auto overflow-hidden aspect-square shrink-0"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="flex flex-col items-stretch w-[22%] ml-5 max-md:w-full max-md:ml-0">
-            <div className="flex items-stretch justify-between gap-5 my-auto max-md:mt-10">
-              <div
-                className="text-xs font-extrabold tracking-wider text-gray-500 uppercase text-nowrap"
-                aria-label="Terms of Service"
+
+        <div className="py-4 my-4 d-flex flex-column flex-sm-row justify-content-between border-top footer-last-text">
+          <p>Copyright &copy; 2023 Inspiration Global | All rights reserved</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="130"
+            height="130"
+            viewBox="0 0 130 130"
+            fill="none"
+          >
+            <path
+              d="M64.9999 0C29.3032 0 0 29.1763 0 64.7185C0 100.261 29.3032 129.437 64.9999 129.437C100.697 129.437 130 100.261 130 64.7185C130 29.1763 100.697 0 64.9999 0ZM64.9999 106.627C41.5573 106.627 22.9098 87.5292 22.9098 64.7185C22.9098 41.9079 42.0901 22.8106 64.9999 22.8106C87.9098 22.8106 107.09 41.9079 107.09 64.7185C107.09 87.5292 87.9098 106.627 64.9999 106.627Z"
+              fill="url(#paint0_linear_201_675)"
+            />
+            <path
+              d="M65.0004 22.8108C41.5578 22.8108 22.9102 41.9081 22.9102 64.7187C22.9102 87.5294 42.0905 106.627 65.0004 106.627C87.9102 106.627 107.091 87.5294 107.091 64.7187C107.091 41.9081 87.9102 22.8108 65.0004 22.8108ZM65.0004 95.4867C47.9512 95.4867 34.0988 81.6941 34.0988 64.7187C34.0988 47.7433 47.9512 33.9509 65.0004 33.9509C82.0495 33.9509 95.9021 47.7433 95.9021 64.7187C95.9021 81.6941 82.0495 95.4867 65.0004 95.4867Z"
+              fill="#A1F157"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_201_675"
+                x1="65"
+                y1="0"
+                x2="65"
+                y2="129.437"
+                gradientUnits="userSpaceOnUse"
               >
-                Terms of Service
-              </div>
-              <div
-                className="text-xs font-extrabold tracking-wider text-gray-500 uppercase text-nowrap"
-                aria-label="DEI Policy"
-              >
-                DEI Policy
-              </div>
-            </div>
-          </div>
+                <stop stopColor="#8852F2" />
+                <stop offset="1" stopColor="#8852F2" stopOpacity={0} />
+              </linearGradient>
+            </defs>
+          </svg>
+          <ul className="list-unstyled d-flex">
+            <li className="ms-3">
+              <NavLink className="link-body-emphasis" href="#">
+                <img src={facebook} alt="facebook-icon" />
+              </NavLink>
+            </li>
+            <li className="ms-3">
+              <NavLink className="link-body-emphasis" href="#">
+                <img src={linkedin} alt="linkedin-icon" />
+              </NavLink>
+            </li>
+          </ul>
+          <p>Terms of Service</p>
+          <p>Die Policy</p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

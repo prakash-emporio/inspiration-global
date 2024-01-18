@@ -1,0 +1,28 @@
+.footer-main-text {
+  font-weight: 900;
+  font-size: 40px;
+  text-align: right;
+  padding-top: 10px;
+  background: linear-gradient(94deg, #763bef 28.57%, #5912e4 89.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-footer {
+  background-color: #111827;
+}
+
+.nav-link {
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #A1F157;
+}
+
+.footer-last-text {
+  color: #6b7280;
+  text-transform: uppercase;
+}

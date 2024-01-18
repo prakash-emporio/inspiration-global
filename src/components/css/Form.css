@@ -1,0 +1,27 @@
+.form-wrapper {
+  background-color: #5912e4;
+}
+
+.form-heading {
+  color: #a1f157;
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.form-control:focus, .form-control:active {
+  background: transparent;
+  color: white;
+}
+
+.form-control::placeholder {
+  color: white;
+  opacity: 1; 
+}

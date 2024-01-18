@@ -1,39 +1,48 @@
 import heroImage from "/heroImage.png";
-import Header from "../header/Header.jsx";
+import "../css/Hero.css";
 
 export default function Hero() {
   return (
-    <div className="">
-      <div className="flex justify-between bg-gray-900 max-md:w-full max-sm:w-full max-lg:max-w-full">
-        <h1 className="px-10 pt-56 text-5xl font-light text-white text-nowrap max-sm:text-center max-lg:w-full">
-          <span className="font-black text-lime-300">We Live</span> at the
-          intersection <br /> of technology, talent & <br /> tomorrow...
-          <button className="flex gap-3 px-8 py-2 text-sm font-semibold text-center uppercase bg-purple-800 rounded-full my-14 text-lime-300">
-            Let's Go
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-5 h-5"
-            >
-              <path
-                fillRule="evenodd"
-                d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-        </h1>
-        <img
-          className="relative max-w-screen-md max-sm:hidden max-lg:w-full"
-          src={heroImage}
-          alt="hero-image"
-        />
+    <section className="hero-banner">
+      <div class="">
+        <div class="row align-items-center">
+          <div class="col-3 p-lg-5 pt-lg-3 d-none d-sm-block">
+
+            <div class="lc-block mb-3 hero-heading">
+              <h2 class="display-4 text-light">
+                <span className="fw-bold hero-main-text">We Live</span> at the
+                intersection <br /> of technology, talent & tomorrow{" "}
+                <span className="hero-end-text">...</span>
+              </h2>
+            </div>
+
+            <button class="btn px-4 me-md-2 hero-btn" href="#" role="button">
+              Let's Go
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                className="ms-2"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.21967 14.7803C5.51256 15.0732 5.98744 15.0732 6.28033 14.7803L13.5 7.56066V13.25C13.5 13.6642 13.8358 14 14.25 14C14.6642 14 15 13.6642 15 13.25V5.75C15 5.33579 14.6642 5 14.25 5H6.75C6.33579 5 6 5.33579 6 5.75C6 6.16421 6.33579 6.5 6.75 6.5H12.4393L5.21967 13.7197C4.92678 14.0126 4.92678 14.4874 5.21967 14.7803Z"
+                  fill="#A1F157"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="col-9 p-0">
+            <div class="">
+              <img class="w-100 hero-image" src={heroImage} />
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="absolute top-0 max-sm:hidden">
-        <Header />
-      </div>
-      <div className="absolute bottom-60 left-10 max-sm:hidden"></div>
-    </div>
+    </section>
   );
 }

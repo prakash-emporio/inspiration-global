@@ -1,0 +1,24 @@
+.cta-card-color {
+  background-color: #5912E4;
+  border-bottom: 10px solid #A1F157;
+}
+
+.cta-text {
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.cta-paragraph {
+  font-weight: 300;
+  text-wrap: wrap;
+  font-size: 1.3rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.cta-logo-wrapper > img:nth-child(2n) {
+  padding-top: 10rem;
+}

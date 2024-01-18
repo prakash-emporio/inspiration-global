@@ -1,0 +1,37 @@
+.testimonial-wrapper {
+  letter-spacing: 1.4px;
+}
+
+.testimonial-heading {
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.testimonial-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.testimonial-number {
+  font-weight: 900;
+  font-size: 5rem;
+  background: linear-gradient(180deg, #8852f2 0%, #5912e4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.testimonial-plus {
+  font-weight: 900;
+  font-size: 4rem;
+  background: linear-gradient(180deg, #8852f2 0%, #5912e4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.testimonial-last-text {
+  font-weight: 800;
+  font-size: 1.5rem;
+}

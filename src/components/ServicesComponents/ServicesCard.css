@@ -1,0 +1,38 @@
+.service-card-heading {
+  font-weight: 900;
+  font-size: 3.75rem;
+}
+
+.service-card-section {
+  border-radius: 0px 0px 20px 0px;
+  background: white;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.service-card-section-title {
+  color: #5912e4;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.service-card-section-text-size {
+  font-size: 1.25rem;
+}
+
+.service-card-li {
+  list-style: disc;
+}
+
+.service-card-btn-color {
+  background-color: #A1F157;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  padding: 8px 8px;
+}
+
+.card-section-container-color {
+  background: #F3F4F6;
+}
+
