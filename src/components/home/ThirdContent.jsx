@@ -19,18 +19,18 @@ export default function ThirdContent() {
             </div>
           </div>
         </div>
-        <div class="card col-md-4 position-relative">
+        <div className="card col-md-4 position-relative">
           <img className="img-fluid" src={content6} alt="" />
 
-          <div class="card-img-overlay">
+          <div className="card-img-overlay">
             <div className="position-absolute top-0 end-0 text-center rounded-circle dynamic-content">
               TM
             </div>
             <div className="card-body top-50 end-10 position-absolute">
-              <h1 class="card-title custom-card-title">Meet Team Member</h1>
+              <h1 className="card-title custom-card-title">Meet Team Member</h1>
               <p className="card-title custom-card-title">Sushant Pednekar</p>
               <button
-                class="btn px-4 me-md-2 common-card-btn"
+                className="btn px-4 me-md-2 common-card-btn"
                 href="#"
                 role="button"
               >
@@ -41,12 +41,13 @@ export default function ThirdContent() {
                   height="20"
                   viewBox="0 0 20 20"
                   fill="none"
+                  className="ms-2 icon-svg"
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M5.21967 5.21967C4.92678 5.51256 4.92678 5.98744 5.21967 6.28033L12.4393 13.5L6.75 13.5C6.33579 13.5 6 13.8358 6 14.25C6 14.6642 6.33579 15 6.75 15L14.25 15C14.6642 15 15 14.6642 15 14.25L15 6.75C15 6.33579 14.6642 6 14.25 6C13.8358 6 13.5 6.33579 13.5 6.75L13.5 12.4393L6.28033 5.21967C5.98744 4.92678 5.51256 4.92678 5.21967 5.21967Z"
-                    fill="#5912E4"
+                    
                   />
                 </svg>
               </button>

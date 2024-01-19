@@ -19,3 +19,10 @@
 .custom-m {
   margin: 5rem!important;
 }
+
+.hero-banner .img-responsive {
+  @media screen and (min-width: 1401px) {
+    max-width: 100%;
+    width: 100%;
+  }
+}

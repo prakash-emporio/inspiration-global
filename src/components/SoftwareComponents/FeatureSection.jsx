@@ -2,7 +2,7 @@ import "./FeatureSection.css";
 
 export default function FeatureSection() {
   return (
-    <div className="container text-center">
+    <div className="text-center">
       <div className="row m-5">
         <div className="col align-self-center">
           <div className="card mb-3">
@@ -11,7 +11,7 @@ export default function FeatureSection() {
                 Enterprise Performance at <br />{" "}
                 <span className="feature-card-title-next">Scale</span>
               </h2>
-              <p className="card-text feature-card-text">
+              <p className="card-text feature-card-text px-5 mx-5">
                 IG and AWS collaborate to provide clients with expert industry
                 knowledge and a vast network of cloud engineering resources.
                 Together, they assist clients in developing agile, custom

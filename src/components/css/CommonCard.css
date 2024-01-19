@@ -3,9 +3,9 @@
   color: #5912e4;
 }
 
-.btn:hover {
-  background-color: #85c54a;
-  color: white;
+.common-card-btn:hover {
+  background-color: #5912e4;
+  color:  #a1f157;
 }
 
 .img-fluid {
@@ -24,6 +24,15 @@
   letter-spacing: 1.4px;
   background: #5912e4;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+.icon-svg {
+  fill: #5912e4;
+}
+
+.btn:hover .icon-svg {
+  fill: #a1f157;
 }
 
 .custom-image {

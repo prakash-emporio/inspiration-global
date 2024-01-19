@@ -67,7 +67,7 @@ export default function SoftwareHero() {
     <section className="hero-banner">
       <div className="row">
         <div className="position-relative">
-          <img className="w-100" src={activeHero} alt="" />
+          <img className="img-responsive" src={activeHero} alt="" />
           <img
             className="position-absolute top-0 end-0 custom-p custom-m"
             src={activeLogo}

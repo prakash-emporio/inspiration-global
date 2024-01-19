@@ -36,6 +36,11 @@
   background-color: #5912e4;
 }
 
+.second-btn:hover {
+  color: white;
+  background-color: #5912e4;
+}
+
 .card-wrapper:hover .col-md-8 {
   width: 40% !important;
 }

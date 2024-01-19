@@ -29,3 +29,16 @@
   border-radius: 20px;
   margin-left: 5rem;
 }
+
+.hero-svg-icon {
+  fill: #a1f157;
+}
+
+.hero-btn:hover {
+  color: #5912e4;
+  background-color: #a1f157;
+}
+
+.hero-btn:hover .hero-svg-icon {
+  fill: #5912e4;
+}

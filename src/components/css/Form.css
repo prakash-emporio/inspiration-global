@@ -25,3 +25,19 @@
   color: white;
   opacity: 1; 
 }
+
+.form-btn {
+  background-color: #A1F157;
+  color: #5912E4;
+}
+
+.form-btn:hover {
+  background-color: #A1F157;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.form-btn:hover .icon-svg {
+  fill: white;
+  transition: 0.5s ease-in-out;
+}

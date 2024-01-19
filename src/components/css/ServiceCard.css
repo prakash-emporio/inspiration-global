@@ -12,21 +12,3 @@
 .service-card-text {
   text-align: left;
 }
-
-.service-btn {
-  background-color: #A1F157;
-  color: #5912E4;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 700;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.service-btn:hover {
-  background-color: #85c54a;
-  color: white;
-}

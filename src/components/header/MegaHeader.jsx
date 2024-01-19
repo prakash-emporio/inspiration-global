@@ -22,14 +22,14 @@ const DropdownMenuItems = [
         id: 1,
         title: "Software",
         description:
-          "Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus.",
+          "Dui ut pretium arcu nisi. In ac tempor gravida duis at. Dolor at egestas duis mauris condimentum vel..",
         button: "Software",
       },
       {
         id: 2,
         title: "Software",
         description:
-          "Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus.",
+          "Dui ut pretium arcu nisi. In ac tempor gravida duis at. Dolor at egestas duis mauris condimentum vel..",
         button: "Software",
       },
     ],
@@ -135,7 +135,7 @@ const DropdownMenuItems = [
         id: 1,
         title: "Sourcing",
         description:
-          "Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus.",
+          "Dui ut pretium arcu nisi. In ac tempor gravida duis at. Dolor at egestas duis mauris condimentum vel..",
         button: "Sourcing",
       },
       {
@@ -158,14 +158,14 @@ const DropdownMenuItems = [
         id: 1,
         title: "Industries",
         description:
-          "Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus.",
+          "Dui ut pretium arcu nisi. In ac tempor gravida duis at. Dolor at egestas duis mauris condimentum vel..",
         button: "Industries",
       },
       {
         id: 2,
         title: "Industries",
         description:
-          "Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus.",
+          "Dui ut pretium arcu nisi. In ac tempor gravida duis at. Dolor at egestas duis mauris condimentum vel..",
         button: "Industries",
       },
     ],
@@ -207,7 +207,7 @@ const DropdownMenuItems = [
         id: 1,
         title: "Blog",
         description:
-          "Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus.",
+          "Dui ut pretium arcu nisi. In ac tempor gravida duis at. Dolor at egestas duis mauris condimentum vel..",
         button: "Blog",
       },
       {
@@ -230,7 +230,7 @@ const DropdownMenuItems = [
         id: 1,
         title: "About Us",
         description:
-          "Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus.",
+          "Dui ut pretium arcu nisi. In ac tempor gravida duis at. Dolor at egestas duis mauris condimentum vel..",
         button: "About Us",
       },
       {
@@ -248,7 +248,7 @@ const DropdownMenuItems = [
 
 export default function MegaHeader() {
   return (
-    <nav className="navbar navbar-expand-lg border-bottom">
+    <nav className="navbar navbar-expand-lg">
       <NavLink className="navbar-brand" to="/">
         <img className="m-3" src={logo} alt="company-logo" />
       </NavLink>
@@ -276,31 +276,31 @@ export default function MegaHeader() {
               {/* this should be dynamic also */}
               <ul className="dropdown-menu w-100 shadow ">
                 <div className="container">
-                  <div className="row p-3">
-                    <div className="col-9 d-none d-sm-block d-sm-none d-md-block">
-                      <div className="col-10">
+                  <div className="row">
+                    <div className="col-8 px-5 py-4 d-none d-sm-block d-sm-none d-md-block">
+                      <div className="col">
                         <p className="dropdown-heading">
                           {DropdownMenuItems[item.id - 1].title}
                         </p>
                       </div>
                       <div className="d-flex gap-3">
-                        <div className="col-4">
+                        <div className="col">
                           <div className="card">
                             <div className="card-body">
-                              <h5 className="card-title card-title-clr">
+                              <h5 className="card-title card-title-size">
                                 {
                                   DropdownMenuItems[item.id - 1].cardDetails[0]
                                     .title
                                 }
                               </h5>
-                              <p className="card-text">
+                              <p className="card-text my-card-text">
                                 {
                                   DropdownMenuItems[item.id - 1].cardDetails[0]
                                     .description
                                 }
                               </p>
                               <button
-                                className="btn common-card-btn"
+                                className="btn mega-header-btn"
                                 href="#"
                                 role="button"
                               >
@@ -314,37 +314,37 @@ export default function MegaHeader() {
                                   height="10"
                                   viewBox="0 0 10 10"
                                   fill="none"
-                                  className="m-2"
+                                  className="icon-svg"
                                 >
                                   <path
                                     fillRule="evenodd"
                                     clipRule="evenodd"
                                     d="M0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L8.5 2.56066L8.5 8.25C8.5 8.66421 8.83579 9 9.25 9C9.66421 9 10 8.66421 10 8.25L10 0.75C10 0.335787 9.66421 0 9.25 0L1.75 0C1.33579 0 1 0.335787 1 0.75C1 1.16421 1.33579 1.5 1.75 1.5L7.43934 1.5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033Z"
-                                    fill="#5912E4"
+                                    // fill="#5912E4"
                                   />
                                 </svg>
                               </button>
                             </div>
                           </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col">
                           {DropdownMenuItems[item.id - 1]?.cardDetails[1] && (
                             <div className="card">
                               <div className="card-body">
-                                <h5 className="card-title card-title-clr">
+                                <h5 className="card-title card-title-size">
                                   {
                                     DropdownMenuItems[item.id - 1]
                                       .cardDetails[1].title
                                   }
                                 </h5>
-                                <p className="card-text">
+                                <p className="card-text my-card-text">
                                   {
                                     DropdownMenuItems[item.id - 1]
                                       .cardDetails[1].description
                                   }
                                 </p>
                                 <button
-                                  className="btn common-card-btn"
+                                  className="btn mega-header-btn"
                                   href="#"
                                   role="button"
                                 >
@@ -358,13 +358,13 @@ export default function MegaHeader() {
                                     height="10"
                                     viewBox="0 0 10 10"
                                     fill="none"
-                                    className="m-2"
+                                    className="icon-svg"
                                   >
                                     <path
                                       fillRule="evenodd"
                                       clipRule="evenodd"
                                       d="M0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L8.5 2.56066L8.5 8.25C8.5 8.66421 8.83579 9 9.25 9C9.66421 9 10 8.66421 10 8.25L10 0.75C10 0.335787 9.66421 0 9.25 0L1.75 0C1.33579 0 1 0.335787 1 0.75C1 1.16421 1.33579 1.5 1.75 1.5L7.43934 1.5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033Z"
-                                      fill="#5912E4"
+                                      // fill="#5912E4"
                                     />
                                   </svg>
                                 </button>
@@ -374,8 +374,8 @@ export default function MegaHeader() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-3 megamenu-sidebar">
-                      <div className="d-flex flex-column text-left text-uppercase gap-4 py-3">
+                    <div className="col-4 megamenu-sidebar">
+                      <div className="d-flex flex-column text-left text-uppercase gap-4 p-3">
                         {DropdownMenuItems[item.id - 1].subMenuItems.map(
                           (subItem) => (
                             <NavLink to={subItem.href} className="subMenuItems" key={subItem.id}>

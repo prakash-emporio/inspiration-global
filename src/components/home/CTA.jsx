@@ -7,7 +7,7 @@ import shopify from "/shopify.svg";
 
 export default function CTA() {
   return (
-    <div className="m-5 text-center">
+    <div className="my-5 text-center">
       <div className="card card-padding cta-card-color">
         <h1 className="card-body cta-text">
           Powering Enterprises
@@ -20,9 +20,9 @@ export default function CTA() {
           <img src={shopify} alt="shopify-logo" />
         </li>
       </div>
-      <div class="mt-5 container">
-        <div class="row justify-content-center">
-          <div class="col-10">
+      <div className="mt-5 container">
+        <div className="row justify-content-center">
+          <div className="col-10">
             <p className="cta-paragraph">
               For a lot of companies, managing complex application landscapes
               that include a mix of legacy systems, digital technologies, and

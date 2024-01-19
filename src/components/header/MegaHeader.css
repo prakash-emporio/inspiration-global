@@ -52,6 +52,36 @@
   background-color: #f3f4f6;
 }
 
+.card-title-size {
+  color: #5912E4;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.my-card-text {
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: black;
+
+}
+
+.mega-header-btn {
+display: inline-flex;
+justify-content: center;
+align-items: center;
+gap: 12px;
+background:#A1F157;
+color: #5912E4;
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.mega-header-btn:hover {
+  background: #5912E4;
+  color: #A1F157;
+
+}
+
+
 @media only screen and (max-width: 767px) {
   .megamenu-sidebar {
     width: 100%; 
