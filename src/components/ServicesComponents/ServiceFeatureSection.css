@@ -1,0 +1,39 @@
+.service-feature-section-wrapper {
+  background: linear-gradient(180deg, #1f2937 12.03%, #111827 100%);
+}
+
+.service-feature-section-header {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.card-wrapper {
+  border-right: 4px solid #a1f157;
+  background: linear-gradient(
+    180deg,
+    rgba(89, 18, 228, 0) 15.86%,
+    #5912e4 152.07%
+  );
+}
+
+.service-feature-section-card-title {
+  color: #a1f157;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.service-feature-section-card-text {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.service-feature-section-card-number {
+  text-align: right;
+  font-size: 90px;
+  font-weight: 900;
+  background: linear-gradient(180deg, #8852f2 0%, #5912e4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
