@@ -11,6 +11,7 @@ import Layout from "./Layout.jsx";
 import Homepage from "./components/pages/Homepage.jsx";
 import SoftwarePage from "./components/pages/SoftwarePage.jsx";
 import ServicePage from "./components/pages/ServicePage.jsx";
+import TalentPage from "./components/pages/TalentPage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
       <Route path="software/azure" element={<SoftwarePage />} />
       <Route path="software/shopify" element={<SoftwarePage />} />
       <Route path="services" element={<ServicePage />} />
+      <Route path="talent" element={<TalentPage />} />
     </Route>
   )
 );

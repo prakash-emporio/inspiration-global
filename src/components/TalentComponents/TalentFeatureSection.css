@@ -1,0 +1,26 @@
+.talent-feature-section-wrapper {
+  background: linear-gradient(180deg, #1f2937 12.03%, #111827 100%);
+}
+
+.talent-feature-section-header {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 90%;
+}
+
+.talent-feature-section-card-title {
+  color: #a1f157;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 100%;
+}
+
+.talent-feature-section-card-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 130%;
+}
