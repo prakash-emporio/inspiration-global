@@ -24,3 +24,27 @@
   font-weight: 300;
   line-height: 130%;
 }
+
+.talent-feature-section-card-color-1 {
+  background: #aa84f5;
+}
+
+.talent-feature-section-card-color-2 {
+  background: #763bef;
+}
+
+.talent-feature-section-card-color-3 {
+  background: #6522ed;
+}
+
+.talent-feature-section-card-color-4 {
+  background: #5912e4;
+}
+
+.talent-feature-section-card-header {
+  color: #a1f157;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+}
