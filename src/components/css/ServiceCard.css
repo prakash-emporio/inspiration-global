@@ -1,14 +1,18 @@
-.card-title-clr{
+.card-title-color{
   color: #5912E4;
-  font-weight: 900;
+  font-weight: 800;
+  font-size: 25px;
   text-align: left;
 }
 
 .service-header {
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 60px;
 }
 
 .service-card-text {
+  color: black;
   text-align: left;
+  font-weight: 300;
+  font-size: 20px;
 }

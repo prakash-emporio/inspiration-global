@@ -12,7 +12,12 @@
 }
 
 .service-feature-section-card-wrapper {
-  border-right: 4px solid #a1f157;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-top-width: 0;
+  border-right-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to top, #a1f157, rgba(0, 0, 0, 0)) 1 100%;
   background: linear-gradient(
     180deg,
     rgba(89, 18, 228, 0) 15.86%,
@@ -21,15 +26,19 @@
 }
 
 .service-feature-section-card-title {
+  min-height: 170px;
   color: #a1f157;
   font-size: 50px;
   font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -1.25px;
 }
 
 .service-feature-section-card-text {
   color: #fff;
   font-size: 25px;
   font-weight: 300;
+  line-height: 130%;
 }
 
 .service-feature-section-card-number {
@@ -40,4 +49,25 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.service-feature-section-card-btn {
+  background: #a1f157;
+  border-radius: 20px;
+  padding: 5px 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.service-feature-section-card-svg {
+  fill: #5912e4;
+}
+
+.service-feature-section-card-wrapper .service-feature-section-card-btn {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 2;
 }

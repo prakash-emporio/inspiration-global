@@ -6,7 +6,7 @@ export default function ServicesHero() {
     <section className="hero-banner">
       <div className="row">
         <div className="position-relative">
-          <img className="w-100" src={serviceHero} alt="" />
+          <img className="service-hero-img" src={serviceHero} alt="" />
           <div className="position-absolute software-top">
             <div className="mx-5 px-5 card bg-transparent">
               <div className="card-body">
@@ -18,7 +18,7 @@ export default function ServicesHero() {
           </div>
           <div className="position-absolute top-100 start-50 translate-middle-service">
             <div className="service-card-color">
-              <div className="card-body">
+              <div className="card-body service-hero-card-body-wrapper">
                 <h1 className="service-hero-card-text">
                   We provide comprehensive product and platform engineering
                   services that address the full technology stack.

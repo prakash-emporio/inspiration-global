@@ -26,3 +26,11 @@
   color: #6b7280;
   text-transform: uppercase;
 }
+
+.footer-svg {
+  fill: #6B7280;
+}
+
+.footer-svg:hover {
+  fill: #A1F157;
+}

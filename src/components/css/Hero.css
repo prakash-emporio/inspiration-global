@@ -2,8 +2,16 @@
   background-color: #111827;
 }
 
+.hero-header {
+  font-size: 65px;
+  font-weight: 250;
+  line-height: 60px;
+  letter-spacing: -1.7px;
+}
+
 .hero-main-text {
   color: #a1f157;
+  font-weight: 900;
 }
 
 .hero-end-text {
@@ -11,8 +19,9 @@
 }
 
 .hero-heading {
+  margin-top: -5rem;
   margin-left: 5rem;
-  margin-right: -30rem;
+  margin-right: -32rem;
 }
 
 .col-3 {
@@ -21,13 +30,22 @@
 
 .col-9 {
   z-index: 1;
+  margin-top: -6rem;
 }
 
 .hero-btn {
   background-color: #5912e4;
+  margin-left: 5rem;
   color: #a1f157;
   border-radius: 20px;
-  margin-left: 5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
 }
 
 .hero-svg-icon {

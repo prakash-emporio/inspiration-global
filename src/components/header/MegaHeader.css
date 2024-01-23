@@ -1,11 +1,22 @@
 .navbar-expand-lg .navbar-collapse {
   justify-content: space-around;
 }
+
+.dropdown-toggle::after {
+  display:none;
+}
+
 .navbar-expand-lg .nav-link {
   text-transform: uppercase;
+  font-size: 15px;
   font-weight: 700;
+  line-height: 25px;
   letter-spacing: 1.5px;
   color: white !important;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
 }
 
 .navbar-brand {
@@ -19,12 +30,16 @@
   z-index: 1000 !important;
 }
 
+.navbar-nav {
+  gap: 10px;
+}
+
 .nav-link:hover {
-  color: #A1F157 !important;
+  color: #a1f157 !important;
 }
 
 .dropdown-menu {
-  border-bottom: 4px solid #A1F157;
+  border-bottom: 4px solid #a1f157;
 }
 
 .dropdown-heading {
@@ -36,7 +51,7 @@
   border: none;
 }
 
-.subMenuItems{
+.subMenuItems {
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 1.8px;
@@ -45,7 +60,7 @@
 }
 
 .subMenuItems:hover {
-  color: #5912E4;
+  color: #5912e4;
 }
 
 .megamenu-sidebar {
@@ -53,7 +68,7 @@
 }
 
 .card-title-size {
-  color: #5912E4;
+  color: #5912e4;
   font-weight: 300;
   font-size: 1.5rem;
 }
@@ -62,29 +77,26 @@
   font-weight: 300;
   font-size: 1.25rem;
   color: black;
-
 }
 
 .mega-header-btn {
-display: inline-flex;
-justify-content: center;
-align-items: center;
-gap: 12px;
-background:#A1F157;
-color: #5912E4;
-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #a1f157;
+  color: #5912e4;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 }
 
 .mega-header-btn:hover {
-  background: #5912E4;
-  color: #A1F157;
-
+  background: #5912e4;
+  color: #a1f157;
 }
-
 
 @media only screen and (max-width: 767px) {
   .megamenu-sidebar {
-    width: 100%; 
-    text-align: center; 
+    width: 100%;
+    text-align: center;
   }
 }

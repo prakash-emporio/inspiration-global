@@ -13,7 +13,7 @@ const ServiceCard = ({ title, description, list }) => {
   return (
     <div className="col-md-3 p-3">
       <div className="card service-card-section">
-        <div className="card-body ">
+        <div className="card-body service-card-section-body">
           <h5 className="card-title service-card-section-title">{title}</h5>
           <p className="card-text service-card-section-text-size">
             {description}
@@ -185,7 +185,7 @@ export default function ServicesCardSection() {
   ];
 
   return (
-    <div className="container">
+    <div className="container-md">
       <h1 className="text-center text-black service-card-heading">
         Product Engineering Services
       </h1>

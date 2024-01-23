@@ -1,11 +1,15 @@
 .common-card-btn {
   background-color: #a1f157;
   color: #5912e4;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1.4px;
 }
 
 .common-card-btn:hover {
   background-color: #5912e4;
-  color:  #a1f157;
+  color: #a1f157;
 }
 
 .img-fluid {
@@ -17,7 +21,7 @@
 }
 
 .dynamic-content {
-  color: #A1F157;
+  color: #a1f157;
   font-weight: 700;
   padding: 10px;
   margin: 10px;
@@ -25,7 +29,6 @@
   background: #5912e4;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 }
-
 
 .icon-svg {
   fill: #5912e4;
@@ -40,5 +43,3 @@
   filter: blur(2px);
   -webkit-filter: blur(2px);
 }
-
-

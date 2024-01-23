@@ -4,7 +4,7 @@ import logo from "/logo.png";
 import phone from "/phone.png";
 
 const navItems = [
-  { id: 1, label: "Software", href: "" },
+  { id: 1, label: "Softwares", href: "" },
   { id: 2, label: "Services", href: "" },
   { id: 3, label: "Talent", href: "" },
   { id: 4, label: "Industries", href: "" },
@@ -261,7 +261,7 @@ export default function MegaHeader() {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div className="collapse navbar-collapse " id="collapsibleNavbar">
+      <div className="collapse navbar-collapse" id="collapsibleNavbar">
         <ul className="navbar-nav">
           {navItems.map((item) => (
             <li className="nav-item dropdown position-static" key={item.id}>
@@ -273,9 +273,8 @@ export default function MegaHeader() {
               >
                 {item.label}
               </NavLink>
-              {/* this should be dynamic also */}
               <ul className="dropdown-menu w-100 shadow ">
-                <div className="container">
+                <div className="container-lg">
                   <div className="row">
                     <div className="col-8 px-5 py-4 d-none d-sm-block d-sm-none d-md-block">
                       <div className="col">
@@ -320,7 +319,6 @@ export default function MegaHeader() {
                                     fillRule="evenodd"
                                     clipRule="evenodd"
                                     d="M0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L8.5 2.56066L8.5 8.25C8.5 8.66421 8.83579 9 9.25 9C9.66421 9 10 8.66421 10 8.25L10 0.75C10 0.335787 9.66421 0 9.25 0L1.75 0C1.33579 0 1 0.335787 1 0.75C1 1.16421 1.33579 1.5 1.75 1.5L7.43934 1.5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033Z"
-                                    // fill="#5912E4"
                                   />
                                 </svg>
                               </button>
@@ -364,7 +362,6 @@ export default function MegaHeader() {
                                       fillRule="evenodd"
                                       clipRule="evenodd"
                                       d="M0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L8.5 2.56066L8.5 8.25C8.5 8.66421 8.83579 9 9.25 9C9.66421 9 10 8.66421 10 8.25L10 0.75C10 0.335787 9.66421 0 9.25 0L1.75 0C1.33579 0 1 0.335787 1 0.75C1 1.16421 1.33579 1.5 1.75 1.5L7.43934 1.5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033Z"
-                                      // fill="#5912E4"
                                     />
                                   </svg>
                                 </button>
@@ -391,7 +388,7 @@ export default function MegaHeader() {
             </li>
           ))}
           <li className="nav-item d-sm-none d-md-none d-lg-block">
-            <NavLink className="nav-link" href="#">
+            <NavLink className="nav-link" href="">
               <img className="" src={phone} alt="mobile-phone-logo" />
               123.456.789
             </NavLink>

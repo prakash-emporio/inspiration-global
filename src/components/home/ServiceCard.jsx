@@ -57,9 +57,9 @@ export default function ServiceCard() {
       <div className="row">
         {services.map((service) => (
           <div className="col col-md-3" key={service.id}>
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title card-title-clr fs-4">
+            <div className="card mb-3">
+              <div className="card-body service-card-section-body">
+                <h5 className="card-title card-title-color">
                   {service.header}
                 </h5>
                 <p className="card-text service-card-text">{service.detail}</p>

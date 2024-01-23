@@ -1,10 +1,19 @@
 .translate-middle-service {
-  transform: translate(-15%,-90%)!important;
+  transform: translate(5%,-85%)!important;
 }
 
 .service-card-color {
   background-color: #A1F157;
-  border-right: 10px solid #5912E4;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-top-width: 0;
+  border-right-width: 10px;
+  border-style: solid;
+  border-image: linear-gradient(to top, #5912E4, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.service-hero-card-body-wrapper {
+  width: 600px;
 }
 
 .service-hero-card-text {
@@ -14,3 +23,9 @@
   color: #000;
   text-align: left;
 }
+
+@media screen and (min-width: 1441px) {
+  .service-hero-img {
+    width: 100%;
+  } 
+} 

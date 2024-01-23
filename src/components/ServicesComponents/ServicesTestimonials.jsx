@@ -2,7 +2,7 @@ import "./ServicesTestimonials.css";
 
 export default function ServicesTestimonials() {
   return (
-    <div className="container m-5">
+    <div className="container-fluid mt-5">
       <div className="row">
         <div className="p-5 col-8 align-self-start service-testimonial-text">
           In business, having a good - or even a great idea can only take you so
