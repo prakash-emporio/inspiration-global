@@ -30,7 +30,7 @@ export default function ServicesFeatureSection() {
       <div className="row g-0 col-wrapper">
         {stepsData.map((step, index) => (
           <div className="col" key={index}>
-            <div className="card card-wrapper">
+            <div className="card service-feature-section-card-wrapper">
               <div className="card-body">
                 <h5 className="card-title p-3 service-feature-section-card-title">
                   {step.title}
@@ -38,7 +38,7 @@ export default function ServicesFeatureSection() {
                 <p className="card-text p-3 service-feature-section-card-text">
                   {step.description}
                 </p>
-                <p className="service-feature-section-card-number">
+                <p className="p-3 service-feature-section-card-number">
                   {step.number}
                 </p>
               </div>
