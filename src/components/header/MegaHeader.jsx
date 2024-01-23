@@ -264,7 +264,8 @@ export default function MegaHeader() {
       <div className="collapse navbar-collapse" id="collapsibleNavbar">
         <ul className="navbar-nav">
           {navItems.map((item) => (
-            <li className="nav-item dropdown position-static" key={item.id}>
+            <li className="nav-item dropdown position-static" key={item.id}
+            >
               <NavLink
                 className="nav-link dropdown-toggle"
                 to={item.href}
@@ -273,9 +274,9 @@ export default function MegaHeader() {
               >
                 {item.label}
               </NavLink>
-              <ul className="dropdown-menu w-100 shadow ">
-                <div className="container-lg">
-                  <div className="row">
+              <ul className="dropdown-menu w-100 shadow">
+                <div className="">
+                  <div className="row g-0">
                     <div className="col-8 px-5 py-4 d-none d-sm-block d-sm-none d-md-block">
                       <div className="col">
                         <p className="dropdown-heading">
@@ -375,7 +376,11 @@ export default function MegaHeader() {
                       <div className="d-flex flex-column text-left text-uppercase gap-4 p-3">
                         {DropdownMenuItems[item.id - 1].subMenuItems.map(
                           (subItem) => (
-                            <NavLink to={subItem.href} className="subMenuItems" key={subItem.id}>
+                            <NavLink
+                              to={subItem.href}
+                              className="subMenuItems"
+                              key={subItem.id}
+                            >
                               {subItem.title}
                             </NavLink>
                           )
