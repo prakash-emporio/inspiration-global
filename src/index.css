@@ -14,7 +14,9 @@ img:hover{
 .custom-card-title{
   color: white;
   font-weight: 900;
-  font-size: 3.2rem;
+  font-size: 58px;
   text-align: left;
+  line-height: 54px;
+  letter-spacing: -1.45px;
 }
 

@@ -1,25 +1,57 @@
 .cta-card-color {
-  background-color: #5912E4;
+  background-color: #5912e4;
   border-bottom: 10px solid #A1F157;
 }
 
 .cta-text {
   color: white;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 58px;
+  line-height: 60px;
+  letter-spacing: -1.45px;
 }
 
 .cta-paragraph {
   font-weight: 300;
   text-wrap: wrap;
-  font-size: 1.3rem;
+  font-size: 20px;
+  line-height: 28px;
 }
 
-li {
-  list-style-type: none;
+
+.gap-5 {
+  gap: 7rem !important;
 }
 
-.cta-logo-wrapper > img:nth-child(2n) {
-  padding-top: 10rem;
+.cta-img {
+  margin-bottom: 10px;
 }
 
+.cta-img:hover {
+  border-radius: 20px;
+  filter: brightness(1);
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.20);
+}
+
+.oracle {
+  margin-bottom: -80px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.20);
+  z-index: 2;
+}
+
+.azure {
+  margin-bottom: -80px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.20);
+  z-index: 2;
+}
+
+.cta-img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.hero-cta {
+  z-index: 1;
+}

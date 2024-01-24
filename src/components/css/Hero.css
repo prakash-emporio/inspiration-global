@@ -53,10 +53,12 @@
 }
 
 .hero-btn:hover {
-  color: #5912e4;
-  background-color: #a1f157;
+  color: #A1F157;
+  background-color: transparent;
+  outline: solid #A1F157;
+  transition: 0.3s ease-in-out;
 }
 
 .hero-btn:hover .hero-svg-icon {
-  fill: #5912e4;
+  fill: #A1F157;
 }

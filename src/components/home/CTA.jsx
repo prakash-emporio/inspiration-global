@@ -7,20 +7,28 @@ import shopify from "/shopify.svg";
 
 export default function CTA() {
   return (
-    <div className="my-5 text-center">
-      <div className="card card-padding cta-card-color">
-        <h1 className="card-body cta-text">
-          Powering Enterprises
-        </h1>
-        <li className="grid cta-logo-wrapper">
-          <img src={aws} alt="aws-logo" />
-          <img src={oracle} alt="oracle-logo" />
-          <img src={salesforce} alt="salesforce-logo" />
-          <img src={azure} alt="azure-logo" />
-          <img src={shopify} alt="shopify-logo" />
-        </li>
+    <div className="my-5">
+      <div className="card card-padding cta-card-color position-relative">
+        <h1 className="card-body mt-5 cta-text text-center">Powering Enterprises</h1>
+        <div className="mt-5 d-flex justify-content-center align-items-center gap-5">
+          <div className="item">
+            <img className="aws cta-img" src={aws} alt="aws-logo" />
+          </div>
+          <div className="item">
+            <img className="oracle cta-img" src={oracle} alt="oracle-logo" />
+          </div>
+          <div className="item">
+            <img className="salesforce cta-img" src={salesforce} alt="salesforce-logo" />
+          </div>
+          <div className="item">
+            <img className="azure cta-img" src={azure} alt="azure-logo" />
+          </div>
+          <div className="item">
+            <img className="shopify cta-img" src={shopify} alt="shopify-logo" />
+          </div>
+        </div>
       </div>
-      <div className="mt-5 container">
+      <div className="mt-5 p-5 container text-center hero-cta">
         <div className="row justify-content-center">
           <div className="col-10">
             <p className="cta-paragraph">

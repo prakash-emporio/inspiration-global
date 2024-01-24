@@ -1,4 +1,5 @@
 import "../css/Testimonial.css";
+import CountUp from "react-countup";
 
 const statsData = [
   { index: 0, value: 24, label: "Years in Business" },
@@ -22,8 +23,13 @@ export default function TestimonialSection() {
       <div className="d-flex justify-content-around">
         {statsData.map((data) => (
           <div key={data.index}>
-            <h1 className="text-center testimonial-number">{data.value}{data.sup && <sup className="testimonial-plus">+</sup>}</h1>
-            <p className="p-2 text-center testimonial-last-text">{data.label}</p>
+            <h1 className="text-center testimonial-number">
+              <CountUp start={0} end={data.value} duration={5} enableScrollSpy scrollSpyOnce ></CountUp>
+              {data.sup && <sup className="testimonial-plus">+</sup>}
+            </h1>
+            <p className="p-2 text-center testimonial-last-text">
+              {data.label}
+            </p>
           </div>
         ))}
       </div>

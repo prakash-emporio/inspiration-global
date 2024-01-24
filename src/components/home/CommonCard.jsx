@@ -1,22 +1,29 @@
+import { useState } from "react";
 import "../css/CommonCard.css";
 import content3 from "/content3.jpg";
 import content4 from "/content4.jpg";
 
 export default function CommonCard() {
+  const [isHovered1, setIsHovered1] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+
   return (
     <div className="card">
       <div className="row g-0">
         <div className="col-md-6 position-relative">
           <img src={content3} className="img-fluid" alt="..." />
-          <div className="position-absolute top-0 end-0 text-center rounded-circle dynamic-content">
-            CS
+          {/* on hover make this CS Case Study */}
+          <div className="position-absolute top-0 end-0 text-center  dynamic-content m-5"
+          onMouseEnter={() => setIsHovered1(true)}
+          onMouseLeave={() => setIsHovered1(false)}>
+            {isHovered1 ? 'Case Study' : 'CS'}
           </div>
-          <div className="position-absolute top-50 start-50 translate-middle-x">
+          <div className="position-absolute top-50 custom-start translate-middle-x">
             <h1 className="card-title custom-card-title">
               Two the cloud in 24 hours
             </h1>
             <button
-              className="btn px-4 me-md-2 common-card-btn"
+              className="btn mt-5 common-card-btn"
               href="#"
               role="button"
             >
@@ -40,13 +47,15 @@ export default function CommonCard() {
         </div>
         <div className="col-md-6 position-relative">
           <img src={content4} className="img-fluid" alt="..." />
-          <div className="position-absolute top-0 end-0 text-center rounded-circle dynamic-content">
-            BG
+          {/* on hover make this B Blog */}
+          <div className="position-absolute top-0 end-0 text-center dynamic-content m-5" onMouseEnter={() => setIsHovered2(true)}
+            onMouseLeave={() => setIsHovered2(false)}>
+          {isHovered2 ? 'Blog' : 'B'}
           </div>
-          <div className="position-absolute top-50 start-50 translate-middle-x">
+          <div className="position-absolute custom-top custom-start-2">
             <h1 className="card-title custom-card-title">Value Based Hiring</h1>
             <button
-              className="btn px-4 me-md-2 common-card-btn"
+              className="btn mt-5 common-card-btn"
               href="#"
               role="button"
             >

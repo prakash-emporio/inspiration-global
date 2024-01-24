@@ -24,15 +24,23 @@
   visibility: visible;
   font-size: 1.25rem;
   padding: 10px;
+  transition: 0.3s ease-in-out;
 }
 
 .content-text-wrapper:hover .card-title-1 {
-  font-size: 5rem;
+  font-size: 68px;
+  line-height: 64px;
+  letter-spacing: -1.7px;
+}
+
+.content-text-wrapper:hover button {
+  margin-top: 100px;
 }
 
 .btn {
   font-weight: 700;
-  letter-spacing: 0.1em;
+  font-size: 14px;
+  letter-spacing: 1.4px;
   border-radius: 20px;
   text-transform: uppercase;
 }
@@ -42,9 +50,20 @@
   color: #5912e4;
 }
 
+.first-content-svg {
+  fill: #5912E4;
+}
+
 .first-btn:hover {
-  background-color: #a1f157;
-  color: white;
+  color: #A1F157;
+  background-color: #5912E4;
+  outline: solid #A1F157;
+  transition: 0.3s ease-in-out;
+}
+
+.first-btn:hover .first-content-svg {
+  fill: #A1F157;
+  transition: 0.3s ease-in-out;
 }
 
 .card-wrapper:hover .col-md-8 {

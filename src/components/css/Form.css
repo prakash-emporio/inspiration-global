@@ -19,6 +19,8 @@
 .form-control:focus, .form-control:active {
   background: transparent;
   color: white;
+  box-shadow: none;
+  border-bottom: 3px solid #a1f157;
 }
 
 .form-control::placeholder {
@@ -32,12 +34,13 @@
 }
 
 .form-btn:hover {
-  background-color: #A1F157;
-  color: white;
-  transition: 0.5s ease-in-out;
+  color: #A1F157;
+  background-color: #5912E4;
+  outline: solid #A1F157;
+  transition: 0.3s ease-in-out;
 }
 
 .form-btn:hover .icon-svg {
-  fill: white;
-  transition: 0.5s ease-in-out;
+  fill: #A1F157;
+  transition: 0.3s ease-in-out;
 }
