@@ -17,14 +17,14 @@ export default function FirstContent() {
     <div className="card card-wrapper card-wrapper-color-1 content-text-wrapper">
       <div className="container-fluid">
         <div className="row g-0">
-          <div className="col-md-8">
+          <div className="col-6 col-md-8">
             <img
               src={FirstContentData.image}
               className="img-fluid content-image-1"
               alt="..."
             />
           </div>
-          <div className="col-md-4 ">
+          <div className="col-6 col-md-4 ">
             <div className="card-body">
               <h1
                 className="card-title-1 

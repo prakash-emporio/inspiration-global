@@ -37,14 +37,10 @@
   background-color: #5912e4;
   margin-left: 5rem;
   color: #a1f157;
-  border-radius: 20px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
-  flex-shrink: 0;
-  font-size: 15px;
-  font-weight: 700;
   line-height: 25px;
 }
 
@@ -53,12 +49,23 @@
 }
 
 .hero-btn:hover {
-  color: #A1F157;
+  color: #a1f157;
   background-color: transparent;
-  outline: solid #A1F157;
+  outline: solid #a1f157;
   transition: 0.3s ease-in-out;
 }
 
 .hero-btn:hover .hero-svg-icon {
-  fill: #A1F157;
+  fill: #a1f157;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-heading {
+    margin-top: 10rem !important;
+    margin-left: 5rem !important;
+    margin-right: -40rem !important;
+  }
+  .hero-btn {
+    text-wrap: nowrap;
+  }
 }

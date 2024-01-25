@@ -10,7 +10,7 @@ export default function ExtraCard() {
   return (
     <div className="card mb-3">
       <div className="row g-0">
-        <div className="col-md-6 position-relative">
+        <div className="col-6 col-md-6 position-relative">
           <img src={content7} className="img-fluid" alt="..." />
 
           <div
@@ -43,7 +43,7 @@ export default function ExtraCard() {
             </button>
           </div>
         </div>
-        <div className="col-md-6 position-relative">
+        <div className="col-6 col-md-6 position-relative">
           <img src={content8} className="img-fluid custom-image" alt="..." />
           <div
             className="position-absolute top-0 end-0 text-center  dynamic-content m-5"

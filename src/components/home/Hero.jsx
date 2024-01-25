@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="hero-banner">
       <div className="">
         <div className="row align-items-center">
-          <div className="col-3 p-lg-5 pt-lg-3 d-none d-sm-block">
+          <div className="col-3 p-lg-5 pt-lg-3">
             <div className="lc-block mb-3 hero-heading">
               <h2 className="text-light hero-header">
                 <span className="hero-main-text">We Live</span> at the

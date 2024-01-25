@@ -39,15 +39,15 @@
 }
 
 .navbar {
-  padding: 0px 15px !important;
+  /* padding: 0 !important; */
   position: absolute;
   width: 100%;
   z-index: 1000 !important;
 }
 
-.navbar-nav {
+/* .navbar-nav {
   gap: 10px;
-}
+} */
 
 .nav-link:hover {
   color: #a1f157 !important;
@@ -116,3 +116,27 @@
     text-align: center;
   }
 }
+/* 
+@media only screen and (min-width: 1025px) {
+  .navbar-nav {
+    gap: 5px;
+  }
+} */
+
+/* 
+@media only screen and (max-width: 1024px) {
+  .navbar-nav {
+    gap: 0px;
+  }
+
+  .navbar-expand-lg .nav-link {
+    color: black !important;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .navbar-expand-lg .nav-link:focus {
+    color: #a1f157 !important;
+  }
+}  */
+
