@@ -119,8 +119,6 @@ export default function CardSection() {
                     consequat est curabitur scelerisque nec ac turpis. Neque et
                     ac volutpat pellentesque ornare orci sed aliquam. Nunc
                     magnis sed fermentum venenatis turpis nulla eget diam.
-                    <br />
-                    <br />
                     Sollicitudin et mauris velit ut tortor massa id. Pharetra
                     tortor id porta ornare ultrices nunc. Praesent morbi
                     facilisis orci feugiat egestas eu sed. Convallis mauris eu
@@ -292,8 +290,6 @@ export default function CardSection() {
                     consequat est curabitur scelerisque nec ac turpis. Neque et
                     ac volutpat pellentesque ornare orci sed aliquam. Nunc
                     magnis sed fermentum venenatis turpis nulla eget diam.
-                    <br />
-                    <br />
                     Sollicitudin et mauris velit ut tortor massa id. Pharetra
                     tortor id porta ornare ultrices nunc. Praesent morbi
                     facilisis orci feugiat egestas eu sed. Convallis mauris eu

@@ -23,13 +23,7 @@ export default function CompanySection() {
           className=""
           alt="datacore"
         />
-        <img
-          loading="lazy"
-          width={100}
-          src={maryland}
-          className=""
-          alt="dhs"
-        />
+        <img loading="lazy" width={100} src={maryland} className="" alt="dhs" />
         <img
           loading="lazy"
           width={200}

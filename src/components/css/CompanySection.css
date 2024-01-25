@@ -14,3 +14,7 @@
   background: white;
   box-shadow: 0px 20px 30px 0px #0000001a;
 }
+
+.company-section img:hover {
+  filter: brightness(1);
+}
