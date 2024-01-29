@@ -4,7 +4,7 @@ import MegaHeader from "./components/header/MegaHeader.jsx";
 
 export default function Layout() {
   return (
-    <div className="d-grid">
+    <div>
       <MegaHeader />
       <main>
         <Outlet />

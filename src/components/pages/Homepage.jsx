@@ -14,7 +14,7 @@ import {
 
 export default function Homepage() {
   return (
-    <div className="">
+    <>
       <Hero />
       <CompanySection />
       <TestimonialSection />
@@ -26,6 +26,6 @@ export default function Homepage() {
       <ServiceCard/>
       <CTA />       
       <Form />
-    </div>
+    </>
   );
 }

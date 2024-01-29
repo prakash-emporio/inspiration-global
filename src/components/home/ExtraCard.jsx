@@ -8,11 +8,10 @@ export default function ExtraCard() {
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   return (
-    <div className="card mb-3">
+    <div className="container-fluid g-0">
       <div className="row g-0">
-        <div className="col-6 col-md-6 position-relative">
+        <div className="col-md-6 position-relative">
           <img src={content7} className="img-fluid" alt="..." />
-
           <div
             className="position-absolute top-0 end-0 text-center  dynamic-content m-5"
             onMouseEnter={() => setIsHovered2(true)}
@@ -43,7 +42,7 @@ export default function ExtraCard() {
             </button>
           </div>
         </div>
-        <div className="col-6 col-md-6 position-relative">
+        <div className="col-md-6 position-relative">
           <img src={content8} className="img-fluid custom-image" alt="..." />
           <div
             className="position-absolute top-0 end-0 text-center  dynamic-content m-5"

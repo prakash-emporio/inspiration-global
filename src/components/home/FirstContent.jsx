@@ -14,8 +14,8 @@ const FirstContentData = {
 
 export default function FirstContent() {
   return (
-    <div className="card card-wrapper card-wrapper-color-1 content-text-wrapper">
-      <div className="container-fluid">
+    <div className="card-wrapper content-text-wrapper card-wrapper-color-1">
+      <div className="container-fluid g-0">
         <div className="row g-0">
           <div className="col-6 col-md-8">
             <img
@@ -28,7 +28,7 @@ export default function FirstContent() {
             <div className="card-body">
               <h1
                 className="card-title-1 
-              py-3"
+              p-3"
               >
                 {FirstContentData.title}
               </h1>
@@ -44,7 +44,7 @@ export default function FirstContent() {
               >
                 {FirstContentData.text2}
               </p>
-              <button className="btn px-4 first-btn" href="#" role="button">
+              <button className="btn mx-3 px-4 first-btn" href="#" role="button">
                 {FirstContentData.buttonText}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

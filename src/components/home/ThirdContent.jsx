@@ -7,9 +7,9 @@ import { useState } from "react";
 export default function ThirdContent() {
   const [isHovered1, setIsHovered1] = useState(false);
   return (
-    <div>
+    <div className="container-fluid g-0">
       <div className="row g-0">
-        <div className="card col-6 col-md-8">
+        <div className="card col-md-8">
           <img
             className="img-fluid third-card-custom-img"
             src={content5}
@@ -24,7 +24,7 @@ export default function ThirdContent() {
             </div>
           </div>
         </div>
-        <div className="card col-6 col-md-4 position-relative">
+        <div className="card col-md-4 position-relative">
           <img
             className="img-fluid"
             src={content6}

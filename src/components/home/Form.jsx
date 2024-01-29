@@ -7,13 +7,13 @@ export default function Form() {
   const onSubmit = (d) => alert(JSON.stringify(d));
 
   return (
-    <div className="form-wrapper ">
+    <div className="form-wrapper">
       <div className="container">
         <div className="row">
-          <div className="col-6 my-auto">
+          <div className="col col-md-6 my-auto">
             <h1 className="form-heading">Let’s Talk</h1>
           </div>
-          <form id="contactForm" onSubmit={handleSubmit(onSubmit)} className="mb-5 col-6">
+          <form id="contactForm" onSubmit={handleSubmit(onSubmit)} className="mb-5 col-12 col-md-6">
             <div className="row my-5">
               <div className="col">
                 <input

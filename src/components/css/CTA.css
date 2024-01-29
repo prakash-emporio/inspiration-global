@@ -1,6 +1,6 @@
 .cta-card-color {
   background-color: #5912e4;
-  border-bottom: 10px solid #A1F157;
+  border-bottom: 10px solid #a1f157;
 }
 
 .cta-text {
@@ -18,32 +18,31 @@
   line-height: 28px;
 }
 
-
 .gap-5 {
   gap: 7rem !important;
 }
 
 .cta-img {
-  margin-bottom: 10px;
+  margin: 10px 50px;
 }
 
 .cta-img:hover {
   border-radius: 20px;
   filter: brightness(1);
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
 }
 
 .oracle {
   margin-bottom: -80px;
   border-radius: 20px;
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 
 .azure {
   margin-bottom: -80px;
   border-radius: 20px;
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 
@@ -54,4 +53,66 @@
 
 .hero-cta {
   z-index: 1;
+}
+
+@media screen and (max-width: 540px) {
+  .cta-img {
+    width: 50px;
+    margin: 5px 5px;
+  }
+
+  .oracle {
+    margin-bottom: -80px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+
+  .azure {
+    margin-bottom: -80px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cta-img {
+    width: 100px;
+    margin: 5px 20px;
+  }
+
+  .oracle {
+    margin-bottom: -80px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+
+  .azure {
+    margin-bottom: -80px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cta-img {
+    width: 100px;
+    margin: 10px 50px;
+  }
+  .oracle {
+    margin-bottom: -80px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+
+  .azure {
+    margin-bottom: -80px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
 }

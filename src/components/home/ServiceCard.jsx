@@ -53,11 +53,15 @@ const services = [
 export default function ServiceCard() {
   return (
     <div className="container text-center">
-      <h1 className="text-dark service-header m-5">Our Services</h1>
-      <div className="row">
+      <div className="row g-0">
+        <div className="col">
+          <h1 className="text-dark my-5 service-header">Our Services</h1>
+        </div>
+      </div>
+      <div className="row mb-5">
         {services.map((service) => (
-          <div className="col-6 col-lg-3 col-sm-6" key={service.id}>
-            <div className="card mb-3">
+          <div className="col-12 col-sm-6 col-lg-3" key={service.id}>
+            <div className="card my-3">
               <div className="card-body service-card-section-body">
                 <h5 className="card-title card-title-color">
                   {service.header}

@@ -10,7 +10,7 @@ export default function CommonCard() {
   return (
     <div className="card">
       <div className="row g-0">
-        <div className="col-6 col-md-6 position-relative">
+        <div className="col-md-6 position-relative">
           <img src={content3} className="img-fluid" alt="..." />
           {/* on hover make this CS Case Study */}
           <div className="position-absolute top-0 end-0 text-center  dynamic-content m-5"
@@ -45,7 +45,7 @@ export default function CommonCard() {
             </button>
           </div>
         </div>
-        <div className="col-6 col-md-6 position-relative">
+        <div className="col-md-6 position-relative">
           <img src={content4} className="img-fluid" alt="..." />
           {/* on hover make this B Blog */}
           <div className="position-absolute top-0 end-0 text-center dynamic-content m-5" onMouseEnter={() => setIsHovered2(true)}

@@ -7,30 +7,33 @@ import shopify from "/shopify.svg";
 
 export default function CTA() {
   return (
-    <div className="my-5">
-      <div className="card card-padding cta-card-color position-relative">
-        <h1 className="card-body mt-5 cta-text text-center">Powering Enterprises</h1>
-        <div className="mt-5 d-flex justify-content-center align-items-center gap-5">
-          <div className="item">
+    <div className="">
+      <div className="container-fluid card card-padding cta-card-color position-relative">
+        <div className="row">
+          <div className="col col-md-12">
+            <h1 className="card-body my-5 cta-text text-center">
+              Powering Enterprises
+            </h1>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col g-5 text-center col-md-12">
             <img className="aws cta-img" src={aws} alt="aws-logo" />
-          </div>
-          <div className="item">
             <img className="oracle cta-img" src={oracle} alt="oracle-logo" />
-          </div>
-          <div className="item">
-            <img className="salesforce cta-img" src={salesforce} alt="salesforce-logo" />
-          </div>
-          <div className="item">
+            <img
+              className="salesforce cta-img"
+              src={salesforce}
+              alt="salesforce-logo"
+            />
             <img className="azure cta-img" src={azure} alt="azure-logo" />
-          </div>
-          <div className="item">
             <img className="shopify cta-img" src={shopify} alt="shopify-logo" />
           </div>
         </div>
       </div>
-      <div className="mt-5 p-5 container text-center hero-cta">
-        <div className="row justify-content-center">
-          <div className="col-10">
+      <div className="container text-center hero-cta">
+        <div className="row">
+          <div className="my-5 col col-md-12">
             <p className="cta-paragraph">
               For a lot of companies, managing complex application landscapes
               that include a mix of legacy systems, digital technologies, and

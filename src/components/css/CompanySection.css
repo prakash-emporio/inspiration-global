@@ -6,15 +6,24 @@
 }
 
 .company-section {
-  margin: auto;
-  height: auto;
   padding: 60px;
-  display: flex;
-  justify-content: space-between;
   background: white;
+  margin: auto;
   box-shadow: 0px 20px 30px 0px #0000001a;
 }
 
 .company-section img:hover {
   filter: brightness(1);
 }
+
+/* @media screen and (max-width: 540px) {
+  .company-logo {
+    width: 50%;
+  }
+  .company-section {
+    padding: 20px;
+  }
+  .company-section-wrapper {
+    margin: 0;
+  }
+} */

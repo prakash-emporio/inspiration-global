@@ -4,16 +4,19 @@
 
 .card-title-1 {
   color: white;
+  font-size: 68px;
   font-weight: 900;
-  font-size: 5rem;
+  line-height: 64px;
+  letter-spacing: -1.7px;
   text-align: left;
 }
 
 .card-text-1 {
   color: white;
   font-weight: 300;
-  font-size: 1rem;
   text-align: left;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .content-text-wrapper .card-text-1 {
@@ -51,35 +54,35 @@
 }
 
 .first-content-svg {
-  fill: #5912E4;
+  fill: #5912e4;
 }
 
 .first-btn:hover {
-  color: #A1F157;
-  background-color: #5912E4;
-  outline: solid #A1F157;
+  color: #a1f157;
+  background-color: #5912e4;
+  outline: solid #a1f157;
   transition: 0.3s ease-in-out;
 }
 
 .first-btn:hover .first-content-svg {
-  fill: #A1F157;
+  fill: #a1f157;
   transition: 0.3s ease-in-out;
 }
 
-.card-wrapper:hover .col-md-8 {
+/* .card-wrapper:hover .col-md-8 {
   width: 40% !important;
 }
 
 .card-wrapper:hover .col-md-4 {
   width: 60% !important;
-}
+} */
 
-.card-wrapper .container-fluid {
+/* .card-wrapper .container-fluid {
   overflow: hidden;
   height: 600px;
   position: relative;
   padding: 0;
-}
+} */
 
 .card-wrapper .img-fluid {
   max-height: 600px !important;
@@ -87,4 +90,23 @@
   object-fit: cover;
   width: 100%;
   object-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-wrapper:hover .col-md-8 {
+    width: 40% !important;
+  }
+  
+  .card-wrapper:hover .col-md-4 {
+    width: 60% !important;
+  }
+
+  .card-wrapper .container-fluid {
+    overflow: hidden;
+    height: 600px;
+    position: relative;
+    padding: 0;
+  }
+  
+  
 }

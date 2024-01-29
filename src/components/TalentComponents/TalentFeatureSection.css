@@ -11,9 +11,28 @@
   line-height: 90%;
 }
 
-.talent-feature-section-card-title {
+.talent-feature-section-card-title-0 {
   color: #a1f157;
   font-size: 40px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -0.95px;
+}
+
+.talent-feature-section-card-text-0 {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 133.33%;
+}
+
+.talent-feature-section-card {
+  height: auto;
+}
+
+.talent-feature-section-card-title {
+  color: #a1f157;
+  font-size: 50px;
   font-weight: 900;
   line-height: 100%;
 }
@@ -22,7 +41,7 @@
   color: white;
   font-size: 20px;
   font-weight: 300;
-  line-height: 130%;
+  line-height: 140%;
 }
 
 .talent-feature-section-card-color-1 {

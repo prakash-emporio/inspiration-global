@@ -14,7 +14,7 @@ const SecondContentData = {
 export default function SecondContent() {
   return (
     <div className="card card-wrapper content-text-wrapper card-wrapper-color-2">
-      <div className="container-fluid">
+      <div className="container-fluid g-0">
         <div className="row g-0">
           <div className="col-6 col-md-4 ">
             <div className="card-body">
