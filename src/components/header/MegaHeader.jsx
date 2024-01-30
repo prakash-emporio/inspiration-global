@@ -5,9 +5,9 @@ import phone from "/phone.png";
 import { useState } from "react";
 
 const navItems = [
-  { id: 1, label: "Softwares", href: "" },
-  { id: 2, label: "Services", href: "" },
-  { id: 3, label: "Talent", href: "" },
+  { id: 1, label: "Softwares", href: "/software/aws" },
+  { id: 2, label: "Services", href: "/services" },
+  { id: 3, label: "Talent", href: "/talent" },
   { id: 4, label: "Industries", href: "" },
   { id: 5, label: "Insights", href: "" },
   { id: 6, label: "Company", href: "" },
@@ -249,8 +249,6 @@ export default function MegaHeader() {
               <NavLink
                 className="nav-link dropdown-toggle"
                 to={item.href}
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 {item.label}
               </NavLink>
@@ -378,8 +376,8 @@ export default function MegaHeader() {
               </ul>
             </li>
           ))}
-          <li className="nav-item d-sm-none d-md-none d-lg-block">
-            <NavLink className="nav-link" href="">
+          <li className="nav-item">
+            <NavLink className="nav-link">
               <img className="" src={phone} alt="mobile-phone-logo" />
               123.456.789
             </NavLink>
