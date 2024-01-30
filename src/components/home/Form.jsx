@@ -10,10 +10,10 @@ export default function Form() {
     <div className="form-wrapper">
       <div className="container">
         <div className="row">
-          <div className="col col-md-6 my-auto">
+          <div className="col col-lg-6 my-auto">
             <h1 className="form-heading">Let’s Talk</h1>
           </div>
-          <form id="contactForm" onSubmit={handleSubmit(onSubmit)} className="mb-5 col-12 col-md-6">
+          <form id="contactForm" onSubmit={handleSubmit(onSubmit)} className="mb-5 col-12 col-lg-6">
             <div className="row my-5">
               <div className="col">
                 <input
