@@ -26,25 +26,14 @@ export default function FirstContent() {
           </div>
           <div className="col-6 col-md-4 ">
             <div className="card-body">
-              <h1
-                className="card-title-1 
-              p-3"
+              <h1 className="card-title-1 p-3">{FirstContentData.title}</h1>
+              <p className="card-text-1"> {FirstContentData.text1}</p>
+              <p className="card-text-1">{FirstContentData.text2}</p>
+              <button
+                className="btn mx-3 px-4 first-btn"
+                href="#"
+                role="button"
               >
-                {FirstContentData.title}
-              </h1>
-              <p
-                className="card-text-1
-              "
-              >
-                {FirstContentData.text1}
-              </p>
-              <p
-                className="card-text-1
-              "
-              >
-                {FirstContentData.text2}
-              </p>
-              <button className="btn mx-3 px-4 first-btn" href="#" role="button">
                 {FirstContentData.buttonText}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

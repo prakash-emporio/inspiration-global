@@ -67,7 +67,7 @@ export default function SoftwareHero() {
 
   return (
     <section className="hero-banner">
-      <div className="row">
+      <div className="row g-0">
         <div className="position-relative">
           <img className="img-fluid" src={activeHero} alt="" />
           <img
@@ -75,17 +75,15 @@ export default function SoftwareHero() {
             src={activeLogo}
             alt=""
           />
-          <div className="container">
-            <div className="row">
+          <div className="container g-0">
+            <div className="row px-2">
               <div className="col col-md-5 bg-transparent position-absolute software-top">
-                <div className="">
-                  <h5 className="text-white software-hero-main-text ">
-                    {activeContent.title}
-                  </h5>
-                  <p className="software-hero-secondary-text text-white">
-                    {activeContent.text}
-                  </p>
-                </div>
+                <h5 className="text-white software-hero-main-text ">
+                  {activeContent.title}
+                </h5>
+                <p className="software-hero-secondary-text text-white">
+                  {activeContent.text}
+                </p>
               </div>
             </div>
           </div>
