@@ -31,16 +31,13 @@
   visibility: visible;
   font-size: 1.25rem;
   transition: 0.3s ease-in-out;
+  margin-top: 50px;
 }
 
 .content-text-wrapper:hover .card-title-2 {
   font-size: 68px;
   line-height: 64px;
   letter-spacing: -1.7px;
-}
-
-.content-text-wrapper:hover .card-text-2 {
-  margin-top: 50px;
 }
 
 .second-btn {

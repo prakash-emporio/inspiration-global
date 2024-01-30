@@ -4,25 +4,64 @@
 
 .software-hero-main-text {
   font-weight: 700;
-  font-size: 3.125rem;
+  font-size: 50px;
+  line-height: 54px;
+  letter-spacing: -1.25px;
 }
 
 .software-hero-secondary-text {
   font-weight: 300;
-  font-size: 1.375rem;
-}
-
-.custom-p {
-  padding: 5rem!important;
+  font-size: 22px;
+  line-height: 30px;
 }
 
 .custom-m {
-  margin: 5rem!important;
+  margin: 7rem 10rem !important;
 }
 
-.hero-banner .img-responsive {
-  @media screen and (min-width: 1401px) {
-    max-width: 100%;
-    width: 100%;
+
+@media screen and (max-width: 540px) {
+  .software-top {
+    top: 50%;
+  }
+  .software-hero-main-text {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .software-hero-secondary-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .software-hero-logo {
+    width: 30%;
+  }
+  .custom-m {
+    margin: 10rem 2rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .software-hero-logo {
+    width: 20%;
+  }
+  .custom-m {
+    margin: 7rem 5rem !important;
+  }
+  .software-hero-main-text {
+    font-size: 40px;
+    line-height: 38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .software-hero-logo {
+    width: 10%;
+  }
+  .custom-m {
+    margin: 7rem 10rem !important;
+  }
+  .software-hero-main-text {
+    font-size: 50px;
+    line-height: 54px;
   }
 }
