@@ -1,0 +1,32 @@
+.company-background-color {
+  background: linear-gradient(180deg, #1f2937 1.43%, #111827 18.84%),
+    var(--Gray-900, #111827);
+}
+
+.company-hero {
+  background: url("/companyhero.png"),
+    lightgray -107497484880.262px -5148839189.003px / 15684312020.776%
+      8820857579.863% no-repeat;
+}
+
+.company-certification-wrapper {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.company-team-header {
+  color: #a1f157;
+  font-size: 58px;
+  font-weight: 900;
+  line-height: 54px;
+  letter-spacing: -1.45px;
+}
+
+.company-team-secondary-header {
+  color: #5912e4;
+  font-size: 142px;
+  font-weight: 900;
+  line-height: 159.905px;
+  letter-spacing: -3.55px;
+}

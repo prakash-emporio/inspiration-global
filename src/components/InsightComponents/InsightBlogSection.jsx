@@ -12,7 +12,7 @@ const InsightCard = ({ title, text, image }) => {
         className="card-img-top insight-blog-card-img"
         alt="card-img"
       />
-      <div className="py-3 text-start">
+      <div className="py-3 card-body">
         <h5 className="card-title industry-blog-card-title">{title}</h5>
         <p className="card-text py-2 industry-blog-card-text ">{text}</p>
         <button className="btn common-card-btn" href="#" role="button">
