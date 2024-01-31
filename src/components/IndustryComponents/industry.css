@@ -1,0 +1,43 @@
+.talent-card-section-wrapper {
+  background: linear-gradient(180deg, #6522ed 12.03%, #5912e4 100%);
+}
+
+.industry-feature-section-card-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+@media screen and (min-width: 1200px) {
+  .industry-bottom {
+    bottom: -30% !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .industry-start {
+    margin-right: 100px;
+    left: 50% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .industry-hero-card {
+    position: relative !important;
+  }
+  .service-hero-card-text {
+    padding: 40px 40px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .industry-start {
+    width: 800px;
+    height: 550px;
+    left: 20% !important;
+  }
+  .industry-bottom {
+    bottom: -50% !important;
+  }
+}

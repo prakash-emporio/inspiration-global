@@ -1,0 +1,20 @@
+.insight-blog-card-img {
+  max-width: 600px;
+  max-height: 440px;
+}
+
+.industry-blog-card-title {
+  color: black;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 50px;
+  letter-spacing: -1.25px;
+}
+
+.industry-blog-card-text {
+  color: black;
+  font-family: "Hanken Grotesk";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+}

@@ -1,18 +1,16 @@
-import talentHero from "/talentHero.png";
-import "./TalentHero.css";
+import industryhero from "/industryhero.png";
 
-
-export default function TalentHero() {
+export default function IndustryHero() {
   return (
     <section className="container-fluid g-0">
       <div className="position-relative">
-        <img className="img-fluid" src={talentHero} alt="" />
+        <img className="img-fluid" src={industryhero} alt="" />
         <div className="position-absolute talent-top">
           <div className="container mx-lg-5">
             <div className="row">
-              <div className="col-6">
+              <div className="col">
                 <h5 className="text-white shared-hero-main-text">
-                  Talent Procurement and Professional Services
+                  Public Sector
                 </h5>
               </div>
             </div>
@@ -21,12 +19,13 @@ export default function TalentHero() {
         <div className="container-fluid g-0">
           <div className="row">
             <div className="col">
-              <div className="position-absolute talent-hero-card">
+              <div className="industry-hero-card position-absolute industry-bottom industry-start">
                 <div className="service-card-color">
                   <h1 className="service-hero-card-text">
-                    Our solutions empower you to promptly meet your staffing
-                    needs with professionals possessing the requisite expertise
-                    for contemporary, intricate IT roles.
+                    Faced with limited resources, tight deadlines, and a
+                    persistent state of crisis, leaders in the public service
+                    sector must carefully balance stability and speed in
+                    response to ever-changing needs.
                   </h1>
                 </div>
               </div>

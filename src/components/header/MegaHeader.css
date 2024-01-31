@@ -34,6 +34,10 @@
   transform: scale(1.1);
 }
 
+.active {
+  color: #A1F157 !important;
+}
+
 .dropdown-menu {
   border-bottom: 4px solid #a1f157;
 }

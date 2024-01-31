@@ -6,8 +6,8 @@ const footerData = [
   { id: 1, label: "Software", link: "/software/aws" },
   { id: 2, label: "Services", link: "/services" },
   { id: 3, label: "Talent", link: "/talent" },
-  { id: 4, label: "Industries", link: "/industries" },
-  { id: 5, label: "Insights", link: "/insights" },
+  { id: 4, label: "Industries", link: "/industry" },
+  { id: 5, label: "Insights", link: "/insight" },
   { id: 6, label: "Company", link: "/company" },
 ];
 
@@ -38,14 +38,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="py-4 my-4 d-flex flex-column flex-sm-row justify-content-between border-top footer-last-text">
+        <div className="py-4 my-4 d-flex flex-column flex-sm-row justify-content-between text-center border-top footer-last-text">
           <p>Copyright &copy; 2023 Inspiration Global | All rights reserved</p>
+          <div className="d-flex justify-content-center align-item-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="130"
             height="130"
             viewBox="0 0 130 130"
             fill="none"
+            className=""
           >
             <path
               d="M64.9999 0C29.3032 0 0 29.1763 0 64.7185C0 100.261 29.3032 129.437 64.9999 129.437C100.697 129.437 130 100.261 130 64.7185C130 29.1763 100.697 0 64.9999 0ZM64.9999 106.627C41.5573 106.627 22.9098 87.5292 22.9098 64.7185C22.9098 41.9079 42.0901 22.8106 64.9999 22.8106C87.9098 22.8106 107.09 41.9079 107.09 64.7185C107.09 87.5292 87.9098 106.627 64.9999 106.627Z"
@@ -69,8 +71,9 @@ export default function Footer() {
               </linearGradient>
             </defs>
           </svg>
-          <ul className="list-unstyled d-flex">
-            <li className="ms-3">
+          </div>
+          <ul className="list-unstyled d-flex justify-content-center align-item-center">
+            <li className="ms-lg-3">
               <NavLink className="link-body-emphasis" href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +87,7 @@ export default function Footer() {
                 </svg>
               </NavLink>
             </li>
-            <li className="ms-3">
+            <li className="ms-lg-3">
               <NavLink className="link-body-emphasis" href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

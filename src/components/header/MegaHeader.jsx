@@ -8,8 +8,8 @@ const navItems = [
   { id: 1, label: "Softwares", href: "/software/aws" },
   { id: 2, label: "Services", href: "/services" },
   { id: 3, label: "Talent", href: "/talent" },
-  { id: 4, label: "Industries", href: "" },
-  { id: 5, label: "Insights", href: "" },
+  { id: 4, label: "Industries", href: "/industry" },
+  { id: 5, label: "Insights", href: "/insight" },
   { id: 6, label: "Company", href: "" },
 ];
 

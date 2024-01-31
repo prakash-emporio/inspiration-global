@@ -29,13 +29,13 @@ export default function ServicesFeatureSection() {
       </h1>
       <div className="row g-0">
         {stepsData.map((step, index) => (
-          <div className="col" key={index}>
+          <div className="col-12 col-lg-4" key={index}>
             <div className="card service-feature-section-card-wrapper">
               <div className="card-body">
                 <h5 className="card-title px-5 service-feature-section-card-title">
                   {step.title}
                 </h5>
-                <p className="card-text pt-5 px-3 service-feature-section-card-text">
+                <p className="card-text pt-lg-5 px-3 service-feature-section-card-text">
                   {step.description}
                 </p>
                 <p className="service-feature-section-card-number">

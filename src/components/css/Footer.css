@@ -18,7 +18,7 @@
   text-transform: uppercase;
 }
 
-.nav-link:hover {
+.active {
   color: #A1F157;
 }
 

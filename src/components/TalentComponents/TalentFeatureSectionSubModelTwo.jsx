@@ -2,7 +2,7 @@ import React from 'react';
 
 // Extracting the common card component
 const TalentProcessCard = ({ stepNumber, title, description, colorClass }) => (
-  <div className="col">
+  <div className="col-12 col-lg">
     <div className={`card talent-feature-section-card ${colorClass}`}>
       <div className="card-body">
         <h5 className="card-title talent-feature-section-card-header my-5">

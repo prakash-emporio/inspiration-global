@@ -11,7 +11,7 @@ const ServiceCard = ({ title, description, list }) => {
   };
 
   return (
-    <div className="col-md-3 p-3">
+    <div className="col-md-6 col-lg-3 p-3">
       <div className="card service-card-section">
         <div className="card-body service-card-section-body">
           <h5 className="card-title service-card-section-title">{title}</h5>
