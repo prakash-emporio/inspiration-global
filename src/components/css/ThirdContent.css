@@ -2,3 +2,25 @@
   font-size: 36px;
   letter-spacing: -0.9px;
 }
+
+.third-content-img {
+  max-height: 600px !important;
+  min-height: 600px;
+  object-fit: cover;
+  width: 100%;
+  object-position: center;
+}
+
+.img-thumbnail {
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 991px) {
+  .img-thumbnail {
+    max-width: 50%;
+  }
+  .third-content-img {
+    min-height: 400px;
+  }
+}

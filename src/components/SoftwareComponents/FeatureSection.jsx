@@ -7,7 +7,7 @@ export default function FeatureSection() {
         <div className="col">
               <h2 className="feature-card-title">
                 Enterprise Performance at <br />
-                <p className="py-5 feature-card-title-next">Scale</p>
+                <p className="feature-card-title-next">Scale</p>
               </h2>
               <p className="card-text feature-card-text">
                 IG and AWS collaborate to provide clients with expert industry

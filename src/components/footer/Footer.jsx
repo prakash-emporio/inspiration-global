@@ -13,7 +13,7 @@ const footerData = [
 
 export default function Footer() {
   return (
-    <footer className="d-grid py-5 main-footer ">
+    <footer className="py-5 main-footer">
       <div className="container">
         <div className="row justify-content-between">
           <div className="mb-3 col-6 col-md-2">
@@ -74,7 +74,7 @@ export default function Footer() {
           </div>
           <ul className="list-unstyled d-flex justify-content-center align-item-center">
             <li className="ms-lg-3">
-              <NavLink className="link-body-emphasis" href="#">
+              <NavLink className="link-body-emphasis" to="https://www.facebook.com/inspirationdigital1/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -88,7 +88,7 @@ export default function Footer() {
               </NavLink>
             </li>
             <li className="ms-lg-3">
-              <NavLink className="link-body-emphasis" href="#">
+              <NavLink className="link-body-emphasis" to="https://www.linkedin.com/company/inspiration-global/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"

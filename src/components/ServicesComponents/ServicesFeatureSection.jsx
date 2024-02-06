@@ -41,22 +41,24 @@ export default function ServicesFeatureSection() {
                 <p className="service-feature-section-card-number">
                   {step.number}
                 </p>
-                <button className="service-feature-section-card-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    className="service-feature-section-card-svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M8.23962 15C8.23962 15.4142 8.5754 15.75 8.98962 15.75L19.1998 15.75L15.1768 19.7729C14.8839 20.0658 14.8839 20.5407 15.1768 20.8336C15.4697 21.1265 15.9446 21.1265 16.2375 20.8336L21.5408 15.5303C21.8337 15.2374 21.8337 14.7625 21.5408 14.4696L16.2375 9.16634C15.9446 8.87345 15.4697 8.87345 15.1768 9.16634C14.8839 9.45923 14.8839 9.93411 15.1768 10.227L19.1998 14.25L8.98962 14.25C8.5754 14.25 8.23962 14.5858 8.23962 15Z"
-                    />
-                  </svg>
-                </button>
+                {step.number === 1 || step.number === 2 ? (
+                  <button className="service-feature-section-card-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      className="service-feature-section-card-svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M8.23962 15C8.23962 15.4142 8.5754 15.75 8.98962 15.75L19.1998 15.75L15.1768 19.7729C14.8839 20.0658 14.8839 20.5407 15.1768 20.8336C15.4697 21.1265 15.9446 21.1265 16.2375 20.8336L21.5408 15.5303C21.8337 15.2374 21.8337 14.7625 21.5408 14.4696L16.2375 9.16634C15.9446 8.87345 15.4697 8.87345 15.1768 9.16634C14.8839 9.45923 14.8839 9.93411 15.1768 10.227L19.1998 14.25L8.98962 14.25C8.5754 14.25 8.23962 14.5858 8.23962 15Z"
+                      />
+                    </svg>
+                  </button>
+                ) : null}
               </div>
             </div>
           </div>

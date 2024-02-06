@@ -2,7 +2,7 @@
   color: #5912E4;
   font-weight: 800;
   font-size: 25px;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .service-header {
@@ -15,4 +15,17 @@
   text-align: left;
   font-weight: 300;
   font-size: 20px;
+}
+
+
+@media screen and (max-width: 991px) {
+  .service-header {
+    font-size: 40px;
+  }
+  .service-card-text {
+    font-size: 16px;
+  }
+  .service-card-section-body {
+    text-align: center;
+  }
 }

@@ -9,3 +9,17 @@
 .extra-custom-card-start-2 {
   left: 10%;
 }
+
+.extra-card-img {
+  max-height: 600px !important;
+  min-height: 600px;
+  object-fit: cover;
+  width: 100%;
+  object-position: center;
+}
+
+@media screen and (max-width: 991px) {
+  .extra-card-img {
+    min-height: 400px;
+  }
+}

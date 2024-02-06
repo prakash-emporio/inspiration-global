@@ -1,5 +1,3 @@
-import React from "react";
-import "../css/Content.css";
 import content1 from "/content1.jpg";
 
 const FirstContentData = {
@@ -17,15 +15,15 @@ export default function FirstContent() {
     <div className="card-wrapper content-text-wrapper card-wrapper-color-1">
       <div className="container-fluid g-0">
         <div className="row g-0">
-          <div className="col-6 col-md-8">
+          <div className="col-lg-8">
             <img
               src={FirstContentData.image}
-              className="img-fluid content-image-1"
+              className="img-fluid"
               alt="..."
             />
           </div>
-          <div className="col-6 col-md-4 ">
-            <div className="card-body">
+          <div className="col-lg-4 ">
+            <div className="card-body first-content-card-body">
               <h1 className="card-title-1 p-3">{FirstContentData.title}</h1>
               <p className="card-text-1"> {FirstContentData.text1}</p>
               <p className="card-text-1">{FirstContentData.text2}</p>

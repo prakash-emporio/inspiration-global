@@ -23,3 +23,9 @@
   line-height: 26px;
   color: #000;
 }
+
+@media screen and (max-width: 992px){
+  .software-cta-title {
+    font-size: 25px;
+  }
+}

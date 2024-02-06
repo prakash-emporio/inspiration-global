@@ -116,3 +116,17 @@
     z-index: 2;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .cta-text {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .cta-paragraph {
+    font-size: 16px;
+  }
+  .g-5,
+  .gy-5 {
+    --bs-gutter-y: 0rem;
+  }
+}

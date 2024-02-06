@@ -8,10 +8,10 @@ export default function CommonCard() {
   const [isHovered2, setIsHovered2] = useState(false);
 
   return (
-    <div className="card">
+    <div className="container-fluid g-0">
       <div className="row g-0">
         <div className="col-lg-6 position-relative">
-          <img src={content3} className="img-fluid" alt="..." />
+          <img src={content3} className="common-card-image" alt="..." />
           {/* on hover make this CS Case Study */}
           <div className="position-absolute top-0 end-0 text-center  dynamic-content m-5"
           onMouseEnter={() => setIsHovered1(true)}
@@ -46,7 +46,7 @@ export default function CommonCard() {
           </div>
         </div>
         <div className="col-lg-6 position-relative">
-          <img src={content4} className="img-fluid" alt="..." />
+          <img src={content4} className="common-card-image" alt="..." />
           {/* on hover make this B Blog */}
           <div className="position-absolute top-0 end-0 text-center dynamic-content m-5" onMouseEnter={() => setIsHovered2(true)}
             onMouseLeave={() => setIsHovered2(false)}>

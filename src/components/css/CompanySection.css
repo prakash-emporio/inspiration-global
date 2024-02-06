@@ -1,29 +1,31 @@
-.company-section-wrapper {
-  margin: -50px;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 99999 !important;
-}
-
-.company-section {
-  padding: 60px;
-  background: white;
-  margin: auto;
-  box-shadow: 0px 20px 30px 0px #0000001a;
-}
-
 .company-section img:hover {
   filter: brightness(1);
 }
 
-/* @media screen and (max-width: 540px) {
-  .company-logo {
-    width: 50%;
-  }
-  .company-section {
-    padding: 20px;
-  }
+@media screen and (min-width: 992px){
   .company-section-wrapper {
-    margin: 0;
+    margin: -50px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 99999 !important;
+    margin-right: 3rem!important;
+    margin-left: 3rem!important;
   }
-} */
+  
+  .company-section {
+    padding: 60px;
+    background: white;
+    margin: auto;
+    box-shadow: 0px 20px 30px 0px #0000001a;
+  }
+  
+}
+
+@media screen and (max-width: 991px) {
+  .company-section {
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: none;
+  }
+}

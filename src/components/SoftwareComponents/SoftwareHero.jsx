@@ -66,18 +66,18 @@ export default function SoftwareHero() {
   const activeContent = routeToContent[activeRoute] || defaultContent;
 
   return (
-    <section className="hero-banner">
-      <div className="row g-0">
-        <div className="position-relative">
-          <img className="img-fluid" src={activeHero} alt="" />
+    <section className="container-fluid g-0 hero-banner">
+      <div className="row position-relative">
+        <img className="img-fluid hero-main-img" src={activeHero} alt="software-hero" />
+
           <img
-            className="software-hero-logo position-absolute top-0 end-0 custom-m"
+            className="img-thumbnail position-absolute custom-m software-hero-logo"
             src={activeLogo}
-            alt=""
+            alt="route-logo"
           />
           <div className="container g-0">
-            <div className="row px-2">
-              <div className="col col-md-5 bg-transparent position-absolute software-top">
+            <div className="row g-0">
+              <div className="col-lg-5 bg-transparent position-absolute software-top">
                 <h5 className="text-white software-hero-main-text ">
                   {activeContent.title}
                 </h5>
@@ -87,7 +87,6 @@ export default function SoftwareHero() {
               </div>
             </div>
           </div>
-        </div>
       </div>
     </section>
   );

@@ -246,10 +246,7 @@ export default function MegaHeader() {
         <ul className="navbar-nav">
           {navItems.map((item) => (
             <li className="nav-item dropdown position-static" key={item.id}>
-              <NavLink
-                className="nav-link dropdown-toggle"
-                to={item.href}
-              >
+              <NavLink className="nav-link dropdown-toggle" to={item.href}>
                 {item.label}
               </NavLink>
               <ul className="dropdown-menu w-100 shadow">
@@ -300,6 +297,7 @@ export default function MegaHeader() {
                                         fillRule="evenodd"
                                         clipRule="evenodd"
                                         d="M0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L8.5 2.56066L8.5 8.25C8.5 8.66421 8.83579 9 9.25 9C9.66421 9 10 8.66421 10 8.25L10 0.75C10 0.335787 9.66421 0 9.25 0L1.75 0C1.33579 0 1 0.335787 1 0.75C1 1.16421 1.33579 1.5 1.75 1.5L7.43934 1.5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033Z"
+                                        fill="#5912E4"
                                       />
                                     </svg>
                                   )}
@@ -346,6 +344,7 @@ export default function MegaHeader() {
                                         fillRule="evenodd"
                                         clipRule="evenodd"
                                         d="M0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L8.5 2.56066L8.5 8.25C8.5 8.66421 8.83579 9 9.25 9C9.66421 9 10 8.66421 10 8.25L10 0.75C10 0.335787 9.66421 0 9.25 0L1.75 0C1.33579 0 1 0.335787 1 0.75C1 1.16421 1.33579 1.5 1.75 1.5L7.43934 1.5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033Z"
+                                        fill="#5912E4"
                                       />
                                     </svg>
                                   </button>

@@ -9,9 +9,9 @@ export default function ThirdContent() {
   return (
     <div className="container-fluid g-0">
       <div className="row g-0">
-        <div className="card col-md-8">
+        <div className="card col-lg-8">
           <img
-            className="img-fluid third-card-custom-img"
+            className="third-content-img"
             src={content5}
             alt=""
           />
@@ -20,18 +20,18 @@ export default function ThirdContent() {
               Sit elementum scelerisque
             </h5>
             <div className="d-flex justify-content-center py-5">
-              <img className="" src={playDefault} alt="" />
+              <img className="img-thumbnail" src={playDefault} alt="" />
             </div>
           </div>
         </div>
-        <div className="card col-md-4 position-relative">
+        <div className="card col-lg-4 position-relative">
           <img
-            className="img-fluid"
+            className="third-content-img"
             src={content6}
             alt="sushant padnekar"
           />
 
-          <div className="card-img-overlay third-card-custom-img">
+          <div className="card-img-overlay">
             <div
               className="position-absolute top-0 end-0 text-center dynamic-content m-5"
               onMouseEnter={() => setIsHovered1(true)}

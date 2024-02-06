@@ -1,4 +1,3 @@
-import "../css/SecondContent.css";
 import content2 from "/content2.jpg";
 
 const SecondContentData = {
@@ -16,13 +15,13 @@ export default function SecondContent() {
     <div className="card card-wrapper content-text-wrapper card-wrapper-color-2">
       <div className="container-fluid g-0">
         <div className="row g-0">
-          <div className="col-6 col-md-4 ">
-            <div className="card-body">
-              <h1 className="card-title card-title-2">
+          <div className="col-lg-4 section-two">
+            <div className="card-body second-content-card-body">
+              <h1 className="card-title-2">
                 {SecondContentData.title}
               </h1>
-              <p className="card-text card-text-2">{SecondContentData.text1}</p>
-              <p className="card-text card-text-2">{SecondContentData.text2}</p>
+              <p className="card-text-2">{SecondContentData.text1}</p>
+              <p className="card-text-2">{SecondContentData.text2}</p>
               <button className="btn second-btn" href="#" role="button">
                 {SecondContentData.buttonText}
                 <svg
@@ -42,7 +41,7 @@ export default function SecondContent() {
               </button>
             </div>
           </div>
-          <div className="col-6 col-md-8">
+          <div className="col-lg-8 section-one">
             <img
               src={SecondContentData.image}
               className="img-fluid content-image-1"

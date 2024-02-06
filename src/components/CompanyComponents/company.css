@@ -3,10 +3,14 @@
     var(--Gray-900, #111827);
 }
 
-.company-hero {
-  background: url("/companyhero.png"),
-    lightgray -107497484880.262px -5148839189.003px / 15684312020.776%
-      8820857579.863% no-repeat;
+/* .company-img {
+  width: 100%;
+} */
+
+.company-hero-header {
+  color: white;
+  font-size: 58px;
+  font-weight: 900;
 }
 
 .company-certification-wrapper {

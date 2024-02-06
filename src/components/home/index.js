@@ -2,8 +2,7 @@ import MegaHeader from "../header/MegaHeader.jsx";
 import Hero from "./Hero.jsx";
 import CompanySection from "./CompanySection.jsx";
 import TestimonialSection from "./TestimonialSection.jsx";
-import FirstContent from "./FirstContent.jsx";
-import SecondContent from "./SecondContent.jsx";
+import ContentWrapper from "./ContentWrapper.jsx";
 import ThirdContent from "./ThirdContent.jsx";
 import CommonCard from "./CommonCard.jsx";
 import ExtraCard from "./ExtraCard.jsx";
@@ -17,8 +16,7 @@ export {
   Hero,
   CompanySection,
   TestimonialSection,
-  FirstContent,
-  SecondContent,
+  ContentWrapper,
   ThirdContent,
   CommonCard,
   ExtraCard,

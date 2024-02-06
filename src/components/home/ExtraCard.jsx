@@ -10,8 +10,8 @@ export default function ExtraCard() {
   return (
     <div className="container-fluid g-0">
       <div className="row g-0">
-        <div className="col-md-6 position-relative">
-          <img src={content7} className="img-fluid" alt="..." />
+        <div className="col-lg-6 position-relative">
+          <img src={content7} className="img-fluid extra-card-img" alt="..." />
           <div
             className="position-absolute top-0 end-0 text-center  dynamic-content m-5"
             onMouseEnter={() => setIsHovered2(true)}
@@ -42,8 +42,8 @@ export default function ExtraCard() {
             </button>
           </div>
         </div>
-        <div className="col-md-6 position-relative">
-          <img src={content8} className="img-fluid custom-image" alt="..." />
+        <div className="col-lg-6 position-relative">
+          <img src={content8} className="extra-card-img custom-image" alt="..." />
           <div
             className="position-absolute top-0 end-0 text-center  dynamic-content m-5"
             onMouseEnter={() => setIsHovered1(true)}

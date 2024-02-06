@@ -4,7 +4,7 @@ import "./ServiceHero.css";
 export default function ServicesHero() {
   return (
     <section className="container-fluid g-0">
-      <div className="position-relative">
+      <div className="row g-0 position-relative">
         <img className="img-fluid" src={serviceHero} alt="" />
         <div className="position-absolute service-top">
           <div className="container mx-lg-5 px-lg-5">

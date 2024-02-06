@@ -1,7 +1,7 @@
 .common-card-btn {
   background-color: #a1f157;
   color: #5912e4;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 25px;
   letter-spacing: 1.4px;
@@ -14,7 +14,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.img-fluid {
+.common-card-image {
   max-height: 600px !important;
   min-height: 600px;
   object-fit: cover;
@@ -68,4 +68,14 @@
   /* Add the blur effect */
   filter: blur(2px);
   -webkit-filter: blur(2px);
+}
+
+@media screen and (max-width: 991px){
+  .common-card-image {
+    max-height: auto;
+    min-height: 400px;
+  }
+  .top-50 {
+    top: 40%!important;
+}
 }

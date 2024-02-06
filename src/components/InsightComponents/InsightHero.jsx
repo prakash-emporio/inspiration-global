@@ -3,7 +3,7 @@ import insighthero from '/insighthero.png';
 export default function InsightHero() {
   return (
     <section className="container-fluid g-0">
-      <div className="position-relative">
+      <div className="row g-0 position-relative">
         <img src="" alt="" />
         <img className="img-fluid" src={insighthero} alt="" />
         <div className="position-absolute talent-top">

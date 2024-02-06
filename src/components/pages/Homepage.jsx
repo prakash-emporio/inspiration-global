@@ -2,8 +2,7 @@ import {
   Hero,
   CompanySection,
   TestimonialSection,
-  FirstContent,
-  SecondContent,
+  ContentWrapper,
   CommonCard,
   ThirdContent,
   ExtraCard,
@@ -18,13 +17,12 @@ export default function Homepage() {
       <Hero />
       <CompanySection />
       <TestimonialSection />
-      <FirstContent />
-      <SecondContent />
+      <ContentWrapper />
       <CommonCard />
       <ThirdContent />
       <ExtraCard />
-      <ServiceCard/>
-      <CTA />       
+      <ServiceCard />
+      <CTA />
       <Form />
     </>
   );

@@ -35,3 +35,25 @@
   font-weight: 800;
   font-size: 1.5rem;
 }
+
+@media screen and (max-width: 991px) {
+  .testimonial-heading {
+    font-size: 3rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .testimonial-number {
+    font-size: 3rem;
+  }
+
+  .testimonial-plus {
+    font-size: 3rem;
+  }
+
+  .testimonial-last-text {
+    font-size: 1.3rem;
+  }
+}

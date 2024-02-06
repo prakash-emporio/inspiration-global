@@ -5,6 +5,10 @@
 .software-card-section-content-wrapper {
   margin-left: -10%;
 }
+.software-card-section-content-wrapper:hover .card {
+  background-color: #5912e4;
+  color: white;
+}
 
 .software-card-section-title {
   font-weight: 900;
@@ -22,6 +26,11 @@
   margin-left: 10%;
 }
 
+.software-card-section-content-wrapper-two:hover .card {
+  background-color: #5912e4;
+  color: white;
+}
+
 .software-card-section-image-wrapper-two {
   margin-left: -10%;
   z-index: -1;
@@ -33,6 +42,21 @@
   color: #5912e4;
 }
 
+.software-svg-icon {
+  fill: #5912e4;
+}
+
+.software-btn:hover {
+  color: #a1f157;
+  background-color: transparent;
+  outline: solid #a1f157;
+  transition: 0.3s ease-in-out;
+}
+
+.software-btn:hover .software-svg-icon {
+  fill: #a1f157;
+}
+
 @media screen and (max-width: 768px) {
   .software-card-section-content-wrapper {
     margin-left: 0;
@@ -42,5 +66,21 @@
   }
   .software-card-section-image-wrapper-two {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .software-card-section-title {
+    font-size: 30px;
+  }
+  .software-card-section-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .section-one {
+    order: 1;
+  }
+  .section-two {
+    order: 2;
   }
 }
