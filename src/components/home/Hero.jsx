@@ -13,7 +13,7 @@ export default function Hero() {
                 intersection <br /> of technology, talent & tomorrow{" "}
                 <span className="hero-end-text">...</span>
               </h2>
-              <button className="btn hero-btn" href="#" role="button">
+              <button className="btn mt-md-3 mt-lg-5 hero-btn" href="#" role="button">
                 Let's Go
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
