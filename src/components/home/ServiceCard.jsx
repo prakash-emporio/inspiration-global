@@ -60,7 +60,7 @@ export default function ServiceCard() {
       </div>
       <div className="row mb-5">
         {services.map((service) => (
-          <div className="col-12 col-sm-6 col-lg-3" key={service.id}>
+          <div className="col-sm-6 col-lg-3" key={service.id}>
             <div className="card my-3">
               <div className="card-body service-card-section-body">
                 <h5 className="card-title card-title-color">

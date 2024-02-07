@@ -41,3 +41,10 @@
     bottom: -50% !important;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .industry-feature-section-card-text {
+    text-align: center;
+  }
+  
+}

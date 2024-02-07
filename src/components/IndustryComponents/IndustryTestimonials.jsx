@@ -2,8 +2,8 @@ import industrytestimonial from "/industrytestimonial.png";
 
 export default function IndustryTestimonials() {
   return (
-    <div className="container mt-5 pt-5">
-      <div className="container my-5 py-5">
+    <div className="container mt-lg-5 pt-lg-5">
+      <div className="container my-lg-5 py-lg-5">
         <div className="row">
           <div className="col-lg-8 service-testimonial-text">
             <p>
@@ -15,7 +15,7 @@ export default function IndustryTestimonials() {
           </div>
         </div>
       </div>
-      <div className="container my-5 py-5">
+      <div className="container my-lg-5 py-lg-5">
         <div className="row">
           <div className="col"></div>
           <div className="col-lg-8 service-testimonial-text">
@@ -37,7 +37,7 @@ export default function IndustryTestimonials() {
       <div className="container">
         <img className="img-fluid" src={industrytestimonial} alt="industry testimonial" />
       </div>
-      <div className="container my-5 py-5">
+      <div className="container my-lg-5 py-lg-5">
         <div className="row">
           <div className="col-lg-8 service-testimonial-text">
             <p>
@@ -51,7 +51,7 @@ export default function IndustryTestimonials() {
           </div>
         </div>
       </div>
-      <div className="container my-5 py-5">
+      <div className="container my-lg-5 py-lg-5">
         <div className="row">
           <div className="col"></div>
           <div className="col-lg-8 service-testimonial-text">
@@ -69,7 +69,7 @@ export default function IndustryTestimonials() {
           </div>
         </div>
       </div>
-      <div className="container my-5 py-5">
+      <div className="container my-lg-5 py-lg-5">
         <div className="row">
           <div className="col-lg-8 service-testimonial-text">
             <p>

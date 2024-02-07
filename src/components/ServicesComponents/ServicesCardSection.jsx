@@ -189,7 +189,7 @@ export default function ServicesCardSection() {
       <h1 className="text-center text-black service-card-heading">
         Product Engineering Services
       </h1>
-      <div className="py-5 row">
+      <div className="py-lg-5 row">
         {servicesData.map((service) => (
           <ServiceCard key={service.idx} {...service} />
         ))}

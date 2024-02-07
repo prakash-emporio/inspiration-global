@@ -5,7 +5,7 @@ const TalentProcessCard = ({ stepNumber, title, description, colorClass }) => (
   <div className="col-12 col-lg">
     <div className={`card talent-feature-section-card ${colorClass}`}>
       <div className="card-body">
-        <h5 className="card-title talent-feature-section-card-header my-5">
+        <h5 className="card-title talent-feature-section-card-header my-lg-5">
           <sup>{stepNumber}</sup> {title}
         </h5>
         <ul className="pb-5">
@@ -77,7 +77,7 @@ const TalentFeatureSectionSubModelTwo = () => {
 
   return (
     <div className="container">
-      <h1 className="talent-feature-section-header m-5 p-5">Our Time-tested Process</h1>
+      <h1 className="talent-feature-section-header m-lg-5 p-5">Our Time-tested Process</h1>
       <div className="row g-0">
         {processSteps.slice(0, 2).map((step, index) => (
           <TalentProcessCard

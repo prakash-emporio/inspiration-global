@@ -70,10 +70,6 @@
 }
 
 .second-btn {
-  margin-top: 50px;
-}
-
-.second-btn {
   color: #a1f157;
   background-color: #5912e4;
 }
@@ -101,6 +97,16 @@
 
   .card-wrapper:hover .col-lg-4 {
     width: 60% !important;
+  }
+
+  .card-wrapper:hover .card-text-1 {
+    padding-right: 3rem!important;
+    padding-left: 3rem!important;
+  }
+
+  .card-wrapper:hover .card-text-2 {
+    padding-right: 3rem!important;
+    padding-left: 3rem!important;
   }
 
   .card-wrapper .container-fluid {
@@ -152,7 +158,7 @@
     letter-spacing: -1.7px;
   }
   .content-text-wrapper:hover .second-btn {
-    margin-top: 100px;
+    margin-top: 15px;
   }
 
   .first-btn {

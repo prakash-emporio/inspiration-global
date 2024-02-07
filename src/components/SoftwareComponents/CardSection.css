@@ -5,6 +5,7 @@
 .software-card-section-content-wrapper {
   margin-left: -10%;
 }
+
 .software-card-section-content-wrapper:hover .card {
   background-color: #5912e4;
   color: white;

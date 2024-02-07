@@ -1,8 +1,8 @@
-.card-title-color{
-  color: #5912E4;
+.card-title-color {
+  color: #5912e4;
   font-weight: 800;
   font-size: 25px;
-  /* text-align: left; */
+  text-align: left;
 }
 
 .service-header {
@@ -17,7 +17,6 @@
   font-size: 20px;
 }
 
-
 @media screen and (max-width: 991px) {
   .service-header {
     font-size: 40px;
@@ -27,5 +26,17 @@
   }
   .service-card-section-body {
     text-align: center;
+  }
+  .card-title {
+    text-align: center;
+  }
+  .service-card-text {
+    text-align: center;
+  }
+  .service-card-section-body {
+    transform: translate3D(0, -1px, 0) scale(1.03);
+    box-shadow: 8px 28px 50px rgba(39, 44, 49, 0.07),
+      1px 6px 12px rgba(39, 44, 49, 0.04);
+    cursor: pointer;
   }
 }

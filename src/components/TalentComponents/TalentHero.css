@@ -2,21 +2,27 @@
   .talent-hero-card {
     margin-right: 100px;
     left: 50% !important;
-    bottom: -10% !important;
+    top: 50% !important;
   }
 }
 
 @media screen and (max-width: 768px) {
   .talent-hero-card {
     position: relative !important;
+    margin-top: 2px !important;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .talent-hero-card {
-    width: 800px;
-    height: 550px;
-    left: 20% !important;
-    bottom: -60% !important;
+    width: 600px;
+    height: 450px;
+    left: 40% !important;
+    top: 60% !important;
   }
 }
+
+.talent-top {
+  top: 30% !important;
+}
+

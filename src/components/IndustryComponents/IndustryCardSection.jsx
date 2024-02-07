@@ -1,7 +1,7 @@
 import "./industry.css";
 
 const IndustryFeatureCard = ({ title, description }) => (
-  <div className="col-12 col-md-6 col-lg">
+  <div className="col-md-6 col-lg">
     <div className="card bg-transparent">
       <div className="card-body">
         <h5 className="card-title talent-feature-section-card-title-0">
@@ -44,7 +44,7 @@ export default function IndustryCardSection() {
       <h1 className="talent-feature-section-header py-5">
         A Few of Our Capabilities
       </h1>
-      <div className="row p-5">
+      <div className="row p-lg-5">
         {engagementModels.map((model, index) => (
           <IndustryFeatureCard
             key={index}

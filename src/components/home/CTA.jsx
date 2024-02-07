@@ -4,6 +4,7 @@ import oracle from "/oracle.svg";
 import salesforce from "/salesforce.svg";
 import azure from "/azure.svg";
 import shopify from "/shopify.svg";
+import { NavLink } from "react-router-dom";
 
 export default function CTA() {
   return (
@@ -19,15 +20,29 @@ export default function CTA() {
 
         <div className="row">
           <div className="col g-5 text-center col-md-12">
-            <img className="aws cta-img" src={aws} alt="aws-logo" />
-            <img className="oracle cta-img" src={oracle} alt="oracle-logo" />
-            <img
-              className="salesforce cta-img"
-              src={salesforce}
-              alt="salesforce-logo"
-            />
-            <img className="azure cta-img" src={azure} alt="azure-logo" />
-            <img className="shopify cta-img" src={shopify} alt="shopify-logo" />
+            <NavLink to="/software/aws">
+              <img className="aws cta-img" src={aws} alt="aws-logo" />
+            </NavLink>
+            <NavLink to="/software/oracle">
+              <img className="oracle cta-img" src={oracle} alt="oracle-logo" />
+            </NavLink>
+            <NavLink to="/software/salesforce">
+              <img
+                className="salesforce cta-img"
+                src={salesforce}
+                alt="salesforce-logo"
+              />
+            </NavLink>
+            <NavLink to="/software/azure">
+              <img className="azure cta-img" src={azure} alt="azure-logo" />
+            </NavLink>
+            <NavLink to="/software/shopify">
+              <img
+                className="shopify cta-img"
+                src={shopify}
+                alt="shopify-logo"
+              />
+            </NavLink>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ const stepsData = [
 export default function ServicesFeatureSection() {
   return (
     <div className="service-feature-section-wrapper">
-      <h1 className="p-5 text-center text-white service-feature-section-header">
+      <h1 className="p-lg-5 text-center text-white service-feature-section-header">
         Steps to Success
       </h1>
       <div className="row g-0">
@@ -32,7 +32,7 @@ export default function ServicesFeatureSection() {
           <div className="col-12 col-lg-4" key={index}>
             <div className="card service-feature-section-card-wrapper">
               <div className="card-body">
-                <h5 className="card-title px-5 service-feature-section-card-title">
+                <h5 className="card-title px-lg-5 service-feature-section-card-title">
                   {step.title}
                 </h5>
                 <p className="card-text pt-lg-5 px-3 service-feature-section-card-text">

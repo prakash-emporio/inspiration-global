@@ -67,3 +67,20 @@
   font-weight: 900;
   line-height: 100%;
 }
+
+@media  screen and (max-width: 992px) {
+  .talent-feature-section-header {
+    font-size: 30px;
+  }
+  .talent-feature-section-card-title-0 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .talent-feature-section-card-text-0 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .talent-feature-section-card-header {
+    font-size: 30px;
+  }
+}

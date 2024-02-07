@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
 
         <div className="py-4 my-4 d-flex flex-column flex-sm-row justify-content-between text-center border-top footer-last-text">
-          <p>Copyright &copy; 2023 Inspiration Global | All rights reserved</p>
+          <p>Copyright &copy; 2024 Inspiration Global | All rights reserved</p>
           <div className="d-flex justify-content-center align-item-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"

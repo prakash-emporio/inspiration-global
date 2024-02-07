@@ -4,7 +4,7 @@ export default function IndustryHero() {
   return (
     <section className="container-fluid g-0">
       <div className="row g-0 position-relative">
-        <img className="img-fluid" src={industryhero} alt="" />
+        <img className="img-fluid talent-hero-img" src={industryhero} alt="" />
         <div className="position-absolute talent-top">
           <div className="container mx-lg-5">
             <div className="row">

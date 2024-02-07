@@ -56,6 +56,8 @@
 }
 
 .subMenuItems:hover {
+  transition: all 500ms ease-in-out;
+  transform: translate(10px,0);
   color: #5912e4;
 }
 
@@ -113,10 +115,12 @@
     margin: 0 auto;
     top: 70%;
     left: 50%;
+    /* transition: all 500ms ease-in-out; 
+    transition-delay: 250ms; */
+    transition: max-height .45s ease-out;
     transform: translate(-50%, 0%);
-    transition: 0.5s all ease 0.2s; 
   }
-  .dropdown-menu.show {
+  .dropdown-menu .show {
     display: flex;
   }
 }

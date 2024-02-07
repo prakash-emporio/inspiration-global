@@ -6,11 +6,11 @@ export default function TalentHero() {
   return (
     <section className="container-fluid g-0">
       <div className="row g-0 position-relative">
-        <img className="img-fluid" src={talentHero} alt="" />
+        <img className="img-fluid talent-hero-img" src={talentHero} alt="" />
         <div className="position-absolute talent-top">
-          <div className="container mx-lg-5">
+          <div className="container mx-lg-5 px-lg-5">
             <div className="row">
-              <div className="col-6">
+              <div className="col-md-6 col-lg-6">
                 <h5 className="text-white shared-hero-main-text">
                   Talent Procurement and Professional Services
                 </h5>

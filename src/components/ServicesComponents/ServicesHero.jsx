@@ -5,11 +5,11 @@ export default function ServicesHero() {
   return (
     <section className="container-fluid g-0">
       <div className="row g-0 position-relative">
-        <img className="img-fluid" src={serviceHero} alt="" />
+        <img className="img-fluid service-hero-img" src={serviceHero} alt="" />
         <div className="position-absolute service-top">
           <div className="container mx-lg-5 px-lg-5">
             <div className="row">
-              <div className="col-6">
+              <div className="col-lg-6">
                 <h5 className="text-white shared-hero-main-text">
                   Product Engineering
                 </h5>

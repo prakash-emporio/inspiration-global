@@ -4,3 +4,13 @@
   font-weight: 900;
   line-height: 100%;
 }
+
+@media screen and (max-width: 992px) {
+  
+  .talent-testimonial-header {
+    font-size: 30px;
+  }
+  .service-testimonial-text {
+    font-size: 20px;
+  }
+}

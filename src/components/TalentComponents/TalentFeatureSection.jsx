@@ -4,7 +4,7 @@ import TalentFeatureSectionSubModelTwo from "./TalentFeatureSectionSubModelTwo";
 
 export default function TalentFeatureSection() {
   return (
-    <div className="talent-feature-section-wrapper py-5">
+    <div className="talent-feature-section-wrapper py-lg-5">
       <TalentFeatureSectionSubModelOne />
       <TalentFeatureSectionSubModelTwo />
     </div>
