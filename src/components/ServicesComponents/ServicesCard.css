@@ -17,6 +17,15 @@
   cursor: pointer;
 }
 
+.service-page-card-section-body:hover {
+  background-color: #5912e4;
+  color: white;
+}
+
+.service-card-section-body:hover .service-card-section-title {
+  color: white;
+}
+
 .service-card-section-title {
   color: #5912e4;
   font-weight: 800;
@@ -41,3 +50,4 @@
 .card-section-container-color {
   background: #f3f4f6;
 }
+

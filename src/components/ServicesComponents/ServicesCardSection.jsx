@@ -13,7 +13,7 @@ const ServiceCard = ({ title, description, list }) => {
   return (
     <div className="col-md-6 col-lg-3 p-3">
       <div className="card service-card-section">
-        <div className="card-body service-card-section-body">
+        <div className="card-body service-page-card-section-body service-card-section-body">
           <h5 className="card-title service-card-section-title">{title}</h5>
           <p className="card-text service-card-section-text-size">
             {description}
