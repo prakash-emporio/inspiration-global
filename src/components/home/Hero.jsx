@@ -6,14 +6,18 @@ export default function Hero() {
     <section className="hero-banner">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-3">
+          <div data-aos="fade-right" data-aos-duration="3000" className="col-md-3">
             <div className="hero-header-wrapper">
               <h2 className="text-light hero-header">
                 <span className="hero-main-text">We Live</span> at the
                 intersection <br /> of technology, talent & tomorrow{" "}
                 <span className="hero-end-text">...</span>
               </h2>
-              <button className="btn mt-md-3 mt-lg-5 hero-btn" href="#" role="button">
+              <button
+                className="btn mt-md-3 mt-lg-5 hero-btn"
+                href="#"
+                role="button"
+              >
                 Let's Go
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +36,11 @@ export default function Hero() {
               </button>
             </div>
           </div>
-          <div className="col-md-9 g-0">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="col-md-9 g-0"
+          >
             <img className="w-100 hero-image" src={heroImage} />
           </div>
         </div>

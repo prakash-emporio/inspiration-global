@@ -1,11 +1,10 @@
-import insighthero from '/insighthero.png';
+import insighthero from "/insighthero.png";
 
 export default function InsightHero() {
   return (
     <section className="container-fluid g-0">
       <div className="row g-0 position-relative">
-        <img src="" alt="" />
-        <img className="img-fluid" src={insighthero} alt="" />
+        <img className="img-fluid talent-hero-img" src={insighthero} alt="" />
         <div className="position-absolute talent-top">
           <div className="bg-transparent">
             <div className="container">
@@ -21,5 +20,5 @@ export default function InsightHero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

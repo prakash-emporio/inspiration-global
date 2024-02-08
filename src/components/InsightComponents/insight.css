@@ -18,3 +18,15 @@
   font-weight: 300;
   line-height: 28px;
 }
+
+@media screen and (max-width: 992px) {
+  .industry-blog-card-title {
+    text-align: left;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .industry-blog-card-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

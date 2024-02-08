@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import "./MegaHeader.css";
 import logo from "/logo.png";
 import phone from "/phone.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const navItems = [
   { id: 1, label: "Softwares", href: "/software/aws" },
@@ -228,9 +228,27 @@ const allowedIds = [3, 5, 6];
 export default function MegaHeader() {
   const [haveCard, setHaveCard] = useState(true);
   const [haveSvg, setHaveSvg] = useState(true);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup function to remove event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className={`navbar navbar-expand-lg ${isSticky ? 'sticky' : ''}`}>
       <NavLink className="navbar-brand" to="/">
         <img className="m-3" src={logo} alt="company-logo" />
       </NavLink>
@@ -250,32 +268,80 @@ export default function MegaHeader() {
               <NavLink className="nav-link dropdown-toggle" to={item.href}>
                 {item.label}
               </NavLink>
-                <ul className="dropdown-menu w-100 shadow">
-                  <div className="">
-                    <div className="row g-0">
-                      <div className="col-8 px-5 py-4 d-none d-sm-block d-sm-none d-md-block">
-                        <div className="col">
-                          <p className="dropdown-heading">
-                            {DropdownMenuItems[item.id - 1].title}
-                          </p>
+              <ul className="dropdown-menu w-100 shadow">
+                <div className="">
+                  <div className="row g-0">
+                    <div className="col-8 px-5 py-4 d-none d-sm-block d-sm-none d-md-block">
+                      <div className="col">
+                        <p className="dropdown-heading">
+                          {DropdownMenuItems[item.id - 1].title}
+                        </p>
+                      </div>
+                      <div className="d-flex gap-3">
+                        <div className="col-5">
+                          <div className="card">
+                            <div className="card-body">
+                              <h5 className="card-title card-title-size">
+                                {
+                                  DropdownMenuItems[item.id - 1].cardDetails[0]
+                                    .title
+                                }
+                              </h5>
+                              <p className="card-text my-card-text">
+                                {
+                                  DropdownMenuItems[item.id - 1].cardDetails[0]
+                                    .description
+                                }
+                              </p>
+                              {allowedIds.includes(item.id) && (
+                                <button
+                                  className="btn mega-header-btn"
+                                  href="#"
+                                  role="button"
+                                >
+                                  {
+                                    DropdownMenuItems[item.id - 1]
+                                      .cardDetails[0].button
+                                  }
+                                  {haveSvg && (
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="10"
+                                      height="10"
+                                      viewBox="0 0 10 10"
+                                      fill="none"
+                                      className="icon-svg"
+                                    >
+                                      <path
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
+                                        d="M0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L8.5 2.56066L8.5 8.25C8.5 8.66421 8.83579 9 9.25 9C9.66421 9 10 8.66421 10 8.25L10 0.75C10 0.335787 9.66421 0 9.25 0L1.75 0C1.33579 0 1 0.335787 1 0.75C1 1.16421 1.33579 1.5 1.75 1.5L7.43934 1.5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033Z"
+                                        fill="#5912E4"
+                                      />
+                                    </svg>
+                                  )}
+                                </button>
+                              )}
+                            </div>
+                          </div>
                         </div>
-                        <div className="d-flex gap-3">
+                        {haveCard && (
                           <div className="col-5">
-                            <div className="card">
-                              <div className="card-body">
-                                <h5 className="card-title card-title-size">
-                                  {
-                                    DropdownMenuItems[item.id - 1]
-                                      .cardDetails[0].title
-                                  }
-                                </h5>
-                                <p className="card-text my-card-text">
-                                  {
-                                    DropdownMenuItems[item.id - 1]
-                                      .cardDetails[0].description
-                                  }
-                                </p>
-                                {allowedIds.includes(item.id) && (
+                            {DropdownMenuItems[item.id - 1]?.cardDetails[1] && (
+                              <div className="card">
+                                <div className="card-body">
+                                  <h5 className="card-title card-title-size">
+                                    {
+                                      DropdownMenuItems[item.id - 1]
+                                        .cardDetails[1].title
+                                    }
+                                  </h5>
+                                  <p className="card-text my-card-text">
+                                    {
+                                      DropdownMenuItems[item.id - 1]
+                                        .cardDetails[1].description
+                                    }
+                                  </p>
                                   <button
                                     className="btn mega-header-btn"
                                     href="#"
@@ -283,98 +349,49 @@ export default function MegaHeader() {
                                   >
                                     {
                                       DropdownMenuItems[item.id - 1]
-                                        .cardDetails[0].button
+                                        .cardDetails[1].button
                                     }
-                                    {haveSvg && (
-                                      <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="10"
-                                        height="10"
-                                        viewBox="0 0 10 10"
-                                        fill="none"
-                                        className="icon-svg"
-                                      >
-                                        <path
-                                          fillRule="evenodd"
-                                          clipRule="evenodd"
-                                          d="M0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L8.5 2.56066L8.5 8.25C8.5 8.66421 8.83579 9 9.25 9C9.66421 9 10 8.66421 10 8.25L10 0.75C10 0.335787 9.66421 0 9.25 0L1.75 0C1.33579 0 1 0.335787 1 0.75C1 1.16421 1.33579 1.5 1.75 1.5L7.43934 1.5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033Z"
-                                          fill="#5912E4"
-                                        />
-                                      </svg>
-                                    )}
-                                  </button>
-                                )}
-                              </div>
-                            </div>
-                          </div>
-                          {haveCard && (
-                            <div className="col-5">
-                              {DropdownMenuItems[item.id - 1]
-                                ?.cardDetails[1] && (
-                                <div className="card">
-                                  <div className="card-body">
-                                    <h5 className="card-title card-title-size">
-                                      {
-                                        DropdownMenuItems[item.id - 1]
-                                          .cardDetails[1].title
-                                      }
-                                    </h5>
-                                    <p className="card-text my-card-text">
-                                      {
-                                        DropdownMenuItems[item.id - 1]
-                                          .cardDetails[1].description
-                                      }
-                                    </p>
-                                    <button
-                                      className="btn mega-header-btn"
-                                      href="#"
-                                      role="button"
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="10"
+                                      height="10"
+                                      viewBox="0 0 10 10"
+                                      fill="none"
+                                      className="icon-svg"
                                     >
-                                      {
-                                        DropdownMenuItems[item.id - 1]
-                                          .cardDetails[1].button
-                                      }
-                                      <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="10"
-                                        height="10"
-                                        viewBox="0 0 10 10"
-                                        fill="none"
-                                        className="icon-svg"
-                                      >
-                                        <path
-                                          fillRule="evenodd"
-                                          clipRule="evenodd"
-                                          d="M0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L8.5 2.56066L8.5 8.25C8.5 8.66421 8.83579 9 9.25 9C9.66421 9 10 8.66421 10 8.25L10 0.75C10 0.335787 9.66421 0 9.25 0L1.75 0C1.33579 0 1 0.335787 1 0.75C1 1.16421 1.33579 1.5 1.75 1.5L7.43934 1.5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033Z"
-                                          fill="#5912E4"
-                                        />
-                                      </svg>
-                                    </button>
-                                  </div>
+                                      <path
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
+                                        d="M0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L8.5 2.56066L8.5 8.25C8.5 8.66421 8.83579 9 9.25 9C9.66421 9 10 8.66421 10 8.25L10 0.75C10 0.335787 9.66421 0 9.25 0L1.75 0C1.33579 0 1 0.335787 1 0.75C1 1.16421 1.33579 1.5 1.75 1.5L7.43934 1.5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033Z"
+                                        fill="#5912E4"
+                                      />
+                                    </svg>
+                                  </button>
                                 </div>
-                              )}
-                            </div>
-                          )}
-                        </div>
+                              </div>
+                            )}
+                          </div>
+                        )}
                       </div>
-                      <div className="col-4 megamenu-sidebar">
-                        <div className="d-flex flex-column text-left text-uppercase gap-4 p-3">
-                          {DropdownMenuItems[item.id - 1].subMenuItems.map(
-                            (subItem) => (
-                              <NavLink
-                                to={subItem.href}
-                                className="subMenuItems"
-                                key={subItem.id}
-                              >
-                                {subItem.title}
-                              </NavLink>
-                            )
-                          )}
-                        </div>
+                    </div>
+                    <div className="col-4 megamenu-sidebar">
+                      <div className="d-flex flex-column text-left text-uppercase gap-4 p-3">
+                        {DropdownMenuItems[item.id - 1].subMenuItems.map(
+                          (subItem) => (
+                            <NavLink
+                              to={subItem.href}
+                              className="subMenuItems"
+                              key={subItem.id}
+                            >
+                              {subItem.title}
+                            </NavLink>
+                          )
+                        )}
                       </div>
                     </div>
                   </div>
-                </ul>
+                </div>
+              </ul>
             </li>
           ))}
           <li className="nav-item">

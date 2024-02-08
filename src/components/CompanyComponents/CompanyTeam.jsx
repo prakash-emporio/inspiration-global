@@ -1,3 +1,5 @@
+import CompanyCardWrapper from "./CompanyTeamCard.jsx";
+
 export default function CompanyTeam() {
   return (
     <div className="container-fluid company-background-color">
@@ -7,10 +9,13 @@ export default function CompanyTeam() {
         </div>
       </div>
       <div className="row">
-        <div className="col">
-          <h1 className="company-team-secondary-header p-5">Mgt.</h1>
+        <div className="col-lg-4 p-lg-5">
+          <h1 className="company-team-secondary-header">Mgt.</h1>
+        </div>
+        <div className="col-lg-8 p-lg-5">
+          <CompanyCardWrapper />
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -65,7 +65,7 @@ export default function InsightBlogSection() {
     <div className="container my-5">
       <div className="row">
         {blogData.map((blog, index) => (
-          <div key={index} className="col-lg-6">
+          <div key={index} className="col-lg-6 p-5">
             <InsightCard
               title={blog.title}
               text={blog.text}
