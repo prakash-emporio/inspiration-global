@@ -1,5 +1,4 @@
 import { useState } from "react";
-import companyCardPeopleOne from "/companyCardPeopleOne.png";
 
 function CompanyTeamCard({ member }) {
   const { imageSrc, name, designation, bio } = member;
@@ -10,7 +9,7 @@ function CompanyTeamCard({ member }) {
         <div className="col-md-4">
           <img
             src={imageSrc}
-            className="img-fluid rounded-start company-card-thumbnail"
+            className="img-thumbnail rounded-start company-card-thumbnail"
             alt="..."
           />
         </div>
@@ -48,49 +47,49 @@ export default function CompanyCardWrapper() {
     },
 
     {
-      imageSrc: "/companyCardPeopleOne.png",
+      imageSrc: "/companyCardPeopleTwo.png",
       name: "Sushant Pednekar",
-      designation: "Partner",
+      designation: "PARTNER",
       bio: "Jogi’s responsibilities include driving vision, corporate business development and developing key partnerships and value creation. Additionally, Mr. Daita has extensive experience in talent sourcing and staffing in providing tier one technology talent to many of today’s most well known brands. Earlier, he served as CEO at Credo Technology Solutions and other technology firms. Prior to relocating to the US in 1999, he was based in Mumbai and gained valuable experience in technology startups, private equity, and M&A. Jogi has a strong passion and understanding of global technology markets, STEM education, and entrepreneurship. He serves as an advisor, investor and board member to numerous portfolio and partner firms. He holds both a BA in Economics and an MBA, and is a BITS, Pilani alumni.",
     },
 
     {
-      imageSrc: "/companyCardPeopleOne.png",
+      imageSrc: "/companyCardPeopleThree.png",
       name: "Prasad Devarapilli",
       designation: "Director Digital OpS",
       bio: "Jogi’s responsibilities include driving vision, corporate business development and developing key partnerships and value creation. Additionally, Mr. Daita has extensive experience in talent sourcing and staffing in providing tier one technology talent to many of today’s most well known brands. Earlier, he served as CEO at Credo Technology Solutions and other technology firms. Prior to relocating to the US in 1999, he was based in Mumbai and gained valuable experience in technology startups, private equity, and M&A. Jogi has a strong passion and understanding of global technology markets, STEM education, and entrepreneurship. He serves as an advisor, investor and board member to numerous portfolio and partner firms. He holds both a BA in Economics and an MBA, and is a BITS, Pilani alumni.",
     },
 
     {
-      imageSrc: "/companyCardPeopleOne.png",
+      imageSrc: "/companyCardPeopleFour.png",
       name: "Srinivas Majji",
       designation: "Director Recruitment",
       bio: "Jogi’s responsibilities include driving vision, corporate business development and developing key partnerships and value creation. Additionally, Mr. Daita has extensive experience in talent sourcing and staffing in providing tier one technology talent to many of today’s most well known brands. Earlier, he served as CEO at Credo Technology Solutions and other technology firms. Prior to relocating to the US in 1999, he was based in Mumbai and gained valuable experience in technology startups, private equity, and M&A. Jogi has a strong passion and understanding of global technology markets, STEM education, and entrepreneurship. He serves as an advisor, investor and board member to numerous portfolio and partner firms. He holds both a BA in Economics and an MBA, and is a BITS, Pilani alumni.",
     },
 
     {
-      imageSrc: "/companyCardPeopleOne.png",
+      imageSrc: "/companyCardPeopleFive.png",
       name: "Michael Marsowicz",
       designation: "PARTNER",
       bio: "Jogi’s responsibilities include driving vision, corporate business development and developing key partnerships and value creation. Additionally, Mr. Daita has extensive experience in talent sourcing and staffing in providing tier one technology talent to many of today’s most well known brands. Earlier, he served as CEO at Credo Technology Solutions and other technology firms. Prior to relocating to the US in 1999, he was based in Mumbai and gained valuable experience in technology startups, private equity, and M&A. Jogi has a strong passion and understanding of global technology markets, STEM education, and entrepreneurship. He serves as an advisor, investor and board member to numerous portfolio and partner firms. He holds both a BA in Economics and an MBA, and is a BITS, Pilani alumni.",
     },
 
     {
-      imageSrc: "/companyCardPeopleOne.png",
+      imageSrc: "/companyCardPeopleSix.png",
       name: "Dinesh Juneja",
       designation: "PARTNER",
       bio: "Jogi’s responsibilities include driving vision, corporate business development and developing key partnerships and value creation. Additionally, Mr. Daita has extensive experience in talent sourcing and staffing in providing tier one technology talent to many of today’s most well known brands. Earlier, he served as CEO at Credo Technology Solutions and other technology firms. Prior to relocating to the US in 1999, he was based in Mumbai and gained valuable experience in technology startups, private equity, and M&A. Jogi has a strong passion and understanding of global technology markets, STEM education, and entrepreneurship. He serves as an advisor, investor and board member to numerous portfolio and partner firms. He holds both a BA in Economics and an MBA, and is a BITS, Pilani alumni.",
     },
 
     {
-      imageSrc: "/companyCardPeopleOne.png",
+      imageSrc: "/companyCardPeopleSeven.png",
       name: "Byron Hutchinson",
       designation: "PARTNER",
       bio: "Jogi’s responsibilities include driving vision, corporate business development and developing key partnerships and value creation. Additionally, Mr. Daita has extensive experience in talent sourcing and staffing in providing tier one technology talent to many of today’s most well known brands. Earlier, he served as CEO at Credo Technology Solutions and other technology firms. Prior to relocating to the US in 1999, he was based in Mumbai and gained valuable experience in technology startups, private equity, and M&A. Jogi has a strong passion and understanding of global technology markets, STEM education, and entrepreneurship. He serves as an advisor, investor and board member to numerous portfolio and partner firms. He holds both a BA in Economics and an MBA, and is a BITS, Pilani alumni.",
     },
 
     {
-      imageSrc: "/companyCardPeopleOne.png",
+      imageSrc: "/companyCardPeopleEight.png",
       name: "Stephen Moritz",
       designation: "PARTNER",
       bio: "Jogi’s responsibilities include driving vision, corporate business development and developing key partnerships and value creation. Additionally, Mr. Daita has extensive experience in talent sourcing and staffing in providing tier one technology talent to many of today’s most well known brands. Earlier, he served as CEO at Credo Technology Solutions and other technology firms. Prior to relocating to the US in 1999, he was based in Mumbai and gained valuable experience in technology startups, private equity, and M&A. Jogi has a strong passion and understanding of global technology markets, STEM education, and entrepreneurship. He serves as an advisor, investor and board member to numerous portfolio and partner firms. He holds both a BA in Economics and an MBA, and is a BITS, Pilani alumni.",

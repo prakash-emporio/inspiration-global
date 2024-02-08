@@ -47,6 +47,15 @@
   cursor: pointer;
 }
 
+.company-card-thumbnail {
+  width: 150px;
+  height: 150px;
+}
+
+.company-card-thumbnail:hover {
+  filter: brightness(1);
+}
+
 .company-card-title {
   color: #f3f4f6;
   font-weight: 900;
