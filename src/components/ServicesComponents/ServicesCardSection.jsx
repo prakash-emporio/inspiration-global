@@ -86,9 +86,9 @@ export default function ServicesCardSection() {
     },
     {
       idx: 2,
-      title: "Conceive & Develop",
+      title: "Modernize & Enhance",
       description:
-        "From idea to prototype to engineering applications for tomorrows business, today – we deliver extraordinary value",
+        "Update applications and data sets to make them more useful, productive, and attractive to those who use them",
       list: [
         "Define user personas",
         "Refine Information and Page Architecture",
@@ -100,9 +100,9 @@ export default function ServicesCardSection() {
     },
     {
       idx: 3,
-      title: "Conceive & Develop",
+      title: "UX Design",
       description:
-        "From idea to prototype to engineering applications for tomorrows business, today – we deliver extraordinary value",
+        "We leverage human centered design practices that engages users and elevates your products and applications",
       list: [
         "Define user personas",
         "Refine Information and Page Architecture",
@@ -114,9 +114,9 @@ export default function ServicesCardSection() {
     },
     {
       idx: 4,
-      title: "Conceive & Develop",
+      title: "Rapid Development",
       description:
-        "From idea to prototype to engineering applications for tomorrows business, today – we deliver extraordinary value",
+        "With our breadth of experience in Low-Code platforms we can quickly develop a POC or App",
       list: [
         "Define user personas",
         "Refine Information and Page Architecture",
@@ -128,9 +128,9 @@ export default function ServicesCardSection() {
     },
     {
       idx: 5,
-      title: "Conceive & Develop",
+      title: "Lift and Shift",
       description:
-        "From idea to prototype to engineering applications for tomorrows business, today – we deliver extraordinary value",
+        "With our proven cloud acceleration approach, you can move your applications and workloads to the cloud quickly",
       list: [
         "Define user personas",
         "Refine Information and Page Architecture",
@@ -142,9 +142,9 @@ export default function ServicesCardSection() {
     },
     {
       idx: 6,
-      title: "Conceive & Develop",
+      title: "Cloud Development",
       description:
-        "From idea to prototype to engineering applications for tomorrows business, today – we deliver extraordinary value",
+        "Leverage a cloud first approach to developing applications with a flexible and scalable architecture",
       list: [
         "Define user personas",
         "Refine Information and Page Architecture",
@@ -156,9 +156,9 @@ export default function ServicesCardSection() {
     },
     {
       idx: 7,
-      title: "Conceive & Develop",
+      title: "Product Testing",
       description:
-        "From idea to prototype to engineering applications for tomorrows business, today – we deliver extraordinary value",
+        "ID testing services can help you expedite time to market, increase quality, and reduce risk & costs",
       list: [
         "Define user personas",
         "Refine Information and Page Architecture",
@@ -170,9 +170,9 @@ export default function ServicesCardSection() {
     },
     {
       idx: 8,
-      title: "Conceive & Develop",
+      title: "Managed Services",
       description:
-        "From idea to prototype to engineering applications for tomorrows business, today – we deliver extraordinary value",
+        "We can help you stabilize, optimize and manage your IT infrastructure with a 99.7% guaranteed SLA",
       list: [
         "Define user personas",
         "Refine Information and Page Architecture",

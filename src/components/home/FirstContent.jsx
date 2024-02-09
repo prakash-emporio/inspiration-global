@@ -1,7 +1,7 @@
 import content1 from "/content1.jpg";
 
 const FirstContentData = {
-  title: "Lead With Impact",
+  title: "Product Engineering with Impact",
   text1:
     "Our public sector approach combines the power of human creativity, strategy, advanced technology, and a culture that prioritizes timely and effective implementation. Through this approach, we enable leaders in public sector organizations to transform their ambitions into tangible results.",
   text2:
@@ -29,7 +29,6 @@ export default function FirstContent() {
               <h1 className="card-title-1 p-lg-5">{FirstContentData.title}</h1>
               <p className="card-text-1"> {FirstContentData.text1}</p>
               <p className="card-text-1">{FirstContentData.text2}</p>
-              <div className="container px-lg-5">
                 <button className="btn first-btn" href="#" role="button">
                   {FirstContentData.buttonText}
                   <svg
@@ -47,7 +46,6 @@ export default function FirstContent() {
                     />
                   </svg>
                 </button>
-              </div>
             </div>
           </div>
         </div>

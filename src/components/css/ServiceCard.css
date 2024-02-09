@@ -17,6 +17,10 @@
   font-size: 20px;
 }
 
+.service-card-section-body {
+  height: 100%;
+}
+
 @media screen and (max-width: 991px) {
   .service-header {
     font-size: 40px;

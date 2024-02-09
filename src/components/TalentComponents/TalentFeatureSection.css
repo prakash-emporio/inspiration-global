@@ -27,7 +27,7 @@
 }
 
 .talent-feature-section-card {
-  height: auto;
+  min-height: 400px;
 }
 
 .talent-feature-section-card-title {

@@ -4,7 +4,7 @@ import logo from "/logo.png";
 
 const footerData = [
   { id: 1, label: "Software", link: "/software/aws" },
-  { id: 2, label: "Services", link: "/services" },
+  { id: 2, label: "Services", link: "/services/product-engineering" },
   { id: 3, label: "Talent", link: "/talent" },
   { id: 4, label: "Industries", link: "/industry" },
   { id: 5, label: "Insights", link: "/insight" },
@@ -33,7 +33,7 @@ export default function Footer() {
               <img className="footer-main-logo" src={logo} alt="company-logo" />
             </div>
             <p className="footer-main-text">
-              From Concept to Completion <br /> with Optimal Solutions
+            We work From <br /> Strategy to Execution
             </p>
           </div>
         </div>

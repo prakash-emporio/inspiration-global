@@ -19,10 +19,6 @@
   line-height: 28px;
 }
 
-.content-text-wrapper:hover button {
-  margin-top: 100px;
-}
-
 .btn {
   font-weight: 700;
   font-size: 14px;
@@ -89,6 +85,7 @@
   fill: #5912e4;
   transition: 0.3s ease-in-out;
 }
+
 
 @media only screen and (min-width: 992px) {
   .card-wrapper:hover .col-lg-8 {
@@ -157,14 +154,25 @@
     line-height: 64px;
     letter-spacing: -1.7px;
   }
-  .content-text-wrapper:hover .second-btn {
-    margin-top: 15px;
-  }
 
   .first-btn {
-    margin-right: 1rem !important;
-    margin-left: 1rem !important;
+    margin-top: -160px;
+    margin-left: 50px;
+  } 
+
+  .content-text-wrapper:hover .first-btn {
+    margin-top: 50px;
   }
+
+  .second-btn {
+    margin-left: 50px;
+    margin-top: -50px;
+  }
+  
+  .content-text-wrapper:hover .second-btn {
+    margin-top: 20px;
+  }
+
 }
 
 @media screen and (max-width: 991px) {

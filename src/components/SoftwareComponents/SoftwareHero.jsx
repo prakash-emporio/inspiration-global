@@ -36,30 +36,30 @@ export default function SoftwareHero() {
   // Map the route to the corresponding content
   const routeToContent = {
     "/aws": {
-      title: "Cloud Ready consulting and AWS application development services.",
-      text: "Designing and developing applications for AWS cloud requires a different approach compared to traditional on-premises applications.",
+      headline: "Cloud Ready consulting and AWS application development services",
+      subHeadline: "Designing and developing applications for AWS cloud requires a different approach compared to traditional on-premises applications",
     },
     "/oracle": {
-      title: "Oracle Cloud consulting and application development services.",
-      text: "Designing and developing applications for Oracle Cloud requires a different approach compared to traditional on-premises applications.",
+      headline: "You + IG + Oracle is a winning combination",
+      subHeadline: "IG is your trusted partner, providing the invaluable experience and expertise your team requires to optimize your Oracle investment",
     },
     "/salesforce": {
-      title: "Salesforce consulting and application development services.",
-      text: "Designing and developing applications for Salesforce requires a different approach compared to traditional on-premises applications.",
+      headline: "Unlocking Salesforce Success: Your Journey Begins Here",
+      subHeadline: "Deep industry insights, proven customer solutions experience, and Salesforce know-how",
     },
     "/azure": {
-      title: "Azure consulting and application development services.",
-      text: "Designing and developing applications for Azure requires a different approach compared to traditional on-premises applications.",
+      headline: "Chart Your Cloud Odyssey with IG's Azure Expertise",
+      subHeadline: "From On-Premises to Cloud Edge, We're Your Masterful Cloud Navigators",
     },
     "/shopify": {
-      title: "Shopify consulting and application development services.",
-      text: "Designing and developing applications for Shopify requires a different approach compared to traditional on-premises applications.",
+      headline: "Shopify consulting and application development services",
+      subHeadline: "Designing and developing applications for Shopify requires a different approach compared to traditional on-premises applications",
     },
   };
 
   const defaultContent = {
-    title: "Cloud Ready consulting and application development services.",
-    text: "Designing and developing applications for the cloud requires a different approach compared to traditional on-premises applications.",
+    headline: "Cloud Ready consulting and application development services",
+    subHeadline: "Designing and developing applications for the cloud requires a different approach compared to traditional on-premises applications",
   };
 
   // Determine the active content based on the active route, or use default content
@@ -79,10 +79,10 @@ export default function SoftwareHero() {
             <div className="row g-0">
               <div className="col-lg-5 bg-transparent position-absolute software-top">
                 <h5 className="text-white software-hero-main-text ">
-                  {activeContent.title}
+                  {activeContent.headline}
                 </h5>
                 <p className="software-hero-secondary-text text-white">
-                  {activeContent.text}
+                  {activeContent.subHeadline}
                 </p>
               </div>
             </div>

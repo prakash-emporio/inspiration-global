@@ -25,7 +25,14 @@ const router = createBrowserRouter(
       <Route path="software/salesforce" element={<SoftwarePage />} />
       <Route path="software/azure" element={<SoftwarePage />} />
       <Route path="software/shopify" element={<SoftwarePage />} />
-      <Route path="services" element={<ServicePage />} />
+      <Route path="services/product-engineering" element={<ServicePage />} />
+      <Route path="services/custom-development" element={<ServicePage />} />
+      <Route path="services/cloud-services" element={<ServicePage />} />
+      <Route path="services/data-analytics" element={<ServicePage />} />
+      <Route path="services/artificial-intelligence" element={<ServicePage />} />
+      <Route path="services/cio-advisory" element={<ServicePage />} />
+      <Route path="services/pmo" element={<ServicePage />} />
+      <Route path="services/security" element={<ServicePage />} />
       <Route path="talent" element={<TalentPage />} />
       <Route path="industry" element={<IndustryPage />} />
       <Route path="insight" element={<InsightPage />} />

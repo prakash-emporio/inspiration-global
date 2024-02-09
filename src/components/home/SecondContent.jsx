@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import content2 from "/content2.jpg";
 
 const SecondContentData = {
-  title: "All About Talent",
+  title: "Talent Without the Hassle",
   text1:
     "Great talent is the equalizer and when combined with sound strategy, technology and data, they are revolutionizing every aspect of business, including competition, value definition, delivery, and transformation to achieve optimal outcomes.",
   text2:
@@ -29,7 +29,6 @@ export default function SecondContent() {
               </h1>
               <p className="card-text-2">{SecondContentData.text1}</p>
               <p className="card-text-2">{SecondContentData.text2}</p>
-              <div className="container mx-lg-5">
                 <NavLink to="/talent">
                 <button className="btn second-btn" href="#" role="button">
                   {SecondContentData.buttonText}
@@ -49,7 +48,6 @@ export default function SecondContent() {
                   </svg>
                 </button>
                 </NavLink>
-              </div>
             </div>
           </div>
           <div className="col-lg-8 section-one">

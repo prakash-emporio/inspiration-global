@@ -8,7 +8,7 @@ const TalentProcessCard = ({ stepNumber, title, description, colorClass }) => (
         <h5 className="card-title talent-feature-section-card-header my-lg-5">
           <sup>{stepNumber}</sup> {title}
         </h5>
-        <ul className="pb-5">
+        <ul className="pb-lg-3">
           {description.map((item, index) => (
             <li key={index} className="card-text talent-feature-section-card-text">
               {item}
@@ -42,9 +42,6 @@ const TalentFeatureSectionSubModelTwo = () => {
       description: [
         'Development screening questions and comparison matrix',
         'Initial recruiting efforts with primary targeted companies',
-        'Research secondary companies for future use',
-        'Research secondary companies for future use',
-        'Research secondary companies for future use',
         'Research secondary companies for future use',
       ],
       colorClass: 'talent-feature-section-card-color-2',

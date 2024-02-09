@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 
 export default function Form() {
 
-  const { register, handleSubmit} = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = (d) => alert(JSON.stringify(d));
 
   return (
@@ -23,6 +23,7 @@ export default function Form() {
                   aria-label="name"
                   {...register("name", { required: true })}
                 />
+                {errors.name && <p>{errors.name.message}</p>}
               </div>
               <div className="col">
                 <input
@@ -32,6 +33,7 @@ export default function Form() {
                   aria-label="email"
                   {...register("email", { required: true })}
                 />
+                {errors.email && <p>{errors.email.message}</p>}
               </div>
             </div>
             <div className="input-group">
@@ -42,6 +44,7 @@ export default function Form() {
                 rows={5}
                 {...register("message", { required: true })}
               />
+              {errors.message && <p>{errors.message.message}</p>}
             </div>
             <div className="d-flex justify-content-end">
               <button type="submit" value="submit" className="btn form-btn mt-5">

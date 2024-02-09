@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const navItems = [
   { id: 1, label: "Softwares", href: "/software/aws" },
-  { id: 2, label: "Services", href: "/services" },
+  { id: 2, label: "Services", href: "/services/product-engineering" },
   { id: 3, label: "Talent", href: "/talent" },
   { id: 4, label: "Industries", href: "/industry" },
   { id: 5, label: "Insights", href: "/insight" },
@@ -71,42 +71,42 @@ const DropdownMenuItems = [
       {
         id: 1,
         title: "Product Engineering",
-        href: "/services",
+        href: "/services/product-engineering",
       },
       {
         id: 2,
         title: "Custom Development",
-        href: "/services",
+        href: "/services/custom-development",
       },
       {
         id: 3,
         title: "Cloud Services",
-        href: "/services",
+        href: "/services/cloud-services",
       },
       {
         id: 4,
         title: "Data & Analytics",
-        href: "/services",
+        href: "/services/data-analytics",
       },
       {
         id: 5,
         title: "Artificial Intelligence",
-        href: "/services",
+        href: "/services/artificial-intelligence",
       },
       {
         id: 6,
         title: "CIO Advisory",
-        href: "/services",
+        href: "/services/cio-advisory",
       },
       {
         id: 7,
         title: "PMO",
-        href: "/services",
+        href: "/services/pmo",
       },
       {
         id: 8,
         title: "Security",
-        href: "/services",
+        href: "/services/security",
       },
     ],
     refrence: "Services",

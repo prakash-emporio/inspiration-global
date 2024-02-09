@@ -4,49 +4,49 @@ const services = [
     id: 1,
     header: "Product Engineering",
     detail:
-      "Ut nulla sociis vulputate iaculis sagittis tellus iaculis auctor facilisis. Nunc tincidunt sagittis.",
+      "At our core, we specialize in comprehensive product engineering services",
   },
   {
     id: 2,
     header: "Custom Development",
     detail:
-      "Ut nulla sociis vulputate iaculis sagittis tellus iaculis auctor facilisis. Nunc tincidunt sagittis.",
+      "In the dynamic landscape of today, your software must be as adaptive as your business itself",
   },
   {
     id: 3,
     header: "Cloud Services",
     detail:
-      "Ut nulla sociis vulputate iaculis sagittis tellus iaculis auctor facilisis. Nunc tincidunt sagittis.",
+      "Today's forward-thinking organizations view the cloud as a pivotal enabler of business growth",
   },
   {
     id: 4,
     header: "Data and Analytics",
     detail:
-      "Ut nulla sociis vulputate iaculis sagittis tellus iaculis auctor facilisis. Nunc tincidunt sagittis.",
+      "Our analytics services and solutions serve as a catalyst for any organization striving for growth",
   },
   {
     id: 5,
     header: "Artificial Intelligence",
     detail:
-      "Ut nulla sociis vulputate iaculis sagittis tellus iaculis auctor facilisis. Nunc tincidunt sagittis.",
+      "We are here to guide you in leveraging the formidable capabilities and adaptability of AI",
   },
   {
     id: 6,
     header: "CIO Advisory",
     detail:
-      "Ut nulla sociis vulputate iaculis sagittis tellus iaculis auctor facilisis. Nunc tincidunt sagittis.",
+      "We assist organizations in harnessing technology and innovation to shape their technology vision",
   },
   {
     id: 7,
     header: "PMO",
     detail:
-      "Ut nulla sociis vulputate iaculis sagittis tellus iaculis auctor facilisis. Nunc tincidunt sagittis.",
+      "Our pragmatic project control framework is reinforced by a robust Project Management Office",
   },
   {
     id: 8,
     header: "Security",
     detail:
-      "Ut nulla sociis vulputate iaculis sagittis tellus iaculis auctor facilisis. Nunc tincidunt sagittis.",
+      "Our extensive cybersecurity expertise, coupled with our industry knowledge, empowers us to innovate cybersecurity solutions",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function ServiceCard() {
       </div>
       <div className="row mb-5">
         {services.map((service) => (
-          <div className="col-sm-6 col-lg-3" key={service.id}>
+          <div className="col-sm-6 col-lg-3 mb-lg-3" key={service.id}>
             <div className="card my-3">
               <div className="card-body service-card-section-body">
                 <h5 className="card-title card-title-color">
