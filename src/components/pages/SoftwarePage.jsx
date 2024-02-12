@@ -1,4 +1,5 @@
-import { CommonCard, Form } from "../home/index.js";
+import { Form } from "../home/index.js";
+import { SharedCard } from "../Shared/index.js";
 import {
   CardSection,
   FeatureSection,
@@ -12,7 +13,7 @@ export default function SoftwarePage() {
       <SoftwareHero />
       <FeatureSection />
       <CardSection />
-      <CommonCard />
+      <SharedCard />
       <SoftwareCTA />
       <Form />
     </>

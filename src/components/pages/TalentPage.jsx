@@ -1,5 +1,6 @@
 import {TalentHero, TalentTestimonials, TalentFeatureSection} from "../TalentComponents/index.js";
-import {CommonCard, Form} from "../home/index.js";
+import { Form} from "../home/index.js";
+import {SharedCard} from "../Shared/index.js";
 import {SoftwareCTA} from "../SoftwareComponents/index.js";
 
 export default function TalentPage() {
@@ -8,7 +9,7 @@ export default function TalentPage() {
     <TalentHero />
     <TalentTestimonials />
     <TalentFeatureSection />
-    <CommonCard />
+    <SharedCard />
     <SoftwareCTA />
     <Form />
     </>

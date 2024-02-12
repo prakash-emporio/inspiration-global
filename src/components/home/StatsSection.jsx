@@ -7,7 +7,7 @@ const statsData = [
   { index: 2, value: 15, label: "Countries Served" },
 ];
 
-export default function TestimonialSection() {
+export default function StatsSection() {
   return (
     <div
       data-aos="zoom-in-up"

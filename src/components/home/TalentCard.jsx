@@ -1,37 +1,38 @@
 import { NavLink } from "react-router-dom";
 import content2 from "/content2.jpg";
 
-const SecondContentData = {
+const TalentCardData = {
   title: "Talent Without the Hassle",
-  text1:
-    "Great talent is the equalizer and when combined with sound strategy, technology and data, they are revolutionizing every aspect of business, including competition, value definition, delivery, and transformation to achieve optimal outcomes.",
-  text2:
-    "These advances have become more critical than ever, given the unprecedented uncertainty and volatility in today's business landscape. To navigate todays challenges successfully, businesses across all industries must embrace new levels of innovation and undergo digital & talent transformation.",
+  text: "Seamless sourcing done right the first time. \n Great talent is the equalizer and when combined with sound strategy, technology and data, they are revolutionizing every aspect of business, including competition, value definition, delivery, and transformation to achieve optimal outcomes.\n These advances have become more critical than ever, given the unprecedented uncertainty and volatility in today's business landscape. To navigate todays challenges successfully, businesses across all industries must embrace new levels of innovation and undergo digital & talent transformation.",
   buttonText: "Learn More",
   image: content2,
 };
 
-export default function SecondContent() {
+export default function TalentCard() {
+  const paragraphs = TalentCardData.text.split("\n");
   return (
     <div
-      data-aos="fade-left"
-      data-aos-duration="2000"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine"
+      // data-aos="fade-left"
+      // data-aos-duration="2000"
+      // data-aos-offset="300"
+      // data-aos-easing="ease-in-sine"
       className="card card-wrapper content-text-wrapper card-wrapper-color-2"
     >
       <div className="container-fluid g-0">
-        <div className="row g-0 align-items-center">
+        <div className="row g-0">
           <div className="col-lg-4 section-two">
             <div className="card-body second-content-card-body">
-              <h1 className="card-title-2 px-lg-5 pt-lg-2">
-                {SecondContentData.title}
+              <h1 className="card-title-2 p-lg-5">
+                {TalentCardData.title}
               </h1>
-              <p className="card-text-2">{SecondContentData.text1}</p>
-              <p className="card-text-2">{SecondContentData.text2}</p>
-                <NavLink to="/talent">
+              {paragraphs.map((paragraph, index) => (
+                <p key={index} className="card-text-2">
+                  {paragraph}
+                </p>
+              ))}
+              <NavLink to="/talent">
                 <button className="btn second-btn" href="#" role="button">
-                  {SecondContentData.buttonText}
+                  {TalentCardData.buttonText}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -47,12 +48,12 @@ export default function SecondContent() {
                     />
                   </svg>
                 </button>
-                </NavLink>
+              </NavLink>
             </div>
           </div>
           <div className="col-lg-8 section-one">
             <img
-              src={SecondContentData.image}
+              src={TalentCardData.image}
               className="img-fluid content-image-1"
               alt="..."
             />

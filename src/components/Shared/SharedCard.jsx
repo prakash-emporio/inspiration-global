@@ -1,29 +1,32 @@
 import { useState } from "react";
 import "../css/CommonCard.css";
-import "../css/ExtraCard.css";
-import content7 from "/content7.jpg";
-import content8 from "/content8.jpg";
+import content3 from "/content3.jpg";
+import content4 from "/content4.jpg";
 
-export default function ExtraCard() {
+export default function SharedCard() {
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
+
   return (
     <div className="container-fluid g-0">
       <div className="row g-0">
         <div className="col-lg-6 position-relative">
-          <img src={content7} className="img-fluid extra-card-img" alt="..." />
-          <div
-            className="position-absolute top-0 end-0 text-center  dynamic-content m-5"
-            onMouseEnter={() => setIsHovered2(true)}
-            onMouseLeave={() => setIsHovered2(false)}
-          >
-            {isHovered2 ? "Blog" : "B"}
+          <img src={content3} className="common-card-image" alt="..." />
+          {/* on hover make this CS Case Study */}
+          <div className="position-absolute top-0 end-0 text-center  dynamic-content m-5"
+          onMouseEnter={() => setIsHovered1(true)}
+          onMouseLeave={() => setIsHovered1(false)}>
+            {isHovered1 ? 'Case Study' : 'CS'}
           </div>
-          <div className="position-absolute extra-custom-card-start extra-custom-card-top ">
+          <div className="position-absolute top-50 custom-start translate-middle-x">
             <h1 className="card-title custom-card-title">
-              Leveraging GenAI in your company
+              Two the cloud in 24 hours
             </h1>
-            <button className="btn mt-5 common-card-btn" href="#" role="button">
+            <button
+              className="btn mt-5 common-card-btn"
+              href="#"
+              role="button"
+            >
               Read more
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,20 +46,19 @@ export default function ExtraCard() {
           </div>
         </div>
         <div className="col-lg-6 position-relative">
-          <img src={content8} className="extra-card-img custom-image" alt="..." />
-          <div
-            className="position-absolute top-0 end-0 text-center  dynamic-content m-5"
-            onMouseEnter={() => setIsHovered1(true)}
-            onMouseLeave={() => setIsHovered1(false)}
-          >
-            {isHovered1 ? "Case Study" : "CS"}
+          <img src={content4} className="common-card-image" alt="..." />
+          {/* on hover make this B Blog */}
+          <div className="position-absolute top-0 end-0 text-center dynamic-content m-5" onMouseEnter={() => setIsHovered2(true)}
+            onMouseLeave={() => setIsHovered2(false)}>
+          {isHovered2 ? 'Blog' : 'B'}
           </div>
-
-          <div className="position-absolute top-50 extra-custom-card-start-2">
-            <h1 className="card-title custom-card-title">
-              How does AI help the Public Sector
-            </h1>
-            <button className="btn mt-5 common-card-btn" href="#" role="button">
+          <div className="position-absolute custom-top custom-start-2">
+            <h1 className="card-title custom-card-title">Value Based Hiring</h1>
+            <button
+              className="btn mt-5 common-card-btn"
+              href="#"
+              role="button"
+            >
               Read more
               <svg
                 xmlns="http://www.w3.org/2000/svg"

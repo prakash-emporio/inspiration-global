@@ -11,6 +11,14 @@ img:hover{
   transition: all 0.5s ease-out;
 }
 
+.btn {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
 .custom-card-title{
   color: white;
   font-weight: 900;

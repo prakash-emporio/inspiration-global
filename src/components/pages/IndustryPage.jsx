@@ -3,7 +3,8 @@ import {
   IndustryHero,
   IndustryTestimonials,
 } from "../IndustryComponents";
-import { CommonCard, Form } from "../home/index.js";
+import { Form } from "../home/index.js";
+import { SharedCard } from "../Shared/index.js";
 import { SoftwareCTA } from "../SoftwareComponents/index.js";
 
 export default function IndustryPage() {
@@ -12,7 +13,7 @@ export default function IndustryPage() {
       <IndustryHero />
       <IndustryTestimonials />
       <IndustryCardSection />
-      <CommonCard />
+      <SharedCard />
       <SoftwareCTA />
       <Form />
     </>

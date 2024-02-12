@@ -1,11 +1,11 @@
+import { SharedCard } from "../Shared/index.js";
 import {
   Hero,
   CompanySection,
-  TestimonialSection,
-  ContentWrapper,
-  CommonCard,
-  ThirdContent,
-  ExtraCard,
+  StatsSection,
+  ImpactTalentWrapper,
+  VideoCard,
+  BlogCaseStudyCard,
   ServiceCard,
   CTA,
   Form,
@@ -16,11 +16,11 @@ export default function Homepage() {
     <>
       <Hero />
       <CompanySection />
-      <TestimonialSection />
-      <ContentWrapper />
-      <CommonCard />
-      <ThirdContent />
-      <ExtraCard />
+      <StatsSection />
+      <ImpactTalentWrapper />
+      <SharedCard />
+      <VideoCard />
+      <BlogCaseStudyCard />
       <ServiceCard />
       <CTA />
       <Form />

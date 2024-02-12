@@ -4,7 +4,7 @@ import content6 from "/content6.png";
 import playDefault from "/playDefault.svg";
 import { useState } from "react";
 
-export default function ThirdContent() {
+export default function VideoCard() {
   const [isHovered1, setIsHovered1] = useState(false);
   return (
     <div className="container-fluid g-0">
