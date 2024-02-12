@@ -11,9 +11,9 @@ export default function SoftwareCTA() {
             adipiscing nunc urna sit.
           </h1>
         </div>
-        <div class="d-flex align-items-end flex-column mb-3">
-          <div class="software-cta-text-1 p-2">Name Surname</div>
-          <div class="software-cta-text-2 p-2">Title</div>
+        <div className="d-flex align-items-end flex-column mb-3">
+          <div className="software-cta-text-1 p-2">Name Surname</div>
+          <div className="software-cta-text-2 p-2">Title</div>
         </div>
       </div>
     </div>
