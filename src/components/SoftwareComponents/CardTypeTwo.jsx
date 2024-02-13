@@ -13,7 +13,7 @@ export default function CardTypeTwo({ image, title, content }) {
     <div className="container-fluid g-0 my-5">
       <div className="row g-0">
         <div className="col-12 col-lg-4 software-card-section-content-wrapper-two section-two">
-          <div className="card my-5 card-section-card-box shadow-lg">
+          <div className="card my-5 card-section-card-box">
             <div className="my-4 px-5">
               <h2 className="software-card-section-title">{title}</h2>
               <p className="software-card-section-text pt-4">
