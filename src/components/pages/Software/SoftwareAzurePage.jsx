@@ -1,18 +1,18 @@
 import { useState } from "react";
-import { Form } from "../home/index.js";
-import { SharedCard } from "../Shared/index.js";
+import { Form } from "../../home/index.js";
+import { SharedCard } from "../../Shared/index.js";
 import {
   FeatureSection,
   SoftwareCTA,
   SoftwareHero,
   CardTypeOne,
-  CardTypeTwo
-} from "../SoftwareComponents/index.js";
+  CardTypeTwo,
+} from "../../SoftwareComponents/index.js";
 
 const api = {
   img: "/AzureHero.png",
   header: {
-    id:"355",
+    id: "355",
     title: "Chart Your Cloud Odyssey with IG's Azure Expertise",
     subtitle:
       " From On-Premises to Cloud Edge, We're Your Masterful Cloud Navigators",

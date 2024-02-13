@@ -1,18 +1,18 @@
 import { useState } from "react";
-import { Form } from "../home/index.js";
-import { SharedCard } from "../Shared/index.js";
+import { Form } from "../../home/index.js";
+import { SharedCard } from "../../Shared/index.js";
 import {
   FeatureSection,
   SoftwareCTA,
   SoftwareHero,
   CardTypeOne,
   CardTypeTwo,
-} from "../SoftwareComponents/index.js";
+} from "../../SoftwareComponents/index.js";
 
 const api = {
   img: "/SalesforceHero.png",
   header: {
-    id : "23423",
+    id: "23423",
     title: "Unlocking Salesforce Success: Your Journey Begins Here",
     subtitle:
       "Deep industry insights, proven customer solutions experience, and Salesforce know-how",

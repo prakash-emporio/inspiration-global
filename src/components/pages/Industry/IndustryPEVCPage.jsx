@@ -5,10 +5,10 @@ import {
   IndustryFeatureCardImage,
   IndustryEngagementModel,
   IndustryFeatureFirstCard,
-} from "../IndustryComponents";
-import { Form } from "../home/index.js";
-import { SharedCard } from "../Shared/index.js";
-import { SoftwareCTA } from "../SoftwareComponents/index.js";
+} from "../../IndustryComponents/index.js";
+import { Form } from "../../home/index.js";
+import { SharedCard } from "../../Shared/index.js";
+import { SoftwareCTA } from "../../SoftwareComponents/index.js";
 
 const api = {
   id: "1267434352342",
@@ -61,39 +61,38 @@ const api = {
   ],
 };
 
-
 export default function IndustryPEVCPage() {
   return (
     <>
-    <IndustryHero
-      key={api.hero.id}
-      heroImage={api.hero.img}
-      heroTitle={api.hero.title}
-      heroHeadline={api.hero.headline}
-    />
-    <IndustryFeatureFirstCard text={api.featureSection.partOne.text} />
-    <IndustryFeatureCardRightText text={api.featureSection.partTwo.text} />
-    <IndustryFeatureCardImage featureImage={api.featureSection.img} />
-    <IndustryFeatureCardLeftText text={api.featureSection.partThree.text} />
-    <IndustryFeatureCardRightText text={api.featureSection.partFour.text} />
-    <IndustryFeatureCardLeftText text={api.featureSection.partFive.text} />
-    <div className="container-fluid talent-card-section-wrapper pb-5">
-      <h1 className="talent-feature-section-header py-5">
-        A Few of Our Capabilities
-      </h1>
-      <div className="row p-lg-5">
-        {api.engagementModels.map((model, index) => (
-          <IndustryEngagementModel
-            key={index}
-            title={model.title}
-            description={model.description}
-          />
-        ))}
+      <IndustryHero
+        key={api.hero.id}
+        heroImage={api.hero.img}
+        heroTitle={api.hero.title}
+        heroHeadline={api.hero.headline}
+      />
+      <IndustryFeatureFirstCard text={api.featureSection.partOne.text} />
+      <IndustryFeatureCardRightText text={api.featureSection.partTwo.text} />
+      <IndustryFeatureCardImage featureImage={api.featureSection.img} />
+      <IndustryFeatureCardLeftText text={api.featureSection.partThree.text} />
+      <IndustryFeatureCardRightText text={api.featureSection.partFour.text} />
+      <IndustryFeatureCardLeftText text={api.featureSection.partFive.text} />
+      <div className="container-fluid talent-card-section-wrapper pb-5">
+        <h1 className="talent-feature-section-header py-5">
+          A Few of Our Capabilities
+        </h1>
+        <div className="row p-lg-5">
+          {api.engagementModels.map((model, index) => (
+            <IndustryEngagementModel
+              key={index}
+              title={model.title}
+              description={model.description}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-    <SharedCard />
-    <SoftwareCTA />
-    <Form />
-  </>
-  )
+      <SharedCard />
+      <SoftwareCTA />
+      <Form />
+    </>
+  );
 }

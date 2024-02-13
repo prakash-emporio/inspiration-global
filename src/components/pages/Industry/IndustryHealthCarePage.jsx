@@ -5,10 +5,10 @@ import {
   IndustryFeatureCardRightText,
   IndustryFeatureCardImage,
   IndustryEngagementModelForHealthCare as IndustryEngagementModel,
-} from "../IndustryComponents";
-import { Form } from "../home/index.js";
-import { SharedCard } from "../Shared/index.js";
-import { SoftwareCTA } from "../SoftwareComponents/index.js";
+} from "../../IndustryComponents/index.js";
+import { Form } from "../../home/index.js";
+import { SharedCard } from "../../Shared/index.js";
+import { SoftwareCTA } from "../../SoftwareComponents/index.js";
 
 const api = {
   id: "12674345",
@@ -51,7 +51,8 @@ const api = {
         "Cloud technology serves as the cornerstone for the future of healthcare, streamlining operations, fostering innovation, and enhancing patient care",
     },
     {
-      title: "Elevating Payer Services with Advanced Analytics and Intelligence",
+      title:
+        "Elevating Payer Services with Advanced Analytics and Intelligence",
       description:
         "Incorporating advanced analytics and intelligence to attain exceptional results across diverse market landscapes.",
     },
@@ -62,7 +63,6 @@ const api = {
     },
   ],
 };
-
 
 export default function IndustryHealthCarePage() {
   return (
@@ -79,9 +79,7 @@ export default function IndustryHealthCarePage() {
       <IndustryFeatureCardLeftText text={api.featureSection.partThree.text} />
       <IndustryFeatureCardRightText text={api.featureSection.partFour.text} />
       <div className="container-fluid talent-card-section-wrapper pb-5">
-        <h1 className="talent-feature-section-header py-5">
-          Our Capabilities
-        </h1>
+        <h1 className="talent-feature-section-header py-5">Our Capabilities</h1>
         <div className="row p-lg-5">
           {api.engagementModels.map((model, index) => (
             <IndustryEngagementModel
@@ -96,5 +94,5 @@ export default function IndustryHealthCarePage() {
       <SoftwareCTA />
       <Form />
     </>
-  )
+  );
 }

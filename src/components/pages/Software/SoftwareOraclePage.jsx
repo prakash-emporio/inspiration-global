@@ -1,18 +1,18 @@
 import { useState } from "react";
-import { Form } from "../home/index.js";
-import { SharedCard } from "../Shared/index.js";
+import { Form } from "../../home/index.js";
+import { SharedCard } from "../../Shared/index.js";
 import {
   FeatureSection,
   SoftwareCTA,
   SoftwareHero,
   CardTypeOne,
-  CardTypeTwo
-} from "../SoftwareComponents/index.js";
+  CardTypeTwo,
+} from "../../SoftwareComponents/index.js";
 
 const api = {
   img: "/OracleHero.png",
   header: {
-    id : "76",
+    id: "76",
     title: "You + IG + Oracle is a winning combination",
     subtitle:
       "IG is your trusted partner, providing the invaluable experience and expertise your team requires to optimize your Oracle investment",

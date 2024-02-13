@@ -5,10 +5,10 @@ import {
   IndustryFeatureCardImage,
   IndustryEngagementModel,
   IndustryFeatureFirstCard,
-} from "../IndustryComponents";
-import { Form } from "../home/index.js";
-import { SharedCard } from "../Shared/index.js";
-import { SoftwareCTA } from "../SoftwareComponents/index.js";
+} from "../../IndustryComponents/index.js";
+import { Form } from "../../home/index.js";
+import { SharedCard } from "../../Shared/index.js";
+import { SoftwareCTA } from "../../SoftwareComponents/index.js";
 
 const api = {
   id: "12674345",

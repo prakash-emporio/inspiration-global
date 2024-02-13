@@ -1,11 +1,13 @@
 .service-testimonial-text {
   color: black;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .service-testimonial-bold-text {
   font-weight: 700;
-  font-size: 2.125rem;
+  font-size: 30px;
+  line-height: 38px;
   color: black;
 }

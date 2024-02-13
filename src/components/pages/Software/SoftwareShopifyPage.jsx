@@ -1,26 +1,26 @@
 import { useState } from "react";
-import { Form } from "../home/index.js";
-import { SharedCard } from "../Shared/index.js";
+import { Form } from "../../home/index.js";
+import { SharedCard } from "../../Shared/index.js";
 import {
   FeatureSection,
   SoftwareCTA,
   SoftwareHero,
   CardTypeOne,
   CardTypeTwo,
-} from "../SoftwareComponents/index.js";
+} from "../../SoftwareComponents/index.js";
 
 const api = {
   id: "21424124214",
-  img: "/AWSHero.png",
+  img: "/ShopifyHero.png",
   header: {
-    id: "557",
+    id: "1323",
     title: "Cloud Ready consulting and AWS application development services",
     subtitle:
       "Designing and developing applications for AWS cloud requires a different approach compared to traditional on-premises applications",
-    logo: "/SoftwareAWS.svg",
+    logo: "/SoftwareShopify.svg",
   },
   featureSection: {
-    id: "57",
+    id: "132ug",
     title: "Enterprise Performance at",
     subtitle: "SCALE",
     content:
@@ -48,17 +48,10 @@ const api = {
       content:
         "At IG, our team of AWS-certified experts is dedicated to helping you design, build, and deploy high-performance applications on AWS. We understand the importance of scalability, reliability, and cost-effectiveness in today's competitive landscape. Whether you're developing a cutting-edge web application or a data-driven backend service, we have the knowledge and experience to guide you in utilizing AWS's vast resources to make your application a success. Contact us today to embark on your journey to high-performance application development with AWS",
     },
-    4: {
-      id: "4",
-      img: "/softwareTalent.png",
-      title: "Talent Sourcing",
-      content:
-        "We understand the unique challenges associated with recruiting AWS professionals. With our specialized knowledge and experience, we become your strategic partner in talent acquisition, ensuring that you have the right people in place to execute your AWS projects successfully. We not only find top-tier AWS talent but also assist in the onboarding process and provide ongoing support to help integrate these experts into your team seamlessly. Don't let the complexities of AWS talent acquisition hold your organization back. Contact us today and let us take the lead in sourcing the skilled professionals your AWS projects require, so you can focus on driving innovation and growth within your business",
-    },
   },
 };
 
-export default function SoftwareAwsPage() {
+export default function SoftwareShopifyPage() {
   const [isLoading, setIsLoading] = useState();
   const [isError, setIsError] = useState();
 
@@ -102,12 +95,6 @@ export default function SoftwareAwsPage() {
         image={api.cardSection[3].img}
         title={api.cardSection[3].title}
         content={api.cardSection[3].content}
-      />
-      <CardTypeTwo
-        key={api.cardSection.id}
-        image={api.cardSection[4].img}
-        title={api.cardSection[4].title}
-        content={api.cardSection[4].content}
       />
       <SharedCard />
       <SoftwareCTA />

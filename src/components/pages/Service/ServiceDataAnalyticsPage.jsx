@@ -1,75 +1,40 @@
-import React, { useState } from "react";
-import "./ServicesCard.css";
+import {
+  ServicesHero,
+  ServiceLeftText,
+  ServiceRightText,
+  ServiceBoldText,
+  ServicesFeatureSection,
+  ServiceSectionCard,
+  ServiceFirstText
+} from "../../ServicesComponents/index.js";
+import { SharedCard } from "../../Shared/index.js";
+import { Form } from "../../home/index.js";
+import { SoftwareCTA } from "../../SoftwareComponents/index.js";
 
-const ServiceCard = ({ title, description, list }) => {
-  const [showList, setShowList] = useState(false);
-  const [isButtonClicked, setIsButtonClicked] = useState(false);
-
-  const toggleList = () => {
-    setShowList(!showList);
-    setIsButtonClicked(!isButtonClicked);
-  };
-
-  return (
-    <div className="col-md-6 col-lg-3 p-3">
-      <div className="card service-card-section">
-        <div className="card-body service-page-card-section-body service-card-section-body">
-          <h5 className="card-title service-card-section-title">{title}</h5>
-          <p className="card-text service-card-section-text-size">
-            {description}
-          </p>
-          {showList && (
-            <ul className="card-text service-card-section-text-size">
-              {list.map((item, index) => (
-                <li className="service-card-li" key={index}>{item}</li>
-              ))}
-            </ul>
-          )}
-          <div className="d-flex justify-content-end">
-            <button
-              type="button"
-              className="service-card-btn-color border-0"
-              onClick={toggleList}
-            >
-              {isButtonClicked ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                >
-                  <path
-                    d="M5.21967 13.7197C4.92678 14.0126 4.92678 14.4874 5.21967 14.7803C5.51256 15.0732 5.98744 15.0732 6.28033 14.7803L10 11.0607L13.7197 14.7803C14.0126 15.0732 14.4874 15.0732 14.7803 14.7803C15.0732 14.4874 15.0732 14.0126 14.7803 13.7197L11.0607 10L14.7803 6.28033C15.0732 5.98744 15.0732 5.51256 14.7803 5.21967C14.4874 4.92678 14.0126 4.92678 13.7197 5.21967L10 8.93934L6.28033 5.21967C5.98744 4.92678 5.51256 4.92678 5.21967 5.21967C4.92678 5.51256 4.92678 5.98744 5.21967 6.28033L8.93934 10L5.21967 13.7197Z"
-                    fill="#5912E4"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M14.7803 5.21967C14.4874 4.92678 14.0126 4.92678 13.7197 5.21967L6.5 12.4393L6.5 6.75C6.5 6.33579 6.16421 6 5.75 6C5.33579 6 5 6.33579 5 6.75L5 14.25C5 14.6642 5.33579 15 5.75 15L13.25 15C13.6642 15 14 14.6642 14 14.25C14 13.8358 13.6642 13.5 13.25 13.5L7.56066 13.5L14.7803 6.28033C15.0732 5.98744 15.0732 5.51256 14.7803 5.21967Z"
-                    fill="#5912E4"
-                  />
-                </svg>
-              )}
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default function ServicesCardSection() {
-  const servicesData = [
+const api = {
+  id: "1267433412322112445",
+  hero: {
+    id: "557",
+    img: "/industryhero.png",
+    title: "Data Analytics",
+    headline:
+      "The advent of data, analytics, and AI has unlocked a world of uncharted opportunities",
+  },
+  featureSection: {
+    partOne: {
+      text: "If your organization's data is fragmented or of subpar quality, it remains immobilized. It's time to reimagine your current processes, ensuring data is not only accessible at speed but also transparent and trustworthy. Only then can data truly amplify the potential of your technology and AI investments",
+    },
+    partTwo: {
+      text: "IG’s analytics services and solutions serve as a catalyst for any organization striving for growth and a competitive edge. We identify practical use cases aligned with your business priorities and engineer customized analytics solutions, harnessing the right talent and technologies tailored to your specific needs. Your data's destiny holds the power to elevate performance, fortitude, and enduring growth for years to come",
+    },
+    partThree: {
+      text: "While big data can be transformative, it often overwhelms businesses, leaving them drowning in a sea of information. Data is only as valuable as the actionable insights it offers; otherwise, it's just noise. We guide our clients in distilling valuable insights from the data clutter, providing tailored analytics and business intelligence solutions with real-world impact. IG helps answer the fundamental questions: where to begin, which tools and skillsets are essential, and where the impact will be most pronounced",
+    },
+    partFour: {
+      text: "Our expert team addresses the spectrum of data, analytics, and BI at a scale that ensures competitiveness and relevance to your customers, both today and tomorrow. With proficiency spanning areas such as business, marketing, technology, customer behavior analysis, data warehousing, visualization, and governance, the IG team offers a comprehensive solution set for any data-related challenge.",
+    },
+  },
+  servicesCards: [
     {
       idx: 1,
       title: "Conceive & Develop",
@@ -182,18 +147,28 @@ export default function ServicesCardSection() {
         "Usability Testing",
       ],
     },
-  ];
+  ],
+};
 
+
+export default function ServiceDataAnalyticsPage() {
   return (
-    <div className="container-md">
-      <h1 className="text-center text-black service-card-heading">
-        Product Engineering Services
-      </h1>
-      <div className="py-lg-5 row">
-        {servicesData.map((service) => (
-          <ServiceCard key={service.idx} {...service} />
-        ))}
-      </div>
-    </div>
+    <>
+      <ServicesHero
+        key={api.hero.id}
+        heroImage={api.hero.img}
+        heroTitle={api.hero.title}
+        heroHeadline={api.hero.headline}
+      />
+      <ServiceFirstText text={api.featureSection.partOne.text} />
+      <ServiceBoldText text={api.featureSection.partTwo.text} />
+      <ServiceLeftText text={api.featureSection.partThree.text} />
+      <ServiceRightText text={api.featureSection.partFour.text} />
+      <ServiceSectionCard cards={api.servicesCards} />
+      <ServicesFeatureSection />
+      <SharedCard />
+      <SoftwareCTA />
+      <Form />
+    </>
   );
 }
