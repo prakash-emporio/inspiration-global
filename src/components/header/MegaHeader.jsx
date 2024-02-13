@@ -382,6 +382,7 @@ export default function MegaHeader() {
                               to={subItem.href}
                               className="subMenuItems"
                               key={subItem.id}
+                              reloadDocument
                             >
                               {subItem.title}
                             </NavLink>
