@@ -1,16 +1,16 @@
-import industryhero from "/industryhero.png";
+import "./industry.css";
 
-export default function IndustryHero() {
+export default function IndustryHero({heroImage, heroTitle, heroHeadline}) {
   return (
     <section className="container-fluid g-0">
       <div className="row g-0 position-relative">
-        <img className="img-fluid talent-hero-img" src={industryhero} alt="" />
+        <img className="img-fluid talent-hero-img" src={heroImage} alt="" />
         <div className="position-absolute talent-top">
           <div className="container mx-lg-5">
             <div className="row">
               <div className="col">
                 <h5 className="text-white shared-hero-main-text">
-                  Public Sector
+                  {heroTitle}
                 </h5>
               </div>
             </div>
@@ -22,10 +22,7 @@ export default function IndustryHero() {
               <div className="industry-hero-card position-absolute industry-bottom industry-start">
                 <div className="service-card-color">
                   <h1 className="service-hero-card-text">
-                    Faced with limited resources, tight deadlines, and a
-                    persistent state of crisis, leaders in the public service
-                    sector must carefully balance stability and speed in
-                    response to ever-changing needs.
+                    {heroHeadline}
                   </h1>
                 </div>
               </div>

@@ -11,7 +11,6 @@ import Layout from "./Layout.jsx";
 import Homepage from "./components/pages/Homepage.jsx";
 import ServicePage from "./components/pages/ServicePage.jsx";
 import TalentPage from "./components/pages/TalentPage.jsx";
-import IndustryPage from "./components/pages/IndustryPage.jsx";
 import InsightPage from "./components/pages/InsightPage.jsx";
 import CompanyPage from "./components/pages/CompanyPage.jsx";
 import SoftwareAwsPage from "./components/pages/SoftwareAwsPage.jsx";
@@ -19,6 +18,11 @@ import SoftwareOraclePage from "./components/pages/SoftwareOraclePage.jsx";
 import SoftwareSalesforcePage from "./components/pages/SoftwareSalesforcePage.jsx";
 import SoftwareAzurePage from "./components/pages/SoftwareAzurePage.jsx";
 import SoftwareShopifyPage from "./components/pages/SoftwareShopifyPage.jsx";
+import IndustryPublicSectorPage from "./components/pages/IndustryPublicSectorPage.jsx";
+import IndustryHealthCarePage from "./components/pages/IndustryHealthCarePage.jsx";
+import IndustryHigherEdPage from "./components/pages/IndustryHigherEdPage.jsx";
+import IndustryInsurancePage from "./components/pages/IndustryInsurancePage.jsx";
+import IndustryPEVCPage from "./components/pages/IndustryPEVCPage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,7 +42,12 @@ const router = createBrowserRouter(
       <Route path="services/pmo" element={<ServicePage />} />
       <Route path="services/security" element={<ServicePage />} />
       <Route path="talent" element={<TalentPage />} />
-      <Route path="industry" element={<IndustryPage />} />
+      <Route path="industry" element={<IndustryPublicSectorPage />} />
+      <Route path="industry/public-sector" element={<IndustryPublicSectorPage />} />
+      <Route path="industry/health-care" element={<IndustryHealthCarePage />} />
+      <Route path="industry/higher-ed" element={<IndustryHigherEdPage />} />
+      <Route path="industry/insurance" element={<IndustryInsurancePage />} />
+      <Route path="industry/pe-vc" element={<IndustryPEVCPage />} />
       <Route path="insight" element={<InsightPage />} />
       <Route path="company" element={<CompanyPage />} />
     </Route>

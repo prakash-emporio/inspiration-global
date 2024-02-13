@@ -150,27 +150,27 @@ const DropdownMenuItems = [
       {
         id: 1,
         title: "Public Sector",
-        href: "",
+        href: "industry/public-sector",
       },
       {
         id: 2,
         title: "HealthCare",
-        href: "",
+        href: "industry/health-care",
       },
       {
         id: 3,
         title: "Higher Ed",
-        href: "",
+        href: "industry/higher-ed",
       },
       {
         id: 4,
         title: "Insurance",
-        href: "",
+        href: "industry/insurance",
       },
       {
         id: 5,
         title: "PE/VC",
-        href: "",
+        href: "industry/pe-vc",
       },
     ],
     refrence: "Industries",

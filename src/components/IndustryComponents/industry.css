@@ -11,14 +11,17 @@
 
 @media screen and (min-width: 1200px) {
   .industry-bottom {
-    bottom: -30% !important;
+    bottom: -50% !important;
+  }
+  .industry-start {
+    margin: 5rem;
+    left: 50% !important;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .industry-start {
-    margin-right: 100px;
-    left: 50% !important;
+@media screen and (min-width: 1600px) {
+  .industry-bottom {
+    bottom: -40% !important;
   }
 }
 
