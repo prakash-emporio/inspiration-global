@@ -134,7 +134,7 @@ const homepage = {
   },
 };
 
-export default function HomePage() {
+export default function Homepage() {
   return (
     <>
       <Hero
