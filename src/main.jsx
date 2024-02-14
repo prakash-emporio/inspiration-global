@@ -8,7 +8,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Layout from "./Layout.jsx";
-import Homepage from "./components/pages/HomePage.jsx";
+import HomePage from "./components/pages/HomePage.jsx";
 import TalentPage from "./components/pages/TalentPage.jsx";
 import InsightPage from "./components/pages/InsightPage.jsx";
 import CompanyPage from "./components/pages/CompanyPage.jsx";
@@ -34,7 +34,7 @@ import IndustryPEVCPage from "./components/pages/Industry/IndustryPEVCPage.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="" element={<Homepage />} />
+      <Route path="" element={<HomePage />} />
       <Route path="software/aws" element={<SoftwareAwsPage />} />
       <Route path="software/oracle" element={<SoftwareOraclePage />} />
       <Route path="software/salesforce" element={<SoftwareSalesforcePage />} />
