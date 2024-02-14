@@ -30,7 +30,7 @@ const api = {
     1: {
       id: "1",
       img: "/softwareConsulting.png",
-      title: "Consluting",
+      title: "Consulting",
       content:
         "At IG, we take pride in being your trusted partner for all your AWS consulting needs. With a wealth of experience and a deep understanding of AWS technologies, our team of highly skilled professionals is here to guide you through the intricate world of cloud computing, ensuring that you harness the full power of AWS to drive your business forward. We are passionate about helping you drive innovation, reducing costs, and ensuring the highest level of security and compliance. Let us take your AWS journey to new heights. Contact us today to get started on your path to AWS success",
     },

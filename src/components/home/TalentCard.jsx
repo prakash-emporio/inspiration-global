@@ -1,15 +1,9 @@
 import { NavLink } from "react-router-dom";
-import content2 from "/content2.jpg";
+import "../css/ImpactTalent.css";
 
-const TalentCardData = {
-  title: "Talent Without the Hassle",
-  text: "Seamless sourcing done right the first time. \n Great talent is the equalizer and when combined with sound strategy, technology and data, they are revolutionizing every aspect of business, including competition, value definition, delivery, and transformation to achieve optimal outcomes.\n These advances have become more critical than ever, given the unprecedented uncertainty and volatility in today's business landscape. To navigate todays challenges successfully, businesses across all industries must embrace new levels of innovation and undergo digital & talent transformation.",
-  buttonText: "Learn More",
-  image: content2,
-};
 
-export default function TalentCard() {
-  const paragraphs = TalentCardData.text.split("\n");
+export default function TalentCard({title, description, buttonText, image}) {
+  const paragraphs = description.split("\n");
   return (
     <div
       // data-aos="fade-left"
@@ -23,7 +17,7 @@ export default function TalentCard() {
           <div className="col-lg-4 section-two">
             <div className="card-body second-content-card-body">
               <h1 className="card-title-2 p-lg-5">
-                {TalentCardData.title}
+                {title}
               </h1>
               {paragraphs.map((paragraph, index) => (
                 <p key={index} className="card-text-2">
@@ -32,7 +26,7 @@ export default function TalentCard() {
               ))}
               <NavLink to="/talent">
                 <button className="btn second-btn" href="#" role="button">
-                  {TalentCardData.buttonText}
+                  {buttonText}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -53,7 +47,7 @@ export default function TalentCard() {
           </div>
           <div className="col-lg-8 section-one">
             <img
-              src={TalentCardData.image}
+              src={image}
               className="img-fluid content-image-1"
               alt="..."
             />

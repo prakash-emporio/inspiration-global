@@ -1,7 +1,8 @@
 import Hero from "./Hero.jsx";
 import CompanySection from "./CompanySection.jsx";
 import StatsSection from "./StatsSection.jsx";
-import ImpactTalentWrapper from "./ImpactTalentWrapper.jsx";
+import ImpactCard from "./ImpactCard.jsx";
+import TalentCard from "./TalentCard.jsx";
 import VideoCard from "./VideoCard.jsx";
 import BlogCaseStudyCard from "./BlogCaseStudyCard.jsx";
 import ServiceCard from "./ServiceCard.jsx";
@@ -13,7 +14,8 @@ export {
   Hero,
   CompanySection,
   StatsSection,
-  ImpactTalentWrapper,
+  ImpactCard,
+  TalentCard,
   VideoCard,
   BlogCaseStudyCard,
   ServiceCard,

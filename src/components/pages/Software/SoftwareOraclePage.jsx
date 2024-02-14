@@ -29,7 +29,7 @@ const api = {
     1: {
       id: "1",
       img: "/softwareConsulting.png",
-      title: "Consluting",
+      title: "Consulting",
       content:
         "IG’s Oracle Consulting is your gateway to unlocking the true potential of Oracle technologies for your business. Our team of experts specializes in Oracle solutions, offering strategic guidance, implementation support, and ongoing optimization to ensure you make the most of Oracle's powerful tools and platforms. Whether you're considering an Oracle Cloud migration, need assistance with database management, or seek to enhance your Oracle-based applications, our consulting services are tailored to your unique needs, enabling you to drive efficiency, innovation, and growth within your organization.",
     },

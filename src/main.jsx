@@ -8,7 +8,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Layout from "./Layout.jsx";
-import Homepage from "./components/pages/Homepage.jsx";
+import Homepage from "./components/pages/HomePage.jsx";
 import TalentPage from "./components/pages/TalentPage.jsx";
 import InsightPage from "./components/pages/InsightPage.jsx";
 import CompanyPage from "./components/pages/CompanyPage.jsx";
@@ -34,29 +34,29 @@ import IndustryPEVCPage from "./components/pages/Industry/IndustryPEVCPage.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/software/aws" element={<SoftwareAwsPage />} />
-      <Route path="/software/oracle" element={<SoftwareOraclePage />} />
-      <Route path="/software/salesforce" element={<SoftwareSalesforcePage />} />
-      <Route path="/software/azure" element={<SoftwareAzurePage />} />
-      <Route path="/software/shopify" element={<SoftwareShopifyPage />} />
-      <Route path="/services/product-engineering" element={<ServiceProductEngPage />} />
-      <Route path="/services/custom-development" element={<ServiceCustomDPage />} />
-      <Route path="/services/cloud-services" element={<ServiceCloudServicePage />} />
-      <Route path="/services/data-analytics" element={<ServiceDataAnalyticsPage />} />
-      <Route path="/services/artificial-intelligence" element={<ServiceAIPage />} />
-      <Route path="/services/cio-advisory" element={<ServiceCIOAdvisory />} />
-      <Route path="/services/pmo" element={<ServicePMO />} />
-      <Route path="/services/security" element={<ServiceSecurityPage />} />
-      <Route path="/talent" element={<TalentPage />} />
-      <Route path="/industry" element={<IndustryPublicSectorPage />} />
-      <Route path="/industry/public-sector" element={<IndustryPublicSectorPage />} />
-      <Route path="/industry/health-care" element={<IndustryHealthCarePage />} />
-      <Route path="/industry/higher-ed" element={<IndustryHigherEdPage />} />
-      <Route path="/industry/insurance" element={<IndustryInsurancePage />} />
-      <Route path="/industry/pe-vc" element={<IndustryPEVCPage />} />
-      <Route path="/insight" element={<InsightPage />} />
-      <Route path="/company" element={<CompanyPage />} />
+      <Route path="" element={<Homepage />} />
+      <Route path="software/aws" element={<SoftwareAwsPage />} />
+      <Route path="software/oracle" element={<SoftwareOraclePage />} />
+      <Route path="software/salesforce" element={<SoftwareSalesforcePage />} />
+      <Route path="software/azure" element={<SoftwareAzurePage />} />
+      <Route path="software/shopify" element={<SoftwareShopifyPage />} />
+      <Route path="services/product-engineering" element={<ServiceProductEngPage />} />
+      <Route path="services/custom-development" element={<ServiceCustomDPage />} />
+      <Route path="services/cloud-services" element={<ServiceCloudServicePage />} />
+      <Route path="services/data-analytics" element={<ServiceDataAnalyticsPage />} />
+      <Route path="services/artificial-intelligence" element={<ServiceAIPage />} />
+      <Route path="services/cio-advisory" element={<ServiceCIOAdvisory />} />
+      <Route path="services/pmo" element={<ServicePMO />} />
+      <Route path="services/security" element={<ServiceSecurityPage />} />
+      <Route path="talent" element={<TalentPage />} />
+      <Route path="industry" element={<IndustryPublicSectorPage />} />
+      <Route path="industry/public-sector" element={<IndustryPublicSectorPage />} />
+      <Route path="industry/health-care" element={<IndustryHealthCarePage />} />
+      <Route path="industry/higher-ed" element={<IndustryHigherEdPage />} />
+      <Route path="industry/insurance" element={<IndustryInsurancePage />} />
+      <Route path="industry/pe-vc" element={<IndustryPEVCPage />} />
+      <Route path="insight" element={<InsightPage />} />
+      <Route path="company" element={<CompanyPage />} />
     </Route>
   )
 );

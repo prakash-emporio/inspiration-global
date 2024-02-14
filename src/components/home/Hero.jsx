@@ -1,24 +1,33 @@
-import heroImage from "/heroImage.png";
 import "../css/Hero.css";
 
-export default function Hero() {
+export default function Hero({
+  heroImg,
+  heroTitle,
+  heroTitleMain,
+  heroTitleEnding,
+  heroButtonText,
+}) {
   return (
     <section className="hero-banner">
       <div className="container-fluid">
         <div className="row">
-          <div data-aos="fade-right" data-aos-duration="3000" className="col-md-3">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            className="col-md-3"
+          >
             <div className="hero-header-wrapper">
               <h2 className="text-light hero-header">
-                <span className="hero-main-text">We Live</span> at the
-                intersection <br /> of technology, talent & tomorrow{" "}
-                <span className="hero-end-text">...</span>
+                <span className="hero-main-text">{heroTitle}</span>{" "}
+                {heroTitleMain}
+                <span className="hero-end-text">{heroTitleEnding}</span>
               </h2>
               <button
                 className="btn mt-md-3 mt-lg-5 hero-btn"
                 href="#"
                 role="button"
               >
-                Let's Go
+                {heroButtonText}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -41,7 +50,7 @@ export default function Hero() {
             data-aos-duration="3000"
             className="col-md-9 g-0"
           >
-            <img className="w-100 hero-image" src={heroImage} />
+            <img className="w-100 hero-image" src={heroImg} />
           </div>
         </div>
       </div>

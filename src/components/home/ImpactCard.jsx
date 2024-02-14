@@ -1,14 +1,7 @@
-import content1 from "/content1.jpg";
+import "../css/ImpactTalent.css";
 
-const ImpactCardData = {
-  title: "Product Engineering with Impact",
-  text: "Transform innovative ideas into solutions that revolutionize industries and enrich lives. \n Our public sector approach combines the power of human creativity, strategy, advanced technology, and a culture that prioritizes timely and effective implementation. Through this approach, we enable leaders in public sector organizations to transform their ambitions into tangible results. \n By leveraging existing resources and expertise to their fullest potential, we assist in establishing the groundwork for meaningful progress that generates long-term benefits for citizens and strengthens the capacity of government.",
-  buttonText: "Dive In",
-  image: content1,
-};
-
-export default function ImpactCard() {
-  const paragraphs = ImpactCardData.text.split("\n");
+export default function ImpactCard({title, description, buttonText, image}) {
+  const paragraphs = description.split("\n");
   return (
     <div
       data-aos="fade-right"
@@ -20,18 +13,18 @@ export default function ImpactCard() {
       <div className="container-fluid g-0">
         <div className="row g-0">
           <div className="col-lg-8">
-            <img src={ImpactCardData.image} className="img-fluid" alt="..." />
+            <img src={image} className="img-fluid" alt="..." />
           </div>
           <div className="col-lg-4">
             <div className="card-body first-content-card-body">
-              <h1 className="card-title-1 p-lg-5">{ImpactCardData.title}</h1>
+              <h1 className="card-title-1 p-lg-5">{title}</h1>
               {paragraphs.map((paragraph, index) => (
                 <p key={index} className="card-text-1">
                   {paragraph}
                 </p>
               ))}
               <button className="btn first-btn" href="#" role="button">
-                {ImpactCardData.buttonText}
+                {buttonText}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"

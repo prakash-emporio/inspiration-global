@@ -29,7 +29,7 @@ const api = {
     1: {
       id: "1",
       img: "/softwareConsulting.png",
-      title: "Consluting",
+      title: "Consulting",
       content:
         "At IG, our Salesforce experts empower your team to focus on selling and enhancing the customer experience, rather than wasting time searching across a disjointed array of tools and repositories. Our goal is to assist you in harnessing Salesforce's top-notch CRM capabilities, automating tasks, streamlining processes, and optimizing your sales efforts, prospects, and ultimately your customer relationships. Through our expertise and customer-centric approach, in combination with Salesforce's robust platform, we enable you to create realistic sales forecasts, gain valuable insights into your sales pipeline, and effortlessly attain a 360-degree view of your customers.",
     },

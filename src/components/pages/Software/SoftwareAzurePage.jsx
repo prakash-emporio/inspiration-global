@@ -29,7 +29,7 @@ const api = {
     1: {
       id: "1",
       img: "/softwareConsulting.png",
-      title: "Consluting",
+      title: "Consulting",
       content:
         "Azure's ever-evolving product portfolio is constantly pushing the boundaries and pioneering new frontiers for businesses. We're here to guide you on the same path. With Azure and Inspiration Digital, the future of cloud technology is at your doorstep. Our team specializes in crafting tailored Azure solutions that redefine your organization's capabilities, competitiveness, and overall performance. We drive cost reductions, mitigate risks, and enhance resource allocation, security, collaboration, scalability, and agility. In essence, we contribute to the improvement of your bottom line. Drawing upon our profound expertise and Azure's extensive range of services, we will modernize and enhance your enterprise architecture, infrastructure, business operations, and the experiences of both your customers and employees.",
     },

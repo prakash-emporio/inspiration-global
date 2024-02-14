@@ -1,33 +1,27 @@
 import "../css/ThirdContent.css";
-import content5 from "/content5.png";
-import content6 from "/content6.png";
-import playDefault from "/playDefault.svg";
+import Video from "./Video";
 import { useState } from "react";
 
-export default function VideoCard() {
+export default function VideoCard({
+  videoTitle,
+  videoLink,
+  cardTitle,
+  cardImage,
+  cardDescription,
+  cardButtonText,
+}) {
   const [isHovered1, setIsHovered1] = useState(false);
+
   return (
     <div className="container-fluid g-0">
       <div className="row g-0">
-        <div className="card col-lg-8">
-          <img
-            className="third-content-img"
-            src={content5}
-            alt=""
-          />
-          <div className="card-img-overlay">
-            <h5 className="card-title custom-card-title text-center pt-5">
-              Sit elementum scelerisque
-            </h5>
-            <div className="d-flex justify-content-center py-5">
-              <img className="img-thumbnail" src={playDefault} alt="" />
-            </div>
-          </div>
+        <div className="card col-lg-9 gap-0">
+          <Video title={videoTitle} link={videoLink} />
         </div>
-        <div className="card col-lg-4 position-relative">
+        <div className="card col-lg-3 position-relative">
           <img
             className="third-content-img"
-            src={content6}
+            src={cardImage}
             alt="sushant padnekar"
           />
 
@@ -41,17 +35,15 @@ export default function VideoCard() {
             </div>
             <div className="card-body top-50  position-absolute">
               <h1 className="card-title custom-card-title third-card-font-size">
-                Meet Team Member
+                {cardTitle}
               </h1>
-              <p className="card-title custom-card-title">
-                Sushant <br /> Pednekar
-              </p>
+              <p className="card-title custom-card-title third-card-font-size-two">{cardDescription}</p>
               <button
                 className="btn mt-3 common-card-btn"
                 href="#"
                 role="button"
               >
-                Meet
+                {cardButtonText}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
