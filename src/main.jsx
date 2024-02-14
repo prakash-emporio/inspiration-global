@@ -49,7 +49,6 @@ const router = createBrowserRouter(
       <Route path="services/pmo" element={<ServicePMO />} />
       <Route path="services/security" element={<ServiceSecurityPage />} />
       <Route path="talent" element={<TalentPage />} />
-      <Route path="industry" element={<IndustryPublicSectorPage />} />
       <Route path="industry/public-sector" element={<IndustryPublicSectorPage />} />
       <Route path="industry/health-care" element={<IndustryHealthCarePage />} />
       <Route path="industry/higher-ed" element={<IndustryHigherEdPage />} />

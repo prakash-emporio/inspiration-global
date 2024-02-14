@@ -265,7 +265,7 @@ export default function MegaHeader() {
         <ul className="navbar-nav">
           {navItems.map((item) => (
             <li className="nav-item dropdown position-static" key={item.id}>
-              <NavLink className="nav-link dropdown-toggle" to={item.href}>
+              <NavLink className="nav-link dropdown-toggle" to={item.href} reloadDocument>
                 {item.label}
               </NavLink>
               <ul className="dropdown-menu w-100 shadow">

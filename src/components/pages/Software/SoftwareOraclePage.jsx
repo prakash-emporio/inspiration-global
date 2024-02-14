@@ -20,10 +20,10 @@ const api = {
   },
   featureSection: {
     id: "88",
-    title: "Enterprise Performance at",
-    subtitle: "SCALE",
+    title: "Unlock the Full Potential of Your Oracle Solution",
+    subtitle: "from Day One",
     content:
-      "Unlock the Full Potential of Your Oracle Solution from Day One. One of the most common hurdles organizations face when embarking on Oracle Cloud or On-Premises solution implementations is the absence of a clear roadmap for maximizing the technology",
+      "One of the most common hurdles organizations face when embarking on Oracle Cloud or On-Premises solution implementations is the absence of a clear roadmap for maximizing the technology",
   },
   cardSection: {
     1: {
