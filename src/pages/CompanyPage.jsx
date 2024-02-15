@@ -2,8 +2,8 @@ import {
   CompanyHero,
   CompanyTestimonial,
   CompanyTeam,
-} from "../CompanyComponents/index.js";
-import { Form } from "../home/index.js";
+} from "../components/CompanyComponents/index.js";
+import { Form } from "../components/home/index.js";
 
 export default function CompanyPage() {
   return (

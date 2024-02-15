@@ -5,36 +5,36 @@ import {
   IndustryFeatureCardImage,
   IndustryEngagementModel,
   IndustryFeatureFirstCard,
-} from "../../IndustryComponents/index.js";
-import { Form } from "../../home/index.js";
-import { SharedCard } from "../../Shared/index.js";
-import { SoftwareCTA } from "../../SoftwareComponents/index.js";
+} from "../../components/IndustryComponents/index.js";
+import { Form } from "../../components/home/index.js";
+import { SharedCard } from "../../components/Shared/index.js";
+import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
 
 const api = {
-  id: "12674345",
+  id: "1267434352342",
   hero: {
-    id: "557",
+    id: "234",
     img: "/industryhero.png",
-    title: "Public Sector",
+    title: "PE / VC",
     headline:
       "Faced with limited resources, tight deadlines, and a persistent state of crisis, leaders in the public service sector must carefully balance stability and speed in response to ever-changing needs.",
   },
   featureSection: {
     img: "/industrytestimonial.png",
     partOne: {
-      text: "However, there is often little time for reflection and consideration of what might be achievable in exploring how their organizations could excel if they reimagined their operations and embraced innovative possibilities.",
+      text: "Is your private equity or venture capital firm equipped with an execution arm dedicated to fostering value creation within your portfolio companies? Whether your investments encompass startups or rapidly growing enterprises, we specialize in bridging the gap between the current status of the companies you support and your aspirations for their future. These companies often require comprehensive business, customer experience, and technology consulting, and we provide these through various services, including technology assessments, product development capabilities, product-market fit evaluations, go-to-market strategies, branding and storytelling, data analytics, business intelligence, and more",
     },
     partTwo: {
-      text: "Even in the face of these challenges, public service agencies have a unique opportunity to cultivate resilience and foster ongoing evolution. By adopting intentional strategies that facilitate a continuous cycle of change and visionary thinking. This involves a dedicated focus on areas such as talent transformation, dismantling organizational silos to encourage collaboration, and championing initiatives that promote agility. These efforts empower our public service clients to lead with impact and continuously adapt to deliver more positive outcomes to the people they serve.",
+      text: "Our approach involves seamless collaboration between our strategy, experience, and technology teams and our business consulting group, ensuring the development of high-impact work and products for our client partners and their respective portfolio companies",
     },
     partThree: {
-      text: "Our expertise is dedicated to evolving your organization, making it more productive and efficient. We not only develop and implement future-proof systems, processes, and technology solutions that are scalable and adaptable but also optimize existing legacy systems to maximize their longevity and efficiency.",
+      text: "At the core of our methodology lies an outside-in perspective, driven by the voice of the customer. Merging our teams with the investor and portfolio company (PortCo) brings together all the essential capabilities required for the success of these businesses in the market as well as the return for the investors",
     },
     partFour: {
-      text: "In today's digital and mobile-centric world, governments and public sector organizations must operate in an 'Always On' mode. People increasingly expect to interact with citizen services on their own terms, and they demand digital technology as the means to enable these interactions. This involves delivering information through the preferred channels selected by citizens, embodying a digital-first mindset that empowers agencies and departments to serve their staff and citizens whenever, wherever, and however they desire.",
+      text: "As a digital consultancy, technology is our expertise, but we approach it with a people-first perspective, with a strong emphasis on delivering value-creation and measurable results. Our business, customer experience, and technology teams possess extensive experience in developing high-impact, accelerated solutions across a broad spectrum of industries",
     },
     partFive: {
-      text: "Enhancing employee engagement and streamlining business processes while delivering exceptional service must be the foremost priorities. Success hinges on embracing the latest innovations in digital technology, data management, artificial intelligence and machine learning, cloud computing, mobile solutions, and social engagement. A fresh perspective and a new way of executing in today's dynamic environment are essential for achieving these goals.",
+      text: "At Inspiration Digital, our mission is to transform the businesses you invest in through a blend of business and digital strategies, ensuring their sustainability and optimizing your returns both today and in the future",
     },
   },
   engagementModels: [
@@ -61,7 +61,7 @@ const api = {
   ],
 };
 
-export default function IndustryPublicSectorPage() {
+export default function IndustryPEVCPage() {
   return (
     <>
       <IndustryHero

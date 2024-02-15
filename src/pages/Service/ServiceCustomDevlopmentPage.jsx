@@ -5,39 +5,33 @@ import {
   ServiceBoldText,
   ServicesFeatureSection,
   ServiceSectionCard,
-  ServiceFirstText,
-} from "../../ServicesComponents/index.js";
-import { SharedCard } from "../../Shared/index.js";
-import { Form } from "../../home/index.js";
-import { SoftwareCTA } from "../../SoftwareComponents/index.js";
+  ServiceFirstText
+} from "../../components/ServicesComponents/index.js";
+import { SharedCard } from "../../components/Shared/index.js";
+import { Form } from "../../components/home/index.js";
+import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
 
 const api = {
-  id: "126743341233122112445",
+  id: "1267433412322112445",
   hero: {
     id: "557",
     img: "/industryhero.png",
-    title: "Security",
+    title: "Custom Development",
     headline:
-      "Our extensive cybersecurity expertise, coupled with our profound industry knowledge, empowers us to innovate next-generation cybersecurity solutions",
+      "Architecting Your Future with Custom Application Development: Dream, Build, Scale",
   },
   featureSection: {
     partOne: {
-      text: "As the proliferation of cloud enablement, data centers and Internet-enabled devices continues, the realm of cyber culture is expanding at a faster pace than cyber security. Everything reliant on cyberspace faces potential risks, including private data, intellectual property, cyber infrastructure, and even military and national security. These risks can emerge from deliberate attacks, inadvertent security lapses, and vulnerabilities in the relatively immature, unregulated global Internet",
+      text: "In the dynamic landscape of today, your software must be as adaptive as your business itself. It's not just about having code that seamlessly integrates with legacy systems; you also need a team of seasoned experts, individuals with full-stack proficiency, to navigate your vision into the future",
     },
     partTwo: {
-      text: "At IG, we collaborate closely with our member firm clients to help organizations develop and implement an integrated cyber strategy. This approach leverages the capabilities of information networks to enhance business operations, improve mission performance, and enhance customer support, all while maintaining the highest standards of security and privacy",
+      text: "We are proud to be one of the renowned teams of specialized software engineers, architects, and developers. We excel in tackling intricate business challenges with innovative, unconventional, and practical solutions",
     },
     partThree: {
-      text: "Most reports on cyber security consistently highlight a common theme: despite increased attention and substantial investments in security, the number of cyber incidents and their associated costs continue to rise. They often attribute this to the growing sophistication of hackers and adversaries, posing a particularly challenging problem. Some even question the feasibility of achieving complete security in today's ever-evolving landscape of cyber threats",
+      text: "Our application transformation services grant you unparalleled access to leading-edge technologies through our extensive network of industry partners. We are at the forefront, pioneering innovations to deliver elegant, hassle-free software solutions at their finest. Our innovative approach to software and application development, coupled with a strategic business mindset, empowers you to reinvent your enterprise applications and, ultimately, transform your business",
     },
     partFour: {
-      text: "However, crucial questions remain unanswered. Specifically, what underlies this trend, and how can organizations reverse it to gain the upper hand in the battle against cyber risk?",
-    },
-    partFive: {
-      text: "Amid these questions and uncertainties, one thing is evident: existing approaches to managing cyber risk, often centered on perimeter security, fall short. The good news is that there are tangible, pragmatic steps that leaders can take to shift the paradigm when it comes to cyber risk. By implementing these measures, organizations can bolster their security, vigilance, and resilience",
-    },
-    partSix: {
-      text: "We welcome the opportunity to discuss these options with you",
+      text: "In a typical scenario, many companies grapple with a mix of outdated legacy systems and contemporary digital and SaaS platforms. These often consume significant IT resources and constrain their ability to drive digital growth. IG recognizes this challenge and leverages emerging technologies, coupled with agility, to help you meet the pressing business demands of tomorrow, whether you're refreshing an existing application or embarking on something entirely new",
     },
   },
   servicesCards: [
@@ -157,27 +151,24 @@ const api = {
 };
 
 
-
-export default function ServiceSecurityPage() {
+export default function ServiceCustomDevlopmentPage() {
   return (
     <>
-    <ServicesHero
-      key={api.hero.id}
-      heroImage={api.hero.img}
-      heroTitle={api.hero.title}
-      heroHeadline={api.hero.headline}
-    />
-    <ServiceFirstText text={api.featureSection.partOne.text} />
-    <ServiceBoldText text={api.featureSection.partTwo.text} />
-    <ServiceLeftText text={api.featureSection.partThree.text} />
-    <ServiceRightText text={api.featureSection.partFour.text} />
-    <ServiceLeftText text={api.featureSection.partFive.text} />
-    <ServiceRightText text={api.featureSection.partSix.text} />
-    <ServiceSectionCard cards={api.servicesCards} />
-    <ServicesFeatureSection />
-    <SharedCard />
-    <SoftwareCTA />
-    <Form />
-  </>
-  )
+      <ServicesHero
+        key={api.hero.id}
+        heroImage={api.hero.img}
+        heroTitle={api.hero.title}
+        heroHeadline={api.hero.headline}
+      />
+      <ServiceFirstText text={api.featureSection.partOne.text} />
+      <ServiceBoldText text={api.featureSection.partTwo.text} />
+      <ServiceLeftText text={api.featureSection.partThree.text} />
+      <ServiceRightText text={api.featureSection.partFour.text} />
+      <ServiceSectionCard cards={api.servicesCards} />
+      <ServicesFeatureSection />
+      <SharedCard />
+      <SoftwareCTA />
+      <Form />
+    </>
+  );
 }

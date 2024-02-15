@@ -1,4 +1,4 @@
-import { SharedCard } from "../Shared/index.js";
+import { SharedCard } from "../components/Shared/index.js";
 import {
   Hero,
   CompanySection,
@@ -10,7 +10,7 @@ import {
   ServiceCard,
   CTA,
   Form,
-} from "../home/index.js";
+} from "../components/home/index.js";
 
 const homepage = {
   id: "1267433412445",

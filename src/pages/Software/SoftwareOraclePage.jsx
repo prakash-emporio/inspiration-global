@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { Form } from "../../home/index.js";
-import { SharedCard } from "../../Shared/index.js";
+import { Form } from "../../components/home/index.js";
+import { SharedCard } from "../../components/Shared/index.js";
 import {
   FeatureSection,
   SoftwareCTA,
   SoftwareHero,
   CardTypeOne,
   CardTypeTwo,
-} from "../../SoftwareComponents/index.js";
+} from "../../components/SoftwareComponents/index.js";
 
 const api = {
   img: "/OracleHero.png",

@@ -5,36 +5,33 @@ import {
   IndustryFeatureCardImage,
   IndustryEngagementModel,
   IndustryFeatureFirstCard,
-} from "../../IndustryComponents/index.js";
-import { Form } from "../../home/index.js";
-import { SharedCard } from "../../Shared/index.js";
-import { SoftwareCTA } from "../../SoftwareComponents/index.js";
+} from "../../components/IndustryComponents/index.js";
+import { Form } from "../../components/home/index.js";
+import { SharedCard } from "../../components/Shared/index.js";
+import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
 
 const api = {
-  id: "1267434352342",
+  id: "12674342",
   hero: {
     id: "234",
     img: "/industryhero.png",
-    title: "PE / VC",
+    title: "Insurance",
     headline:
       "Faced with limited resources, tight deadlines, and a persistent state of crisis, leaders in the public service sector must carefully balance stability and speed in response to ever-changing needs.",
   },
   featureSection: {
     img: "/industrytestimonial.png",
     partOne: {
-      text: "Is your private equity or venture capital firm equipped with an execution arm dedicated to fostering value creation within your portfolio companies? Whether your investments encompass startups or rapidly growing enterprises, we specialize in bridging the gap between the current status of the companies you support and your aspirations for their future. These companies often require comprehensive business, customer experience, and technology consulting, and we provide these through various services, including technology assessments, product development capabilities, product-market fit evaluations, go-to-market strategies, branding and storytelling, data analytics, business intelligence, and more",
+      text: "To thrive in the contemporary insurance marketplace, insurance carriers must transition from a primary focus on products and distribution to a customer-centric approach, particularly in a digital and mobile-first economy. People increasingly demand insurance providers to be accessible on their terms, with a strong emphasis on digital technology as the enabler. This entails delivering information through the preferred channels according to individual choices, ensuring that carriers, their distribution networks, staff, and customers can engage when, where, and how they desire",
     },
     partTwo: {
-      text: "Our approach involves seamless collaboration between our strategy, experience, and technology teams and our business consulting group, ensuring the development of high-impact work and products for our client partners and their respective portfolio companies",
+      text: "Achieving success in this context relies heavily on embracing the latest innovations in digital technology, data management, AI, cloud computing, mobile accessibility, and social engagement. It also necessitates a complete shift in mindset and execution within today's market",
     },
     partThree: {
-      text: "At the core of our methodology lies an outside-in perspective, driven by the voice of the customer. Merging our teams with the investor and portfolio company (PortCo) brings together all the essential capabilities required for the success of these businesses in the market as well as the return for the investors",
+      text: "Historically, carriers have heavily relied on agents and brokers. While these intermediaries remain valuable, the significance of providing a seamless experience across all channels has grown substantially. The primary strategy involves determining how direct, agent, and broker channels can collaborate harmoniously to create an effortless and efficient experience for both the carrier and the customer. Those companies that excel in this regard will enhance customer retention, lifetime value, profitability, and reduce overall operational costs",
     },
     partFour: {
-      text: "As a digital consultancy, technology is our expertise, but we approach it with a people-first perspective, with a strong emphasis on delivering value-creation and measurable results. Our business, customer experience, and technology teams possess extensive experience in developing high-impact, accelerated solutions across a broad spectrum of industries",
-    },
-    partFive: {
-      text: "At Inspiration Digital, our mission is to transform the businesses you invest in through a blend of business and digital strategies, ensuring their sustainability and optimizing your returns both today and in the future",
+      text: "Customers now anticipate a swifter, more transparent, and intuitively engaging experience than ever before. As other industries have elevated their standards for customer experience, expectations have risen across the board. In today's fiercely competitive landscape, where options abound, and disruption is ever-present, adopting a digital-first mindset is not merely advantageous but imperative",
     },
   },
   engagementModels: [
@@ -61,7 +58,7 @@ const api = {
   ],
 };
 
-export default function IndustryPEVCPage() {
+export default function IndustryInsurancePage() {
   return (
     <>
       <IndustryHero
@@ -75,7 +72,6 @@ export default function IndustryPEVCPage() {
       <IndustryFeatureCardImage featureImage={api.featureSection.img} />
       <IndustryFeatureCardLeftText text={api.featureSection.partThree.text} />
       <IndustryFeatureCardRightText text={api.featureSection.partFour.text} />
-      <IndustryFeatureCardLeftText text={api.featureSection.partFive.text} />
       <div className="container-fluid talent-card-section-wrapper pb-5">
         <h1 className="talent-feature-section-header py-5">
           A Few of Our Capabilities

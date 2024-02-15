@@ -6,32 +6,32 @@ import {
   ServicesFeatureSection,
   ServiceSectionCard,
   ServiceFirstText
-} from "../../ServicesComponents/index.js";
-import { SharedCard } from "../../Shared/index.js";
-import { Form } from "../../home/index.js";
-import { SoftwareCTA } from "../../SoftwareComponents/index.js";
+} from "../../components/ServicesComponents/index.js";
+import { SharedCard } from "../../components/Shared/index.js";
+import { Form } from "../../components/home/index.js";
+import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
 
 const api = {
   id: "1267433412322112445",
   hero: {
     id: "557",
     img: "/industryhero.png",
-    title: "Custom Development",
+    title: "Cloud Services",
     headline:
-      "Architecting Your Future with Custom Application Development: Dream, Build, Scale",
+      "We work towards advancing the cloud Journey towards enhanced resilience",
   },
   featureSection: {
     partOne: {
-      text: "In the dynamic landscape of today, your software must be as adaptive as your business itself. It's not just about having code that seamlessly integrates with legacy systems; you also need a team of seasoned experts, individuals with full-stack proficiency, to navigate your vision into the future",
+      text: "In response to recent disruptions, organizations have swiftly embraced cloud and digital transformation, bolstering their resilience. However, the next phase involves a reinvention aimed at achieving deeper integration within a cohesive cloud strategy. This transformation is essential to unlock delayed value and streamline costs",
     },
     partTwo: {
-      text: "We are proud to be one of the renowned teams of specialized software engineers, architects, and developers. We excel in tackling intricate business challenges with innovative, unconventional, and practical solutions",
+      text: "Today's forward-thinking organizations view the cloud as a pivotal enabler of business growth and exceptional experiences for both customers and employees. They recognize that it transcends mere migration; it is a pathway to fostering innovation, accelerating growth, and maintaining a competitive edge",
     },
     partThree: {
-      text: "Our application transformation services grant you unparalleled access to leading-edge technologies through our extensive network of industry partners. We are at the forefront, pioneering innovations to deliver elegant, hassle-free software solutions at their finest. Our innovative approach to software and application development, coupled with a strategic business mindset, empowers you to reinvent your enterprise applications and, ultimately, transform your business",
+      text: "Whether you're embarking on your cloud journey or planning a migration, the choice of the right partner can make all the difference between success and failure. IG's consultants and architects specialize in guiding companies through the intricacies of cloud platforms, enterprise architecture, integration, licensing, and toolsets. Among these facets, cost savings emerge as a crucial focal point, especially in times of economic uncertainty",
     },
     partFour: {
-      text: "In a typical scenario, many companies grapple with a mix of outdated legacy systems and contemporary digital and SaaS platforms. These often consume significant IT resources and constrain their ability to drive digital growth. IG recognizes this challenge and leverages emerging technologies, coupled with agility, to help you meet the pressing business demands of tomorrow, whether you're refreshing an existing application or embarking on something entirely new",
+      text: "Amid the promise of extensive cloud transformation and the complexities that must be addressed, such as rethinking operating models and talent acquisition, organizations find themselves at a crossroads. They've already reaped the low-hanging fruit of cloud adoption but must now redouble their efforts to fully realize its potential. How do we know this? Because those who consistently achieve positive outcomes are the avid adopters who view the cloud as an ever-evolving journey, not just a destination",
     },
   },
   servicesCards: [
@@ -151,7 +151,7 @@ const api = {
 };
 
 
-export default function ServiceCustomDPage() {
+export default function ServiceCloudServicePage() {
   return (
     <>
       <ServicesHero

@@ -7,10 +7,10 @@ import {
   ServiceSectionCard,
   ServiceFirstText,
   ServicePointText
-} from "../../ServicesComponents/index.js";
-import { SharedCard } from "../../Shared/index.js";
-import { Form } from "../../home/index.js";
-import { SoftwareCTA } from "../../SoftwareComponents/index.js";
+} from "../../components/ServicesComponents/index.js";
+import { SharedCard } from "../../components/Shared/index.js";
+import { Form } from "../../components/home/index.js";
+import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
 
 const api = {
   id: "1267433412322112445",
@@ -164,7 +164,7 @@ const api = {
   ],
 };
 
-export default function ServiceCIOAdvisory() {
+export default function ServiceCIOAdvisoryPage() {
   return (
     <>
       <ServicesHero

@@ -5,33 +5,39 @@ import {
   ServiceBoldText,
   ServicesFeatureSection,
   ServiceSectionCard,
-  ServiceFirstText
-} from "../../ServicesComponents/index.js";
-import { SharedCard } from "../../Shared/index.js";
-import { Form } from "../../home/index.js";
-import { SoftwareCTA } from "../../SoftwareComponents/index.js";
+  ServiceFirstText,
+} from "../../components/ServicesComponents/index.js";
+import { SharedCard } from "../../components/Shared/index.js";
+import { Form } from "../../components/home/index.js";
+import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
 
 const api = {
-  id: "1267433412322112445",
+  id: "126743341233122112445",
   hero: {
     id: "557",
     img: "/industryhero.png",
-    title: "Data Analytics",
+    title: "Security",
     headline:
-      "The advent of data, analytics, and AI has unlocked a world of uncharted opportunities",
+      "Our extensive cybersecurity expertise, coupled with our profound industry knowledge, empowers us to innovate next-generation cybersecurity solutions",
   },
   featureSection: {
     partOne: {
-      text: "If your organization's data is fragmented or of subpar quality, it remains immobilized. It's time to reimagine your current processes, ensuring data is not only accessible at speed but also transparent and trustworthy. Only then can data truly amplify the potential of your technology and AI investments",
+      text: "As the proliferation of cloud enablement, data centers and Internet-enabled devices continues, the realm of cyber culture is expanding at a faster pace than cyber security. Everything reliant on cyberspace faces potential risks, including private data, intellectual property, cyber infrastructure, and even military and national security. These risks can emerge from deliberate attacks, inadvertent security lapses, and vulnerabilities in the relatively immature, unregulated global Internet",
     },
     partTwo: {
-      text: "IG’s analytics services and solutions serve as a catalyst for any organization striving for growth and a competitive edge. We identify practical use cases aligned with your business priorities and engineer customized analytics solutions, harnessing the right talent and technologies tailored to your specific needs. Your data's destiny holds the power to elevate performance, fortitude, and enduring growth for years to come",
+      text: "At IG, we collaborate closely with our member firm clients to help organizations develop and implement an integrated cyber strategy. This approach leverages the capabilities of information networks to enhance business operations, improve mission performance, and enhance customer support, all while maintaining the highest standards of security and privacy",
     },
     partThree: {
-      text: "While big data can be transformative, it often overwhelms businesses, leaving them drowning in a sea of information. Data is only as valuable as the actionable insights it offers; otherwise, it's just noise. We guide our clients in distilling valuable insights from the data clutter, providing tailored analytics and business intelligence solutions with real-world impact. IG helps answer the fundamental questions: where to begin, which tools and skillsets are essential, and where the impact will be most pronounced",
+      text: "Most reports on cyber security consistently highlight a common theme: despite increased attention and substantial investments in security, the number of cyber incidents and their associated costs continue to rise. They often attribute this to the growing sophistication of hackers and adversaries, posing a particularly challenging problem. Some even question the feasibility of achieving complete security in today's ever-evolving landscape of cyber threats",
     },
     partFour: {
-      text: "Our expert team addresses the spectrum of data, analytics, and BI at a scale that ensures competitiveness and relevance to your customers, both today and tomorrow. With proficiency spanning areas such as business, marketing, technology, customer behavior analysis, data warehousing, visualization, and governance, the IG team offers a comprehensive solution set for any data-related challenge.",
+      text: "However, crucial questions remain unanswered. Specifically, what underlies this trend, and how can organizations reverse it to gain the upper hand in the battle against cyber risk?",
+    },
+    partFive: {
+      text: "Amid these questions and uncertainties, one thing is evident: existing approaches to managing cyber risk, often centered on perimeter security, fall short. The good news is that there are tangible, pragmatic steps that leaders can take to shift the paradigm when it comes to cyber risk. By implementing these measures, organizations can bolster their security, vigilance, and resilience",
+    },
+    partSix: {
+      text: "We welcome the opportunity to discuss these options with you",
     },
   },
   servicesCards: [
@@ -151,24 +157,27 @@ const api = {
 };
 
 
-export default function ServiceDataAnalyticsPage() {
+
+export default function ServiceSecurityPage() {
   return (
     <>
-      <ServicesHero
-        key={api.hero.id}
-        heroImage={api.hero.img}
-        heroTitle={api.hero.title}
-        heroHeadline={api.hero.headline}
-      />
-      <ServiceFirstText text={api.featureSection.partOne.text} />
-      <ServiceBoldText text={api.featureSection.partTwo.text} />
-      <ServiceLeftText text={api.featureSection.partThree.text} />
-      <ServiceRightText text={api.featureSection.partFour.text} />
-      <ServiceSectionCard cards={api.servicesCards} />
-      <ServicesFeatureSection />
-      <SharedCard />
-      <SoftwareCTA />
-      <Form />
-    </>
-  );
+    <ServicesHero
+      key={api.hero.id}
+      heroImage={api.hero.img}
+      heroTitle={api.hero.title}
+      heroHeadline={api.hero.headline}
+    />
+    <ServiceFirstText text={api.featureSection.partOne.text} />
+    <ServiceBoldText text={api.featureSection.partTwo.text} />
+    <ServiceLeftText text={api.featureSection.partThree.text} />
+    <ServiceRightText text={api.featureSection.partFour.text} />
+    <ServiceLeftText text={api.featureSection.partFive.text} />
+    <ServiceRightText text={api.featureSection.partSix.text} />
+    <ServiceSectionCard cards={api.servicesCards} />
+    <ServicesFeatureSection />
+    <SharedCard />
+    <SoftwareCTA />
+    <Form />
+  </>
+  )
 }

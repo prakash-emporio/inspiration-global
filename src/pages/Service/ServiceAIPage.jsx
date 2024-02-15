@@ -3,46 +3,44 @@ import {
   ServiceLeftText,
   ServiceRightText,
   ServiceBoldText,
-  ServicePointText,
   ServicesFeatureSection,
   ServiceSectionCard,
   ServiceFirstText
-} from "../../ServicesComponents/index.js";
-import { SharedCard } from "../../Shared/index.js";
-import { Form } from "../../home/index.js";
-import { SoftwareCTA } from "../../SoftwareComponents/index.js";
+} from "../../components/ServicesComponents/index.js";
+import { SharedCard } from "../../components/Shared/index.js";
+import { Form } from "../../components/home/index.js";
+import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
 
 const api = {
-  id: "1267433412445",
+  id: "1267433412322112445",
   hero: {
     id: "557",
     img: "/industryhero.png",
-    title: "Product Engineering",
+    title: "Artificial Intelligence",
     headline:
-      "Our mission is to empower our clients to meet the fundamental expectations every individual has when it comes to healthcare: access, experience, and outcomes",
+      "Unlocking your Potential with artificial intelligence and data is a must-have",
   },
   featureSection: {
     partOne: {
-      text: "In business, having a good - or even a great idea for a product can only take you so far. Without the proper management, methodology and attention, ideas can quickly die on the vine as pressure from internal stakeholders, competitors and changing market conditions outpace an organization’s ability to grow, innovate and adapt",
+      text: "When you harness the capabilities of analytics, automation, and artificial intelligence (AI), you gain the ability to unearth hidden relationships within vast datasets. By implementing a well-planned strategy and adopting the right technology, you can strike a harmonious balance between speed, cost efficiency, and data quality, ultimately delivering quantifiable business value",
     },
     partTwo: {
-      text: "At our core, we specialize in comprehensive product and platform engineering services that encompass the entire technology stack, spanning the entire product lifecycle",
+      text: "It's a fusion of humans with machines, strategy with insights, cost reduction with automation, data with a clear purpose, and speed with unwavering precision. The transformative power of 'with' has never been more significant, and IG is at the forefront, empowering companies to harness this force, identify game-changing advantages, and operate with swifter, more precise decision-making while forging valuable connections with their customers",
     },
     partThree: {
-      text: "Our focus is on accelerating time to market, reducing costs, boosting revenue, and elevating service levels. Our community of innovators brings a rich history of collaboration, diversity, and curiosity to deliver human-centric, tech-driven solutions tailored to your unique business requirements",
+      text: "We are here to guide you in leveraging the formidable capabilities and adaptability of AI, propelling your organization to new heights of excellence. From crafting a strategic framework for AI to innovating fresh business models and enhancing performance across your operational domains, we stand by your side throughout your journey to turn raw data into actionable insights",
     },
     partFour: {
-      text: "The digital era has reshaped the way businesses interact with their customers, from promoting products and services to delivering exceptional customer experiences and responsive support. To thrive today, businesses need to not just 'do' digital; they must 'be' digital inside and out. The common thread linking companies and customers is the pursuit of creating meaningful, enduring connections. Our seasoned strategists, with decades of experience in B2B, B2C, and B2B2C, embrace a customer-centric approach, immersing themselves in your customers' lives to understand their motivations, emotions, and needs. Armed with the right insights, skills, and technology, we craft your narrative and engineer measurable experiences that seamlessly connect you with users across the entire ecosystem.",
+      text: "With our robust suite of assets and intellectual property, combined with Managed Analytics & AI services (featuring cloud-based Robotic Process Automation Software as a Service and Insights as a Service), we translate cognitive technology into real-world applications. Collaborating closely with you, we engineer AI-driven products that position your business at the forefront of innovation",
     },
     partFive: {
-      text: "Our community of solvers has a long history of working with organizations in bringing diverse perspectives, curiosity, and ingenuity to deliver human-centered, technology powered solutions and products made for your specific business needs.",
-      points: [
-        "ID leverages business, experience and engineering to help companies accelerate and transform products, platforms and the organization",
-        "We work from strategy to execution",
-        "Stellar track record of successful delivery",
-        "Flat organizational structure with everyone invested in our client's success",
-        "Numerous accelerators, IP and frameworks to improve costs and time-to-market",
-      ],
+      text: "Our expertise extends to modernizing your analytics and data processes, leveraging cutting-edge cloud-enabled platforms and big data architectures to empower analytics and AI-driven transformations",
+    },
+    partSix: {
+      text: "Our team of robotic and intelligent automation specialists collaborates with you to implement automated processes that mimic human decision-making, interactions, and judgments. This approach uncovers novel opportunities that drive results at every tier of your business",
+    },
+    partSeven: {
+      text: "In the end, we facilitate your journey to AI-driven insights and engagement through next-generation autonomous algorithms. These algorithms augment your human decision-making, generating actionable predictions and insights from your data while enabling a higher degree of autonomous decision-making",
     },
   },
   servicesCards: [
@@ -161,7 +159,8 @@ const api = {
   ],
 };
 
-export default function ServiceProductEngPage() {
+
+export default function ServiceAIPage() {
   return (
     <>
       <ServicesHero
@@ -174,7 +173,9 @@ export default function ServiceProductEngPage() {
       <ServiceBoldText text={api.featureSection.partTwo.text} />
       <ServiceLeftText text={api.featureSection.partThree.text} />
       <ServiceRightText text={api.featureSection.partFour.text} />
-      <ServicePointText text={api.featureSection.partFive.text} points={api.featureSection.partFive.points} />
+      <ServiceLeftText text={api.featureSection.partFive.text} />
+      <ServiceRightText text={api.featureSection.partSix.text} />
+      <ServiceLeftText text={api.featureSection.partSeven.text} />
       <ServiceSectionCard cards={api.servicesCards} />
       <ServicesFeatureSection />
       <SharedCard />

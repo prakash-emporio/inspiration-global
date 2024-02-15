@@ -6,32 +6,32 @@ import {
   ServicesFeatureSection,
   ServiceSectionCard,
   ServiceFirstText
-} from "../../ServicesComponents/index.js";
-import { SharedCard } from "../../Shared/index.js";
-import { Form } from "../../home/index.js";
-import { SoftwareCTA } from "../../SoftwareComponents/index.js";
+} from "../../components/ServicesComponents/index.js";
+import { SharedCard } from "../../components/Shared/index.js";
+import { Form } from "../../components/home/index.js";
+import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
 
 const api = {
   id: "1267433412322112445",
   hero: {
     id: "557",
     img: "/industryhero.png",
-    title: "Cloud Services",
+    title: "Data Analytics",
     headline:
-      "We work towards advancing the cloud Journey towards enhanced resilience",
+      "The advent of data, analytics, and AI has unlocked a world of uncharted opportunities",
   },
   featureSection: {
     partOne: {
-      text: "In response to recent disruptions, organizations have swiftly embraced cloud and digital transformation, bolstering their resilience. However, the next phase involves a reinvention aimed at achieving deeper integration within a cohesive cloud strategy. This transformation is essential to unlock delayed value and streamline costs",
+      text: "If your organization's data is fragmented or of subpar quality, it remains immobilized. It's time to reimagine your current processes, ensuring data is not only accessible at speed but also transparent and trustworthy. Only then can data truly amplify the potential of your technology and AI investments",
     },
     partTwo: {
-      text: "Today's forward-thinking organizations view the cloud as a pivotal enabler of business growth and exceptional experiences for both customers and employees. They recognize that it transcends mere migration; it is a pathway to fostering innovation, accelerating growth, and maintaining a competitive edge",
+      text: "IG’s analytics services and solutions serve as a catalyst for any organization striving for growth and a competitive edge. We identify practical use cases aligned with your business priorities and engineer customized analytics solutions, harnessing the right talent and technologies tailored to your specific needs. Your data's destiny holds the power to elevate performance, fortitude, and enduring growth for years to come",
     },
     partThree: {
-      text: "Whether you're embarking on your cloud journey or planning a migration, the choice of the right partner can make all the difference between success and failure. IG's consultants and architects specialize in guiding companies through the intricacies of cloud platforms, enterprise architecture, integration, licensing, and toolsets. Among these facets, cost savings emerge as a crucial focal point, especially in times of economic uncertainty",
+      text: "While big data can be transformative, it often overwhelms businesses, leaving them drowning in a sea of information. Data is only as valuable as the actionable insights it offers; otherwise, it's just noise. We guide our clients in distilling valuable insights from the data clutter, providing tailored analytics and business intelligence solutions with real-world impact. IG helps answer the fundamental questions: where to begin, which tools and skillsets are essential, and where the impact will be most pronounced",
     },
     partFour: {
-      text: "Amid the promise of extensive cloud transformation and the complexities that must be addressed, such as rethinking operating models and talent acquisition, organizations find themselves at a crossroads. They've already reaped the low-hanging fruit of cloud adoption but must now redouble their efforts to fully realize its potential. How do we know this? Because those who consistently achieve positive outcomes are the avid adopters who view the cloud as an ever-evolving journey, not just a destination",
+      text: "Our expert team addresses the spectrum of data, analytics, and BI at a scale that ensures competitiveness and relevance to your customers, both today and tomorrow. With proficiency spanning areas such as business, marketing, technology, customer behavior analysis, data warehousing, visualization, and governance, the IG team offers a comprehensive solution set for any data-related challenge.",
     },
   },
   servicesCards: [
@@ -151,7 +151,7 @@ const api = {
 };
 
 
-export default function ServiceCloudServicePage() {
+export default function ServiceDataAnalyticsPage() {
   return (
     <>
       <ServicesHero
