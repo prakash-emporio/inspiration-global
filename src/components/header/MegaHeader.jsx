@@ -5,12 +5,12 @@ import phone from "/phone.png";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  { id: 1, label: "Softwares", href: "software/aws" },
-  { id: 2, label: "Services", href: "services/product-engineering" },
-  { id: 3, label: "Talent", href: "talent" },
-  { id: 4, label: "Industries", href: "industry/public-sector" },
-  { id: 5, label: "Insights", href: "insight" },
-  { id: 6, label: "Company", href: "company" },
+  { id: 1, label: "Softwares", href: "/software/aws" },
+  { id: 2, label: "Services", href: "/services/product-engineering" },
+  { id: 3, label: "Talent", href: "/talent" },
+  { id: 4, label: "Industries", href: "/industry/public-sector" },
+  { id: 5, label: "Insights", href: "/insight" },
+  { id: 6, label: "Company", href: "/company" },
 ];
 
 const DropdownMenuItems = [
@@ -30,27 +30,27 @@ const DropdownMenuItems = [
       {
         id: 1,
         title: "AWS",
-        href: "software/aws",
+        href: "/software/aws",
       },
       {
         id: 2,
         title: "Oracle",
-        href: "software/oracle",
+        href: "/software/oracle",
       },
       {
         id: 3,
         title: "Salesforce",
-        href: "software/salesforce",
+        href: "/software/salesforce",
       },
       {
         id: 4,
         title: "Azure",
-        href: "software/azure",
+        href: "/software/azure",
       },
       {
         id: 5,
         title: "Shopify+",
-        href: "software/shopify",
+        href: "/software/shopify",
       },
     ],
     refrence: "Software",
@@ -71,42 +71,42 @@ const DropdownMenuItems = [
       {
         id: 1,
         title: "Product Engineering",
-        href: "services/product-engineering",
+        href: "/services/product-engineering",
       },
       {
         id: 2,
         title: "Custom Development",
-        href: "services/custom-development",
+        href: "/services/custom-development",
       },
       {
         id: 3,
         title: "Cloud Services",
-        href: "services/cloud-services",
+        href: "/services/cloud-services",
       },
       {
         id: 4,
         title: "Data & Analytics",
-        href: "services/data-analytics",
+        href: "/services/data-analytics",
       },
       {
         id: 5,
         title: "Artificial Intelligence",
-        href: "services/artificial-intelligence",
+        href: "/services/artificial-intelligence",
       },
       {
         id: 6,
         title: "CIO Advisory",
-        href: "services/cio-advisory",
+        href: "/services/cio-advisory",
       },
       {
         id: 7,
         title: "PMO",
-        href: "services/pmo",
+        href: "/services/pmo",
       },
       {
         id: 8,
         title: "Security",
-        href: "services/security",
+        href: "/services/security",
       },
     ],
     refrence: "Services",
@@ -150,27 +150,27 @@ const DropdownMenuItems = [
       {
         id: 1,
         title: "Public Sector",
-        href: "industry/public-sector",
+        href: "/industry/public-sector",
       },
       {
         id: 2,
         title: "HealthCare",
-        href: "industry/health-care",
+        href: "/industry/health-care",
       },
       {
         id: 3,
         title: "Higher Ed",
-        href: "industry/higher-ed",
+        href: "/industry/higher-ed",
       },
       {
         id: 4,
         title: "Insurance",
-        href: "industry/insurance",
+        href: "/industry/insurance",
       },
       {
         id: 5,
         title: "PE/VC",
-        href: "industry/pe-vc",
+        href: "/industry/pe-vc",
       },
     ],
     refrence: "Industries",
