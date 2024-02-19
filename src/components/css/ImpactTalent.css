@@ -136,7 +136,7 @@
   }
 
   .content-text-wrapper:hover .first-btn {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .second-btn {
@@ -243,11 +243,22 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1399px) {
+@media (min-width: 1200px) and (max-width: 1400px) {
   .first-btn {
     margin-top: -35rem;
   }
   .second-btn {
     margin-top: -40rem;
+  }
+  .card-title-1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .card-title-2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .p-lg-5 {
+    padding: 1rem 3rem !important;
   }
 }
