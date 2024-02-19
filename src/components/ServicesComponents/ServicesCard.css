@@ -7,7 +7,7 @@
   border-radius: 0px 0px 20px 0px;
   background: white;
   box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
-  min-height: 275px;
+  min-height: 280px;
 }
 
 .service-card-section-body:hover {
@@ -45,7 +45,7 @@
   background-color: #a1f157;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   border-radius: 50%;
-  padding: 8px 8px;
+  padding: 10px 10px;
 }
 
 .card-section-container-color {
