@@ -20,7 +20,7 @@ export default function SharedCard() {
             {isHovered1 ? 'Case Study' : 'CS'}
           </div>
           <div className="position-absolute top-50 custom-start translate-middle-x">
-            <h1 className="card-title custom-card-title">
+            <h1 className="custom-card-title">
               Two the cloud in 24 hours
             </h1>
             <NavLink reloadDocument to="/insight">
@@ -56,7 +56,7 @@ export default function SharedCard() {
           {isHovered2 ? 'Blog' : 'B'}
           </div>
           <div className="position-absolute custom-top custom-start-2">
-            <h1 className="card-title custom-card-title">Value Based Hiring</h1>
+            <h1 className="custom-card-title">Value Based Hiring</h1>
             <NavLink reloadDocument to="/insight">
             <button
               className="btn mt-5 common-card-btn"

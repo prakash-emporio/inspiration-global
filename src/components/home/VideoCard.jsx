@@ -33,11 +33,11 @@ export default function VideoCard({
             >
               {isHovered1 ? "Team" : "T"}
             </div>
-            <div className="card-body top-50  position-absolute">
-              <h1 className="card-title custom-card-title third-card-font-size">
+            <div className="card-body top-50 position-absolute">
+              <h1 className="custom-card-title third-card-font-size">
                 {cardTitle}
               </h1>
-              <p className="card-title custom-card-title third-card-font-size-two">
+              <p className="custom-card-title third-card-font-size-two">
                 {cardDescription}
               </p>
               <NavLink reloadDocument to="/company">

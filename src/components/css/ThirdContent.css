@@ -19,6 +19,15 @@
   filter: brightness(90%) !important;
 }
 
+.video-card-title {
+  color: white;
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 54px;
+  letter-spacing: -1.45px;
+  text-align: center !important;
+}
+
 @media screen and (max-width: 992px){
   .third-content-img {
     height: 600px;

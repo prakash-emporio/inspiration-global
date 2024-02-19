@@ -52,7 +52,7 @@
 }
 
 .custom-top {
-  top: 62%;
+  top: 50%;
 }
 
 .icon-svg {
@@ -76,5 +76,8 @@
   }
   .top-50 {
     top: 40% !important;
+  }
+  .card-title {
+    text-align: left;
   }
 }
