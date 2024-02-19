@@ -29,10 +29,10 @@
 }
 
 .first-btn:hover {
-  color: #a1f157;
-  background-color: #5912e4;
-  outline: solid #a1f157;
-  transition: 0.3s ease-in-out;
+  color: #a1f157 !important;
+  background-color: #5912e4 !important;
+  outline: solid #a1f157 !important;
+  transition: 0.3s ease-in-out !important;
 }
 
 .first-btn:hover .first-content-svg {
@@ -67,10 +67,10 @@
 }
 
 .second-btn:hover {
-  color: #5912e4;
-  background-color: #a1f157;
-  outline: solid #5912e4;
-  transition: 0.3s ease-in-out;
+  color: #5912e4 !important;
+  background-color: #a1f157 !important;
+  outline: solid #5912e4 !important;
+  transition: 0.3s ease-in-out !important;
 }
 
 .second-btn:hover .second-content-svg {

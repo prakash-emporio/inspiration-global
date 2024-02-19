@@ -50,10 +50,10 @@
 }
 
 .software-btn:hover {
-  color: #a1f157;
-  background-color: transparent;
-  outline: solid #a1f157;
-  transition: 0.3s ease-in-out;
+  color: #a1f157 !important;
+  background-color: transparent !important;
+  outline: solid #a1f157 !important;
+  transition: 0.3s ease-in-out !important;
 }
 
 .software-btn:hover .software-svg-icon {

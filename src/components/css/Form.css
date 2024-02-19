@@ -35,10 +35,10 @@
 }
 
 .form-btn:hover {
-  color: #A1F157;
-  background-color: #5912E4;
-  outline: solid #A1F157;
-  transition: 0.3s ease-in-out;
+  color: #A1F157 !important;
+  background-color: #5912E4 !important;
+  outline: solid #A1F157 !important;
+  transition: 0.3s ease-in-out !important;
 }
 
 .form-btn:hover .icon-svg {
