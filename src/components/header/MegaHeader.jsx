@@ -5,10 +5,10 @@ import phone from "/phone.png";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  { id: 1, label: "Softwares", href: "" },
-  { id: 2, label: "Services", href: "" },
+  { id: 1, label: "Softwares"},
+  { id: 2, label: "Services"},
   { id: 3, label: "Talent", href: "/talent" },
-  { id: 4, label: "Industries", href: "" },
+  { id: 4, label: "Industries"},
   { id: 5, label: "Insights", href: "/insight" },
   { id: 6, label: "Company", href: "/company" },
 ];
@@ -265,7 +265,7 @@ export default function MegaHeader() {
         <ul className="navbar-nav">
           {navItems.map((item) => (
             <li className="nav-item dropdown position-static" key={item.id}>
-              <NavLink className="nav-link dropdown-toggle" to={item.href} reloadDocument>
+              <NavLink className="nav-link dropdown-toggle" to={item?.href} reloadDocument>
                 {item.label}
               </NavLink>
               <ul className="dropdown-menu w-100 shadow">
