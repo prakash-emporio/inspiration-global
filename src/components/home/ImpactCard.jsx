@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "../css/ImpactTalent.css";
 
 export default function ImpactCard({title, description, buttonText, image}) {
@@ -13,7 +14,7 @@ export default function ImpactCard({title, description, buttonText, image}) {
       <div className="container-fluid g-0">
         <div className="row g-0">
           <div className="col-lg-8">
-            <img src={image} className="img-fluid" alt="..." />
+            <img src={image} className="img-fluid content-image" alt="..." />
           </div>
           <div className="col-lg-4">
             <div className="card-body first-content-card-body">
@@ -23,6 +24,7 @@ export default function ImpactCard({title, description, buttonText, image}) {
                   {paragraph}
                 </p>
               ))}
+              <NavLink reloadDocument to="/services/product-engineering">
               <button className="btn first-btn" href="#" role="button">
                 {buttonText}
                 <svg
@@ -40,6 +42,7 @@ export default function ImpactCard({title, description, buttonText, image}) {
                   />
                 </svg>
               </button>
+              </NavLink>
             </div>
           </div>
         </div>

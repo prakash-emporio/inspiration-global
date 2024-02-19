@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../css/CommonCard.css";
 import content3 from "/content3.jpg";
 import content4 from "/content4.jpg";
+import { NavLink } from "react-router-dom";
 
 export default function SharedCard() {
   const [isHovered1, setIsHovered1] = useState(false);
@@ -22,6 +23,7 @@ export default function SharedCard() {
             <h1 className="card-title custom-card-title">
               Two the cloud in 24 hours
             </h1>
+            <NavLink reloadDocument to="/insight">
             <button
               className="btn mt-5 common-card-btn"
               href="#"
@@ -43,6 +45,7 @@ export default function SharedCard() {
                 />
               </svg>
             </button>
+            </NavLink>
           </div>
         </div>
         <div className="col-lg-6 position-relative">
@@ -54,6 +57,7 @@ export default function SharedCard() {
           </div>
           <div className="position-absolute custom-top custom-start-2">
             <h1 className="card-title custom-card-title">Value Based Hiring</h1>
+            <NavLink reloadDocument to="/insight">
             <button
               className="btn mt-5 common-card-btn"
               href="#"
@@ -75,6 +79,7 @@ export default function SharedCard() {
                 />
               </svg>
             </button>
+            </NavLink>
           </div>
         </div>
       </div>

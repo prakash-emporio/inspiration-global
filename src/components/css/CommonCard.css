@@ -8,9 +8,9 @@
 }
 
 .common-card-btn:hover {
-  color: #A1F157;
+  color: #a1f157;
   background-color: transparent;
-  outline: solid #A1F157;
+  outline: solid #a1f157;
   transition: 0.3s ease-in-out;
 }
 
@@ -43,7 +43,6 @@
   cursor: pointer;
 }
 
-
 .custom-start {
   left: 40%;
 }
@@ -70,12 +69,12 @@
   -webkit-filter: blur(2px);
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
   .common-card-image {
-    max-height: auto;
+    max-height: 400px !important;
     min-height: 400px;
   }
   .top-50 {
-    top: 40%!important;
-}
+    top: 40% !important;
+  }
 }

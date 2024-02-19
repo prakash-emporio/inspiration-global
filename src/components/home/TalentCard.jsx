@@ -24,7 +24,7 @@ export default function TalentCard({title, description, buttonText, image}) {
                   {paragraph}
                 </p>
               ))}
-              <NavLink to="/talent">
+              <NavLink reloadDocument to="/talent">
                 <button className="btn second-btn" href="#" role="button">
                   {buttonText}
                   <svg
@@ -48,7 +48,7 @@ export default function TalentCard({title, description, buttonText, image}) {
           <div className="col-lg-8 section-one">
             <img
               src={image}
-              className="img-fluid content-image-1"
+              className="img-fluid content-image"
               alt="..."
             />
           </div>

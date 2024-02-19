@@ -19,11 +19,47 @@
   filter: brightness(90%) !important;
 }
 
-@media screen and (max-width: 991px) {
-  .img-thumbnail {
-    max-width: 30%;
-  }
+@media screen and (max-width: 992px){
   .third-content-img {
-    min-height: 400px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .img-thumbnail {
+    height: 40%;
+  }
+
+  .third-card-font-size {
+    font-size: 24px;
+  }
+  .video-card-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .third-card-font-size {
+    font-size: 24px !important;
+  }
+  .third-card-font-size-two {
+    font-size: 30px !important;
+    line-height: 30px !important;
+  }
+  .img-thumbnail {
+    height: 40%;
+  }
+  .video-card-title {
+    font-size: 48px !important;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1399px) {
+  .third-card-font-size {
+    font-size: 30px !important;
+  }
+  .third-card-font-size-two {
+    font-size: 30px !important;
   }
 }

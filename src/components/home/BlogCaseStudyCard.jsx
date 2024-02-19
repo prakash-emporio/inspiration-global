@@ -3,6 +3,7 @@ import "../css/CommonCard.css";
 import "../css/ExtraCard.css";
 import content7 from "/content7.jpg";
 import content8 from "/content8.jpg";
+import { NavLink } from "react-router-dom";
 
 export default function BlogCaseStudyCard() {
   const [isHovered1, setIsHovered1] = useState(false);
@@ -23,6 +24,7 @@ export default function BlogCaseStudyCard() {
             <h1 className="card-title custom-card-title">
               Leveraging GenAI in your company
             </h1>
+            <NavLink reloadDocument to="/insight">
             <button className="btn mt-5 common-card-btn" href="#" role="button">
               Read more
               <svg
@@ -40,6 +42,7 @@ export default function BlogCaseStudyCard() {
                 />
               </svg>
             </button>
+            </NavLink>
           </div>
         </div>
         <div className="col-lg-6 position-relative">
@@ -56,6 +59,7 @@ export default function BlogCaseStudyCard() {
             <h1 className="card-title custom-card-title">
               How does AI help the Public Sector
             </h1>
+            <NavLink reloadDocument to="/insight">
             <button className="btn mt-5 common-card-btn" href="#" role="button">
               Read more
               <svg
@@ -73,6 +77,7 @@ export default function BlogCaseStudyCard() {
                 />
               </svg>
             </button>
+            </NavLink>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function Video({ title, link }) {
     <>
       {!isPlaying && (
         <div className="card-img-overlay">
-          <h5 className="card-title custom-card-title text-center pt-lg-5">
+          <h5 className="card-title custom-card-title video-card-title text-center pt-lg-5">
             {title}
           </h5>
         </div>

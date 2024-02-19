@@ -13,13 +13,15 @@
 .extra-card-img {
   max-height: 600px !important;
   min-height: 600px;
-  object-fit: cover;
+  object-fit: fill;
   width: 100%;
   object-position: center;
 }
 
-@media screen and (max-width: 991px) {
-  .extra-card-img {
-    min-height: 400px;
+@media screen and (max-width: 1024px) {
+
+  .custom-card-title{
+    font-size: 48px;
+    line-height: 44px;
   }
 }

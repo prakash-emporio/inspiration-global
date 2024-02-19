@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "../css/ThirdContent.css";
 import Video from "./Video";
 import { useState } from "react";
@@ -20,11 +21,10 @@ export default function VideoCard({
         </div>
         <div className="card col-lg-3 position-relative">
           <img
-            className="third-content-img"
+            className="img-fluid third-content-img"
             src={cardImage}
             alt="sushant padnekar"
           />
-
           <div className="card-img-overlay">
             <div
               className="position-absolute top-0 end-0 text-center dynamic-content m-5"
@@ -37,28 +37,28 @@ export default function VideoCard({
               <h1 className="card-title custom-card-title third-card-font-size">
                 {cardTitle}
               </h1>
-              <p className="card-title custom-card-title third-card-font-size-two">{cardDescription}</p>
-              <button
-                className="btn mt-3 common-card-btn"
-                href="#"
-                role="button"
-              >
-                {cardButtonText}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  className="ms-2 icon-svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M5.21967 5.21967C4.92678 5.51256 4.92678 5.98744 5.21967 6.28033L12.4393 13.5L6.75 13.5C6.33579 13.5 6 13.8358 6 14.25C6 14.6642 6.33579 15 6.75 15L14.25 15C14.6642 15 15 14.6642 15 14.25L15 6.75C15 6.33579 14.6642 6 14.25 6C13.8358 6 13.5 6.33579 13.5 6.75L13.5 12.4393L6.28033 5.21967C5.98744 4.92678 5.51256 4.92678 5.21967 5.21967Z"
-                  />
-                </svg>
-              </button>
+              <p className="card-title custom-card-title third-card-font-size-two">
+                {cardDescription}
+              </p>
+              <NavLink reloadDocument to="/company">
+                <button className="btn common-card-btn" href="#" role="button">
+                  {cardButtonText}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    className="ms-2 icon-svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M5.21967 5.21967C4.92678 5.51256 4.92678 5.98744 5.21967 6.28033L12.4393 13.5L6.75 13.5C6.33579 13.5 6 13.8358 6 14.25C6 14.6642 6.33579 15 6.75 15L14.25 15C14.6642 15 15 14.6642 15 14.25L15 6.75C15 6.33579 14.6642 6 14.25 6C13.8358 6 13.5 6.33579 13.5 6.75L13.5 12.4393L6.28033 5.21967C5.98744 4.92678 5.51256 4.92678 5.21967 5.21967Z"
+                    />
+                  </svg>
+                </button>
+              </NavLink>
             </div>
           </div>
         </div>

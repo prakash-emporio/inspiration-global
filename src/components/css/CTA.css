@@ -78,7 +78,7 @@
 
 @media screen and (min-width: 768px) {
   .cta-img {
-    width: 100px;
+    width: 80px;
     margin: 5px 20px;
   }
 
@@ -128,5 +128,25 @@
   .g-5,
   .gy-5 {
     --bs-gutter-y: 0rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width:1024px) {
+  .cta-img {
+    width: 80px;
+    margin: 10px 50px;
+  }
+  .oracle {
+    margin-bottom: -80px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+
+  .azure {
+    margin-bottom: -80px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
   }
 }

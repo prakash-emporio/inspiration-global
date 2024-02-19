@@ -2,6 +2,10 @@
   background-color: #111827;
 }
 
+.hero-image{
+  filter: brightness(100%) !important;
+}
+
 .hero-header {
   font-size: 65px;
   font-weight: 250;

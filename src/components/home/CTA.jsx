@@ -18,9 +18,8 @@ export default function CTA({ title, description }) {
             <h1 className="card-body my-5 cta-text text-center">{title}</h1>
           </div>
         </div>
-
         <div className="row">
-          <div className="col g-5 text-center col-md-12">
+          <div className="col g-5 text-center col">
             <NavLink reloadDocument to="/software/aws">
               <img className="aws cta-img" src={aws} alt="aws-logo" />
             </NavLink>

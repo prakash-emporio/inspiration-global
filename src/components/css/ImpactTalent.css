@@ -78,7 +78,6 @@
   transition: 0.3s ease-in-out;
 }
 
-
 @media only screen and (min-width: 992px) {
   .card-wrapper:hover .col-lg-8 {
     width: 40% !important;
@@ -89,13 +88,13 @@
   }
 
   .card-wrapper:hover .card-text-1 {
-    padding-right: 3rem!important;
-    padding-left: 3rem!important;
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
   }
 
   .card-wrapper:hover .card-text-2 {
-    padding-right: 3rem!important;
-    padding-left: 3rem!important;
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
   }
 
   .card-wrapper .container-fluid {
@@ -134,7 +133,7 @@
   .first-btn {
     margin-top: -300px;
     margin-left: 50px;
-  } 
+  }
 
   .content-text-wrapper:hover .first-btn {
     margin-top: 50px;
@@ -144,14 +143,18 @@
     margin-left: 3rem;
     margin-top: -300px;
   }
-  
+
   .content-text-wrapper:hover .second-btn {
     margin-top: 20px;
   }
-
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
+  .content-image {
+    max-width: 100%;
+    width: 100%;
+  }
+
   .card-title-1 {
     font-size: 40px;
   }
@@ -198,4 +201,53 @@
     #a1f157 50%,
     rgba(161, 241, 87, 0.85) 100%
   );
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .first-btn {
+    margin-top: -45rem;
+  }
+  .second-btn {
+    margin-top: -55rem;
+  }
+  .card-title-1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .card-title-2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .p-lg-5 {
+    padding: 1rem 3rem !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .first-btn {
+    margin-top: -35rem;
+  }
+  .second-btn {
+    margin-top: -45rem;
+  }
+  .card-title-1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .card-title-2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .p-lg-5 {
+    padding: 1rem 3rem !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .first-btn {
+    margin-top: -35rem;
+  }
+  .second-btn {
+    margin-top: -40rem;
+  }
 }

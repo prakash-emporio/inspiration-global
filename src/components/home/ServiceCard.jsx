@@ -11,7 +11,7 @@ export default function ServiceCard({ services }) {
       </div>
       <div className="row mb-5">
         {services.map((service) => (
-          <div className="col-sm-6 col-lg-3 mb-lg-3" key={service.id}>
+          <div className="col-sm-6 col-lg-4 col-xxl-3 mb-lg-3" key={service.id}>
             <div className="card my-3">
               <NavLink reloadDocument to={service.link} className="not-active">
                 <div className="card-body service-card-section-body">
