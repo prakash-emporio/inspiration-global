@@ -33,7 +33,7 @@ export default function Footer() {
               <img className="footer-main-logo" src={logo} alt="company-logo" />
             </div>
             <p className="footer-main-text">
-            We work From <br /> Strategy to Execution
+            We work From Strategy to Execution
             </p>
           </div>
         </div>

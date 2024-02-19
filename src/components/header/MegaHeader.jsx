@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./MegaHeader.css";
 import logo from "/logo.png";
 import phone from "/phone.png";
@@ -396,10 +396,10 @@ export default function MegaHeader() {
             </li>
           ))}
           <li className="nav-item">
-            <NavLink className="nav-link">
+            <a href="#contactForm" className="nav-link">
               <img className="" src={phone} alt="mobile-phone-logo" />
               123.456.789
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>
