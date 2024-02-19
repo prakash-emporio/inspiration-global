@@ -4,6 +4,7 @@
 
 .software-card-section-content-wrapper {
   margin-left: -25%;
+  width: 50%;
 }
 
 .software-card-section-content-wrapper:hover .card {
@@ -25,6 +26,7 @@
 
 .software-card-section-content-wrapper-two {
   margin-left: 10%;
+  width: 50%;
 }
 
 .software-card-section-content-wrapper-two:hover .card {

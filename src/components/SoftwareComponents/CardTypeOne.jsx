@@ -10,7 +10,7 @@ export default function CardTypeOne({ image, title, content }) {
       : content;
   return (
     <div className="container-fluid g-0 my-5">
-    <div className="row g-0">
+    <div className="row g-0 align-items-center">
       <div className="col-12 col-lg-8 software-card-section-image-wrapper">
         <img className="img-fluid" src={image} alt="software hero img" />
       </div>
