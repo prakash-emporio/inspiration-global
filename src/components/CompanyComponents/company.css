@@ -41,14 +41,18 @@
 }
 
 .company-card {
+  background: #111827;
+}
+
+.company-card:hover {
   background: linear-gradient(180deg, #1f2937 1.43%, #111827 18.84%),
     var(--Gray-900, #111827);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
-.company-card-thumbnail {
-  width: 150px;
-  height: 150px;
+.linkedin-btn {
+  filter: brightness(100%) !important;
 }
 
 .company-card-thumbnail:hover {

@@ -1,4 +1,5 @@
-import CompanyCardWrapper from "./CompanyTeamCard.jsx";
+import CompanyTeamCardAdv from "./CompanyTeamCardAdv.jsx";
+import CompanyTeamCardNew from "./CompanyTeamCardNew.jsx";
 
 export default function CompanyTeam() {
   return (
@@ -13,7 +14,15 @@ export default function CompanyTeam() {
           <h1 className="company-team-secondary-header">Mgt.</h1>
         </div>
         <div className="col-lg-8 p-lg-5">
-          <CompanyCardWrapper />
+          <CompanyTeamCardNew/>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-lg-4 p-lg-5">
+          <h1 className="company-team-secondary-header">Adv.</h1>
+        </div>
+        <div className="col-lg-8 p-lg-5">
+          <CompanyTeamCardAdv/>
         </div>
       </div>
     </div>
