@@ -9,6 +9,11 @@
   object-position: center;
 }
 
+.third-content-img:hover {
+  transition: 0.5s ease-in-out !important;
+  filter: brightness(50%) !important;
+}
+
 .img-thumbnail {
   background-color: transparent;
   border: none;

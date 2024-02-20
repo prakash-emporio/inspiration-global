@@ -3,6 +3,7 @@
   font-size: 40px;
   text-align: right;
   padding-top: 10px;
+  line-height: 40px;
   background: linear-gradient(94deg, #763bef 28.57%, #5912e4 89.06%);
   background-clip: text;
   -webkit-background-clip: text;
