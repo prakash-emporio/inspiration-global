@@ -79,11 +79,14 @@
   }
 }
 
-@media (min-width: 1201px) and (max-width: 1399px) {
+@media (min-width: 1201px) and (max-width: 1440px) {
   .third-card-font-size {
     font-size: 30px !important;
   }
   .third-card-font-size-two {
-    font-size: 30px !important;
+    font-size: 58px !important;
+  }
+  .third-custom-top {
+    top: 40% !important;
   }
 }

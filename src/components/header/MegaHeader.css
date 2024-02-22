@@ -128,10 +128,16 @@
 
 @media only screen and (min-width: 1025px) {
   .navbar-nav {
-    gap: 30px;
+    gap: 15px;
   }
   .navbar-brand {
     margin-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar-nav {
+    gap: 30px;
   }
 }
 
@@ -157,7 +163,7 @@
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1024px) {
+@media screen and (min-width: 992px) and (max-width: 1023px) {
   .navbar-nav {
     gap: 5px;
   }
@@ -166,8 +172,14 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   .navbar-brand {
-    margin-left: 6.5rem;
+    margin-left: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+  .navbar-brand {
+    margin-left: 5.5rem;
   }
 }

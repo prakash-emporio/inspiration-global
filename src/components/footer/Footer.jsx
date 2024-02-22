@@ -13,14 +13,18 @@ const footerData = [
 
 export default function Footer() {
   return (
-    <footer className="py-5 main-footer">
+    <footer className="pt-5 pb-1 main-footer">
       <div className="container">
         <div className="row justify-content-between">
           <div className="mb-3 col-6 col-md-2">
             <ul className="nav flex-column">
               {footerData.map((item) => (
                 <li key={item.id} className="mb-2 nav-item">
-                  <NavLink to={item.link} className="p-2 nav-link">
+                  <NavLink
+                    to={item.link}
+                    className="p-2 nav-link"
+                    reloadDocument
+                  >
                     {item.label}
                   </NavLink>
                 </li>
@@ -33,7 +37,7 @@ export default function Footer() {
               <img className="footer-main-logo" src={logo} alt="company-logo" />
             </div>
             <p className="footer-main-text">
-            We work From Strategy to Execution
+              We work From Strategy to Execution
             </p>
           </div>
         </div>
@@ -41,40 +45,43 @@ export default function Footer() {
         <div className="py-4 my-4 d-flex flex-column flex-sm-row justify-content-between text-center border-top footer-last-text">
           <p>Copyright &copy; 2024 Inspiration Global | All rights reserved</p>
           <div className="d-flex justify-content-center align-item-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="130"
-            height="130"
-            viewBox="0 0 130 130"
-            fill="none"
-            className=""
-          >
-            <path
-              d="M64.9999 0C29.3032 0 0 29.1763 0 64.7185C0 100.261 29.3032 129.437 64.9999 129.437C100.697 129.437 130 100.261 130 64.7185C130 29.1763 100.697 0 64.9999 0ZM64.9999 106.627C41.5573 106.627 22.9098 87.5292 22.9098 64.7185C22.9098 41.9079 42.0901 22.8106 64.9999 22.8106C87.9098 22.8106 107.09 41.9079 107.09 64.7185C107.09 87.5292 87.9098 106.627 64.9999 106.627Z"
-              fill="url(#paint0_linear_201_675)"
-            />
-            <path
-              d="M65.0004 22.8108C41.5578 22.8108 22.9102 41.9081 22.9102 64.7187C22.9102 87.5294 42.0905 106.627 65.0004 106.627C87.9102 106.627 107.091 87.5294 107.091 64.7187C107.091 41.9081 87.9102 22.8108 65.0004 22.8108ZM65.0004 95.4867C47.9512 95.4867 34.0988 81.6941 34.0988 64.7187C34.0988 47.7433 47.9512 33.9509 65.0004 33.9509C82.0495 33.9509 95.9021 47.7433 95.9021 64.7187C95.9021 81.6941 82.0495 95.4867 65.0004 95.4867Z"
-              fill="#A1F157"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_201_675"
-                x1="65"
-                y1="0"
-                x2="65"
-                y2="129.437"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#8852F2" />
-                <stop offset="1" stopColor="#8852F2" stopOpacity={0} />
-              </linearGradient>
-            </defs>
-          </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="130"
+              height="130"
+              viewBox="0 0 130 130"
+              fill="none"
+              className=""
+            >
+              <path
+                d="M64.9999 0C29.3032 0 0 29.1763 0 64.7185C0 100.261 29.3032 129.437 64.9999 129.437C100.697 129.437 130 100.261 130 64.7185C130 29.1763 100.697 0 64.9999 0ZM64.9999 106.627C41.5573 106.627 22.9098 87.5292 22.9098 64.7185C22.9098 41.9079 42.0901 22.8106 64.9999 22.8106C87.9098 22.8106 107.09 41.9079 107.09 64.7185C107.09 87.5292 87.9098 106.627 64.9999 106.627Z"
+                fill="url(#paint0_linear_201_675)"
+              />
+              <path
+                d="M65.0004 22.8108C41.5578 22.8108 22.9102 41.9081 22.9102 64.7187C22.9102 87.5294 42.0905 106.627 65.0004 106.627C87.9102 106.627 107.091 87.5294 107.091 64.7187C107.091 41.9081 87.9102 22.8108 65.0004 22.8108ZM65.0004 95.4867C47.9512 95.4867 34.0988 81.6941 34.0988 64.7187C34.0988 47.7433 47.9512 33.9509 65.0004 33.9509C82.0495 33.9509 95.9021 47.7433 95.9021 64.7187C95.9021 81.6941 82.0495 95.4867 65.0004 95.4867Z"
+                fill="#A1F157"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_201_675"
+                  x1="65"
+                  y1="0"
+                  x2="65"
+                  y2="129.437"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#8852F2" />
+                  <stop offset="1" stopColor="#8852F2" stopOpacity={0} />
+                </linearGradient>
+              </defs>
+            </svg>
           </div>
           <ul className="list-unstyled d-flex justify-content-center align-item-center">
             <li className="ms-lg-3">
-              <NavLink className="link-body-emphasis" to="https://www.facebook.com/inspirationdigital1/">
+              <NavLink
+                className="link-body-emphasis"
+                to="https://www.facebook.com/inspirationdigital1/"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -88,7 +95,10 @@ export default function Footer() {
               </NavLink>
             </li>
             <li className="ms-lg-3">
-              <NavLink className="link-body-emphasis" to="https://www.linkedin.com/company/inspiration-global/">
+              <NavLink
+                className="link-body-emphasis"
+                to="https://www.linkedin.com/company/inspiration-global/"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"

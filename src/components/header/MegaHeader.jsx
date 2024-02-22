@@ -248,8 +248,12 @@ export default function MegaHeader() {
   }, []);
 
   return (
-    <nav className={`navbar navbar-expand-lg ${isSticky ? "sticky" : ""}`}>
-      <NavLink className="navbar-brand" to="/">
+    <nav
+      className={`navbar navbar-expand-lg container-fluid ${
+        isSticky ? "sticky" : ""
+      }`}
+    >
+      <NavLink className="navbar-brand" to="/" reloadDocument>
         <img className="m-3" src={logo} alt="company-logo" />
       </NavLink>
       <button
@@ -273,16 +277,16 @@ export default function MegaHeader() {
                 {item.label}
               </NavLink>
               <ul className="dropdown-menu w-100 shadow">
-                <div className="">
+                <div className="container-fluid">
                   <div className="row g-0">
                     <div className="col-8 px-5 py-4">
-                      <div className="col">
+                      <div className="col mx-5">
                         <p className="dropdown-heading">
                           {DropdownMenuItems[item.id - 1].title}
                         </p>
                       </div>
                       <div className="d-flex gap-3">
-                        <div className="col-5">
+                        <div className="col-5 mx-5">
                           <div className="card">
                             <div className="card-body">
                               <h5 className="card-title card-title-size">

@@ -12,7 +12,7 @@
 }
 
 .custom-m {
-  right: 10%;
+  right: 9%;
   top: 15%;
 }
 
@@ -29,6 +29,19 @@
   }
   .feature-card-title-next {
     font-size: 30px !important;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 991px) {
+  .software-top {
+    top: 50%;
+    padding: 0rem 5rem;
+  }
+  .software-hero-logo {
+    width: 13% !important;
+  }
+  .custom-m {
+    right: 5%;
   }
 }
 
@@ -90,6 +103,27 @@
   .software-hero-logo {
     width: 13%;
   }
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+  .custom-m {
+    right: 2%;
+    top: 20%;
+  }
+}
+
+@media (min-width: 1024) and (max-width: 1200px) {
+  .custom-m {
+    right: 2%;
+    top: 10%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .custom-m {
+    right: 2%;
+    top: 15%;
+}
 }
 
 @media screen and (min-width: 1600px) {

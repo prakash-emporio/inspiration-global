@@ -1,10 +1,9 @@
 import "./FeatureSection.css";
 
 export default function FeatureSection({ title, subtitle, text }) {
-
   return (
     <div className="container text-center">
-      <div className="row my-5">
+      <div className="row my-md-5 mx-md-5 px-md-5">
         <div className="col">
           <h2 className="feature-card-title">
             {title}
