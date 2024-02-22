@@ -22,7 +22,20 @@
 }
 
 .not-active {
-  color: transparent
+  color: transparent;
+}
+
+@media (max-width: 540px) {
+  .card-title-color {
+    font-size: 24px;
+  }
+  .service-header {
+    font-size: 24px !important;
+    padding: 20px;
+  }
+  .service-card-text {
+    text-align: center !important;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -39,7 +52,7 @@
     text-align: center;
   }
   .service-card-text {
-    text-align: center;
+    text-align: left;
   }
   .service-card-section-body {
     transform: translate3D(0, -1px, 0) scale(1.03);

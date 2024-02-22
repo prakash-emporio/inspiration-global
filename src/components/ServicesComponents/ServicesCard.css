@@ -52,3 +52,8 @@
   background: #f3f4f6;
 }
 
+@media screen and (max-width: 992px) {
+  .service-card-section-body {
+    text-align: left;
+  }
+}

@@ -26,17 +26,17 @@ function CompanyTeamCard({ member }) {
           onMouseEnter={handleMouseOver}
           onMouseLeave={handleMouseOver}
         >
-          <div className="card-body px-5">
+          <div className="card-body px-md-5">
             <div className="row align-items-center">
-              <div className="col-4">
+              <div className="col-md-4">
                 <h5 className="card-title company-card-title">{name}</h5>
               </div>
-              <div className="col-4">
+              <div className="col-md-4">
                 <p className="card-text company-designation">{designation}</p>
               </div>
               {isHovered && (
                 <>
-                  <div className="col-2">
+                  <div className="col-md-2">
                     <button
                       className="btn company-card-btn"
                       onClick={() => setShowBio(!showBio)}

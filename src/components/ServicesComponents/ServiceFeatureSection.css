@@ -66,8 +66,22 @@
 
 .service-feature-section-card-wrapper .service-feature-section-card-btn {
   position: absolute;
-  left: 100%;
+  right: -4%;
   top: 50%;
-  transform: translate(-50%, 50%);
   z-index: 2;
+}
+
+@media screen and (max-width: 992px) {
+  .service-feature-section-card-title {
+    font-size: 40px;
+    padding: 20px;
+  }
+
+  .service-feature-section-card-text {
+    font-size: 20px;
+  }
+
+  .service-feature-section-card-number {
+    font-size: 70px;
+  }
 }

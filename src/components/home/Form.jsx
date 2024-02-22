@@ -2,8 +2,11 @@ import "../css/Form.css";
 import { useForm } from "react-hook-form";
 
 export default function Form() {
-
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   const onSubmit = (d) => alert(JSON.stringify(d));
 
   return (
@@ -13,7 +16,11 @@ export default function Form() {
           <div className="col col-lg-6 my-auto">
             <h1 className="form-heading">Let’s Talk</h1>
           </div>
-          <form id="contactForm" onSubmit={handleSubmit(onSubmit)} className="mb-5 col-12 col-lg-6">
+          <form
+            id="contactForm"
+            onSubmit={handleSubmit(onSubmit)}
+            className="mb-5 col-12 col-lg-6 px-5"
+          >
             <div className="row my-5">
               <div className="col">
                 <input
@@ -47,7 +54,11 @@ export default function Form() {
               {errors.message && <p>{errors.message.message}</p>}
             </div>
             <div className="d-flex justify-content-end">
-              <button type="submit" value="submit" className="btn form-btn mt-5">
+              <button
+                type="submit"
+                value="submit"
+                className="btn form-btn mt-5"
+              >
                 Send
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

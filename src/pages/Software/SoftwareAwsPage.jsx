@@ -5,6 +5,7 @@ import {
   FeatureSection,
   SoftwareCTA,
   SoftwareHero,
+  CardConsulting,
   CardTypeOne,
   CardTypeTwo,
 } from "../../components/SoftwareComponents/index.js";
@@ -85,7 +86,7 @@ export default function SoftwareAwsPage() {
         subtitle={api.featureSection.subtitle}
         text={api.featureSection.content}
       />
-      <CardTypeOne
+      <CardConsulting
         key={api.cardSection.id}
         image={api.cardSection[1].img}
         title={api.cardSection[1].title}

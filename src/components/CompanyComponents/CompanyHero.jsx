@@ -1,5 +1,6 @@
 import "./company.css";
 import companyhero from "/companyhero.png";
+import CompanyHeroNew from "/CompanyHeroNew.png";
 
 export default function CompanyHero() {
   return (
@@ -13,10 +14,10 @@ export default function CompanyHero() {
             <p className="company-hero-header-two">Our Core</p>
           </div>
         </div>
-        <div className="col">
+        <div className="col-md-9">
           <img
-            className="img-fluid object-fit-fill"
-            src={companyhero}
+            className="img-fluid object-fit-fill company-hero-img"
+            src={CompanyHeroNew}
             alt="company-img"
           />
         </div>

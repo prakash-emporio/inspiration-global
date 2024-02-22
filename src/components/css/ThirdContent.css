@@ -33,7 +33,17 @@
   text-align: center !important;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 540px) {
+  .third-content-img {
+    height: 300px !important;
+  }
+
+  .third-custom-top {
+    top: 30% !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
   .third-content-img {
     height: 600px;
   }

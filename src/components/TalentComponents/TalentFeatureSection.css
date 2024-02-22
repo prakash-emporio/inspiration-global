@@ -68,7 +68,7 @@
   line-height: 100%;
 }
 
-@media  screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .talent-feature-section-header {
     font-size: 30px;
   }
@@ -82,5 +82,14 @@
   }
   .talent-feature-section-card-header {
     font-size: 30px;
+  }
+  .talent-feature-section-card {
+    min-height: 400px !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .talent-feature-section-card {
+    min-height: 250px !important;
   }
 }

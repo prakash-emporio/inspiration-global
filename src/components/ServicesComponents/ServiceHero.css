@@ -65,7 +65,7 @@
     padding: 20px;
   }
   .service-testimonial-bold-text {
-    font-size: 30px !important;
+    font-size: 30px;
     padding: 20px;
     line-height: 35px;
   }
@@ -92,6 +92,41 @@
   }
   .service-feature-section-card-title {
     min-height: 100px !important;
+  }
+
+  .service-feature-section-card-wrapper .service-feature-section-card-btn {
+    position: absolute;
+    top: 50%;
+    right: -2% !important;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 540px) {
+  .shared-hero-main-text {
+    font-size: 30px !important;
+  }
+  .service-testimonial-bold-text {
+    font-size: 24px !important;
+  }
+  .service-testimonial-point {
+    padding: 5px !important;
+  }
+  .service-feature-section-card-title {
+    font-size: 24px !important;
+    text-align: center;
+  }
+  .service-feature-section-card-text {
+    font-size: 16px !important;
+  }
+  .service-feature-section-card-number {
+    font-size: 40px !important;
+  }
+  .service-feature-section-card-wrapper .service-feature-section-card-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    right: -3% !important;
   }
 }
 

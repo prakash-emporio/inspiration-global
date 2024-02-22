@@ -18,9 +18,27 @@
   object-position: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 540px) {
+  .extra-card-img {
+    max-height: 300px !important;
+    min-height: 300px !important;
+  }
+  .custom-card-title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .extra-custom-card-start {
+    left: 0% !important;
+    padding: 0px 50px;
+  }
+  .extra-custom-card-start-2 {
+    left: 0% !important;
+    padding: 0px 50px;
+  }
+}
 
-  .custom-card-title{
+@media screen and (max-width: 1024px) {
+  .custom-card-title {
     font-size: 48px;
     line-height: 44px;
   }

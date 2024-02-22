@@ -3,6 +3,11 @@
     var(--Gray-900, #111827);
 }
 
+.company-hero-img {
+  margin: -5% 20%;
+  padding: 0;
+}
+
 .company-hero-header {
   color: white;
   font-size: 58px;
@@ -124,5 +129,37 @@
   }
   .company-card-title {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .img-thumbnail {
+    height: 30%;
+  }
+  .company-hero-img {
+    margin: -30% 50%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .company-hero-img {
+    margin: -30% 50%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .company-hero-img {
+    margin: -30% 50%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .company-hero-img {
+    margin: -5% 20%;
+    padding: 0;
+  }
+
+  .company-text-margin {
+    margin-top: -25rem;
   }
 }

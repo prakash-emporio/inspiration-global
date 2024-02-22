@@ -1,6 +1,6 @@
 import "./industry.css";
 
-export default function IndustryHero({heroImage, heroTitle, heroHeadline}) {
+export default function IndustryHero({ heroImage, heroTitle, heroHeadline }) {
   return (
     <section className="container-fluid g-0">
       <div className="row g-0 position-relative">
@@ -9,7 +9,7 @@ export default function IndustryHero({heroImage, heroTitle, heroHeadline}) {
           <div className="container mx-lg-5">
             <div className="row">
               <div className="col">
-                <h5 className="text-white shared-hero-main-text">
+                <h5 className="text-white shared-hero-main-text px-md-5">
                   {heroTitle}
                 </h5>
               </div>
@@ -21,9 +21,7 @@ export default function IndustryHero({heroImage, heroTitle, heroHeadline}) {
             <div className="col">
               <div className="industry-hero-card position-absolute industry-bottom industry-start">
                 <div className="service-card-color">
-                  <h1 className="service-hero-card-text">
-                    {heroHeadline}
-                  </h1>
+                  <h1 className="service-hero-card-text">{heroHeadline}</h1>
                 </div>
               </div>
             </div>

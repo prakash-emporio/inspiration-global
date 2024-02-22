@@ -27,13 +27,13 @@ export default function VideoCard({
           />
           <div className="card-img-overlay">
             <div
-              className="position-absolute top-0 end-0 text-center dynamic-content m-5"
+              className="position-absolute top-0 end-0 text-center dynamic-content m-xl-5"
               onMouseEnter={() => setIsHovered1(true)}
               onMouseLeave={() => setIsHovered1(false)}
             >
               {isHovered1 ? "Team" : "T"}
             </div>
-            <div className="card-body top-50 position-absolute">
+            <div className="card-body top-50 third-custom-top position-absolute">
               <h1 className="custom-card-title third-card-font-size">
                 {cardTitle}
               </h1>

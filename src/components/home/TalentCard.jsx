@@ -1,24 +1,15 @@
 import { NavLink } from "react-router-dom";
 import "../css/ImpactTalent.css";
 
-
-export default function TalentCard({title, description, buttonText, image}) {
+export default function TalentCard({ title, description, buttonText, image }) {
   const paragraphs = description.split("\n");
   return (
-    <div
-      // data-aos="fade-left"
-      // data-aos-duration="2000"
-      // data-aos-offset="300"
-      // data-aos-easing="ease-in-sine"
-      className="card card-wrapper content-text-wrapper card-wrapper-color-2"
-    >
+    <div className="card card-wrapper content-text-wrapper card-wrapper-color-2">
       <div className="container-fluid g-0">
         <div className="row g-0">
           <div className="col-lg-4 section-two">
             <div className="card-body second-content-card-body">
-              <h1 className="card-title-2 p-lg-5">
-                {title}
-              </h1>
+              <h1 className="card-title-2 p-lg-5">{title}</h1>
               {paragraphs.map((paragraph, index) => (
                 <p key={index} className="card-text-2">
                   {paragraph}
@@ -46,11 +37,7 @@ export default function TalentCard({title, description, buttonText, image}) {
             </div>
           </div>
           <div className="col-lg-8 section-one">
-            <img
-              src={image}
-              className="img-fluid content-image"
-              alt="..."
-            />
+            <img src={image} className="img-fluid content-image" alt="..." />
           </div>
         </div>
       </div>

@@ -1,14 +1,14 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./MegaHeader.css";
 import logo from "/logo.png";
 import phone from "/phone.png";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  { id: 1, label: "Softwares"},
-  { id: 2, label: "Services"},
+  { id: 1, label: "Softwares" },
+  { id: 2, label: "Services" },
   { id: 3, label: "Talent", href: "/talent" },
-  { id: 4, label: "Industries"},
+  { id: 4, label: "Industries" },
   { id: 5, label: "Insights", href: "/insight" },
   { id: 6, label: "Company", href: "/company" },
 ];
@@ -239,16 +239,16 @@ export default function MegaHeader() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Cleanup function to remove event listener
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <nav className={`navbar navbar-expand-lg ${isSticky ? 'sticky' : ''}`}>
+    <nav className={`navbar navbar-expand-lg ${isSticky ? "sticky" : ""}`}>
       <NavLink className="navbar-brand" to="/">
         <img className="m-3" src={logo} alt="company-logo" />
       </NavLink>
@@ -265,13 +265,17 @@ export default function MegaHeader() {
         <ul className="navbar-nav">
           {navItems.map((item) => (
             <li className="nav-item dropdown position-static" key={item.id}>
-              <NavLink className="nav-link dropdown-toggle" to={item?.href} reloadDocument>
+              <NavLink
+                className="nav-link dropdown-toggle"
+                to={item?.href}
+                reloadDocument
+              >
                 {item.label}
               </NavLink>
               <ul className="dropdown-menu w-100 shadow">
                 <div className="">
                   <div className="row g-0">
-                    <div className="col-8 px-5 py-4 d-none d-sm-block d-sm-none d-md-block">
+                    <div className="col-8 px-5 py-4">
                       <div className="col">
                         <p className="dropdown-heading">
                           {DropdownMenuItems[item.id - 1].title}

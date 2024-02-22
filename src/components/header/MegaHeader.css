@@ -3,7 +3,15 @@
 }
 
 .dropdown-toggle::after {
-  display:none;
+  display: none;
+}
+
+.collapsing {
+  background-color: #111827;
+}
+
+.show {
+  background-color: #111827;
 }
 
 .navbar-expand-lg .nav-link {
@@ -57,7 +65,7 @@
 
 .subMenuItems:hover {
   transition: all 500ms ease-in-out;
-  transform: translate(10px,0);
+  transform: translate(10px, 0);
   color: #5912e4;
 }
 
@@ -102,11 +110,19 @@
   width: 100%;
 }
 
+@media (max-width: 540px) {
+  .navbar-brand {
+    margin-left: 0rem !important;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .megamenu-sidebar {
     width: 100%;
     text-align: center;
+  }
+  .navbar-brand {
+    margin-left: 2rem;
   }
 }
 
@@ -114,9 +130,12 @@
   .navbar-nav {
     gap: 30px;
   }
+  .navbar-brand {
+    margin-left: 4rem;
+  }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
   .navbar-nav {
     text-align: end;
     padding: 20px;
@@ -130,9 +149,7 @@
     margin: 0 auto;
     top: 70%;
     left: 50%;
-    /* transition: all 500ms ease-in-out; 
-    transition-delay: 250ms; */
-    transition: max-height .45s ease-out;
+    transition: max-height 0.45s ease-out;
     transform: translate(-50%, 0%);
   }
   .dropdown-menu .show {
@@ -140,8 +157,17 @@
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1024px) {
   .navbar-nav {
     gap: 5px;
+  }
+  .navbar-brand {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .navbar-brand {
+    margin-left: 6.5rem;
   }
 }

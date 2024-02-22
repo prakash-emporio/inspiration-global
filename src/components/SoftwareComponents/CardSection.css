@@ -45,6 +45,30 @@
   color: #5912e4;
 }
 
+.software-sales-btn {
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  color: #5912e4;
+}
+
+.software-card-section-content-wrapper:hover .software-sales-btn {
+  color: #a1f157 !important;
+  background-color: transparent !important;
+  transition: 0.1s ease-in-out !important;
+}
+
+.software-sales-btn:hover {
+  outline: solid #a1f157 !important;
+  transition: 0.1s ease-in-out !important;
+}
+
+.software-sales-svg-icon {
+  fill: #5912e4;
+}
+
+.software-card-section-content-wrapper:hover .software-sales-svg-icon {
+  fill: #a1f157;
+}
+
 .software-svg-icon {
   fill: #5912e4;
 }
@@ -72,7 +96,7 @@
   }
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
   .software-card-section-title {
     font-size: 30px;
   }
@@ -85,5 +109,13 @@
   }
   .section-two {
     order: 2;
+  }
+  .software-card-section-content-wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+  .software-card-section-content-wrapper-two {
+    width: 100%;
+    margin-left: 0;
   }
 }

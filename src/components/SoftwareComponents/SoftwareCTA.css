@@ -27,5 +27,6 @@
 @media screen and (max-width: 992px){
   .software-cta-title {
     font-size: 25px;
+    padding: 20px;
   }
 }

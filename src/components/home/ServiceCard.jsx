@@ -6,7 +6,7 @@ export default function ServiceCard({ services }) {
     <div className="container text-center">
       <div className="row g-0">
         <div className="col">
-          <h1 className="text-dark my-5 service-header">Our Services</h1>
+          <h1 className="text-dark my-md-5 service-header">Our Services</h1>
         </div>
       </div>
       <div className="row mb-5">

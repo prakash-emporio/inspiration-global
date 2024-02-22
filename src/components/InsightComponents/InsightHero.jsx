@@ -10,7 +10,7 @@ export default function InsightHero() {
             <div className="container">
               <div className="row">
                 <div className="col">
-                  <h5 className="mx-5 px-5 text-white shared-hero-main-text">
+                  <h5 className="px-md-5 py-md-3 px-lg-0 text-white shared-hero-main-text">
                     Blog
                   </h5>
                 </div>

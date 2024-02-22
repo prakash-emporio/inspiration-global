@@ -26,3 +26,64 @@
   top: 30% !important;
 }
 
+/* write yesterday */
+@media (max-width: 540px) {
+  .shared-hero-main-text {
+    font-size: 24px;
+    padding: 20px;
+    line-height: 30px;
+  }
+  .service-hero-card-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .service-testimonial-text {
+    font-size: 16px !important;
+  }
+  .talent-testimonial-header {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .talent-feature-section-header {
+    font-size: 24px !important;
+    padding: 20px !important;
+  }
+  .talent-feature-section-card-title-0 {
+    font-size: 24px !important;
+  }
+  .talent-feature-section-card-text-0 {
+    font-size: 16px !important;
+  }
+  .talent-feature-section-card-header {
+    font-size: 24px !important;
+  }
+  .talent-feature-section-card-text {
+    font-size: 16px !important;
+  }
+  .talent-feature-section-card {
+    max-height: 250px !important;
+  }
+  .talent-feature-section-card {
+    min-height: 250px !important;
+  }
+
+  /* Shared Component */
+  .software-cta-text-1 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .software-cta-text-2 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .dynamic-content {
+    margin: 20px;
+  }
+  .custom-card-title {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+  .common-card-image {
+    max-height: 300px !important;
+  }
+}
