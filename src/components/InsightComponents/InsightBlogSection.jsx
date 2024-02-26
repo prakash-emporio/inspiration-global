@@ -3,10 +3,17 @@ import blogimage2 from "/blogimage2.png";
 import blogimage3 from "/blogimage3.png";
 import blogimage4 from "/blogimage4.png";
 import "./insight.css";
+import { useNavigate } from "react-router-dom";
 
-const InsightCard = ({ title, text, image }) => {
+const InsightCard = ({ title, text, image, id }) => {
+  const navigator = useNavigate();
+
+  function handleClick() {
+    navigator(`/insight/${id}`);
+  }
+
   return (
-    <div className="card">
+    <div onClick={handleClick} className="card">
       <img
         src={image}
         className="card-img-top insight-blog-card-img"
@@ -40,21 +47,25 @@ const InsightCard = ({ title, text, image }) => {
 export default function InsightBlogSection() {
   const blogData = [
     {
+      id: 1,
       title: "Value Based Hiring",
       text: "Convallis blandit aliquam quam lectus nisl odio convallis mi eu. Et non at mattis nisi. Dignissim etiam cursus non porttitor. Libero in est ut sagittis amet et enim. Ut scelerisque ultricies donec...",
       image: blogimage1,
     },
     {
+      id: 2,
       title: "How Has Technology Changed The Recruitment Sector",
       text: "Convallis blandit aliquam quam lectus nisl odio convallis mi eu. Et non at mattis nisi. Dignissim etiam cursus non porttitor. Libero in est ut sagittis amet et enim. Ut scelerisque ultricies donec...",
       image: blogimage2,
     },
     {
+      id: 3,
       title: "Leveraging GenAI in your company",
       text: "Convallis blandit aliquam quam lectus nisl odio convallis mi eu. Et non at mattis nisi. Dignissim etiam cursus non porttitor. Libero in est ut sagittis amet et enim. Ut scelerisque ultricies donec...",
       image: blogimage3,
     },
     {
+      id: 4,
       title: "5 Methods For Attracting Top Talent",
       text: "Convallis blandit aliquam quam lectus nisl odio convallis mi eu. Et non at mattis nisi. Dignissim etiam cursus non porttitor. Libero in est ut sagittis amet et enim. Ut scelerisque ultricies donec...",
       image: blogimage4,
@@ -64,12 +75,13 @@ export default function InsightBlogSection() {
   return (
     <div className="container my-5">
       <div className="row">
-        {blogData.map((blog, index) => (
-          <div key={index} className="col-md-6 col-lg-6 p-5">
+        {blogData.map((blog) => (
+          <div key={blog.id} className="col-md-6 col-lg-6 p-5 cursor-pointer">
             <InsightCard
               title={blog.title}
               text={blog.text}
               image={blog.image}
+              id={blog.id}
             />
           </div>
         ))}

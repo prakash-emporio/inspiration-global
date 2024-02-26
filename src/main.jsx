@@ -80,7 +80,7 @@ const router = createBrowserRouter(
       <Route path="industry/insurance" element={<IndustryInsurancePage />} />
       <Route path="industry/pe-vc" element={<IndustryPEVCPage />} />
       <Route path="insight" element={<InsightPage />} />
-      <Route path="blog-detail" element={<BlogDetailPage />} />
+      <Route path="/insight/:id" element={<BlogDetailPage />} />
       <Route path="company" element={<CompanyPage />} />
     </Route>
   )
