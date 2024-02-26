@@ -47,6 +47,10 @@ body {
     font-size: 40px !important;
     line-height: 40px !important;
   }
+  .margin-code {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
