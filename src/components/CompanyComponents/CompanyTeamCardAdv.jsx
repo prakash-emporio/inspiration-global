@@ -28,10 +28,10 @@ function CompanyTeamCard({ member }) {
         >
           <div className="card-body px-5">
             <div className="row align-items-center">
-              <div className="col-4">
+              <div className="col-5">
                 <h5 className="card-title company-card-title">{name}</h5>
               </div>
-              <div className="col-4">
+              <div className="col-3">
                 <p className="card-text text-uppercase company-designation">
                   {designation}
                 </p>
