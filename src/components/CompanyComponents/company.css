@@ -12,9 +12,8 @@
   color: white;
   font-size: 58px;
   font-weight: 900;
-  padding-top: 3rem !important;
-  padding-right: 0rem !important;
-  padding-left: 0rem !important;
+  padding-left: 105px;
+  padding-top: 215px;
 }
 
 .company-hero-header-two {
@@ -115,6 +114,10 @@
   background: #1f2937;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+
+.company-padding {
+  padding: 0px 105px;
 }
 
 @media screen and (max-width: 992px) {

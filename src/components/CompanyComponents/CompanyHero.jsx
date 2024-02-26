@@ -7,7 +7,7 @@ export default function CompanyHero() {
     <div className="container-fluid g-0">
       <div className="row">
         <div className="col">
-          <div className="d-flex justify-content-start pt-5 px-5 align-items-center align-middle h-25 m-5">
+          <div className="d-flex justify-content-start align-items-center">
             <h1 className="company-hero-header">About Us</h1>
           </div>
           <div className="position-absolute start-50 z-2">

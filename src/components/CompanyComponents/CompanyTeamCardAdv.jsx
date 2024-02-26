@@ -32,7 +32,9 @@ function CompanyTeamCard({ member }) {
                 <h5 className="card-title company-card-title">{name}</h5>
               </div>
               <div className="col-4">
-                <p className="card-text text-uppercase company-designation">{designation}</p>
+                <p className="card-text text-uppercase company-designation">
+                  {designation}
+                </p>
               </div>
               {isHovered && (
                 <>

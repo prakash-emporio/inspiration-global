@@ -10,18 +10,18 @@ export default function CompanyTeam() {
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-4 p-lg-5">
+        <div className="col-lg-4 company-padding">
           <h1 className="company-team-secondary-header">Mgt.</h1>
         </div>
-        <div className="col-lg-8 p-lg-5">
+        <div className="col-lg-8 company-padding">
           <CompanyTeamCardNew/>
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-4 p-lg-5">
+        <div className="col-lg-4 company-padding">
           <h1 className="company-team-secondary-header">Adv.</h1>
         </div>
-        <div className="col-lg-8 p-lg-5">
+        <div className="col-lg-8 company-padding">
           <CompanyTeamCardAdv/>
         </div>
       </div>
