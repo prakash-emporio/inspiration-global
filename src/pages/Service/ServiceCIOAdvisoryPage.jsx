@@ -16,7 +16,7 @@ const api = {
   id: "1267433412322112445",
   hero: {
     id: "557",
-    img: "/industryhero.png",
+    img: "/serviceHero.png",
     title: "CIO Advisory",
     headline:
       "Technology is pervasive, but Value is elusive in today's CIO roles",

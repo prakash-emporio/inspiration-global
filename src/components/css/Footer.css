@@ -20,7 +20,7 @@
 }
 
 .active {
-  color: #A1F157;
+  color: #a1f157;
 }
 
 .footer-last-text {
@@ -29,18 +29,21 @@
 }
 
 .footer-svg {
-  fill: #6B7280;
+  fill: #6b7280;
 }
 
 .footer-svg:hover {
-  fill: #A1F157;
+  fill: #a1f157;
 }
 
+.footer-final-text:hover {
+  color: #d1d5db;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 991px) {
   .footer-main-text {
     font-size: 25px;
     text-align: right;
   }
-  
 }

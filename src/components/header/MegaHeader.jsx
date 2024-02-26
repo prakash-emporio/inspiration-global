@@ -265,7 +265,7 @@ export default function MegaHeader() {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div className="collapse navbar-collapse" id="collapsibleNavbar">
+      <div className="collapse navbar-collapse margin-code" id="collapsibleNavbar">
         <ul className="navbar-nav">
           {navItems.map((item) => (
             <li className="nav-item dropdown position-static" key={item.id}>

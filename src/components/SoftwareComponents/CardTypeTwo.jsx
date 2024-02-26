@@ -12,7 +12,7 @@ export default function CardTypeTwo({ image, title, content }) {
   return (
     <div className="container-fluid g-0 my-5">
       <div className="row g-0 align-items-center">
-        <div className="col-12 col-lg-6 software-card-section-content-wrapper-two section-two">
+        <div className="col-12 col-lg-4 software-card-section-content-wrapper-two section-two">
           <div className="card card-section-card-box">
             <div className="px-5">
               <h2 className="software-card-section-title my-md-5">{title}</h2>
@@ -62,7 +62,7 @@ export default function CardTypeTwo({ image, title, content }) {
             </div>
           </div>
         </div>
-        <div className="col-12 col-lg-6 software-card-section-image-wrapper-two section-one">
+        <div className="col-12 col-lg-8 software-card-section-image-wrapper-two section-one">
           <img className="img-fluid" src={image} alt="" />
         </div>
       </div>

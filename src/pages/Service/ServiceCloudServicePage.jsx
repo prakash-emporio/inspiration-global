@@ -15,7 +15,7 @@ const api = {
   id: "1267433412322112445",
   hero: {
     id: "557",
-    img: "/industryhero.png",
+    img: "/serviceHero.png",
     title: "Cloud Services",
     headline:
       "We work towards advancing the cloud Journey towards enhanced resilience",

@@ -14,7 +14,7 @@ const api = {
   id: "1267433412322112445",
   hero: {
     id: "557",
-    img: "/industryhero.png",
+    img: "/serviceHero.png",
     title: "PMO",
     headline:
       "Comprehensive Project Management Office Services for today and tomorrow",

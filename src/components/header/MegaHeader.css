@@ -1,5 +1,5 @@
 .navbar-expand-lg .navbar-collapse {
-  justify-content: space-around;
+  justify-content: end;
 }
 
 .dropdown-toggle::after {
@@ -172,14 +172,26 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
+@media screen and (min-width: 1024px) and (max-width: 1119px) {
   .navbar-brand {
     margin-left: 2.5rem;
   }
 }
 
-@media screen and (min-width: 1201px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
   .navbar-brand {
     margin-left: 5.5rem;
+  }
+  .navbar-nav {
+    gap: 5px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .navbar-brand {
+    margin-left: 105px;
+  }
+  .navbar-nav {
+    gap: 40px;
   }
 }

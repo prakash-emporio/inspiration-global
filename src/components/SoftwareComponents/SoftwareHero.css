@@ -12,8 +12,11 @@
 }
 
 .custom-m {
-  right: 9%;
-  top: 15%;
+  right: 0%;
+  margin-right: 105px;
+  margin-top: 105px;
+  width: 180px;
+  height: 180px;
 }
 
 /* Mobile CSS For All Software Components Here */
@@ -30,22 +33,11 @@
   .feature-card-title-next {
     font-size: 30px !important;
   }
-}
-
-@media (min-width: 540px) and (max-width: 991px) {
-  .software-top {
-    top: 50%;
-    padding: 0rem 5rem;
-  }
-  .software-hero-logo {
-    width: 13% !important;
-  }
   .custom-m {
-    right: 5%;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
   }
-}
-
-@media screen and (max-width: 991px) {
   .software-hero-text-wrapper {
     padding: 20px;
   }
@@ -57,9 +49,28 @@
     font-size: 16px;
     line-height: 22px;
   }
+}
 
-  .software-hero-logo {
-    width: 20%;
+@media (min-width: 541px) and (max-width: 991px) {
+  .software-top {
+    top: 50%;
+    padding: 0rem 5rem;
+  }
+  .custom-m {
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+  }
+  .software-hero-text-wrapper {
+    padding: 20px;
+  }
+  .software-hero-main-text {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .software-hero-secondary-text {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -67,13 +78,6 @@
   .software-top {
     top: 50%;
     padding: 20px 40px;
-  }
-  .software-hero-logo {
-    width: 20%;
-  }
-  .custom-m {
-    right: 10%;
-    top: 20%;
   }
   .hero-main-img {
     min-height: 500px;
@@ -84,10 +88,6 @@
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-  .custom-m {
-    right: 5%;
-    top: 20%;
-  }
   .software-top {
     top: 50%;
     left: 0%;
@@ -99,35 +99,5 @@
   .software-top {
     top: 30%;
     left: 7%;
-  }
-  .software-hero-logo {
-    width: 13%;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1023px) {
-  .custom-m {
-    right: 2%;
-    top: 20%;
-  }
-}
-
-@media (min-width: 1024) and (max-width: 1200px) {
-  .custom-m {
-    right: 2%;
-    top: 10%;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .custom-m {
-    right: 2%;
-    top: 15%;
-}
-}
-
-@media screen and (min-width: 1600px) {
-  .custom-m {
-    right: 17%;
   }
 }

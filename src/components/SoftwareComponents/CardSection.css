@@ -35,7 +35,7 @@
 }
 
 .software-card-section-image-wrapper-two {
-  margin-left: -10%;
+  margin: 0% -15%;
   z-index: -1;
 }
 
@@ -52,12 +52,9 @@
 
 .software-card-section-content-wrapper:hover .software-sales-btn {
   color: #a1f157 !important;
+  outline: solid #a1f157 !important;
   background-color: transparent !important;
   transition: 0.1s ease-in-out !important;
-}
-
-.software-sales-btn:hover {
-  outline: solid #a1f157 !important;
   transition: 0.1s ease-in-out !important;
 }
 

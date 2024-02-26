@@ -7,11 +7,13 @@ export default function Form() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (d) => alert(JSON.stringify(d));
+  const onSubmit = (d) => {
+    alert(JSON.stringify(d));
+  };
 
   return (
     <div className="form-wrapper">
-      <div className="container">
+      <div className="container-fluid margin-code">
         <div className="row">
           <div className="col col-lg-6 my-auto">
             <h1 className="form-heading">Let’s Talk</h1>
@@ -28,9 +30,15 @@ export default function Form() {
                   className="form-control"
                   placeholder="NAME"
                   aria-label="name"
-                  {...register("name", { required: true })}
+                  maxLength={30}
+                  
+                  {...register("name", {
+                    required: { value: true, message: "Name is Required" },
+                  })}
                 />
-                {errors.name && <p>{errors.name.message}</p>}
+                {errors.name && (
+                  <p className="error-message">{errors.name.message}</p>
+                )}
               </div>
               <div className="col">
                 <input
@@ -38,9 +46,14 @@ export default function Form() {
                   className="form-control"
                   placeholder="EMAIL"
                   aria-label="email"
-                  {...register("email", { required: true })}
+                  maxLength={30}
+                  {...register("email", {
+                    required: { value: true, message: "Email is Required" },
+                  })}
                 />
-                {errors.email && <p>{errors.email.message}</p>}
+                {errors.email && (
+                  <p className="error-message">{errors.email.message}</p>
+                )}
               </div>
             </div>
             <div className="input-group">

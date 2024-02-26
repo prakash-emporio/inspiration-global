@@ -17,7 +17,8 @@
   color: white;
 }
 
-.form-control:focus, .form-control:active {
+.form-control:focus,
+.form-control:active {
   background: transparent;
   color: white;
   box-shadow: none;
@@ -26,27 +27,37 @@
 
 .form-control::placeholder {
   color: white !important;
-  opacity: 1; 
+  opacity: 1;
 }
 
 .form-btn {
-  background-color: #A1F157;
-  color: #5912E4;
+  background-color: #a1f157;
+  color: #5912e4;
 }
 
 .form-btn:hover {
-  color: #A1F157 !important;
-  background-color: #5912E4 !important;
-  outline: solid #A1F157 !important;
+  color: #a1f157 !important;
+  background-color: #5912e4 !important;
+  outline: solid #a1f157 !important;
   transition: 0.3s ease-in-out !important;
 }
 
 .form-btn:hover .icon-svg {
-  fill: #A1F157;
+  fill: #a1f157;
   transition: 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 991px){
+.error-message {
+  color: white;
+  padding: 20px 15px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media screen and (max-width: 991px) {
   .form-heading {
     font-size: 3rem;
     text-align: center;

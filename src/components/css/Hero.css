@@ -118,6 +118,14 @@
   }
 }
 
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .hero-header-wrapper {
+    margin-top: 20rem !important;
+    margin-left: 105px !important;
+    margin-right: -35rem !important;
+  }
+}
+
 @media only screen and (min-width: 2500px) {
   .hero-header-wrapper {
     margin-top: 45rem !important;

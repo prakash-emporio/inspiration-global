@@ -3,7 +3,7 @@ import "./SoftwareCTA.css";
 export default function SoftwareCTA() {
   return (
     <div className="software-cta-card-color">
-      <div className="container g-0">
+      <div className="container-fluid margin-code">
         <div className="row g-0 py-5">
           <div className="col-lg-10">
             <h1 className="software-cta-title">

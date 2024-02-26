@@ -11,7 +11,7 @@ export default function SharedCard() {
   return (
     <div className="container-fluid g-0">
       <div className="row g-0">
-        <div className="col-lg-6 position-relative">
+        <div className="col-lg-6 position-relative square">
           <img src={content3} className="common-card-image" alt="..." />
           {/* on hover make this CS Case Study */}
           <div
@@ -48,7 +48,7 @@ export default function SharedCard() {
             </NavLink>
           </div>
         </div>
-        <div className="col-lg-6 position-relative">
+        <div className="col-lg-6 position-relative square">
           <img src={content4} className="common-card-image" alt="..." />
           {/* on hover make this B Blog */}
           <div

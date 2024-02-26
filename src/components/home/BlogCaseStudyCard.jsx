@@ -11,7 +11,7 @@ export default function BlogCaseStudyCard() {
   return (
     <div className="container-fluid g-0">
       <div className="row g-0">
-        <div className="col-lg-6 position-relative">
+        <div className="col-lg-6 position-relative square">
           <img src={content7} className="img-fluid extra-card-img" alt="..." />
           <div
             className="position-absolute top-0 end-0 text-center dynamic-content m-xl-5"
@@ -45,7 +45,7 @@ export default function BlogCaseStudyCard() {
             </NavLink>
           </div>
         </div>
-        <div className="col-lg-6 position-relative">
+        <div className="col-lg-6 position-relative square">
           <img
             src={content8}
             className="extra-card-img custom-image"

@@ -19,7 +19,7 @@ export default function VideoCard({
         <div className="card col-lg-9 gap-0">
           <Video title={videoTitle} link={videoLink} />
         </div>
-        <div className="card col-lg-3 position-relative">
+        <div className="card col-lg-3 position-relative square">
           <img
             className="img-fluid third-content-img"
             src={cardImage}

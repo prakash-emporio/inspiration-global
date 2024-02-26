@@ -15,7 +15,7 @@ const api = {
   id: "126743341233122112445",
   hero: {
     id: "557",
-    img: "/industryhero.png",
+    img: "/serviceHero.png",
     title: "Security",
     headline:
       "Our extensive cybersecurity expertise, coupled with our profound industry knowledge, empowers us to innovate next-generation cybersecurity solutions",
@@ -156,28 +156,26 @@ const api = {
   ],
 };
 
-
-
 export default function ServiceSecurityPage() {
   return (
     <>
-    <ServicesHero
-      key={api.hero.id}
-      heroImage={api.hero.img}
-      heroTitle={api.hero.title}
-      heroHeadline={api.hero.headline}
-    />
-    <ServiceFirstText text={api.featureSection.partOne.text} />
-    <ServiceBoldText text={api.featureSection.partTwo.text} />
-    <ServiceLeftText text={api.featureSection.partThree.text} />
-    <ServiceRightText text={api.featureSection.partFour.text} />
-    <ServiceLeftText text={api.featureSection.partFive.text} />
-    <ServiceRightText text={api.featureSection.partSix.text} />
-    <ServiceSectionCard cards={api.servicesCards} />
-    <ServicesFeatureSection />
-    <SharedCard />
-    <SoftwareCTA />
-    <Form />
-  </>
-  )
+      <ServicesHero
+        key={api.hero.id}
+        heroImage={api.hero.img}
+        heroTitle={api.hero.title}
+        heroHeadline={api.hero.headline}
+      />
+      <ServiceFirstText text={api.featureSection.partOne.text} />
+      <ServiceBoldText text={api.featureSection.partTwo.text} />
+      <ServiceLeftText text={api.featureSection.partThree.text} />
+      <ServiceRightText text={api.featureSection.partFour.text} />
+      <ServiceLeftText text={api.featureSection.partFive.text} />
+      <ServiceRightText text={api.featureSection.partSix.text} />
+      <ServiceSectionCard cards={api.servicesCards} />
+      <ServicesFeatureSection />
+      <SharedCard />
+      <SoftwareCTA />
+      <Form />
+    </>
+  );
 }

@@ -34,7 +34,8 @@
   background: #5912e4;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   border-radius: 50%;
-  text-align: center;
+  text-align: center; 
+  text-transform: uppercase;
 }
 
 .dynamic-content:hover {
@@ -64,10 +65,10 @@
   fill: #a1f157;
 }
 
-.custom-image {
+/* .custom-image {
   filter: blur(2px);
   -webkit-filter: blur(2px);
-}
+} */
 
 /* Mobile Screens */
 

@@ -6,7 +6,7 @@ import {
   ServicePointText,
   ServicesFeatureSection,
   ServiceSectionCard,
-  ServiceFirstText
+  ServiceFirstText,
 } from "../../components/ServicesComponents/index.js";
 import { SharedCard } from "../../components/Shared/index.js";
 import { Form } from "../../components/home/index.js";
@@ -16,7 +16,7 @@ const api = {
   id: "1267433412445",
   hero: {
     id: "557",
-    img: "/industryhero.png",
+    img: "/serviceHero.png",
     title: "Product Engineering",
     headline:
       "Our mission is to empower our clients to meet the fundamental expectations every individual has when it comes to healthcare: access, experience, and outcomes",
@@ -174,7 +174,10 @@ export default function ServiceProductEngineeringPage() {
       <ServiceBoldText text={api.featureSection.partTwo.text} />
       <ServiceLeftText text={api.featureSection.partThree.text} />
       <ServiceRightText text={api.featureSection.partFour.text} />
-      <ServicePointText text={api.featureSection.partFive.text} points={api.featureSection.partFive.points} />
+      <ServicePointText
+        text={api.featureSection.partFive.text}
+        points={api.featureSection.partFive.points}
+      />
       <ServiceSectionCard cards={api.servicesCards} />
       <ServicesFeatureSection />
       <SharedCard />

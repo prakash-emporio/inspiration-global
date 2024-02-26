@@ -14,7 +14,7 @@ const footerData = [
 export default function Footer() {
   return (
     <footer className="pt-5 pb-1 main-footer">
-      <div className="container">
+      <div className="container-fluid margin-code">
         <div className="row justify-content-between">
           <div className="mb-3 col-6 col-md-2">
             <ul className="nav flex-column">
@@ -114,8 +114,8 @@ export default function Footer() {
               </NavLink>
             </li>
           </ul>
-          <p>Terms of Service</p>
-          <p>Dei Policy</p>
+          <p className="footer-final-text">Terms of Service</p>
+          <p className="footer-final-text">Dei Policy</p>
         </div>
       </div>
     </footer>

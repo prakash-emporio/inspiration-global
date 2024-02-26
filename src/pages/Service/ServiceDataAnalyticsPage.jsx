@@ -15,7 +15,7 @@ const api = {
   id: "1267433412322112445",
   hero: {
     id: "557",
-    img: "/industryhero.png",
+    img: "/serviceHero.png",
     title: "Data Analytics",
     headline:
       "The advent of data, analytics, and AI has unlocked a world of uncharted opportunities",
