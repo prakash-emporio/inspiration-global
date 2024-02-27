@@ -7,10 +7,10 @@ export default function LeftImageRightText({ img, text }) {
   return (
     <section className="container-fluid g-0">
       <div className="row g-0">
-        <div className="col">
+        <div className="col-md-8">
           <img className="img-fluid" src={API.img} alt="" />
         </div>
-        <div className="col-4 blog-image-side-text">{API.text}</div>
+        <div className="col blog-image-side-text">{API.text}</div>
       </div>
     </section>
   );

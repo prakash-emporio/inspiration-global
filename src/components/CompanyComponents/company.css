@@ -120,6 +120,15 @@
   padding: 0px 105px;
 }
 
+@media (max-width: 540px) {
+  .company-hero-header {
+    font-size: 30px;
+  }
+  .company-hero-header-two {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .company-team-header {
     font-size: 40px;

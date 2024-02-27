@@ -41,6 +41,18 @@
   cursor: pointer;
 }
 
+.justify-content {
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 540px) {
+  .footer-main-text {
+    font-size: 28px !important;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .footer-main-text {
     font-size: 25px;

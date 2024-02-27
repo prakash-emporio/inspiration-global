@@ -173,7 +173,7 @@ export default function MegaHeader() {
                         className="subMenuItems"
                         reloadDocument
                       >
-                        CIO Advisory
+                        Artificial Intelligence
                       </NavLink>
                       <NavLink
                         to={"services/cio-advisory"}

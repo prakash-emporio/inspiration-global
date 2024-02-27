@@ -6,14 +6,6 @@
   display: none;
 }
 
-.collapsing {
-  background-color: #111827;
-}
-
-.show {
-  background-color: #111827;
-}
-
 .navbar-expand-lg .nav-link {
   text-transform: uppercase;
   font-size: 15px;
@@ -205,6 +197,12 @@
   .navbar-nav {
     text-align: end;
     padding: 20px;
+  }
+  .collapsing {
+    background-color: #111827;
+  }
+  .show {
+    background-color: #111827;
   }
 }
 

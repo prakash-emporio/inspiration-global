@@ -6,8 +6,8 @@ export default function RightTextLeftImage({ text, img }) {
   return (
     <section className="container-fluid">
       <div className="row g-0">
-        <div className="col-5 blog-image-side-text">{API.text}</div>
-        <div className="col">
+        <div className="col blog-image-side-text">{API.text}</div>
+        <div className="col-md-8">
           <img className="img-fluid" src={API.img} alt="" />
         </div>
       </div>
