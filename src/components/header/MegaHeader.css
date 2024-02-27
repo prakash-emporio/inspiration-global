@@ -48,7 +48,9 @@
 
 .dropdown-heading {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.4px;
 }
 
 .card {
@@ -61,6 +63,7 @@
   letter-spacing: 1.8px;
   color: black;
   text-decoration: none;
+  padding-bottom: 30px;
 }
 
 .subMenuItems:hover {
@@ -76,13 +79,14 @@
 .card-title-size {
   color: #5912e4;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 32px;
 }
 
 .my-card-text {
   font-weight: 300;
   font-size: 1.25rem;
   color: black;
+  margin: 20px 0px;
 }
 
 .mega-header-btn {
@@ -108,6 +112,59 @@
   z-index: 100000 !important;
   background-color: #111827; /* Adjust background color as needed */
   width: 100%;
+}
+
+.dropdown-card-padding {
+  padding-left: 105px;
+  padding-top: 50px;
+}
+
+.card-dropdown-margin {
+  padding-right: 30px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.megamenu-sidebar-common-padding {
+  padding-left: 105px;
+  padding-right: 105px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.blog-image {
+  margin-top: 50px;
+}
+
+.dropdown-card-margin {
+  margin-top: 24px;
+}
+
+.dropdown-blog {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  color: #6b7280;
+}
+
+.dropdown-blog-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.4px;
+  color: black;
+  text-wrap: nowrap;
+}
+
+.megamenu-sidebar-padding {
+  padding-left: 105px;
+  padding-right: 105px;
+}
+
+.megamenu-sidebar-btn-top-margin {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 540px) {
