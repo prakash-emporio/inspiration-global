@@ -30,7 +30,8 @@ export default function Form() {
                   placeholder="NAME"
                   aria-label="name"
                   maxLength={30}
-                  
+                  autoComplete="on"
+                  autoSave="on"
                   {...register("name", {
                     required: { value: true, message: "Name is Required" },
                   })}
@@ -45,6 +46,8 @@ export default function Form() {
                   className="form-control"
                   placeholder="EMAIL"
                   aria-label="email"
+                  autoComplete="on"
+                  autoSave="on"
                   maxLength={30}
                   {...register("email", {
                     required: { value: true, message: "Email is Required" },
@@ -60,6 +63,8 @@ export default function Form() {
                 className="form-control"
                 aria-label="With textarea"
                 placeholder="TELL US EVERYTHING"
+                autoComplete="on"
+                autoSave="on"
                 rows={5}
                 {...register("message", { required: true })}
               />
