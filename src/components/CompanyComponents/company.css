@@ -142,11 +142,9 @@
   .company-card-title {
     font-size: 24px;
   }
-}
-
-@media (max-width: 992px) {
   .img-thumbnail {
-    height: 30%;
+    object-fit: cover;
+    object-position: center;
   }
   .company-hero-img {
     margin: -30% 50%;

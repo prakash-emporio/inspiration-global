@@ -55,7 +55,7 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
   .cta-img {
     width: 50px;
     margin: 5px 5px;

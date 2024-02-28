@@ -187,12 +187,6 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .navbar-nav {
-    gap: 30px;
-  }
-}
-
 @media screen and (max-width: 992px) {
   .navbar-nav {
     text-align: end;
@@ -241,7 +235,7 @@
     margin-left: 5.5rem;
   }
   .navbar-nav {
-    gap: 5px;
+    gap: 3px;
   }
 }
 
