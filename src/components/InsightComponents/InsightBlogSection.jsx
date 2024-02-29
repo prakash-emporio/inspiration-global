@@ -4,21 +4,38 @@ import blogimage3 from "/blogimage3.png";
 import blogimage4 from "/blogimage4.png";
 import "./insight.css";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-const InsightCard = ({ title, text, image, id }) => {
+const InsightCard = ({ title, text, image, slug }) => {
   const navigator = useNavigate();
 
   function handleClick() {
-    navigator(`/insight/${id}`);
+    navigator(`/insight/${slug}`);
   }
+
+  // Function to check if image exists
+  const imageExists = (url) => {
+    const img = new Image();
+    img.src = url;
+    return img.complete || img.width + img.height > 0;
+  };
 
   return (
     <div onClick={handleClick} className="card">
-      <img
-        src={image}
-        className="card-img-top insight-blog-card-img"
-        alt="card-img"
-      />
+      {image && imageExists(image) ? (
+        <img
+          src={image}
+          className="card-img-top insight-blog-card-img"
+          alt="card-img"
+        />
+      ) : (
+        <img
+          src={blogimage2} // Replace "path_to_dummy_image" with the path to your dummy image
+          className="card-img-top insight-blog-card-img"
+          alt="dummy-card-img"
+        />
+      )}
       <div className="py-3 card-body">
         <h5 className="card-title industry-blog-card-title">{title}</h5>
         <p className="card-text py-2 industry-blog-card-text ">{text}</p>
@@ -45,32 +62,47 @@ const InsightCard = ({ title, text, image, id }) => {
 };
 
 export default function InsightBlogSection() {
-  const blogData = [
-    {
-      id: 1,
-      title: "Value Based Hiring",
-      text: "Convallis blandit aliquam quam lectus nisl odio convallis mi eu. Et non at mattis nisi. Dignissim etiam cursus non porttitor. Libero in est ut sagittis amet et enim. Ut scelerisque ultricies donec...",
-      image: blogimage1,
-    },
-    {
-      id: 2,
-      title: "How Has Technology Changed The Recruitment Sector",
-      text: "Convallis blandit aliquam quam lectus nisl odio convallis mi eu. Et non at mattis nisi. Dignissim etiam cursus non porttitor. Libero in est ut sagittis amet et enim. Ut scelerisque ultricies donec...",
-      image: blogimage2,
-    },
-    {
-      id: 3,
-      title: "Leveraging GenAI in your company",
-      text: "Convallis blandit aliquam quam lectus nisl odio convallis mi eu. Et non at mattis nisi. Dignissim etiam cursus non porttitor. Libero in est ut sagittis amet et enim. Ut scelerisque ultricies donec...",
-      image: blogimage3,
-    },
-    {
-      id: 4,
-      title: "5 Methods For Attracting Top Talent",
-      text: "Convallis blandit aliquam quam lectus nisl odio convallis mi eu. Et non at mattis nisi. Dignissim etiam cursus non porttitor. Libero in est ut sagittis amet et enim. Ut scelerisque ultricies donec...",
-      image: blogimage4,
-    },
-  ];
+  const [loading, setLoading] = useState(true);
+  const [blogData, setBlogData] = useState([]);
+
+  async function getAllBlogs() {
+    const response = await axios.get(
+      "https://igapibuilder.brandsnarrative.com/wp-json/custom/v1/get-all-posts"
+    );
+    setBlogData(response.data);
+    setLoading(false);
+  }
+
+  useEffect(() => {
+    getAllBlogs();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="container loading-skeleton">
+        <div className="row">
+          <div className="col">
+            <div className="card">
+              <img
+                src="//placekitten.com/300/200"
+                className="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div className="col">
+            <div className="card">
+              <img
+                src="//placebear.com/300/200"
+                className="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="container my-5">
@@ -79,9 +111,10 @@ export default function InsightBlogSection() {
           <div key={blog.id} className="col-md-6 col-lg-6 cursor-pointer">
             <InsightCard
               title={blog.title}
-              text={blog.text}
-              image={blog.image}
+              text={blog.excerpt}
+              image={blog.featured_image}
               id={blog.id}
+              slug={blog.slug}
             />
           </div>
         ))}

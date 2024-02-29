@@ -198,6 +198,30 @@
   .show {
     background-color: #111827;
   }
+
+  .nav-item:hover .dropdown-menu {
+    display: block;
+    background-color: #111827;
+    border-bottom: none;
+    border-right: 4px solid #5912e4;
+  }
+
+  .col-8 {
+    display: none;
+  }
+
+  .megamenu-sidebar {
+    text-align: right;
+    background-color: #111827;
+  }
+
+  .subMenuItems {
+    color: white;
+  }
+
+  .megamenu-sidebar-common-padding {
+    padding: 20px;
+  }
 }
 
 @media only screen and (min-width: 992px) {

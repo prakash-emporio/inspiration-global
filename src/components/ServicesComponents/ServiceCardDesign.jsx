@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ServiceCardDesign({ title, description, list}) {
+export default function ServiceCardDesign({ title, description, list }) {
   const [showList, setShowList] = useState(false);
   const [isButtonClicked, setIsButtonClicked] = useState(false);
 
@@ -11,8 +11,8 @@ export default function ServiceCardDesign({ title, description, list}) {
 
   return (
     <div className="col-md-6 col-lg-4 col-xxl-3 p-3">
-      <div className="card service-card-section">
-        <div className="card-body service-page-card-section-body service-card-section-body">
+      <div className={`card service-card-section ${showList ? "expanded" : ""}`}>
+        <div className="card-body service-page-card-section-body service-card-body">
           <h5 className="card-title service-card-section-title">{title}</h5>
           <p className="card-text service-card-section-text-size">
             {description}
@@ -20,7 +20,9 @@ export default function ServiceCardDesign({ title, description, list}) {
           {showList && (
             <ul className="card-text service-card-section-text-size">
               {list.map((item, index) => (
-                <li className="service-card-li" key={index}>{item}</li>
+                <li className="service-card-li" key={index}>
+                  {item}
+                </li>
               ))}
             </ul>
           )}

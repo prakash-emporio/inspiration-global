@@ -8,9 +8,16 @@
   background: white;
   box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
   min-height: 280px;
+  position: relative;
+  transition: all 0.4s ease;
 }
 
-.service-card-section-body:hover {
+.service-card-section .expanded {
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1); /* Maintain shadow */
+  z-index: 1; /* Bring expanded card to front */
+}
+
+.service-card-body:hover {
   transform: translate3D(0, -1px, 0) scale(1.03); /* move up slightly and zoom in */
   box-shadow: 8px 28px 50px rgba(39, 44, 49, 0.07),
     1px 6px 12px rgba(39, 44, 49, 0.04);
@@ -21,9 +28,10 @@
 .service-page-card-section-body:hover {
   background-color: #5912e4;
   color: white;
+  z-index: 2;
 }
 
-.service-card-section-body:hover .service-card-section-title {
+.service-card-body:hover .service-card-section-title {
   color: white;
 }
 
@@ -46,6 +54,9 @@
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   border-radius: 50%;
   padding: 10px 10px;
+  position: absolute;
+  bottom: 10px;
+  margin-top: 10px;
 }
 
 .card-section-container-color {
@@ -53,7 +64,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .service-card-section-body {
+  .service-card-body {
     text-align: left;
   }
 }
