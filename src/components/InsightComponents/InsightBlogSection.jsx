@@ -1,7 +1,3 @@
-import blogimage1 from "/blogimage1.png";
-import blogimage2 from "/blogimage2.png";
-import blogimage3 from "/blogimage3.png";
-import blogimage4 from "/blogimage4.png";
 import "./insight.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -14,28 +10,13 @@ const InsightCard = ({ title, text, image, slug }) => {
     navigator(`/insight/${slug}`);
   }
 
-  // Function to check if image exists
-  const imageExists = (url) => {
-    const img = new Image();
-    img.src = url;
-    return img.complete || img.width + img.height > 0;
-  };
-
   return (
     <div onClick={handleClick} className="card">
-      {image && imageExists(image) ? (
         <img
           src={image}
           className="card-img-top insight-blog-card-img"
           alt="card-img"
         />
-      ) : (
-        <img
-          src={blogimage2} // Replace "path_to_dummy_image" with the path to your dummy image
-          className="card-img-top insight-blog-card-img"
-          alt="dummy-card-img"
-        />
-      )}
       <div className="py-3 card-body">
         <h5 className="card-title industry-blog-card-title">{title}</h5>
         <p className="card-text py-2 industry-blog-card-text ">{text}</p>
@@ -112,7 +93,7 @@ export default function InsightBlogSection() {
             <InsightCard
               title={blog.title}
               text={blog.excerpt}
-              image={blog.featured_image}
+              image={blog?.featured_image || "/blogimage2.png"}
               id={blog.id}
               slug={blog.slug}
             />

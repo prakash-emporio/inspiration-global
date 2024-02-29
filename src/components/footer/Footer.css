@@ -58,4 +58,7 @@
     font-size: 25px;
     text-align: right;
   }
+  .main-footer {
+    padding: 20px;
+  }
 }

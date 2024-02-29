@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { SocialIcon } from "../components/BlogDetailComponents/index.js";
-import InsightBlogSection from "../components/InsightComponents/InsightBlogSection.jsx";
-import blogDetial from "/blogDetail.png";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import BlogComponent from "../components/BlogDetailComponents/BlogComponent.jsx";
+import RecentBlogs from "../components/BlogDetailComponents/RecentBlogs.jsx";
 
 export default function BlogDetailPage() {
   const [blog, setBlog] = useState(null);
@@ -84,27 +83,26 @@ export default function BlogDetailPage() {
 
   const { slug } = useParams();
 
-  // function getBlogBySlug(blogSlug) {
-  //   return `https://igapibuilder.brandsnarrative.com/wp-json/custom/v1/${blogSlug}`;
-  // }
+  function getBlogBySlug(blogSlug) {
+    return `https://igapibuilder.brandsnarrative.com/wp-json/custom/v1/get-post-detail/${blogSlug}`;
+  }
 
-  // async function downloadBlog() {
-  //   const response = await axios.get(getBlogBySlug(slug));
-  //   console.log(response.data);
-  //   setBlog(response.data);
-  // }
+  async function downloadBlog() {
+    const response = await axios.get(getBlogBySlug(slug));
+    setBlog(response.data);
+  }
 
   useEffect(() => {
     // console.log(slug);
-    // downloadBlog();
+    downloadBlog();
   }, [slug]);
   return (
     <>
       <section className="container-fluid g-0">
         <div className="row g-0 position-relative">
-          <img className="img-fluid talent-hero-img" src={blogDetial} alt="" />
+          <img className="img-fluid talent-hero-img" src={blog?.hero_image || "/blogDetail.png"} alt="" />
           <div className="blog-hero-heading-wrapper">
-            <h1 className="blog-hero-heading">Value Based Hiring</h1>
+            <h1 className="blog-hero-heading">{blog?.hero_heading || "Dummy Title Is Showing"}</h1>
           </div>
         </div>
       </section>
@@ -115,7 +113,7 @@ export default function BlogDetailPage() {
         }
       />
       <SocialIcon />
-      <InsightBlogSection />
+      <RecentBlogs blogData={blog?.recent_posts} />
     </>
   );
 }

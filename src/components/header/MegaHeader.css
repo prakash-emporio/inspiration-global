@@ -31,7 +31,6 @@
 
 .nav-link:hover {
   color: #a1f157 !important;
-  transform: scale(1.1);
 }
 
 .dropdown-menu {
@@ -222,9 +221,20 @@
   .megamenu-sidebar-common-padding {
     padding: 20px;
   }
+
+  .extra-mega-menu-sidebar {
+    display: none;
+  }
+  .navbar-collapse {
+    padding: 20px !important;
+  }
 }
 
 @media only screen and (min-width: 992px) {
+  .nav-link:hover {
+    color: #a1f157 !important;
+    transform: scale(1.1);
+  }
   .dropdown:hover .dropdown-menu {
     display: flex;
     justify-content: center;

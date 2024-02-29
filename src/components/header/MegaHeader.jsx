@@ -71,7 +71,7 @@ export default function MegaHeader() {
                     </div>
                   </div>
                   {/* dropdown menu side bar */}
-                  <div className="col-4 megamenu-sidebar">
+                  <div className="col-lg-4 megamenu-sidebar">
                     <div className="d-flex flex-column text-left text-uppercase megamenu-sidebar-common-padding">
                       <NavLink
                         to={"/software/aws"}
@@ -138,7 +138,7 @@ export default function MegaHeader() {
                     </div>
                   </div>
                   {/* dropdown menu side bar */}
-                  <div className="col-4 megamenu-sidebar">
+                  <div className="col-lg-4 megamenu-sidebar">
                     <div className="d-flex flex-column text-left text-uppercase megamenu-sidebar-common-padding">
                       <NavLink
                         to={"services/product-engineering"}
@@ -265,7 +265,7 @@ export default function MegaHeader() {
                     </div>
                   </div>
                   {/* dropdown menu side bar */}
-                  <div className="col-4 megamenu-sidebar">
+                  <div className="col-lg-4 megamenu-sidebar">
                     <div className="d-flex flex-column text-left text-uppercase megamenu-sidebar-common-padding">
                       <NavLink
                         to={"industry/public-sector"}
@@ -344,7 +344,7 @@ export default function MegaHeader() {
                     </div>
                   </div>
                   {/* dropdown menu side bar */}
-                  <div className="col-4 megamenu-sidebar">
+                  <div className="col-lg-4 megamenu-sidebar extra-mega-menu-sidebar">
                     <div className="d-flex flex-column text-uppercase megamenu-sidebar-padding">
                       <img
                         className="blog-image"
