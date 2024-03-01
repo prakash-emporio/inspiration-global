@@ -19,8 +19,6 @@ export default function SoftwareHero({
           src={heroLogo}
           alt="route-logo"
         />
-        <div className="container g-0">
-          <div className="row g-0">
             <div className="col-lg-5 bg-transparent position-absolute software-top">
               <h5 className="text-white software-hero-main-text ">
                 {heroheader}
@@ -30,8 +28,6 @@ export default function SoftwareHero({
               </p>
             </div>
           </div>
-        </div>
-      </div>
     </section>
   );
 }

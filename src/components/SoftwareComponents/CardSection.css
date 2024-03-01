@@ -86,9 +86,10 @@
 }
 
 @media screen and (max-width: 576px) {
- 
+  .software-btn {
+    margin: 20px 0px;
+  }
 }
-
 
 @media screen and (max-width: 768px) {
   .software-card-section-content-wrapper {

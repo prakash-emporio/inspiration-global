@@ -103,21 +103,32 @@
 }
 
 @media (max-width: 540px) {
+  .container {
+    margin-top: 0em !important;
+    margin-bottom: 0em !important;
+  }
+  .service-hero-card-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
   .shared-hero-main-text {
     font-size: 30px !important;
+  }
+  .service-testimonial-text {
+    font-size: 20px !important;
   }
   .service-testimonial-bold-text {
     font-size: 24px !important;
   }
   .service-testimonial-point {
-    padding: 5px !important;
+    padding: 0px !important;
   }
   .service-feature-section-card-title {
-    font-size: 24px !important;
+    font-size: 30px !important;
     text-align: center;
   }
   .service-feature-section-card-text {
-    font-size: 16px !important;
+    font-size: 20px !important;
   }
   .service-feature-section-card-number {
     font-size: 40px !important;
