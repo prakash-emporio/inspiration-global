@@ -8,7 +8,7 @@ export default function BlogComponent({ details }) {
   return (
     <div>
       {details.map((blogDetail, index) => (
-        <div key={index} className="container my-lg-5">
+        <div key={index} className="container-fluid my-lg-5">
           <div className="row">
             <div className="col">
               <h5 className="blog-paragraph-title">{blogDetail.title}</h5>
@@ -22,7 +22,11 @@ export default function BlogComponent({ details }) {
           <section className="container-fluid g-0">
             <div className="row g-0">
               <div className="col-md-8">
-                <img className="img-fluid" src={blogDetail.img} alt="" />
+                <img
+                  className="img-fluid"
+                  src={blogDetail.img}
+                  alt=""
+                />
               </div>
               <div className="col blog-image-side-text">
                 {blogDetail.image_side_text}

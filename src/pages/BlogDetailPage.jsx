@@ -100,7 +100,7 @@ export default function BlogDetailPage() {
     <>
       <section className="container-fluid g-0">
         <div className="row g-0 position-relative">
-          <img className="img-fluid talent-hero-img" src={blog?.hero_image || "/blogDetail.png"} alt="" />
+          <img height={600} className="blog-hero-img" src={blog?.hero_image || "/blogDetail.png"} alt="" />
           <div className="blog-hero-heading-wrapper">
             <h1 className="blog-hero-heading">{blog?.hero_heading || "Dummy Title Is Showing"}</h1>
           </div>

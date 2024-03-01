@@ -12,7 +12,6 @@ const InsightCard = ({ title, text, image, slug }) => {
     <div onClick={handleClick} className="card">
         <img
           src={image || blogimage2}
-          height={400}
           className="card-img-top insight-blog-card-img"
           alt="card-img"
         />    

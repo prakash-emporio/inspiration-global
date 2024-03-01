@@ -23,10 +23,6 @@
     max-height: 300px !important;
     min-height: 300px !important;
   }
-  .custom-card-title {
-    font-size: 24px;
-    line-height: 24px;
-  }
   .extra-custom-card-start {
     left: 0% !important;
     padding: 0px 50px;

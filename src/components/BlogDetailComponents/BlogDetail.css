@@ -15,6 +15,12 @@
   border-image: linear-gradient(to top, #A1F157, rgba(0, 0, 0, 0)) 1 100%;
 }
 
+.blog-hero-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .blog-hero-heading {
   color: white;
   font-weight: 900;
