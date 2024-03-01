@@ -48,7 +48,7 @@ export default function CTA({ title, description }) {
       </div>
       <div className="container text-center hero-cta">
         <div className="row">
-          <div className="my-5 col col-md-12">
+          <div className="my-lg-5 col col-md-12">
             <p className="cta-paragraph">{part1}</p>
             <p className="cta-paragraph">{part2}</p>
           </div>
