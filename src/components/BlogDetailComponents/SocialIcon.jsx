@@ -25,7 +25,7 @@ export default function SocialIcon() {
   ];
   return (
     <div className="social-icon-container container my-5">
-      <div className="d-flex justify-content-evenly align-items-center">
+      <div className="d-flex justify-content-center gap-4 align-items-center">
         {logos.map((logo) => (
           <img key={logo.id} className="object-fit-scale social-icon-img" width={50} height={50} src={logo.logo} alt="social-icons" />
         ))}

@@ -8,28 +8,14 @@ const InsightCard = ({ title, text, image, slug }) => {
     navigator(`/insight/${slug}`);
   }
 
-  // Function to check if image exists
-  const imageExists = (url) => {
-    const img = new Image();
-    img.src = url;
-    return img.complete || img.width + img.height > 0;
-  };
-
   return (
     <div onClick={handleClick} className="card">
-      {image && imageExists(image) ? (
         <img
-          src={image}
+          src={image || blogimage2}
+          height={400}
           className="card-img-top insight-blog-card-img"
           alt="card-img"
-        />
-      ) : (
-        <img
-          src={blogimage2} // Replace "path_to_dummy_image" with the path to your dummy image
-          className="card-img-top insight-blog-card-img"
-          alt="dummy-card-img"
-        />
-      )}
+        />    
       <div className="py-3 card-body">
         <h5 className="card-title industry-blog-card-title">{title}</h5>
         <p className="card-text py-2 industry-blog-card-text ">{text}</p>
@@ -57,7 +43,7 @@ const InsightCard = ({ title, text, image, slug }) => {
 
 export default function RecentBlogs({blogData}) {
     return (
-      <div className="container my-5">
+      <div className="container my-md-5 py-md-5">
         <div className="row">
           {blogData?.map((blog) => (
             <div key={blog.id} className="col-md-6 col-lg-6 cursor-pointer">
