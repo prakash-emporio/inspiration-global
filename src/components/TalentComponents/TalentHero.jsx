@@ -1,7 +1,6 @@
 import talentHero from "/talentHero.png";
 import "./TalentHero.css";
 
-
 export default function TalentHero() {
   return (
     <section className="container-fluid g-0">
@@ -18,18 +17,14 @@ export default function TalentHero() {
             </div>
           </div>
         </div>
-        <div className="container-fluid g-0">
-          <div className="row">
-            <div className="col">
-              <div className="position-absolute talent-hero-card">
-                <div className="service-card-color">
-                  <h1 className="service-hero-card-text">
-                    Our solutions empower you to promptly meet your staffing
-                    needs with professionals possessing the requisite expertise
-                    for contemporary, intricate IT roles.
-                  </h1>
-                </div>
-              </div>
+        <div className="col">
+          <div className="position-absolute talent-hero-card">
+            <div className="service-card-color">
+              <h1 className="service-hero-card-text">
+                Our solutions empower you to promptly meet your staffing needs
+                with professionals possessing the requisite expertise for
+                contemporary, intricate IT roles.
+              </h1>
             </div>
           </div>
         </div>

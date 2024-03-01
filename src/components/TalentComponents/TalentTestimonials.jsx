@@ -3,9 +3,9 @@ import "./TalentTestimonials.css";
 export default function TalentTestimonials() {
   return (
     <div className="container mt-lg-5 pt-lg-5">
-      <div className="container my-lg-5 py-5">
+      <div className="container my-lg-5 py-lg-5">
         <div className="row">
-        <div className="col-lg-8 service-testimonial-text">
+        <div className="col-lg-6 service-testimonial-text">
           <p>
             In today's dynamic business landscape, every organization needs
             highly proficient IT personnel. IG's versatile team excels in
@@ -19,7 +19,7 @@ export default function TalentTestimonials() {
         <div className="col"></div>
         </div>
       </div>
-      <div className="container my-lg-5 py-5">
+      <div className="container my-lg-5 py-lg-5">
         <div className="row">
           <div className="col">
             <h1 className="talent-testimonial-header">
@@ -43,7 +43,7 @@ export default function TalentTestimonials() {
           </div>
         </div>
       </div>
-      <div className="container my-lg-5 py-5">
+      <div className="container my-lg-5 py-lg-5">
         <div className="row">
           <div className="col-lg-8 service-testimonial-text section-two">
             <p>
@@ -60,7 +60,7 @@ export default function TalentTestimonials() {
           </div>
         </div>
       </div>
-      <div className="container my-lg-5 py-5">
+      <div className="container my-lg-5 py-lg-5">
         <div className="row">
           <div className="col">
             <h1 className="talent-testimonial-header">Holistic Evaluation</h1>

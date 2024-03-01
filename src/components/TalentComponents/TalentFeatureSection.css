@@ -71,6 +71,7 @@
 @media screen and (max-width: 992px) {
   .talent-feature-section-header {
     font-size: 30px;
+    padding: 20px;
   }
   .talent-feature-section-card-title-0 {
     font-size: 30px;
