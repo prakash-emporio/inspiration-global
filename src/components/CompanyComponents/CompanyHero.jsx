@@ -1,5 +1,4 @@
 import "./company.css";
-import companyhero from "/companyhero.png";
 import CompanyHeroNew from "/CompanyHeroNew.png";
 
 export default function CompanyHero() {
@@ -7,14 +6,10 @@ export default function CompanyHero() {
     <div className="container-fluid g-0">
       <div className="row">
         <div className="col">
-          <div className="d-flex justify-content-start align-items-center">
-            <h1 className="company-hero-header">About Us</h1>
-          </div>
-          <div className="position-absolute start-50 z-2">
-            <p className="company-hero-header-two">Our Core</p>
-          </div>
+            <h2 className="position-absolute z-2 company-hero-header">About Us</h2>
+            <h2 className="position-absolute z-2 company-hero-header-two">Our Core</h2>
         </div>
-        <div className="col-md-9">
+        <div className="col-md-8">
           <img
             className="img-fluid object-fit-fill company-hero-img"
             src={CompanyHeroNew}

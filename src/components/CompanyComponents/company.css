@@ -3,17 +3,10 @@
     var(--Gray-900, #111827);
 }
 
-.company-hero-img {
-  margin: -5% 20%;
-  padding: 0;
-}
-
 .company-hero-header {
   color: white;
   font-size: 58px;
   font-weight: 900;
-  padding-left: 105px;
-  padding-top: 215px;
 }
 
 .company-hero-header-two {
@@ -116,8 +109,14 @@
   cursor: pointer;
 }
 
-.company-padding {
-  padding: 0px 105px;
+.company-hero-header {
+  top: 25%;
+  left: 5%;
+}
+
+.company-hero-header-two {
+  top: 50%;
+  left: 50%;
 }
 
 @media (max-width: 540px) {
@@ -127,9 +126,19 @@
   .company-hero-header-two {
     font-size: 30px;
   }
+
+  .company-hero-header {
+    top: 15%;
+    left: 5%;
+  }
+
+  .company-hero-header-two {
+    top: 25%;
+    left: 36%;
+  }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width:541px) and (max-width: 991px) {
   .company-team-header {
     font-size: 40px;
   }
@@ -146,30 +155,19 @@
     object-fit: cover;
     object-position: center;
   }
-  .company-hero-img {
-    margin: -30% 50%;
+  .company-hero-header {
+    top: 25%;
+    left: 5%;
+  }
+
+  .company-hero-header-two {
+    top: 50%;
+    left: 30%;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .company-hero-img {
-    margin: -30% 50%;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1499px) {
-  .company-hero-img {
-    margin: -30% 50%;
-  }
-}
-
-@media (min-width: 1500px) {
-  .company-hero-img {
-    margin: -5% 20%;
-    padding: 0;
-  }
-
-  .company-text-margin {
-    margin-top: -25rem;
+@media (min-width: 992px) {
+  .company-padding {
+    padding: 0px 105px;
   }
 }

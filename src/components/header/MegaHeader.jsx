@@ -413,6 +413,7 @@ export default function MegaHeader() {
                         title="About Us"
                         text="Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus."
                         buttonName="About Us"
+                        route="/company"
                       />
                       {/* Second card inside dropdown */}
                       <DropdownCard
