@@ -55,10 +55,17 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 620px){
+  .cta-img {
+    width: 40px !important;
+    margin: 5px 5px !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .cta-img {
-    width: 40px;
-    margin: 5px 5px;
+    width: 80px;
+    margin: 5px 15px;
   }
 
   .oracle {
@@ -108,7 +115,7 @@
 
 @media screen and (min-width: 992px) {
   .cta-img {
-    width: 100px;
+    width: 90px;
     margin: 10px 50px;
   }
   .oracle {

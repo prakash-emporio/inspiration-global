@@ -148,15 +148,3 @@
     bottom: -10% !important;
   }
 }
-
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .service-hero-card {
-    width: 600px;
-    height: 450px;
-    left: 40% !important;
-    top: 60% !important;
-  }
-}
