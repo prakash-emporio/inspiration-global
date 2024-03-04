@@ -127,6 +127,15 @@
     font-size: 30px;
   }
 
+  .company-team-header {
+    font-size: 30px;
+  }
+
+  .company-team-secondary-header{
+    font-size: 50px;
+    text-align: center;
+  }
+
   .company-hero-header {
     top: 15%;
     left: 5%;
