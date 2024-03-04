@@ -104,14 +104,13 @@
 }
 
 .card:hover .company-card {
-  background: #1f2937;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
 .company-hero-header {
   top: 25%;
-  left: 5%;
+  left: 8%;
 }
 
 .company-hero-header-two {
@@ -131,7 +130,7 @@
     font-size: 30px;
   }
 
-  .company-team-secondary-header{
+  .company-team-secondary-header {
     font-size: 50px;
     text-align: center;
   }
@@ -147,7 +146,7 @@
   }
 }
 
-@media screen and (min-width:541px) and (max-width: 991px) {
+@media screen and (min-width: 541px) and (max-width: 991px) {
   .company-team-header {
     font-size: 40px;
   }

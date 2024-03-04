@@ -3,7 +3,10 @@ import CompanyTeamCardNew from "./CompanyTeamCardNew.jsx";
 
 export default function CompanyTeam() {
   return (
-    <div id="#team" className="container-fluid company-background-color company-padding">
+    <div
+      id="#team"
+      className="container-fluid company-background-color company-padding"
+    >
       <div className="row">
         <div className="col">
           <h1 className="p-5 text-center company-team-header">Our Team</h1>
@@ -11,7 +14,9 @@ export default function CompanyTeam() {
       </div>
       <div className="row">
         <div className="col-lg-4 ">
-          <h1 className="company-team-secondary-header sticky-lg-top sticky-lg-top top-50">Mgt.</h1>
+          <h1 className="company-team-secondary-header">
+            Mgt.
+          </h1>
         </div>
         <div className="col-lg-8">
           <CompanyTeamCardNew />
@@ -19,7 +24,9 @@ export default function CompanyTeam() {
       </div>
       <div className="row">
         <div className="col-lg-4">
-          <h1 className="company-team-secondary-header sticky-lg-top top-50">Adv.</h1>
+          <h1 className="company-team-secondary-header">
+            Adv.
+          </h1>
         </div>
         <div className="col-lg-8">
           <CompanyTeamCardAdv />

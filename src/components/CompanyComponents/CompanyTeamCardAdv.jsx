@@ -1,40 +1,4 @@
-import { useState } from "react";
-import companybtn from "/companybtn.png";
-import { NavLink } from "react-router-dom";
-
-function CompanyTeamCard({ member }) {
-  const { imageSrc, name, designation, bio, linkedin } = member;
-
-  return (
-    <div className="container-fluid">
-      <div className="row g-0">
-        <div className="d-flex justify-content-between align-items-center gap-2">
-          <div>
-            <img
-              className="img-thumbnail"
-              src={imageSrc}
-              alt="Management-Images"
-            />
-          </div>
-          <div className="company-card-title">{name}</div>
-          <div className="company-designation">{designation}</div>
-          <div>
-            <NavLink to={linkedin}>
-              <img
-                className="object-fit-contain linkedin-btn"
-                src={companybtn}
-                alt="linkedin-btn"
-              />
-            </NavLink>
-          </div>
-        </div>
-        <div className="py-2">
-          <p className="company-card-detail">{bio}</p>
-        </div>
-      </div>
-    </div>
-  );
-}
+import CompanyTeamCard from "./CompanyTeamCard";
 
 export default function CompanyTeamCardAdv() {
   const teamMembers = [
