@@ -2,8 +2,8 @@ import React from "react";
 
 export default function CompanyTestimonial() {
   return (
-    <div className="container-fluid company-text-margin">
-      <div className="container my-md-3 py-md-3 mb-lg-5 py-lg-5">
+    <div className="container-fluid company-text-margin margin-code">
+      <div className="my-md-3 py-md-3 mb-lg-5 py-lg-5">
         <div className="row">
           <div className="col-md-10 col-lg-7 service-testimonial-text text-white z-2">
             <p>
@@ -16,7 +16,7 @@ export default function CompanyTestimonial() {
           </div>
         </div>
       </div>
-      <div className="container my-md-3 py-md-3 mb-lg-5 py-lg-5">
+      <div className="my-md-3 py-md-3 mb-lg-5 py-lg-5">
         <div className="row">
           <div className="col"></div>
           <div className="col-md-10 col-lg-7 service-testimonial-text text-white z-2">
@@ -34,7 +34,7 @@ export default function CompanyTestimonial() {
           </div>
         </div>
       </div>
-      <div className="container my-md-3 py-md-3 mb-lg-5 py-lg-5">
+      <div className="my-md-3 py-md-3 mb-lg-5 py-lg-5">
         <div className="row">
           <div className="col-md-10 col-lg-7 service-testimonial-text text-white">
             <p>
@@ -52,7 +52,7 @@ export default function CompanyTestimonial() {
           </div>
         </div>
       </div>
-      <div className="container my-md-3 py-md-3 mb-lg-5 py-lg-5">
+      <div className="my-md-3 py-md-3 mb-lg-5 py-lg-5">
         <div className="row">
           <div className="col d-flex justify-content-start align-items-center">
             <h2 className="talent-testimonial-header">Certifications</h2>
