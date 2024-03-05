@@ -1,7 +1,7 @@
 import "../css/Testimonial.css";
 import CountUp from "react-countup";
 
-export default function StatsSection({title, description, statsData}) {
+export default function StatsSection({ title, description, statsData }) {
   return (
     <div
       data-aos="zoom-in-up"
@@ -12,9 +12,7 @@ export default function StatsSection({title, description, statsData}) {
         <div className="row">
           <div className="col-12 col-md-12">
             <h1 className="py-3 testimonial-heading">{title}</h1>
-            <p className="testimonial-text p-3">
-              {description}
-            </p>
+            <p className="testimonial-text p-3">{description}</p>
           </div>
         </div>
       </div>
@@ -30,7 +28,7 @@ export default function StatsSection({title, description, statsData}) {
                   duration={5}
                   enableScrollSpy
                   scrollSpyOnce
-                ></CountUp>
+                >{({ countUpRef }) => <span ref={countUpRef} />}</CountUp>
                 {data.sup && <sup className="testimonial-plus">+</sup>}
               </h1>
               <p className="py-2 testimonial-last-text">{data.label}</p>
