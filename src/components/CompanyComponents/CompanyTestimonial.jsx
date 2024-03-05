@@ -4,7 +4,7 @@ export default function CompanyTestimonial() {
   return (
     <div className="container-fluid company-text-margin margin-code">
       <div className="my-md-3 py-md-3 mb-lg-5 py-lg-5">
-        <div className="row">
+        <div className="row g-0">
           <div className="col-md-10 col-lg-7 service-testimonial-text text-white z-2">
             <p>
               To excel in today's rapidly evolving landscape, organizations must
@@ -17,7 +17,7 @@ export default function CompanyTestimonial() {
         </div>
       </div>
       <div className="my-md-3 py-md-3 mb-lg-5 py-lg-5">
-        <div className="row">
+        <div className="row g-0">
           <div className="col"></div>
           <div className="col-md-10 col-lg-7 service-testimonial-text text-white z-2">
             <p>
@@ -35,7 +35,7 @@ export default function CompanyTestimonial() {
         </div>
       </div>
       <div className="my-md-3 py-md-3 mb-lg-5 py-lg-5">
-        <div className="row">
+        <div className="row g-0">
           <div className="col-md-10 col-lg-7 service-testimonial-text text-white">
             <p>
               With a rich history of crafting, refining, and deploying
@@ -53,7 +53,7 @@ export default function CompanyTestimonial() {
         </div>
       </div>
       <div className="my-md-3 py-md-3 mb-lg-5 py-lg-5">
-        <div className="row">
+        <div className="row g-0">
           <div className="col d-flex justify-content-start align-items-center">
             <h2 className="talent-testimonial-header">Certifications</h2>
           </div>

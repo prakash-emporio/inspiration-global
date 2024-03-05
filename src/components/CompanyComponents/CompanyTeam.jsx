@@ -9,7 +9,7 @@ export default function CompanyTeam() {
     >
       <div className="row">
         <div className="col">
-          <h1 className="p-5 text-center company-team-header">Our Team</h1>
+          <h1 className="p-md-5 text-center company-team-header">Our Team</h1>
         </div>
       </div>
       <div className="row">

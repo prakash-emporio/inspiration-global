@@ -158,11 +158,14 @@
 
   .company-team-header {
     font-size: 30px;
+    padding: 20px 0px;
   }
 
   .company-team-secondary-header {
     font-size: 50px;
     text-align: center;
+    padding: 20px 0px;
+    line-height: 50px;
   }
   .company-text-margin {
     margin-top: 100%;
