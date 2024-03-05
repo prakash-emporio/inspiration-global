@@ -19,7 +19,7 @@ export default function CompanyTeamCard({ member }) {
     <div onMouseEnter={handleMouseOver}
     onMouseLeave={handleMouseOver} className="card mb-3 company-card">
       <div className="row g-0">
-        <div className="col-md-2 d-flex justify-content-center align-items-center">
+        <div className="col-md-2 d-flex justify-content-center align-items-start">
           <img
             src={imageSrc}
             className="img-thumbnail rounded-start company-card-thumbnail"

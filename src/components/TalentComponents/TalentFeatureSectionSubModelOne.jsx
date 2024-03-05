@@ -3,9 +3,7 @@ const TalentFeatureCard = ({ title, description }) => (
   <div className="col-12 col-md-6 col-lg-4 col-xl">
     <div className="card bg-transparent">
       <div className="card-body">
-        <h5 className="talent-feature-section-card-title-0">
-          {title}
-        </h5>
+        <h5 className="talent-feature-section-card-title-0">{title}</h5>
         <p className="card-text talent-feature-section-card-text-0">
           {description}
         </p>

@@ -103,7 +103,6 @@
   .company-card-title {
     color: white;
   }
-
   .company-designation {
     color: white;
   }
@@ -132,7 +131,8 @@
 
 .company-hero-header {
   top: 215px;
-  left: 105px;
+  left: 0px;
+  padding-left: 120px;
 }
 
 .company-hero-header-two {
@@ -147,7 +147,8 @@
   .company-hero-header {
     font-size: 30px;
     top: 110px;
-    left: 10px;
+    padding-left: 20px;
+    left: 0px;
   }
   .company-hero-header-two {
     font-size: 30px;
@@ -230,5 +231,11 @@
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .company-hero-img {
     left: 320px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .company-hero-header-two {
+    top: 700px;
   }
 }
