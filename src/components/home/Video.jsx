@@ -18,7 +18,13 @@ export default function Video({ title, link }) {
         url={link}
         className="object-fit-contain"
         light={<img src={videoThumbnail} width="100%" alt="Thumbnail" />}
-        playIcon={<img className="img-thumbnail img-brightness position-absolute" src={playDefault} alt="play-button" />}
+        playIcon={
+          <img
+            className="img-thumbnail play-btn img-brightness position-absolute"
+            src={playDefault}
+            alt="play-button"
+          />
+        }
         width="100%"
         height="100%"
         playing={true}

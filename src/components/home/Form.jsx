@@ -13,7 +13,7 @@ export default function Form() {
   return (
     <div className="form-wrapper">
       <div className="container-fluid margin-code">
-        <div className="row">
+        <div className="row g-0">
           <div className="col col-lg-6 my-auto">
             <h1 className="form-heading">Let’s Talk</h1>
           </div>
