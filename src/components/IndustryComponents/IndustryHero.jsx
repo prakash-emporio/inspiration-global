@@ -17,7 +17,7 @@ export default function IndustryHero({ heroImage, heroTitle, heroHeadline }) {
           </div>
         </div>
         <div className="container-fluid g-0">
-          <div className="row">
+          <div className="row g-0">
             <div className="col">
               <div className="industry-hero-card position-absolute industry-bottom industry-start">
                 <div className="service-card-color">

@@ -137,7 +137,7 @@
     position: absolute;
     top: 50%;
     z-index: 2;
-    right: -3% !important;
+    right: 0%!important;
   }
 }
 

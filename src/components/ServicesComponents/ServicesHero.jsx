@@ -18,7 +18,7 @@ export default function ServicesHero({ heroImage, heroTitle, heroHeadline }) {
           </div>
         </div>
         <div className="container-fluid g-0">
-          <div className="row">
+          <div className="row g-0">
             <div className="col">
               <div className="position-absolute service-hero-card">
                 <div className="service-card-color">

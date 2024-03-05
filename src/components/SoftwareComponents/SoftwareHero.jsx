@@ -8,7 +8,7 @@ export default function SoftwareHero({
 }) {
   return (
     <section className="container-fluid g-0 hero-banner">
-      <div className="row position-relative">
+      <div className="row g-0 position-relative">
         <img
           className="img-fluid hero-main-img"
           src={heroImage}
