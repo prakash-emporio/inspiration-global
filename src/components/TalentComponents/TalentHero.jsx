@@ -9,7 +9,7 @@ export default function TalentHero() {
         <div className="position-absolute talent-top">
           <div className="container mx-lg-5 px-lg-5">
             <div className="row">
-              <div className="col-md-6 col-lg-6">
+              <div className="col-md-6 px-lg-5">
                 <h5 className="text-white shared-hero-main-text">
                   Talent Procurement and Professional Services
                 </h5>

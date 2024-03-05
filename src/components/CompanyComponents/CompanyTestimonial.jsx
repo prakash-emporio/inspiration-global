@@ -54,7 +54,7 @@ export default function CompanyTestimonial() {
       </div>
       <div className="container my-md-3 py-md-3 mb-lg-5 py-lg-5">
         <div className="row">
-          <div className="col">
+          <div className="col d-flex justify-content-start align-items-center">
             <h2 className="talent-testimonial-header">Certifications</h2>
           </div>
           <div className="col-md-10 col-lg-7 service-testimonial-text text-white">

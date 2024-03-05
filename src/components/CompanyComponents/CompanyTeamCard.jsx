@@ -36,7 +36,7 @@ export default function CompanyTeamCard({ member }) {
                 <h5 className="card-title company-card-title">{name}</h5>
               </div>
               <div className="col-md-4">
-                <p className="card-text company-designation">{designation}</p>
+                <p className="card-text company-designation text-uppercase">{designation}</p>
               </div>
               {isHovered && (
                 <>
@@ -56,7 +56,7 @@ export default function CompanyTeamCard({ member }) {
                         className="btn company-card-btn"
                         onClick={toggleBio}
                       >
-                        {showFullBio ? "Read Less" : "Read More"}
+                        {showFullBio ? "Close" : "Read Bio"}
                       </button>
                     </p>
                 

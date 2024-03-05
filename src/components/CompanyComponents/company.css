@@ -9,16 +9,28 @@
   font-weight: 900;
 }
 
+.company-hero-img {
+  top: -130px;
+  left: 420px;
+}
+
 .company-hero-header-two {
   color: #a1f157;
   font-size: 58px;
   font-weight: 900;
+  padding-left: 50%;
+  padding-right: 50%;
+  text-wrap: nowrap;
 }
 
 .company-certification-wrapper {
   font-size: 20px;
   font-weight: 700;
   line-height: 38px;
+}
+
+.company-text-margin {
+  margin-top: 50%;
 }
 
 .company-team-header {
@@ -57,7 +69,7 @@
 }
 
 .company-card-title {
-  color: #f3f4f6;
+  color: #4b5563;
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -65,7 +77,7 @@
 }
 
 .company-designation {
-  color: #9ca3af;
+  color: #4b5563;
   font-size: 18px;
   font-weight: 500;
   line-height: 38px;
@@ -85,6 +97,16 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
+}
+
+.card:hover {
+  .company-card-title {
+    color: white;
+  }
+
+  .company-designation {
+    color: white;
+  }
 }
 
 .card-hover-text {
@@ -109,21 +131,28 @@
 }
 
 .company-hero-header {
-  top: 25%;
-  left: 8%;
+  top: 215px;
+  left: 105px;
 }
 
 .company-hero-header-two {
-  top: 50%;
-  left: 50%;
+  top: 491px;
 }
 
 @media (max-width: 540px) {
+  .company-hero-img {
+    top: 0;
+    left: 0;
+  }
   .company-hero-header {
     font-size: 30px;
+    top: 110px;
+    left: 10px;
   }
   .company-hero-header-two {
     font-size: 30px;
+    top: 200px;
+    padding-left: 38%;
   }
 
   .company-team-header {
@@ -134,19 +163,12 @@
     font-size: 50px;
     text-align: center;
   }
-
-  .company-hero-header {
-    top: 15%;
-    left: 5%;
-  }
-
-  .company-hero-header-two {
-    top: 25%;
-    left: 36%;
+  .company-text-margin {
+    margin-top: 70%;
   }
 }
 
-@media screen and (min-width: 541px) and (max-width: 991px) {
+@media screen and (min-width: 541px) and (max-width: 768px) {
   .company-team-header {
     font-size: 40px;
   }
@@ -164,18 +186,49 @@
     object-position: center;
   }
   .company-hero-header {
-    top: 25%;
-    left: 5%;
+    top: 15%;
+    left: 0;
   }
-
+  .company-hero-img {
+    top: 0;
+    left: 10px;
+  }
   .company-hero-header-two {
-    top: 50%;
-    left: 30%;
+    top: 320px;
+    padding-left: 36%;
+  }
+  .company-text-margin {
+    margin-top: 65%;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
+  .company-hero-img {
+    left: 170px;
+  }
+  .company-hero-header {
+    top: 150px;
+    left: 82px;
+  }
+  .company-hero-header-two {
+    top: 350px;
+  }
+}
+
+@media (min-width: 991px) {
   .company-padding {
     padding: 0px 105px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .company-hero-header-two {
+    top: 380px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .company-hero-img {
+    left: 320px;
   }
 }

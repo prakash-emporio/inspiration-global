@@ -1,7 +1,7 @@
 import "./ServiceHero.css";
 import "./ServicesText.css";
 
-export default function ServicesHero({heroImage, heroTitle, heroHeadline}) {
+export default function ServicesHero({ heroImage, heroTitle, heroHeadline }) {
   return (
     <section className="container-fluid g-0">
       <div className="row g-0 position-relative">
@@ -9,7 +9,7 @@ export default function ServicesHero({heroImage, heroTitle, heroHeadline}) {
         <div className="position-absolute service-top">
           <div className="container mx-lg-5 px-lg-5">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-md-6 px-lg-4">
                 <h5 className="text-white shared-hero-main-text">
                   {heroTitle}
                 </h5>
@@ -22,9 +22,7 @@ export default function ServicesHero({heroImage, heroTitle, heroHeadline}) {
             <div className="col">
               <div className="position-absolute service-hero-card">
                 <div className="service-card-color">
-                  <h1 className="service-hero-card-text">
-                    {heroHeadline}
-                  </h1>
+                  <h1 className="service-hero-card-text">{heroHeadline}</h1>
                 </div>
               </div>
             </div>

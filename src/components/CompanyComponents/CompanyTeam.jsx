@@ -4,7 +4,7 @@ import CompanyTeamCardNew from "./CompanyTeamCardNew.jsx";
 export default function CompanyTeam() {
   return (
     <div
-      id="#team"
+      id="team"
       className="container-fluid company-background-color company-padding"
     >
       <div className="row">

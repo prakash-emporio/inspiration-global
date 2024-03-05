@@ -49,9 +49,7 @@ export default function MegaHeader() {
         <ul className="navbar-nav">
           {/* Software */}
           <li className="nav-item dropdown position-static">
-            <NavLink className="nav-link dropdown-toggle">
-              Software
-            </NavLink>
+            <NavLink className="nav-link dropdown-toggle">Software</NavLink>
             <ul className="dropdown-menu w-100 shadow">
               <div className="container-fluid">
                 <div className="row g-0">
@@ -118,9 +116,7 @@ export default function MegaHeader() {
           </li>
           {/* Service */}
           <li className="nav-item dropdown position-static">
-            <NavLink className="nav-link dropdown-toggle">
-              Services
-            </NavLink>
+            <NavLink className="nav-link dropdown-toggle">Services</NavLink>
             <ul className="dropdown-menu w-100 shadow">
               <div className="container-fluid">
                 <div className="row g-0">
@@ -247,9 +243,7 @@ export default function MegaHeader() {
           </li>
           {/* Industries */}
           <li className="nav-item dropdown position-static">
-            <NavLink className="nav-link dropdown-toggle">
-              Industries
-            </NavLink>
+            <NavLink className="nav-link dropdown-toggle">Industries</NavLink>
             <ul className="dropdown-menu w-100 shadow">
               <div className="container-fluid">
                 <div className="row g-0">
@@ -426,6 +420,7 @@ export default function MegaHeader() {
                         title="Team"
                         text="Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus."
                         buttonName="Team"
+                        route={"/company#team"}
                       />
                     </div>
                   </div>
