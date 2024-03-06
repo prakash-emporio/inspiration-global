@@ -32,6 +32,7 @@ import {
   IndustryPEVCPage,
   InsightPage,
   CompanyPage,
+  DEIPolicyPage,
 } from "./pages/index.js";
 import BlogDetailPage from "./pages/BlogDetailPage.jsx";
 
@@ -82,6 +83,7 @@ const router = createBrowserRouter(
       <Route path="insight" element={<InsightPage />} />
       <Route path="/insight/:slug" element={<BlogDetailPage />} />
       <Route path="company" element={<CompanyPage />} />
+      <Route path="policy" element={<DEIPolicyPage />} />
     </Route>
   )
 );

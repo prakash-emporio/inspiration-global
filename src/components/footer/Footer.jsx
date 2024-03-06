@@ -1,6 +1,7 @@
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
 import logo from "/logo.png";
+import {useNavigate} from "react-router-dom";
 
 const footerData = [
   { id: 1, label: "Software", link: "/software/aws" },
@@ -12,6 +13,12 @@ const footerData = [
 ];
 
 export default function Footer() {
+
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/policy")
+  }
   return (
     <footer className="pt-5 pb-1 main-footer">
       <div className="container-fluid margin-code">
@@ -115,7 +122,7 @@ export default function Footer() {
             </li>
           </ul>
           <p className="footer-final-text">Terms of Service</p>
-          <p className="footer-final-text">Dei Policy</p>
+          <p onClick={handleClick} className="footer-final-text">Dei Policy</p>
         </div>
       </div>
     </footer>

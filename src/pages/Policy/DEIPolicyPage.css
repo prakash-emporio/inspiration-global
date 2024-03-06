@@ -1,0 +1,77 @@
+.policy-page-bcg-color {
+  background-color: rgba(31, 41, 55, 1);
+}
+
+.policy-page-title {
+  color: white;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 54px;
+  letter-spacing: -0.025em;
+  margin-top: 160px;
+  margin-bottom: 80px;
+}
+
+.policy-page-text {
+  color: white;
+  background-color: rgba(17, 24, 39, 1);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 50px;
+  border-radius: 21px;
+  border: 0px, 10px, 0px, 0px;
+}
+
+.policy-page-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: rgba(161, 241, 87, 1);
+}
+
+.policy-page-btn:hover {
+  color: rgba(161, 241, 87, 0.7);
+}
+
+.policy-page-btn-svg {
+  margin-left: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 540px) {
+  .policy-page-title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .policy-page-title {
+    padding: 20px;
+  }
+  .policy-page-text {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .policy-page-title {
+    padding-left: 210px;
+    padding-right: 210px;
+  }
+  .policy-page-text {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    padding-left: 210px;
+    padding-right: 210px;
+  }
+}

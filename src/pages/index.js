@@ -20,7 +20,7 @@ import IndustryInsurancePage from "./Industry/IndustryInsurancePage.jsx";
 import IndustryPEVCPage from "./Industry/IndustryPEVCPage.jsx";
 import InsightPage from "./InsightPage";
 import CompanyPage from "./CompanyPage";
-
+import DEIPolicyPage from "./Policy/DEIPolicyPage.jsx";
 export {
   Homepage,
   SoftwareAwsPage,
@@ -44,4 +44,5 @@ export {
   IndustryPEVCPage,
   InsightPage,
   CompanyPage,
+  DEIPolicyPage
 };
