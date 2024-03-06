@@ -4,6 +4,7 @@ import MegaHeader from "./components/header/MegaHeader.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import OffcanvasNavbar from "./components/header/OffCanvasHeader.jsx";
 
 export default function Layout() {
   useEffect(() => {
@@ -13,6 +14,7 @@ export default function Layout() {
   return (
     <div>
       <MegaHeader />
+      {/* <OffcanvasNavbar/> */}
       <main>
         <Outlet />
       </main>

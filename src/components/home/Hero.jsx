@@ -53,7 +53,7 @@ export default function Hero({
             data-aos-duration="3000"
             className="col-md-9 g-0"
           >
-            <img className="w-100 hero-image" src={heroImg} />
+            <img className="w-100 hero-image" src={heroImg} alt="home-hero-img"/>
           </div>
         </div>
       </div>

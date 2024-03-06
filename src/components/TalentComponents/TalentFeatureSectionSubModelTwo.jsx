@@ -76,7 +76,7 @@ const TalentFeatureSectionSubModelTwo = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="container mb-0">
       <h1 className="talent-feature-section-header m-lg-5 p-5">
         Our Time-tested Process
       </h1>

@@ -1,6 +1,6 @@
 export default function ServiceSpecialText({ text, points }) {
   return (
-    <div className="container">
+    <div className="container mt-0 mb-0">
       <div className="row">
         <div className="p-lg-5 col-lg-8 service-testimonial-text service-testimonial-bold-text">{text}</div>
       </div>
