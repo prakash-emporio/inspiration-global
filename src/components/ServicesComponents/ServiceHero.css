@@ -29,11 +29,6 @@
   border-image: linear-gradient(to top, #5912e4, rgba(0, 0, 0, 0)) 1 100%;
 }
 
-.service-hero-card-body-wrapper {
-  width: 600px;
-  height: auto;
-}
-
 .service-hero-card-text {
   padding: 60px 40px;
   color: #000;
@@ -44,17 +39,8 @@
   letter-spacing: -1.05px;
 }
 
-.service-top {
-  top: 30% !important;
-}
-
 @media screen and (max-width: 576px) {
   .talent-hero-img {
-    height: 400px;
-    object-fit: cover;
-    object-position: center;
-  }
-  .service-hero-img {
     height: 400px;
     object-fit: cover;
     object-position: center;
@@ -117,10 +103,6 @@
 }
 
 @media (max-width: 540px) {
-  /* .container {
-    margin-top: 0em !important;
-    margin-bottom: 0em !important;
-  } */
   .service-hero-card-text {
     font-size: 24px;
     line-height: 30px;

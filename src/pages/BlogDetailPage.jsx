@@ -72,11 +72,9 @@ export default function BlogDetailPage() {
             "Get out there and begin making an impact now that you’ve gained fresh knowledge and perspectives. It only takes a few of us to embrace such tactics and start a domino effect that will make our jobs more interesting and exciting!",
 
             "It is time to break the norm and hire people who are willing to go the extra mile.",
-
           ],
           img: "",
-          image_side_text:
-            "",
+          image_side_text: "",
         },
       ],
     },
@@ -87,7 +85,7 @@ export default function BlogDetailPage() {
   function getBlogBySlug(blogSlug) {
     const backendAPI = import.meta.env.VITE_IG_BACKEND_API;
     return `${backendAPI}get-post-detail/${blogSlug}`;
-}
+  }
 
   async function downloadBlog() {
     const response = await axios.get(getBlogBySlug(slug));
@@ -102,9 +100,16 @@ export default function BlogDetailPage() {
     <>
       <section className="container-fluid g-0">
         <div className="row g-0 position-relative">
-          <img height={600} className="blog-hero-img" src={blog?.hero_image || "/blogDetail.png"} alt="" />
+          <img
+            height={600}
+            className="blog-hero-img"
+            src={blog?.hero_image || "/blogDetail.png"}
+            alt=""
+          />
           <div className="blog-hero-heading-wrapper">
-            <h1 className="blog-hero-heading">{blog?.hero_heading || "Dummy Title Is Showing"}</h1>
+            <h1 className="blog-hero-heading">
+              {blog?.hero_heading || "Dummy Title Is Showing"}
+            </h1>
           </div>
         </div>
       </section>
