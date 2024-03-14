@@ -1,3 +1,5 @@
+import "./SoftwareHero.css";
+
 export default function NewSoftwareHero({ title, text, heroLogo }) {
   return (
     <section className="container-fluid mt-0 mb-0">

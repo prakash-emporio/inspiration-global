@@ -4,7 +4,6 @@ import { SharedCard } from "../../components/Shared/index.js";
 import {
   FeatureSection,
   SoftwareCTA,
-  SoftwareHero,
   CardTypeOne,
   CardTypeTwo,
 } from "../../components/SoftwareComponents/index.js";
@@ -65,13 +64,6 @@ export default function SoftwareAzurePage() {
 
   return (
     <>
-      {/* <SoftwareHero
-        key={api.header.id}
-        heroImage={api.img}
-        heroheader={api.header.title}
-        heroSubheader={api.header.subtitle}
-        heroLogo={api.header.logo}
-      /> */}
       <div
         className="hero-background-img software-hero-background-img"
         style={{ backgroundImage: `url(${api.img})` }}

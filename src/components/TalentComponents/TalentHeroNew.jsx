@@ -1,3 +1,5 @@
+import "./TalentHero.css";
+
 export default function TalentHeroNew() {
   return (
     <section className="container-fluid mt-0 mb-0">

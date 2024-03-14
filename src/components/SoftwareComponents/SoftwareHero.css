@@ -11,13 +11,6 @@
   line-height: 30px;
 }
 
-.custom-m {
-  right: 0%;
-  margin-right: 105px;
-  margin-top: 105px;
-  width: 180px;
-  height: 180px;
-}
 
 .custom-logo-margin {
   margin-top: 115px;
@@ -37,11 +30,6 @@
   .feature-card-title-next {
     font-size: 30px !important;
   }
-  .custom-m {
-    margin-right: 10px;
-    width: 100px;
-    height: 100px;
-  }
   .software-hero-text-wrapper {
     padding: 20px;
   }
@@ -56,15 +44,6 @@
 }
 
 @media (min-width: 541px) and (max-width: 991px) {
-  .software-top {
-    top: 50%;
-    padding: 0rem 5rem;
-  }
-  .custom-m {
-    margin-right: 20px;
-    width: 150px;
-    height: 150px;
-  }
   .software-hero-text-wrapper {
     padding: 20px;
   }
@@ -79,29 +58,10 @@
 }
 
 @media screen and (max-width: 576px) {
-  .software-top {
-    top: 50%;
-    padding: 20px 40px;
-  }
   .hero-main-img {
     min-height: 500px;
     object-fit: cover;
     width: 100%;
     object-position: center;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .software-top {
-    top: 50%;
-    left: 0%;
-    padding: 20px 40px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .software-top {
-    top: 30%;
-    left: 7%;
   }
 }

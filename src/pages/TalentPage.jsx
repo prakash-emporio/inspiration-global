@@ -1,6 +1,4 @@
 import {
-  TalentHero,
-  TalentTestimonials,
   TalentFeatureSection,
 } from "../components/TalentComponents/index.js";
 import { Form } from "../components/home/index.js";

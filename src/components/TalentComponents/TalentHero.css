@@ -1,37 +1,3 @@
-@media screen and (min-width: 993px) {
-  .talent-hero-card {
-    /* margin-right: 100px; */
-    left: 50% !important;
-    top: 50% !important;
-  }
-}
-
-/* #hero-talent-img {
-  background-image: url("/talentHero.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 600px;
-}
-
-.custom-padding {
-  padding-top: 215px;
-}
-
-.custom-card-padding {
-  margin-top: 315px;
-} */
-
-@media screen and (max-width: 992px) {
-  .talent-hero-card {
-    position: relative !important;
-  }
-}
-
-.talent-top {
-  top: 30% !important;
-}
-
 /* write yesterday */
 @media (max-width: 540px) {
   .shared-hero-main-text {
