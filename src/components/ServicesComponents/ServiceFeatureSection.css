@@ -30,7 +30,7 @@
   color: #a1f157;
   font-size: 50px;
   font-weight: 900;
-  line-height: 100%;
+  line-height: 50px;
   letter-spacing: -1.25px;
 }
 
@@ -38,7 +38,7 @@
   color: #fff;
   font-size: 25px;
   font-weight: 300;
-  line-height: 130%;
+  line-height: 32px;
 }
 
 .service-feature-section-card-number {
