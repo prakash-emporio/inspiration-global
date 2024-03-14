@@ -5,6 +5,20 @@
   letter-spacing: -1.45px;
 }
 
+.service-testimonial-text {
+  color: black;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.service-testimonial-bold-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: black;
+}
+
 .service-card-color {
   background-color: #a1f157;
   border-bottom-width: 0;
@@ -21,10 +35,10 @@
 }
 
 .service-hero-card-text {
-  padding: 80px 40px;
+  padding: 60px 40px;
   color: #000;
   text-align: left;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 42px;
   letter-spacing: -1.05px;

@@ -6,6 +6,30 @@
   --black-color: #000000;
   --green-color: #a1f157;
 }
+/* 
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4.25rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.75rem;
+} */
 
 body {
   font-family: "Hanken Grotesk", sans-serif;
@@ -49,7 +73,20 @@ body {
   padding-right: 105px;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
+  .margin-code {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .hero-background-img {
+    height: 500px !important;
+  }
+  #hero-home-img {
+    height: 500px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .margin-code {
     padding-left: 0px;
     padding-right: 0px;
@@ -58,17 +95,17 @@ body {
     font-size: 30px !important;
     line-height: 30px !important;
   }
+  p {
+    margin-bottom: 0 !important;
+  }
 }
 
 .cursor-pointer {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-  .margin-code {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+.custom-padding {
+  padding-top: 215px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -82,4 +119,33 @@ body {
   .custom-card-title {
     font-size: 48px;
   }
+}
+
+#hero-talent-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.hero-background-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.software-hero-background-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1050px;
+}
+
+/* .custom-padding {
+  padding-top: 215px;
+} */
+
+.custom-card-padding {
+  margin-top: 100px;
 }

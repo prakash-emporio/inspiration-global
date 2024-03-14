@@ -1,3 +1,4 @@
+import "./MegaHeader.css";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "/logo.png";
@@ -36,7 +37,7 @@ export default function OffcanvasNavbar() {
         isSticky ? "sticky" : ""
       }`}
     >
-      <div className="container-fluid margin-code">
+      <div className="container mt-0 mb-0">
         <NavLink className="navbar-brand" to="/" reloadDocument>
           <img className="m-3" src={logo} alt="company-logo" />
         </NavLink>
@@ -66,28 +67,38 @@ export default function OffcanvasNavbar() {
             ></button>
           </div>
           <div className="offcanvas-body">
-            <ul className="navbar-nav justify-content-end align-items-center flex-grow-1">
+            <ul className="navbar-nav justify-content-end flex-grow-1">
               {/* Software */}
               <li className="nav-item dropdown position-static">
-                <NavLink className="nav-link dropdown-toggle">Software</NavLink>
+                <NavLink className="nav-link dropdown-toggle">
+                  Software
+                </NavLink>
                 <ul className="dropdown-menu w-100 shadow">
                   <div className="container-fluid">
                     <div className="row g-0">
                       <div className="col-8 dropdown-card-padding">
-                        <div className="col">
+                        {/* <div className="col">
                           <p className="dropdown-heading">
                             Lorem ipsum dolor sit amet consectetur, adipisicing
                             elit. Rem molestias eligendi maxime sed expedita
                             quaerat dolor quasi deserunt delectus enim!
                           </p>
-                        </div>
+                        </div> */}
                         <div className="d-flex gap-3">
                           {/* first card inside dropdown */}
-                          <DropdownCard
-                            title="Software"
-                            text="Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus."
-                            buttonName="Software"
-                          />
+                          <div className="col-5">
+                            <div className="card card-dropdown-margin">
+                              <div className="">
+                                <h5 className="card-title card-title-size">
+                                  Software
+                                </h5>
+                                <p className="card-text my-card-text">
+                                  Vitae nulla vel dolor morbi. In in habitasse
+                                  commodo scelerisque elementum metus.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       {/* dropdown menu side bar */}
@@ -121,13 +132,13 @@ export default function OffcanvasNavbar() {
                           >
                             Azure
                           </NavLink>
-                          <NavLink
+                          {/* <NavLink
                             to={"/software/shopify"}
                             className="subMenuItems"
                             reloadDocument
                           >
                             Shopify+
-                          </NavLink>
+                          </NavLink> */}
                         </div>
                       </div>
                     </div>
@@ -141,20 +152,28 @@ export default function OffcanvasNavbar() {
                   <div className="container-fluid">
                     <div className="row g-0">
                       <div className="col-8 dropdown-card-padding">
-                        <div className="col">
+                        {/* <div className="col">
                           <p className="dropdown-heading">
                             Lorem ipsum dolor sit amet consectetur, adipisicing
                             elit. Rem molestias eligendi maxime sed expedita
                             quaerat dolor quasi deserunt delectus enim!
                           </p>
-                        </div>
+                        </div> */}
                         <div className="d-flex">
                           {/* first card inside dropdown */}
-                          <DropdownCard
-                            title="Services"
-                            text="Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus."
-                            buttonName="Services"
-                          />
+                          <div className="col-5">
+                            <div className="card card-dropdown-margin">
+                              <div className="">
+                                <h5 className="card-title card-title-size">
+                                  Services
+                                </h5>
+                                <p className="card-text my-card-text">
+                                  Vitae nulla vel dolor morbi. In in habitasse
+                                  commodo scelerisque elementum metus.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       {/* dropdown menu side bar */}
@@ -251,9 +270,9 @@ export default function OffcanvasNavbar() {
                           />
                           {/* Second card inside dropdown */}
                           <DropdownCard
-                            title="Carrers"
+                            title="Careers"
                             text="Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus."
-                            buttonName="Carrers"
+                            buttonName="Careers"
                           />
                         </div>
                       </div>
@@ -270,20 +289,28 @@ export default function OffcanvasNavbar() {
                   <div className="container-fluid">
                     <div className="row g-0">
                       <div className="col-8 dropdown-card-padding">
-                        <div className="col">
+                        {/* <div className="col">
                           <p className="dropdown-heading">
                             Lorem ipsum dolor sit amet consectetur, adipisicing
                             elit. Rem molestias eligendi maxime sed expedita
                             quaerat dolor quasi deserunt delectus enim!
                           </p>
-                        </div>
+                        </div> */}
                         <div className="d-flex">
                           {/* first card inside dropdown */}
-                          <DropdownCard
-                            title="Industries"
-                            text="Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus."
-                            buttonName="Industries"
-                          />
+                          <div className="col-5">
+                            <div className="card card-dropdown-margin">
+                              <div className="">
+                                <h5 className="card-title card-title-size">
+                                  Industries
+                                </h5>
+                                <p className="card-text my-card-text">
+                                  Vitae nulla vel dolor morbi. In in habitasse
+                                  commodo scelerisque elementum metus.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       {/* dropdown menu side bar */}

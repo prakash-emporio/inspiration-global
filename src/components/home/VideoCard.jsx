@@ -16,7 +16,7 @@ export default function VideoCard({
   return (
     <div className="container-fluid g-0">
       <div className="row g-0">
-        <div className="card col-lg-9 gap-0">
+        <div className="card custom-video-card col-lg-9 gap-0">
           <Video title={videoTitle} link={videoLink} />
         </div>
         <div className="card col-lg-3 position-relative square">

@@ -8,6 +8,7 @@ import {
   CardTypeOne,
   CardTypeTwo,
 } from "../../components/SoftwareComponents/index.js";
+import NewSoftwareHero from "../../components/SoftwareComponents/NewSoftwareHero.jsx";
 
 const api = {
   img: "/OracleHero.png",
@@ -64,13 +65,23 @@ export default function SoftwareOraclePage() {
 
   return (
     <>
-      <SoftwareHero
+      {/* <SoftwareHero
         key={api.header.id}
         heroImage={api.img}
         heroheader={api.header.title}
         heroSubheader={api.header.subtitle}
         heroLogo={api.header.logo}
-      />
+      /> */}
+      <div
+        className="hero-background-img software-hero-background-img"
+        style={{ backgroundImage: `url(${api.img})` }}
+      >
+        <NewSoftwareHero
+          title={api.header.title}
+          text={api.header.subtitle}
+          heroLogo={api.header.logo}
+        />
+      </div>
       <FeatureSection
         key={api.featureSection.id}
         title={api.featureSection.title}

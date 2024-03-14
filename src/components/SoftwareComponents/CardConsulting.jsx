@@ -24,7 +24,7 @@ export default function CardConsulting({ image, title, content }) {
               {content.length > maxLength && (
                 <button
                   type="button"
-                  className="btn software-btn my-md-5"
+                  className="btn software-btn my-md-5 mx-3"
                   onClick={() => setIsExpanded(!isExpanded)}
                 >
                   {isExpanded ? "Learn Less" : "Learn More"}

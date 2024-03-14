@@ -12,11 +12,11 @@ const InsightCard = ({ title, text, image, slug }) => {
 
   return (
     <div onClick={handleClick} className="card">
-        <img
-          src={image}
-          className="card-img-top insight-blog-card-img"
-          alt="card-img"
-        />
+      <img
+        src={image}
+        className="card-img-top insight-blog-card-img"
+        alt="card-img"
+      />
       <div className="py-3 card-body">
         <h5 className="card-title industry-blog-card-title">{title}</h5>
         <p className="card-text py-2 industry-blog-card-text ">{text}</p>
@@ -47,9 +47,8 @@ export default function InsightBlogSection() {
   const [blogData, setBlogData] = useState([]);
 
   async function getAllBlogs() {
-    const response = await axios.get(
-      "https://igapibuilder.brandsnarrative.com/wp-json/custom/v1/get-all-posts"
-    );
+    const backendAPI = import.meta.env.VITE_IG_BACKEND_API;
+    const response = await axios.get(`${backendAPI}get-all-posts`);
     setBlogData(response.data);
     setLoading(false);
   }

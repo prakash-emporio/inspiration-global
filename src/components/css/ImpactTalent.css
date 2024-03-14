@@ -184,7 +184,7 @@
     order: 2;
   }
   .second-btn {
-    margin-top: 0px;
+    margin-top: 1rem !important;
   }
   .content-text-wrapper:hover button {
     margin-top: 0px;
@@ -192,6 +192,7 @@
   .first-btn {
     margin-right: 0rem !important;
     margin-left: 0rem !important;
+    margin-top: 1rem !important;
   }
 }
 

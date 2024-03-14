@@ -35,6 +35,7 @@ import {
   DEIPolicyPage,
 } from "./pages/index.js";
 import BlogDetailPage from "./pages/BlogDetailPage.jsx";
+import CareersPage from "./pages/Talent/CareersPage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -44,7 +45,7 @@ const router = createBrowserRouter(
       <Route path="software/oracle" element={<SoftwareOraclePage />} />
       <Route path="software/salesforce" element={<SoftwareSalesforcePage />} />
       <Route path="software/azure" element={<SoftwareAzurePage />} />
-      <Route path="software/shopify" element={<SoftwareShopifyPage />} />
+      {/* <Route path="software/shopify" element={<SoftwareShopifyPage />} /> */}
       <Route
         path="services/product-engineering"
         element={<ServiceProductEngineeringPage />}
@@ -84,6 +85,7 @@ const router = createBrowserRouter(
       <Route path="/insight/:slug" element={<BlogDetailPage />} />
       <Route path="company" element={<CompanyPage />} />
       <Route path="policy" element={<DEIPolicyPage />} />
+      <Route path="careers" element={<CareersPage />} />
     </Route>
   )
 );

@@ -1,0 +1,6 @@
+@media screen and (max-width: 576px) {
+  .service-content-custom-margin {
+    margin-top: 150px !important;
+    margin-bottom: 0px !important;
+  }
+}

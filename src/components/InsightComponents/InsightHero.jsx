@@ -1,21 +1,12 @@
-import insighthero from "/insighthero.png";
-
-export default function InsightHero() {
+export default function InsightHero({title}) {
   return (
-    <section className="container-fluid g-0">
-      <div className="row g-0 position-relative">
-        <img className="img-fluid talent-hero-img" src={insighthero} alt="" />
-        <div className="position-absolute talent-top">
-          <div className="bg-transparent">
-            <div className="container">
-              <div className="row">
-                <div className="col">
-                  <h5 className="px-md-5 py-md-3 px-lg-0 text-white shared-hero-main-text">
-                    Blog
-                  </h5>
-                </div>
-              </div>
-            </div>
+    <section className="container-fluid mt-0 mb-0">
+      <div className="container mt-0 mb-0">
+        <div className="row justify-content-between g-0 custom-padding">
+          <div className="col-md-5">
+            <h1 className="text-white shared-hero-main-text">
+              {title ? title : "Title Goes Here"}
+            </h1>
           </div>
         </div>
       </div>

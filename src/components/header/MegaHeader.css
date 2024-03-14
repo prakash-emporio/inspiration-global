@@ -17,15 +17,11 @@
 
 .navbar-toggler-icon {
   background-color: transparent;
-  background-image: url("/public/navbar-toggler.png");
+  background-image: url("/navbar-toggler.png");
 }
 
 .navbar-toggler {
   border-color: rgba(161, 241, 87, 1);
-}
-
-.navbar-brand {
-  margin-left: 5rem;
 }
 
 .navbar {
@@ -163,31 +159,10 @@
   margin-bottom: 50px;
 }
 
-@media (max-width: 540px) {
-  .navbar-brand {
-    margin-left: 0rem !important;
-  }
-}
-
-@media (min-width: 540px) and (max-width: 768px) {
-  .navbar-brand {
-    margin-left: 0rem;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .megamenu-sidebar {
     width: 100%;
     text-align: center;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .navbar-nav {
-    gap: 15px;
-  }
-  .navbar-brand {
-    margin-left: 4rem;
   }
 }
 
@@ -257,34 +232,23 @@
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1023px) {
-  .navbar-nav {
-    gap: 5px;
+@media (min-width: 992px) and (max-width: 1199px) {
+  .megamenu-sidebar-padding {
+    padding: 0px 20px;
   }
-  .navbar-brand {
-    margin-left: 3rem;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1119px) {
-  .navbar-brand {
-    margin-left: 2.5rem;
+  .dropdown-blog-title {
+    text-wrap: wrap;
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .navbar-brand {
-    margin-left: 5.5rem;
-  }
-  .navbar-nav {
-    gap: 3px;
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .megamenu-sidebar-padding {
+    padding: 0px 50px;
   }
 }
+
 
 @media screen and (min-width: 1400px) {
-  .navbar-brand {
-    margin-left: 105px;
-  }
   .navbar-nav {
     gap: 40px;
   }

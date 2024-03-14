@@ -18,13 +18,13 @@ export default function ServiceCardDesign({ title, description, list }) {
             {description}
           </p>
           {showList && (
-            <ul className="card-text service-card-section-text-size">
+            <article className="card-text service-card-section-text-size">
               {list.map((item, index) => (
-                <li className="service-card-li" key={index}>
+                <p className="service-card-li mb-0 pb-2" key={index}>
                   {item}
-                </li>
+                </p>
               ))}
-            </ul>
+            </article>
           )}
           <div className="d-flex justify-content-end">
             <button

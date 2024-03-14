@@ -36,7 +36,7 @@ export default function TalentCard({ title, description, buttonText, image }) {
               </NavLink>
             </div>
           </div>
-          <div className="col-lg-8 section-one square">
+          <div className="col-lg-8 section-one">
             <img src={image} className="img-fluid content-image" alt="..." />
           </div>
         </div>

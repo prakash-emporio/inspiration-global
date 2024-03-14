@@ -1,39 +1,40 @@
 import {
-  ServicesHero,
-  ServiceLeftText,
-  ServiceRightText,
-  ServiceBoldText,
+  ServiceContent,
   ServicesFeatureSection,
   ServiceSectionCard,
-  ServiceFirstText
 } from "../../components/ServicesComponents/index.js";
 import { SharedCard } from "../../components/Shared/index.js";
 import { Form } from "../../components/home/index.js";
 import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
+import SharedHero from "../../components/Shared/SharedHero.jsx";
 
 const api = {
   id: "1267433412322112445",
   hero: {
     id: "557",
-    img: "/serviceHero.png",
+    img: "/CustomDevelopmentHero.png",
     title: "Custom Development",
     headline:
       "Architecting Your Future with Custom Application Development: Dream, Build, Scale",
   },
-  featureSection: {
-    partOne: {
+  contentSection: [
+    {
+      id: 1,
       text: "In the dynamic landscape of today, your software must be as adaptive as your business itself. It's not just about having code that seamlessly integrates with legacy systems; you also need a team of seasoned experts, individuals with full-stack proficiency, to navigate your vision into the future",
     },
-    partTwo: {
+    {
+      id: 2,
       text: "We are proud to be one of the renowned teams of specialized software engineers, architects, and developers. We excel in tackling intricate business challenges with innovative, unconventional, and practical solutions",
     },
-    partThree: {
+    {
+      id: 3,
       text: "Our application transformation services grant you unparalleled access to leading-edge technologies through our extensive network of industry partners. We are at the forefront, pioneering innovations to deliver elegant, hassle-free software solutions at their finest. Our innovative approach to software and application development, coupled with a strategic business mindset, empowers you to reinvent your enterprise applications and, ultimately, transform your business",
     },
-    partFour: {
+    {
+      id: 4,
       text: "In a typical scenario, many companies grapple with a mix of outdated legacy systems and contemporary digital and SaaS platforms. These often consume significant IT resources and constrain their ability to drive digital growth. IG recognizes this challenge and leverages emerging technologies, coupled with agility, to help you meet the pressing business demands of tomorrow, whether you're refreshing an existing application or embarking on something entirely new",
     },
-  },
+  ],
   servicesCards: [
     {
       idx: 1,
@@ -150,20 +151,25 @@ const api = {
   ],
 };
 
-
 export default function ServiceCustomDevlopmentPage() {
   return (
     <>
-      <ServicesHero
-        key={api.hero.id}
-        heroImage={api.hero.img}
-        heroTitle={api.hero.title}
-        heroHeadline={api.hero.headline}
-      />
-      <ServiceFirstText text={api.featureSection.partOne.text} />
-      <ServiceBoldText text={api.featureSection.partTwo.text} />
-      <ServiceLeftText text={api.featureSection.partThree.text} />
-      <ServiceRightText text={api.featureSection.partFour.text} />
+      <div
+        className="hero-background-img"
+        style={{ backgroundImage: `url(${api.hero.img})` }}
+      >
+        <SharedHero title={api.hero.title} text={api.hero.headline} />
+      </div>
+      <div className="container">
+        {api.contentSection.map((item) => (
+          <ServiceContent
+            key={item.id}
+            index={item.id}
+            text={item.text}
+            points={item.points}
+          />
+        ))}
+      </div>
       <ServiceSectionCard cards={api.servicesCards} />
       <ServicesFeatureSection />
       <SharedCard />

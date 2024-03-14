@@ -1,16 +1,12 @@
 import {
-  ServicesHero,
-  ServiceLeftText,
-  ServiceRightText,
-  ServiceBoldText,
-  ServicePointText,
+  ServiceContent,
   ServicesFeatureSection,
   ServiceSectionCard,
-  ServiceFirstText,
 } from "../../components/ServicesComponents/index.js";
 import { SharedCard } from "../../components/Shared/index.js";
 import { Form } from "../../components/home/index.js";
 import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
+import SharedHero from "../../components/Shared/SharedHero.jsx";
 
 const api = {
   id: "1267433412445",
@@ -19,22 +15,27 @@ const api = {
     img: "/serviceHero.png",
     title: "Product Engineering",
     headline:
-      "Our mission is to empower our clients to meet the fundamental expectations every individual has when it comes to healthcare: access, experience, and outcomes",
+      "We provide comprehensive product and platform engineering services that address the full technology stack.",
   },
-  featureSection: {
-    partOne: {
+  contentSection: [
+    {
+      id: 1,
       text: "In business, having a good - or even a great idea for a product can only take you so far. Without the proper management, methodology and attention, ideas can quickly die on the vine as pressure from internal stakeholders, competitors and changing market conditions outpace an organization’s ability to grow, innovate and adapt",
     },
-    partTwo: {
+    {
+      id: 2,
       text: "At our core, we specialize in comprehensive product and platform engineering services that encompass the entire technology stack, spanning the entire product lifecycle",
     },
-    partThree: {
+    {
+      id: 3,
       text: "Our focus is on accelerating time to market, reducing costs, boosting revenue, and elevating service levels. Our community of innovators brings a rich history of collaboration, diversity, and curiosity to deliver human-centric, tech-driven solutions tailored to your unique business requirements",
     },
-    partFour: {
+    {
+      id: 4,
       text: "The digital era has reshaped the way businesses interact with their customers, from promoting products and services to delivering exceptional customer experiences and responsive support. To thrive today, businesses need to not just 'do' digital; they must 'be' digital inside and out. The common thread linking companies and customers is the pursuit of creating meaningful, enduring connections. Our seasoned strategists, with decades of experience in B2B, B2C, and B2B2C, embrace a customer-centric approach, immersing themselves in your customers' lives to understand their motivations, emotions, and needs. Armed with the right insights, skills, and technology, we craft your narrative and engineer measurable experiences that seamlessly connect you with users across the entire ecosystem.",
     },
-    partFive: {
+    {
+      id: 5,
       text: "Our community of solvers has a long history of working with organizations in bringing diverse perspectives, curiosity, and ingenuity to deliver human-centered, technology powered solutions and products made for your specific business needs.",
       points: [
         "ID leverages business, experience and engineering to help companies accelerate and transform products, platforms and the organization",
@@ -44,7 +45,7 @@ const api = {
         "Numerous accelerators, IP and frameworks to improve costs and time-to-market",
       ],
     },
-  },
+  ],
   servicesCards: [
     {
       idx: 1,
@@ -164,20 +165,22 @@ const api = {
 export default function ServiceProductEngineeringPage() {
   return (
     <>
-      <ServicesHero
-        key={api.hero.id}
-        heroImage={api.hero.img}
-        heroTitle={api.hero.title}
-        heroHeadline={api.hero.headline}
-      />
-      <ServiceFirstText text={api.featureSection.partOne.text} />
-      <ServiceBoldText text={api.featureSection.partTwo.text} />
-      <ServiceLeftText text={api.featureSection.partThree.text} />
-      <ServiceRightText text={api.featureSection.partFour.text} />
-      <ServicePointText
-        text={api.featureSection.partFive.text}
-        points={api.featureSection.partFive.points}
-      />
+      <div
+        className="hero-background-img"
+        style={{ backgroundImage: `url(${api.hero.img})` }}
+      >
+        <SharedHero title={api.hero.title} text={api.hero.headline} />
+      </div>
+      <div className="container">
+        {api.contentSection.map((item) => (
+          <ServiceContent
+            key={item.id}
+            index={item.id}
+            text={item.text}
+            points={item.points}
+          />
+        ))}
+      </div>
       <ServiceSectionCard cards={api.servicesCards} />
       <ServicesFeatureSection />
       <SharedCard />

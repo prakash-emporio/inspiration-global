@@ -1,4 +1,6 @@
+import NewBlogSharedCard from "../components/Shared/NewBlogSharedCard.jsx";
 import { SharedCard } from "../components/Shared/index.js";
+import NewHero from "../components/home/NewHero.jsx";
 import {
   Hero,
   CompanySection,
@@ -61,7 +63,7 @@ const homepage = {
   },
   videoCardData: {
     id: "video_1",
-    videoTitle: "Your Video Title Here",
+    videoTitle: "PE/VC Value Creation with Measureable Results.",
     videoLink: "/video.mp4",
     cardTitle: "Meet Team Member",
     cardImage: "/content6.png",
@@ -137,14 +139,18 @@ const homepage = {
 export default function Homepage() {
   return (
     <>
-      <Hero
-        key={homepage.hero.id}
-        heroImg={homepage.hero.img}
-        heroTitle={homepage.hero.title}
-        heroTitleMain={homepage.hero.main}
-        heroTitleEnding={homepage.hero.ending}
-        heroButtonText={homepage.hero.buttonText}
-      />
+      <div
+        id="hero-home-img"
+        className="img-fluid"
+        style={{ backgroundImage: `url(${homepage.hero.img})` }}
+      >
+        <NewHero
+          heroTitle={homepage.hero.title}
+          heroTitleMain={homepage.hero.main}
+          heroTitleEnding={homepage.hero.ending}
+          heroButtonText={homepage.hero.buttonText}
+        />
+      </div>
       <CompanySection />
       <StatsSection
         key={homepage.statsSection.id}

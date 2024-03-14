@@ -68,3 +68,10 @@
     text-align: left;
   }
 }
+
+@media (min-width: 992px) {
+  .expanded {
+    transition: all 0.2s ease;
+    min-height: 550px;
+  }
+}

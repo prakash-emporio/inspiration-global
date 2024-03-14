@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import BlogComponent from "../components/BlogDetailComponents/BlogComponent.jsx";
 import RecentBlogs from "../components/BlogDetailComponents/RecentBlogs.jsx";
+import BlogDetailHero from "../components/BlogDetailComponents/BlogDetailHero.jsx";
 
 export default function BlogDetailPage() {
   const [blog, setBlog] = useState(null);
@@ -84,8 +85,9 @@ export default function BlogDetailPage() {
   const { slug } = useParams();
 
   function getBlogBySlug(blogSlug) {
-    return `https://igapibuilder.brandsnarrative.com/wp-json/custom/v1/get-post-detail/${blogSlug}`;
-  }
+    const backendAPI = import.meta.env.VITE_IG_BACKEND_API;
+    return `${backendAPI}get-post-detail/${blogSlug}`;
+}
 
   async function downloadBlog() {
     const response = await axios.get(getBlogBySlug(slug));
@@ -106,6 +108,12 @@ export default function BlogDetailPage() {
           </div>
         </div>
       </section>
+      {/* <div
+        id="hero-talent-img"
+        style={{ backgroundImage: `url(${blog?.hero_image || "/blogDetail.png"})` }}
+      >
+        <BlogDetailHero title="Blog" />
+      </div> */}
       <BlogComponent
         details={
           singleBlog["why-value-based-hiring-is-important-for-a-company"]

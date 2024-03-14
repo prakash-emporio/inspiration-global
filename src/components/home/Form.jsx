@@ -1,18 +1,28 @@
 import "../css/Form.css";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 export default function Form() {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (d) => {
-    alert(JSON.stringify(d));
-  };
+
+  const onSubmit = async (data) => {
+    // Submit the form data to the API
+    const backendAPI = import.meta.env.VITE_IG_BACKEND_API;
+    const response = await axios.post(`${backendAPI}store_form_data`, data);
+    // Handle the response
+    if (response.status === 200) {
+      console.log("Form submitted successfully");
+    } else {
+      console.log("Form submission failed");
+    }
+};
 
   return (
     <div className="form-wrapper">
-      <div className="container-fluid margin-code">
+      <div className="container mt-0 mb-0">
         <div className="row g-0">
           <div className="col col-lg-6 my-auto">
             <h1 className="form-heading">Let’s Talk</h1>

@@ -21,7 +21,7 @@ export default function Footer() {
   }
   return (
     <footer className="pt-5 pb-1 main-footer">
-      <div className="container-fluid margin-code">
+      <div className="container mt-0 mb-0">
         <div className="row justify-content-between">
           <div className="mb-3 col-6 col-md-2">
             <ul className="nav flex-column">

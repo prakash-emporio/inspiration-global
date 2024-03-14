@@ -1,14 +1,11 @@
 import {
-  IndustryHero,
-  IndustryFeatureFirstCard,
-  IndustryFeatureCardLeftText,
-  IndustryFeatureCardRightText,
-  IndustryFeatureCardImage,
+  IndustryContent,
   IndustryEngagementModelForHealthCare as IndustryEngagementModel,
 } from "../../components/IndustryComponents/index.js";
 import { Form } from "../../components/home/index.js";
 import { SharedCard } from "../../components/Shared/index.js";
 import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
+import SharedHero from "../../components/Shared/SharedHero.jsx";
 
 const api = {
   id: "12674345",
@@ -19,21 +16,24 @@ const api = {
     headline:
       "Our mission is to empower our clients to meet the fundamental expectations every individual has when it comes to healthcare: access, experience, and outcomes",
   },
-  featureSection: {
-    img: "/industrytestimonial.png",
-    partOne: {
-      text: "Enhancing the Human Element in Healthcare",
+  contentSection: [
+    {
+      id: 1,
+      text: "Enhancing the Human Element in Healthcare. Every person deserves access to healthcare that is convenient, fair, and affordable, regardless of their location. In an age where industries such as banking and retail offer personalized and convenient services, people now expect a similar level of experience from their healthcare providers.",
     },
-    partTwo: {
-      text: "Every person deserves access to healthcare that is convenient, fair, and affordable, regardless of their location. In an age where industries such as banking and retail offer personalized and convenient services, people now expect a similar level of experience from their healthcare providers. This is why healthcare executives prioritize delivering highly personalized experiences as a top strategic goal. Improving access and enhancing the healthcare experience are pivotal in delivering better care, which, in turn, leads to more positive outcomes",
+    {
+      id: 2,
+      text: "This is why healthcare executives prioritize delivering highly personalized experiences as a top strategic goal. Improving access and enhancing the healthcare experience are pivotal in delivering better care, which, in turn, leads to more positive outcomes",
     },
-    partThree: {
+    {
+      id: 3,
       text: "We assist our clients in addressing these crucial imperatives through intelligent, cloud-based solutions. These solutions increase resource capacity, enhance workforce productivity, facilitate data integration for personalized services across multiple channels, and elevate the overall quality of care and therapeutics",
     },
-    partFour: {
+    {
+      id: 4,
       text: "In collaboration with the world's foremost healthcare payers, providers, and public health entities, we are placing individuals at the heart of healthcare. Our collective efforts are aimed at enhancing healthcare experiences for all, recognizing that it's time to embrace digital advancements in order to remain competitive. While many healthcare organizations are currently focused on renovation, we encourage a shift towards innovation, positioning your organization as a healthcare industry leader and disruptor",
     },
-  },
+  ],
   engagementModels: [
     {
       title: "Empowering Healthcare Organizations for Ongoing Disruption",
@@ -67,27 +67,29 @@ const api = {
 export default function IndustryHealthCarePage() {
   return (
     <>
-      <IndustryHero
-        key={api.hero.id}
-        heroImage={api.hero.img}
-        heroTitle={api.hero.title}
-        heroHeadline={api.hero.headline}
-      />
-      <IndustryFeatureFirstCard text={api.featureSection.partOne.text} />
-      <IndustryFeatureCardRightText text={api.featureSection.partTwo.text} />
-      <IndustryFeatureCardImage featureImage={api.featureSection.img} />
-      <IndustryFeatureCardLeftText text={api.featureSection.partThree.text} />
-      <IndustryFeatureCardRightText text={api.featureSection.partFour.text} />
-      <div className="container-fluid talent-card-section-wrapper pb-5">
-        <h1 className="talent-feature-section-header py-5">Our Capabilities</h1>
-        <div className="row p-lg-5">
-          {api.engagementModels.map((model, index) => (
-            <IndustryEngagementModel
-              key={index}
-              title={model.title}
-              description={model.description}
-            />
-          ))}
+      <div
+        className="hero-background-img"
+        style={{ backgroundImage: `url(${api.hero.img})` }}
+      >
+        <SharedHero title={api.hero.title} text={api.hero.headline} />
+      </div>
+      {api.contentSection.map((item) => (
+        <IndustryContent key={item.id} index={item.id} text={item.text} />
+      ))}
+      <div className="talent-card-section-wrapper pb-5">
+        <div className="container">
+          <h1 className="talent-feature-section-header py-5">
+            Our Capabilities
+          </h1>
+          <div className="row py-md-5">
+            {api.engagementModels.map((model, index) => (
+              <IndustryEngagementModel
+                key={index}
+                title={model.title}
+                description={model.description}
+              />
+            ))}
+          </div>
         </div>
       </div>
       <SharedCard />

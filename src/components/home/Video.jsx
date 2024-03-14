@@ -1,6 +1,7 @@
 import playDefault from "/playDefault.svg";
+import Play from "/Play.png";
 import ReactPlayer from "react-player/lazy";
-import videoThumbnail from "/content5.jpg";
+import videoThumbnail from "/videothumbnail.png";
 import { useState } from "react";
 
 export default function Video({ title, link }) {
@@ -17,11 +18,11 @@ export default function Video({ title, link }) {
       <ReactPlayer
         url={link}
         className="object-fit-contain"
-        light={<img src={videoThumbnail} width="100%" alt="Thumbnail" />}
+        light={<img className="third-content-img" src={videoThumbnail} width="100%" alt="Thumbnail" />}
         playIcon={
           <img
             className="img-thumbnail play-btn img-brightness position-absolute"
-            src={playDefault}
+            src={Play}
             alt="play-button"
           />
         }

@@ -19,6 +19,10 @@
   height: 180px;
 }
 
+.custom-logo-margin {
+  margin-top: 115px;
+}
+
 /* Mobile CSS For All Software Components Here */
 
 @media (max-width: 540px) {
