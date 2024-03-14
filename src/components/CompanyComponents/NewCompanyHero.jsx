@@ -1,3 +1,5 @@
+import "./company.css";
+
 export default function NewCompanyHero({ title, subtitle }) {
   return (
     <section className="container mt-0 mb-0">
