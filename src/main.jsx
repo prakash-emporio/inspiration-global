@@ -36,6 +36,7 @@ import {
 } from "./pages/index.js";
 import BlogDetailPage from "./pages/BlogDetailPage.jsx";
 import CareersPage from "./pages/Talent/CareersPage.jsx";
+import CareersDetailPage from "./pages/Talent/CareersDetailPage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -86,6 +87,7 @@ const router = createBrowserRouter(
       <Route path="company" element={<CompanyPage />} />
       <Route path="policy" element={<DEIPolicyPage />} />
       <Route path="careers" element={<CareersPage />} />
+      <Route path="/careers/:id" element={<CareersDetailPage/>} />
     </Route>
   )
 );

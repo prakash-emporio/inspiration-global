@@ -1,0 +1,77 @@
+.job-card-btn {
+  color: var(--purple-color);
+  outline: 1px solid var(--purple-color);
+}
+
+.job-card-body:hover .job-card-btn {
+  color: var(--white-color);
+  outline: 1.5px solid var(--white-color);
+}
+
+.job-card-btn-two {
+  color: var(--purple-color);
+  background-color: rgba(161, 241, 87, 1);
+}
+
+.job-card-btn-two:hover {
+  transition: 0.3s all ease-in-out;
+  color: var(--green-color);
+  outline: 1.5px solid var(--green-color);
+}
+
+.job-form-label {
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.job-card-heading {
+  font-weight: 900;
+  font-size: 3.75rem;
+}
+
+.job-card-section {
+  border-radius: 0px 0px 20px 0px;
+  background: white;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+  min-height: 280px;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.job-card-body:hover {
+  box-shadow: 8px 28px 50px rgba(39, 44, 49, 0.07),
+    1px 6px 12px rgba(39, 44, 49, 0.04);
+  transition: all 0.4s ease; /* zoom in */
+  cursor: pointer;
+}
+
+.job-card-section-title {
+  color: #5912e4;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.job-card-section-text-size {
+  font-size: 1.25rem;
+}
+
+.job-card-btn-color {
+  background-color: #a1f157;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  padding: 10px 10px;
+  position: absolute;
+  bottom: 10px;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .job-card-body {
+    text-align: left;
+  }
+  .job-card-section-text-size{
+    padding: 10px;
+  }
+}

@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import BlogComponent from "../components/BlogDetailComponents/BlogComponent.jsx";
 import RecentBlogs from "../components/BlogDetailComponents/RecentBlogs.jsx";
-import BlogDetailHero from "../components/BlogDetailComponents/BlogDetailHero.jsx";
 
 export default function BlogDetailPage() {
   const [blog, setBlog] = useState(null);
