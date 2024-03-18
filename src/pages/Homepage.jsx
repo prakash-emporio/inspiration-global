@@ -1,4 +1,3 @@
-import NewBlogSharedCard from "../components/Shared/NewBlogSharedCard.jsx";
 import { SharedCard } from "../components/Shared/index.js";
 import NewHero from "../components/home/NewHero.jsx";
 import {

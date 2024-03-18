@@ -24,7 +24,7 @@ export default function TalentCard({ title, description, buttonText, image }) {
                     height="20"
                     viewBox="0 0 20 20"
                     fill="none"
-                    className="ms-2 second-content-svg"
+                    className="second-content-svg"
                   >
                     <path
                       fillRule="evenodd"

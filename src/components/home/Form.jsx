@@ -18,7 +18,7 @@ export default function Form() {
     } else {
       console.log("Form submission failed");
     }
-};
+  };
 
   return (
     <div className="form-wrapper">
@@ -93,7 +93,7 @@ export default function Form() {
                   height="20"
                   viewBox="0 0 20 20"
                   fill="none"
-                  className="ms-2 icon-svg"
+                  className="icon-svg"
                 >
                   <path
                     fillRule="evenodd"

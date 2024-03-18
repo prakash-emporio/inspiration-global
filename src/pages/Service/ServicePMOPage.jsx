@@ -206,7 +206,7 @@ export default function ServicePMOPage() {
           />
         ))}
       </div>
-      <ServicesFeatureSection />
+      {/* <ServicesFeatureSection /> */}
       <SharedCard />
       <SoftwareCTA />
       <Form />

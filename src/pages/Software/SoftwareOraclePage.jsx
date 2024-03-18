@@ -20,7 +20,7 @@ const api = {
   },
   featureSection: {
     id: "88",
-    title: "Unlock the Full Potential of Your Oracle Solution",
+    title: "Unlock Your Oracle Solution",
     subtitle: "from Day One",
     content:
       "One of the most common hurdles organizations face when embarking on Oracle Cloud or On-Premises solution implementations is the absence of a clear roadmap for maximizing the technology",

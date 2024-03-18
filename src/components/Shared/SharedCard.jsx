@@ -36,7 +36,7 @@ export default function SharedCard() {
                   height="20"
                   viewBox="0 0 20 20"
                   fill="none"
-                  className="ms-2 icon-svg"
+                  className="icon-svg"
                 >
                   <path
                     fillRule="evenodd"
@@ -52,7 +52,7 @@ export default function SharedCard() {
           <img src={content4} className="common-card-image" alt="..." />
           {/* on hover make this B Blog */}
           <div
-            className="position-absolute top-0 end-0 text-center dynamic-content m-md-3 m-xl-5"
+            className="position-absolute top-0 end-0 text-center dynamic-content-2 m-md-3 m-xl-5"
             onMouseEnter={() => setIsHovered2(true)}
             onMouseLeave={() => setIsHovered2(false)}
           >
@@ -73,7 +73,7 @@ export default function SharedCard() {
                   height="20"
                   viewBox="0 0 20 20"
                   fill="none"
-                  className="ms-2 icon-svg"
+                  className="icon-svg"
                 >
                   <path
                     fillRule="evenodd"

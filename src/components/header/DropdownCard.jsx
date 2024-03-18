@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function DropdownCard({ title, text, buttonName, route }) {
+export default function DropdownCard({ title, buttonName, route }) {
   const navigate = useNavigate();
   function handleClick() {
     navigate(route);
@@ -10,10 +10,9 @@ export default function DropdownCard({ title, text, buttonName, route }) {
       <div className="card card-dropdown-margin">
         <div className="">
           <h5 className="card-title card-title-size">{title}</h5>
-          <p className="card-text my-card-text">{text}</p>
           <button
             onClick={handleClick}
-            className="btn mega-header-btn"
+            className="btn mega-header-btn mt-md-3"
             href="#"
             role="button"
           >

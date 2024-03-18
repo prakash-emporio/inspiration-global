@@ -40,12 +40,6 @@
   color: rgba(161, 241, 87, 0.7);
 }
 
-.policy-page-btn-svg {
-  margin-left: 12px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
 @media (max-width: 540px) {
   .policy-page-title {
     font-size: 30px;

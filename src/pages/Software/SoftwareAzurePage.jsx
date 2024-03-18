@@ -20,8 +20,8 @@ const api = {
   },
   featureSection: {
     id: "345",
-    title: "Enterprise Performance at",
-    subtitle: "SCALE",
+    title: "Leverage Cloud With",
+    subtitle: "No Boundaries",
     content:
       " We offer a business-focused, application-driven strategy that empowers us to deliver agile, hybrid Azure cloud solutions. This provides you with the portability and visibility necessary to manage workloads seamlessly and securely across core, cloud, and edge environments.",
   },

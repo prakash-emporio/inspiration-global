@@ -27,7 +27,7 @@ export default function VideoCard({
           />
           <div className="card-img-overlay">
             <div
-              className="position-absolute top-0 end-0 text-center dynamic-content m-xl-5"
+              className="position-absolute top-0 end-0 text-center dynamic-content-2 m-xl-5"
               onMouseEnter={() => setIsHovered1(true)}
               onMouseLeave={() => setIsHovered1(false)}
             >
@@ -49,7 +49,7 @@ export default function VideoCard({
                     height="20"
                     viewBox="0 0 20 20"
                     fill="none"
-                    className="ms-2 icon-svg"
+                    className="icon-svg"
                   >
                     <path
                       fillRule="evenodd"

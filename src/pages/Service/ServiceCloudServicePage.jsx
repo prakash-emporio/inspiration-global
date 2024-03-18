@@ -169,7 +169,7 @@ export default function ServiceCloudServicePage() {
           />
         ))}
       </div>
-      <ServicesFeatureSection />
+      {/* <ServicesFeatureSection /> */}
       <SharedCard />
       <SoftwareCTA />
       <Form />

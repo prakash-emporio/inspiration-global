@@ -184,7 +184,7 @@ export default function ServiceCIOAdvisoryPage() {
           />
         ))}
       </div>
-      <ServicesFeatureSection />
+      {/* <ServicesFeatureSection /> */}
       <SharedCard />
       <SoftwareCTA />
       <Form />

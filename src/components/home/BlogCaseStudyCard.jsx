@@ -14,7 +14,7 @@ export default function BlogCaseStudyCard() {
         <div className="col-lg-6 position-relative square">
           <img src={content7} className="img-fluid extra-card-img" alt="..." />
           <div
-            className="position-absolute top-0 end-0 text-center dynamic-content m-xl-5"
+            className="position-absolute top-0 end-0 text-center dynamic-content-2 m-xl-5"
             onMouseEnter={() => setIsHovered2(true)}
             onMouseLeave={() => setIsHovered2(false)}
           >
@@ -33,7 +33,7 @@ export default function BlogCaseStudyCard() {
                   height="20"
                   viewBox="0 0 20 20"
                   fill="none"
-                  className="ms-2 icon-svg"
+                  className="icon-svg"
                 >
                   <path
                     fillRule="evenodd"
@@ -72,7 +72,7 @@ export default function BlogCaseStudyCard() {
                   height="20"
                   viewBox="0 0 20 20"
                   fill="none"
-                  className="ms-2 icon-svg"
+                  className="icon-svg"
                 >
                   <path
                     fillRule="evenodd"

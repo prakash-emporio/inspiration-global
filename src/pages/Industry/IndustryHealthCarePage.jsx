@@ -77,10 +77,16 @@ export default function IndustryHealthCarePage() {
         <IndustryContent key={item.id} index={item.id} text={item.text} />
       ))}
       <div className="talent-card-section-wrapper pb-5">
-        <div className="container">
-          <h1 className="talent-feature-section-header py-5">
+        <div className="container mb-0">
+          <h2 className="talent-feature-section-header py-5">
             Our Capabilities
-          </h1>
+          </h2>
+          <h5 className="text-center health-care-text">
+            Our suite of services, spanning digital health, operational
+            transformation, health experience enhancement, and high-impact
+            consulting, equips organizations to provide tailored, efficient, and
+            well-informed healthcare solutions.
+          </h5>
           <div className="row py-md-5">
             {api.engagementModels.map((model, index) => (
               <IndustryEngagementModel

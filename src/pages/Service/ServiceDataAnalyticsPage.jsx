@@ -183,7 +183,7 @@ export default function ServiceDataAnalyticsPage() {
           />
         ))}
       </div>
-      <ServicesFeatureSection />
+      {/* <ServicesFeatureSection /> */}
       <SharedCard />
       <SoftwareCTA />
       <Form />

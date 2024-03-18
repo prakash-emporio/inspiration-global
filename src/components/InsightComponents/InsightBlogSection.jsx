@@ -28,7 +28,7 @@ const InsightCard = ({ title, text, image, slug }) => {
             height="20"
             viewBox="0 0 20 20"
             fill="none"
-            className="ms-2 icon-svg"
+            className="icon-svg"
           >
             <path
               fillRule="evenodd"

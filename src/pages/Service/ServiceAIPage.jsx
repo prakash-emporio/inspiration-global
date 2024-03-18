@@ -181,7 +181,7 @@ export default function ServiceAIPage() {
           />
         ))}
       </div>
-      <ServicesFeatureSection />
+      {/* <ServicesFeatureSection /> */}
       <SharedCard />
       <SoftwareCTA />
       <Form />

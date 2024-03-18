@@ -10,7 +10,7 @@ export default function ServiceSectionCard({cards}) {
       </h1>
       <div className="py-lg-5 row">
         {cards.map((service) => (
-          <ServiceCardDesign key={service.idx} {...service} />
+          <ServiceCardDesign key={service.idx}  {...service} />
         ))}
       </div>
     </div>

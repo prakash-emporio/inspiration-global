@@ -27,7 +27,7 @@ export default function ImpactCard({ title, description, buttonText, image }) {
                     height="20"
                     viewBox="0 0 20 20"
                     fill="none"
-                    className="ms-2 first-content-svg"
+                    className="first-content-svg"
                   >
                     <path
                       fillRule="evenodd"

@@ -4,8 +4,6 @@ import CountUp from "react-countup";
 export default function StatsSection({ title, description, statsData }) {
   return (
     <div
-      data-aos="zoom-in-up"
-      data-aos-duration="3000"
       className="mb-5 testimonial-wrapper container"
     >
       <div className="text-center">

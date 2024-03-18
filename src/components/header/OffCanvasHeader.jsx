@@ -39,7 +39,7 @@ export default function OffcanvasNavbar() {
     >
       <div className="container mt-0 mb-0">
         <NavLink className="navbar-brand" to="/" reloadDocument>
-          <img className="m-3" src={logo} alt="company-logo" />
+          <img src={logo} alt="company-logo" />
         </NavLink>
         <button
           className="navbar-toggler"
@@ -70,35 +70,16 @@ export default function OffcanvasNavbar() {
             <ul className="navbar-nav justify-content-end flex-grow-1">
               {/* Software */}
               <li className="nav-item dropdown position-static">
-                <NavLink className="nav-link dropdown-toggle">
-                  Software
-                </NavLink>
+                <NavLink className="nav-link dropdown-toggle">Software</NavLink>
                 <ul className="dropdown-menu w-100 shadow">
                   <div className="container-fluid">
                     <div className="row g-0">
                       <div className="col-8 dropdown-card-padding">
-                        {/* <div className="col">
+                        <div className="col">
                           <p className="dropdown-heading">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Rem molestias eligendi maxime sed expedita
-                            quaerat dolor quasi deserunt delectus enim!
+                            We Leverage best-of breed software & Innovation to
+                            drive our customers transformation
                           </p>
-                        </div> */}
-                        <div className="d-flex gap-3">
-                          {/* first card inside dropdown */}
-                          <div className="col-5">
-                            <div className="card card-dropdown-margin">
-                              <div className="">
-                                <h5 className="card-title card-title-size">
-                                  Software
-                                </h5>
-                                <p className="card-text my-card-text">
-                                  Vitae nulla vel dolor morbi. In in habitasse
-                                  commodo scelerisque elementum metus.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       {/* dropdown menu side bar */}
@@ -132,13 +113,6 @@ export default function OffcanvasNavbar() {
                           >
                             Azure
                           </NavLink>
-                          {/* <NavLink
-                            to={"/software/shopify"}
-                            className="subMenuItems"
-                            reloadDocument
-                          >
-                            Shopify+
-                          </NavLink> */}
                         </div>
                       </div>
                     </div>
@@ -152,28 +126,11 @@ export default function OffcanvasNavbar() {
                   <div className="container-fluid">
                     <div className="row g-0">
                       <div className="col-8 dropdown-card-padding">
-                        {/* <div className="col">
+                        <div className="col">
                           <p className="dropdown-heading">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Rem molestias eligendi maxime sed expedita
-                            quaerat dolor quasi deserunt delectus enim!
+                            We help clients focus on the right-fit technology
+                            and cloud services to transform your tomorrow
                           </p>
-                        </div> */}
-                        <div className="d-flex">
-                          {/* first card inside dropdown */}
-                          <div className="col-5">
-                            <div className="card card-dropdown-margin">
-                              <div className="">
-                                <h5 className="card-title card-title-size">
-                                  Services
-                                </h5>
-                                <p className="card-text my-card-text">
-                                  Vitae nulla vel dolor morbi. In in habitasse
-                                  commodo scelerisque elementum metus.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       {/* dropdown menu side bar */}
@@ -256,24 +213,87 @@ export default function OffcanvasNavbar() {
                       <div className="col-8 dropdown-card-padding">
                         <div className="col">
                           <p className="dropdown-heading">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Rem molestias eligendi maxime sed expedita
-                            quaerat dolor quasi deserunt delectus enim!
+                            We save you valuable time, effort, and resources
+                            while ensuring you get the right talent for the job
                           </p>
                         </div>
-                        <div className="d-flex">
+                        <div className="d-flex justify-content-between">
                           {/* first card inside dropdown */}
-                          <DropdownCard
-                            title="Sourcing"
-                            text="Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus."
-                            buttonName="Sourcing"
-                          />
+                          <div className="col-5">
+                            <div className="card card-dropdown-margin">
+                              <div>
+                                <h5 className="card-title card-title-size">
+                                  Sourcing
+                                </h5>
+                                <button
+                                  className="btn mega-header-btn mt-md-3"
+                                  href="#"
+                                  role="button"
+                                >
+                                  <NavLink
+                                    className="text-decoration-none careers-link"
+                                    to="/sourcing"
+                                    reloadDocument
+                                  >
+                                    Sourcing
+                                  </NavLink>
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="10"
+                                    height="10"
+                                    viewBox="0 0 10 10"
+                                    fill="none"
+                                    className="icon-svg"
+                                  >
+                                    <path
+                                      fillRule="evenodd"
+                                      clipRule="evenodd"
+                                      d="M0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L8.5 2.56066L8.5 8.25C8.5 8.66421 8.83579 9 9.25 9C9.66421 9 10 8.66421 10 8.25L10 0.75C10 0.335787 9.66421 0 9.25 0L1.75 0C1.33579 0 1 0.335787 1 0.75C1 1.16421 1.33579 1.5 1.75 1.5L7.43934 1.5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033Z"
+                                      fill="#5912E4"
+                                    />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                           {/* Second card inside dropdown */}
-                          <DropdownCard
-                            title="Careers"
-                            text="Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus."
-                            buttonName="Careers"
-                          />
+                          <div className="col-5">
+                            <div className="card card-dropdown-margin">
+                              <div>
+                                <h5 className="card-title card-title-size">
+                                  Careers
+                                </h5>
+                                <button
+                                  className="btn mega-header-btn mt-md-3"
+                                  href="#"
+                                  role="button"
+                                >
+                                  <NavLink
+                                    className="text-decoration-none careers-link"
+                                    to="/careers"
+                                    reloadDocument
+                                  >
+                                    Careers
+                                  </NavLink>
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="10"
+                                    height="10"
+                                    viewBox="0 0 10 10"
+                                    fill="none"
+                                    className="icon-svg"
+                                  >
+                                    <path
+                                      fillRule="evenodd"
+                                      clipRule="evenodd"
+                                      d="M0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L8.5 2.56066L8.5 8.25C8.5 8.66421 8.83579 9 9.25 9C9.66421 9 10 8.66421 10 8.25L10 0.75C10 0.335787 9.66421 0 9.25 0L1.75 0C1.33579 0 1 0.335787 1 0.75C1 1.16421 1.33579 1.5 1.75 1.5L7.43934 1.5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033Z"
+                                      fill="#5912E4"
+                                    />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -289,28 +309,11 @@ export default function OffcanvasNavbar() {
                   <div className="container-fluid">
                     <div className="row g-0">
                       <div className="col-8 dropdown-card-padding">
-                        {/* <div className="col">
+                        <div className="col">
                           <p className="dropdown-heading">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Rem molestias eligendi maxime sed expedita
-                            quaerat dolor quasi deserunt delectus enim!
+                            We deliver cross-sector consulting excellence across
+                            a diverse set of industries
                           </p>
-                        </div> */}
-                        <div className="d-flex">
-                          {/* first card inside dropdown */}
-                          <div className="col-5">
-                            <div className="card card-dropdown-margin">
-                              <div className="">
-                                <h5 className="card-title card-title-size">
-                                  Industries
-                                </h5>
-                                <p className="card-text my-card-text">
-                                  Vitae nulla vel dolor morbi. In in habitasse
-                                  commodo scelerisque elementum metus.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       {/* dropdown menu side bar */}
@@ -372,22 +375,16 @@ export default function OffcanvasNavbar() {
                       <div className="col-8 dropdown-card-padding">
                         <div className="col">
                           <p className="dropdown-heading">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Rem molestias eligendi maxime sed expedita
-                            quaerat dolor quasi deserunt delectus enim!
+                            Dive into our research, insights, and real client
+                            success stories to accelerate your journey
                           </p>
                         </div>
                         <div className="d-flex">
                           {/* first card inside dropdown */}
-                          <DropdownCard
-                            title="Blog"
-                            text="Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus."
-                            buttonName="See All"
-                          />
+                          <DropdownCard title="Blog" buttonName="See All" />
                           {/* Second card inside dropdown */}
                           <DropdownCard
                             title="Case Studies"
-                            text="Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus."
                             buttonName="See All"
                           />
                         </div>
@@ -451,23 +448,21 @@ export default function OffcanvasNavbar() {
                       <div className="col-8 dropdown-card-padding">
                         <div className="col">
                           <p className="dropdown-heading">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Rem molestias eligendi maxime sed expedita
-                            quaerat dolor quasi deserunt delectus enim!
+                            By seamlessly integrating human insight with the
+                            latest technological advancements, we deliver
+                            unparalleled solutions
                           </p>
                         </div>
                         <div className="d-flex">
                           {/* first card inside dropdown */}
                           <DropdownCard
                             title="About Us"
-                            text="Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus."
                             buttonName="About Us"
                             route="/company"
                           />
                           {/* Second card inside dropdown */}
                           <DropdownCard
                             title="Team"
-                            text="Vitae nulla vel dolor morbi. In in habitasse commodo scelerisque elementum metus."
                             buttonName="Team"
                             route={"/company#team"}
                           />

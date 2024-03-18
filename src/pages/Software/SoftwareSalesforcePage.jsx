@@ -20,8 +20,8 @@ const api = {
   },
   featureSection: {
     id: "323423",
-    title: "Enterprise Performance at",
-    subtitle: "SCALE",
+    title: "We Put Back In Salesforce",
+    subtitle: "The Sales",
     content:
       "Are you fully leveraging every opportunity that comes your way? With our Salesforce platform and sales process expertise, you'll be well-equipped to do so. At Inspiration Digital, we help you forge stronger connections with your customers and hit your sales goals.",
   },

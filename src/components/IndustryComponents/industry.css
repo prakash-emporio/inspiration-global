@@ -9,6 +9,14 @@
   line-height: 28px;
 }
 
+.health-care-text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  color: white;
+}
+
 @media screen and (min-width: 1200px) {
   .industry-bottom {
     bottom: -50% !important;
@@ -16,6 +24,18 @@
   .industry-start {
     margin: 5rem;
     left: 50% !important;
+  }
+  .health-care-card-title {
+    height: 200px;
+  }
+  .health-care-card-text {
+    height: 150px;
+  }
+  .t-card-title {
+    height: 150px;
+  }
+  .t-card-text {
+    height: 150px;
   }
 }
 

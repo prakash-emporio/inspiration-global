@@ -9,6 +9,7 @@ import {
   CardTypeTwo,
 } from "../../components/SoftwareComponents/index.js";
 import NewSoftwareHero from "../../components/SoftwareComponents/NewSoftwareHero.jsx";
+import axios from "axios";
 
 const api = {
   id: "21424124214",
@@ -60,8 +61,25 @@ const api = {
 };
 
 export default function SoftwareAwsPage() {
+  const [pageData, setPageData] = useState({});
   const [isLoading, setIsLoading] = useState();
   const [isError, setIsError] = useState();
+
+  function getPageData(route) {
+    const backendpageData = import.meta.env.VITE_IG_BACKEND_API;
+    return `${backendpageData}software/${route}`;
+  }
+
+  async function downloadPageData(pageName) {
+    const response = await axios.get(getPageData(pageName));
+    console.log(response.data);
+    setPageData(response.data);
+    setIsLoading(false);
+  }
+
+  // useEffect(() => {
+  //   downloadPageData("aws");
+  // },[]);
 
   if (isLoading) {
     return <div>Loading...</div>;

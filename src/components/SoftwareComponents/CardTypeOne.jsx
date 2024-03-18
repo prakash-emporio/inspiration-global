@@ -35,7 +35,7 @@ export default function CardTypeOne({ image, title, content }) {
                       viewBox="0 0 10 10"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="ms-2 software-svg-icon"
+                      className="software-svg-icon"
                     >
                       <path
                         fillRule="evenodd"
@@ -50,7 +50,7 @@ export default function CardTypeOne({ image, title, content }) {
                       height="20"
                       viewBox="0 0 20 20"
                       fill="none"
-                      className="ms-2 software-svg-icon"
+                      className="software-svg-icon"
                     >
                       <path
                         fillRule="evenodd"

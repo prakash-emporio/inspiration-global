@@ -17,9 +17,9 @@ const api = {
 export default function DEIPolicyPage({ title, content }) {
   return (
     <div className="policy-page-bcg-color">
-      <div className="container-fluid">
+      <div className="container mt-0 mb-0">
         <div className="row g-0 align-items-center">
-          <div className="col margin-code">
+          <div className="col">
             <h1 className="policy-page-title">{title ? title : api.title}</h1>
             <article className="policy-page-text">
               <p>
@@ -72,7 +72,7 @@ export default function DEIPolicyPage({ title, content }) {
               </ul>
               <div className="d-flex justify-content-end align-items-center">
                 <button className="btn policy-page-btn">
-                  Terms of Service{" "}
+                  Terms of Service
                   <svg
                     width="20"
                     height="20"

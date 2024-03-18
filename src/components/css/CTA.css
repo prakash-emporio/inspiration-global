@@ -24,6 +24,7 @@
 
 .cta-img {
   margin: 10px 50px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
 }
 
 .cta-img:hover {
@@ -55,7 +56,7 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 620px){
+@media screen and (max-width: 620px) {
   .cta-img {
     width: 40px !important;
     margin: 5px 5px !important;

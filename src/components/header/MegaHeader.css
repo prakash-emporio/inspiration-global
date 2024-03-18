@@ -2,6 +2,12 @@
   justify-content: end;
 }
 
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .dropdown-toggle::after {
   display: none;
 }
@@ -159,6 +165,10 @@
   margin-bottom: 50px;
 }
 
+.careers-link {
+  color: var(--purple-color);
+}
+
 @media only screen and (max-width: 768px) {
   .megamenu-sidebar {
     width: 100%;
@@ -230,6 +240,10 @@
   .dropdown-menu .show {
     display: flex;
   }
+  .navbar-expand-lg .offcanvas {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -247,9 +261,11 @@
   }
 }
 
-
 @media screen and (min-width: 1400px) {
   .navbar-nav {
     gap: 40px;
+  }
+  .subMenuItems {
+    padding-bottom: 30px;
   }
 }
