@@ -19,6 +19,10 @@
   outline: 1.5px solid var(--green-color);
 }
 
+.job-svg-icon {
+  fill: #5912e4;
+}
+
 .job-form-label {
   color: var(--white-color);
   font-size: 16px;
@@ -44,6 +48,11 @@
     1px 6px 12px rgba(39, 44, 49, 0.04);
   transition: all 0.4s ease; /* zoom in */
   cursor: pointer;
+}
+
+.job-card-btn-two:hover .job-svg-icon {
+  fill: #a1f157;
+  transition: all 0.4s ease;
 }
 
 .job-card-section-title {
