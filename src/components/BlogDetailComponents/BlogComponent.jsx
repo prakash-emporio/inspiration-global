@@ -7,9 +7,9 @@ export default function BlogComponent({ details }) {
 
   return (
     <>
-      {details.map((blogDetail, index) => (
+      {details.map((blogDetail) => (
         <>
-          <div key={index} className="container g-5">
+          <div key={blogDetail.id} className="container g-5">
             <div className="row g-0">
               <div className="col">
                 <h5 className="blog-paragraph-title">{blogDetail.title}</h5>
