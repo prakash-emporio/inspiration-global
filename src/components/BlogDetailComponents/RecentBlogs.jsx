@@ -42,8 +42,8 @@ const InsightCard = ({ title, text, image, slug }) => {
 
 export default function RecentBlogs({blogData}) {
     return (
-      <div className="container my-md-5 py-md-5">
-        <div className="row">
+      <div className="container my-md-5 py-md-5 g-0">
+        <div className="row g-5">
           {blogData?.map((blog) => (
             <div key={blog.id} className="col-md-6 col-lg-6 cursor-pointer">
               <InsightCard
