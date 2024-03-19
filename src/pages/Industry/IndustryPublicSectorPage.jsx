@@ -79,7 +79,7 @@ export default function IndustryPublicSectorPage() {
           <h1 className="talent-feature-section-header py-5">
             A Few of Our Capabilities
           </h1>
-          <div className="row py-md-5">
+          <div className="row g-0 py-md-5">
             {api.engagementModels.map((model, index) => (
               <IndustryEngagementModel
                 key={index}
