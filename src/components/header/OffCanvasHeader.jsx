@@ -14,6 +14,11 @@ export default function OffcanvasNavbar() {
 
   const [isSticky, setIsSticky] = useState(false);
 
+  function handleDisabledClick(e) {
+    const { linkDisabled } = state
+    if(linkDisabled) e.preventDefault()
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -70,7 +75,7 @@ export default function OffcanvasNavbar() {
             <ul className="navbar-nav justify-content-end flex-grow-1">
               {/* Software */}
               <li className="nav-item dropdown position-static">
-                <NavLink className="nav-link dropdown-toggle">Software</NavLink>
+                <NavLink onClick={handleDisabledClick} className="nav-link dropdown-toggle">Software</NavLink>
                 <ul className="dropdown-menu w-100 shadow">
                   <div className="container-fluid">
                     <div className="row g-0">
@@ -121,7 +126,7 @@ export default function OffcanvasNavbar() {
               </li>
               {/* Service */}
               <li className="nav-item dropdown position-static">
-                <NavLink className="nav-link dropdown-toggle">Services</NavLink>
+                <NavLink onClick={handleDisabledClick} className="nav-link dropdown-toggle">Services</NavLink>
                 <ul className="dropdown-menu w-100 shadow">
                   <div className="container-fluid">
                     <div className="row g-0">
@@ -302,7 +307,7 @@ export default function OffcanvasNavbar() {
               </li>
               {/* Industries */}
               <li className="nav-item dropdown position-static">
-                <NavLink className="nav-link dropdown-toggle">
+                <NavLink onClick={handleDisabledClick} className="nav-link dropdown-toggle">
                   Industries
                 </NavLink>
                 <ul className="dropdown-menu w-100 shadow">
