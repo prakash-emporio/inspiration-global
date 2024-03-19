@@ -6,10 +6,10 @@ export default function BlogComponent({ details }) {
   // }, []);
 
   return (
-    <div>
+    <>
       {details.map((blogDetail, index) => (
-        <div key={index} className="container-fluid my-lg-5">
-          <div className="row">
+        <div key={index} className="container g-5">
+          <div className="row g-0">
             <div className="col">
               <h5 className="blog-paragraph-title">{blogDetail.title}</h5>
               <section className="blog-paragraph">
@@ -19,8 +19,8 @@ export default function BlogComponent({ details }) {
               </section>
             </div>
           </div>
-          <section className="container-fluid g-0">
-            <div className="row g-0">
+          <section className="container g-0">
+            <div className="row g-5">
               <div className="col-md-8">
                 <img
                   className="img-fluid"
@@ -35,6 +35,6 @@ export default function BlogComponent({ details }) {
           </section>
         </div>
       ))}
-    </div>
+    </>
   );
 }

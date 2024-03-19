@@ -18,7 +18,7 @@ export default function CompanyTeam() {
             <CompanyTeamCardNew />
           </div>
         </div>
-        <div className="row">
+        <div className="row g-0">
           <div className="col-lg-4">
             <h1 className="company-team-secondary-header">Adv.</h1>
           </div>

@@ -12,7 +12,7 @@
   border-top-width: 0;
   border-right-width: 10px;
   border-style: solid;
-  border-image: linear-gradient(to top, #A1F157, rgba(0, 0, 0, 0)) 1 100%;
+  border-image: linear-gradient(to top, #a1f157, rgba(0, 0, 0, 0)) 1 100%;
 }
 
 .blog-hero-img {
@@ -63,6 +63,31 @@
   line-height: 46px;
   letter-spacing: -0.4px;
 }
+
+@media screen and (max-width: 576px) {
+  .blog-hero-img {
+    height: 500px;
+  }
+  .blog-hero-heading {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .blog-image-side-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .blog-paragraph-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 578px) and (max-width: 1024px) {
+  .blog-hero-heading {
+    padding: 10px;
+  }
+}
+
 
 @media (min-width: 993px) {
   .blog-paragraph {

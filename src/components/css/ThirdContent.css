@@ -37,13 +37,8 @@
   .third-content-img {
     height: 300px !important;
   }
-
   .third-custom-top {
     top: 30% !important;
-  }
-
-  .custom-video-card {
-    height: 300px !important;
   }
 }
 
@@ -54,10 +49,6 @@
 }
 
 @media (max-width: 1024px) {
-  /* .play-btn {
-    height: 40%;
-  } */
-
   .third-card-font-size {
     font-size: 24px;
   }
