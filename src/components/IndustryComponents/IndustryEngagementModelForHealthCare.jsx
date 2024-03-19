@@ -3,7 +3,7 @@ export default function IndustryEngagementModelForHealthCare({
   description,
 }) {
   return (
-    <div className="col-md-6 col-lg-4">
+    <div className="col-md-6">
       <div className="card bg-transparent">
         <div className="card-body">
           <h5 className="card-title talent-feature-section-card-title-0 health-care-card-title">
