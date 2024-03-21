@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { InsightHero } from "../../components/InsightComponents";
-import CareersHero from "/CareersHero.png";
+import CareersHero from "../../assets/CareersHero.png";
 import JobDetailCard from "../../components/TalentComponents/JobDetailCard";
 import JobForm from "../../components/TalentComponents/JobForm";
 

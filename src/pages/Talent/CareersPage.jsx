@@ -1,6 +1,6 @@
 import { InsightHero } from "../../components/InsightComponents";
 import JobCard from "../../components/TalentComponents/JobCard";
-import CareersHero from "/CareersHero.png";
+import CareersHero from "../../assets/CareersHero.png";
 import { useNavigate } from "react-router-dom";
 
 const jobCards = [
