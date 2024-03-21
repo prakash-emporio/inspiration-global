@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { InsightHero } from "../../components/InsightComponents";
-import insightHero from "/insighthero.png";
+import CareersHero from "/CareersHero.png";
 import JobDetailCard from "../../components/TalentComponents/JobDetailCard";
 import JobForm from "../../components/TalentComponents/JobForm";
 
@@ -56,7 +56,7 @@ export default function CareersDetailPage() {
     <>
       <div
         id="hero-talent-img"
-        style={{ backgroundImage: `url(${insightHero})` }}
+        style={{ backgroundImage: `url(${CareersHero})` }}
       >
         <InsightHero title="Careers" />
       </div>
