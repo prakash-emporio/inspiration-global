@@ -12,7 +12,7 @@ export default function SourcingPage() {
         <InsightHero title="Sourcing" />
       </div>
       <div className="container">
-        <h2 className="text-center fw-bold">Currently In Devlopment</h2>
+        <h2 className="text-center fw-bold">Currently In Development</h2>
       </div>
     </>
   );
