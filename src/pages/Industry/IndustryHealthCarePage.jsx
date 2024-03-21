@@ -11,10 +11,11 @@ const api = {
   id: "12674345",
   hero: {
     id: "557",
-    img: "/industryhero.png",
+    img: "/HealthCareHero.png",
     title: "Health Care",
     headline:
       "Our mission is to empower our clients to meet the fundamental expectations every individual has when it comes to healthcare: access, experience, and outcomes",
+    bodyImg: "/HealthCareBody.png",
   },
   contentSection: [
     {
@@ -74,7 +75,12 @@ export default function IndustryHealthCarePage() {
         <SharedHero title={api.hero.title} text={api.hero.headline} />
       </div>
       {api.contentSection.map((item) => (
-        <IndustryContent key={item.id} index={item.id} text={item.text} />
+        <IndustryContent
+          key={item.id}
+          index={item.id}
+          text={item.text}
+          bodyImg={api.hero.bodyImg}
+        />
       ))}
       <div className="talent-card-section-wrapper pb-5">
         <div className="container mb-0">

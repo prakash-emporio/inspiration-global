@@ -198,7 +198,7 @@ export default function ServiceProductEngineeringPage() {
           />
         ))}
       </div>
-      <ServiceSectionCard cards={api.servicesCards} />
+      <ServiceSectionCard cards={api.servicesCards} heading="Product Engineering Services" />
       <ServicesFeatureSection />
       <SharedCard />
       <SoftwareCTA />

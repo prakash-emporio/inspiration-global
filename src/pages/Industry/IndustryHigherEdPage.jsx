@@ -11,10 +11,11 @@ const api = {
   id: "12674345",
   hero: {
     id: "557",
-    img: "/industryhero.png",
+    img: "/HigherEDHero.png",
     title: "Higher ED",
     headline:
       "Faced with limited resources, tight deadlines, and a persistent state of crisis, leaders in the public service sector must carefully balance stability and speed in response to ever-changing needs.",
+    bodyImg: "/HigherEDBody.png",
   },
   contentSection: [
     {
@@ -72,7 +73,12 @@ export default function IndustryHigherEdPage() {
         <SharedHero title={api.hero.title} text={api.hero.headline} />
       </div>
       {api.contentSection.map((item) => (
-        <IndustryContent key={item.id} index={item.id} text={item.text} />
+        <IndustryContent
+          key={item.id}
+          index={item.id}
+          text={item.text}
+          bodyImg={api.hero.bodyImg}
+        />
       ))}
       <div className="talent-card-section-wrapper pb-5">
         <div className="container">

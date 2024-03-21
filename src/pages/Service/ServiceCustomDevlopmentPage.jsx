@@ -170,7 +170,7 @@ export default function ServiceCustomDevlopmentPage() {
           />
         ))}
       </div>
-      <ServiceSectionCard cards={api.servicesCards} />
+      <ServiceSectionCard cards={api.servicesCards} heading="Custom Development Services" />
       <ServicesFeatureSection />
       <SharedCard />
       <SoftwareCTA />

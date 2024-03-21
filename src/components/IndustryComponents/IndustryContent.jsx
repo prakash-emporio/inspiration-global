@@ -1,9 +1,11 @@
 import "./industry.css"
 
-export default function IndustryContent({ text, index }) {
+
+export default function IndustryContent({ text, index, bodyImg }) {
   const isThirdPosition = index === 2;
   const even = index % 2 === 0;
   const first = index === 1;
+
   return (
     <>
       <div
@@ -31,7 +33,7 @@ export default function IndustryContent({ text, index }) {
         <div className="container mb-0 mt-0">
           <img
             className="img-fluid"
-            src="/industrytestimonial.png"
+            src={bodyImg}
             alt="Alternate Text"
           />
         </div>
