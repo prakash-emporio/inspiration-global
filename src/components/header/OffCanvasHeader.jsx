@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import logo from "/logo.png";
 import DropdownCard from "./DropdownCard";
 import dropdownblogImage from "/dropdownblogimage.png";
+import { useNavigate } from "react-router-dom";
 
 export default function OffcanvasNavbar() {
   const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
@@ -15,8 +16,7 @@ export default function OffcanvasNavbar() {
   const [isSticky, setIsSticky] = useState(false);
 
   function handleDisabledClick(e) {
-    const { linkDisabled } = state
-    if(linkDisabled) e.preventDefault()
+    e.preventDefault();
   }
 
   useEffect(() => {
@@ -35,6 +35,13 @@ export default function OffcanvasNavbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // added for team section routing
+  const navigate = useNavigate();
+
+  const scrollToTeam = () => {
+    navigate("/company#team");
+  };
 
   return (
     <nav
@@ -75,7 +82,12 @@ export default function OffcanvasNavbar() {
             <ul className="navbar-nav justify-content-end flex-grow-1">
               {/* Software */}
               <li className="nav-item dropdown position-static">
-                <NavLink onClick={handleDisabledClick} className="nav-link dropdown-toggle">Software</NavLink>
+                <NavLink
+                  onClick={handleDisabledClick}
+                  className="nav-link dropdown-toggle"
+                >
+                  Software
+                </NavLink>
                 <ul className="dropdown-menu w-100 shadow">
                   <div className="container-fluid">
                     <div className="row g-0">
@@ -126,7 +138,12 @@ export default function OffcanvasNavbar() {
               </li>
               {/* Service */}
               <li className="nav-item dropdown position-static">
-                <NavLink onClick={handleDisabledClick} className="nav-link dropdown-toggle">Services</NavLink>
+                <NavLink
+                  onClick={handleDisabledClick}
+                  className="nav-link dropdown-toggle"
+                >
+                  Services
+                </NavLink>
                 <ul className="dropdown-menu w-100 shadow">
                   <div className="container-fluid">
                     <div className="row g-0">
@@ -301,13 +318,34 @@ export default function OffcanvasNavbar() {
                           </div>
                         </div>
                       </div>
+                      <div className="col-lg-4 megamenu-sidebar">
+                        <div className="d-flex flex-column text-left text-uppercase megamenu-sidebar-common-padding">
+                          <NavLink
+                            to={"/sourcing"}
+                            className="subMenuItems"
+                            reloadDocument
+                          >
+                            Sourcing
+                          </NavLink>
+                          <NavLink
+                            to={"/careers"}
+                            className="subMenuItems"
+                            reloadDocument
+                          >
+                            Careers
+                          </NavLink>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </ul>
               </li>
               {/* Industries */}
               <li className="nav-item dropdown position-static">
-                <NavLink onClick={handleDisabledClick} className="nav-link dropdown-toggle">
+                <NavLink
+                  onClick={handleDisabledClick}
+                  className="nav-link dropdown-toggle"
+                >
                   Industries
                 </NavLink>
                 <ul className="dropdown-menu w-100 shadow">
@@ -368,9 +406,8 @@ export default function OffcanvasNavbar() {
               {/* Insights */}
               <li className="nav-item dropdown position-static">
                 <NavLink
+                  onClick={handleDisabledClick}
                   className="nav-link dropdown-toggle"
-                  to={"/insight"}
-                  reloadDocument
                 >
                   Insights
                 </NavLink>
@@ -386,17 +423,23 @@ export default function OffcanvasNavbar() {
                         </div>
                         <div className="d-flex">
                           {/* first card inside dropdown */}
-                          <DropdownCard title="Blog" buttonName="See All" />
+                          <DropdownCard
+                            title="Blog"
+                            buttonName="See All"
+                            route="/insight/blog"
+                          />
                           {/* Second card inside dropdown */}
                           <DropdownCard
                             title="Case Studies"
                             buttonName="See All"
+                            route="/insight/casestudy"
                           />
                         </div>
                       </div>
                       {/* dropdown menu side bar */}
-                      <div className="col-lg-4 megamenu-sidebar extra-mega-menu-sidebar">
-                        <div className="d-flex flex-column text-uppercase megamenu-sidebar-padding">
+                      <div className="col-lg-4 megamenu-sidebar">
+                        {/* removed this Blog Card Due to Mobile Navigation Issue */}
+                        {/* <div className="d-flex flex-column text-uppercase megamenu-sidebar-padding">
                           <img
                             className="blog-image"
                             width={285}
@@ -432,6 +475,22 @@ export default function OffcanvasNavbar() {
                               </svg>
                             </button>
                           </div>
+                        </div> */}
+                        <div className="d-flex flex-column text-left text-uppercase megamenu-sidebar-common-padding">
+                          <NavLink
+                            to={"insight/blog"}
+                            className="subMenuItems"
+                            reloadDocument
+                          >
+                            Blog
+                          </NavLink>
+                          <NavLink
+                            to={"insight/casestudy"}
+                            className="subMenuItems"
+                            reloadDocument
+                          >
+                            Case Study
+                          </NavLink>
                         </div>
                       </div>
                     </div>
@@ -469,8 +528,26 @@ export default function OffcanvasNavbar() {
                           <DropdownCard
                             title="Team"
                             buttonName="Team"
-                            route={"/company#team"}
+                            route="/company#team"
                           />
+                        </div>
+                      </div>
+                      <div className="col-lg-4 megamenu-sidebar">
+                        <div className="d-flex flex-column text-left text-uppercase megamenu-sidebar-common-padding">
+                          <NavLink
+                            to={"/company"}
+                            className="subMenuItems"
+                            reloadDocument
+                          >
+                            About Us
+                          </NavLink>
+                          <NavLink
+                            onClick={scrollToTeam}
+                            className="subMenuItems"
+                            reloadDocument
+                          >
+                            Team
+                          </NavLink>
                         </div>
                       </div>
                     </div>

@@ -103,7 +103,7 @@ export default function BlogDetailPage() {
             height={600}
             className="blog-hero-img"
             src={blog?.hero_image || "/blogDetail.png"}
-            alt=""
+            alt="blog-hero-img"
           />
           <div className="blog-hero-heading-wrapper">
             <h1 className="blog-hero-heading">

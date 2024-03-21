@@ -37,6 +37,8 @@ import {
 import BlogDetailPage from "./pages/BlogDetailPage.jsx";
 import CareersPage from "./pages/Talent/CareersPage.jsx";
 import CareersDetailPage from "./pages/Talent/CareersDetailPage.jsx";
+import CaseStudyPage from "./pages/CaseStudyPage.jsx";
+import SourcingPage from "./pages/Talent/SourcingPage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -82,10 +84,12 @@ const router = createBrowserRouter(
       <Route path="industry/higher-ed" element={<IndustryHigherEdPage />} />
       <Route path="industry/insurance" element={<IndustryInsurancePage />} />
       <Route path="industry/pe-vc" element={<IndustryPEVCPage />} />
-      <Route path="insight" element={<InsightPage />} />
-      <Route path="/insight/:slug" element={<BlogDetailPage />} />
+      <Route path="/insight/blog" element={<InsightPage />} />
+      <Route path="/insight/blog/:slug" element={<BlogDetailPage />} />
+      <Route path="/insight/casestudy" element={<CaseStudyPage />} />
       <Route path="company" element={<CompanyPage />} />
       <Route path="policy" element={<DEIPolicyPage />} />
+      <Route path="sourcing" element={<SourcingPage />} />
       <Route path="careers" element={<CareersPage />} />
       <Route path="/careers/:id" element={<CareersDetailPage/>} />
     </Route>

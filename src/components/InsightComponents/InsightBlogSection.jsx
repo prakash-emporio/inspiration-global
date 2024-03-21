@@ -7,7 +7,7 @@ const InsightCard = ({ title, text, image, slug }) => {
   const navigator = useNavigate();
 
   function handleClick() {
-    navigator(`/insight/${slug}`);
+    navigator(`/insight/blog/${slug}`);
   }
 
   return (

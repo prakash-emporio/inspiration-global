@@ -7,8 +7,8 @@ const footerData = [
   { id: 1, label: "Software", link: "/software/aws" },
   { id: 2, label: "Services", link: "/services/product-engineering" },
   { id: 3, label: "Talent", link: "/talent" },
-  { id: 4, label: "Industries", link: "/industry" },
-  { id: 5, label: "Insights", link: "/insight" },
+  { id: 4, label: "Industries", link: "/industry/public-sector" },
+  { id: 5, label: "Insights", link: "/insight/blog" },
   { id: 6, label: "Company", link: "/company" },
 ];
 

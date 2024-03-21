@@ -1,6 +1,6 @@
 import { InsightHero } from "../../components/InsightComponents";
 import JobCard from "../../components/TalentComponents/JobCard";
-import careersHero from "/careershero.png";
+import CareersHero from "/CareersHero.png";
 import { useNavigate } from "react-router-dom";
 
 const jobCards = [
@@ -107,7 +107,7 @@ export default function CareersPage() {
     <>
       <div
         id="hero-talent-img"
-        style={{ backgroundImage: `url(${careersHero})` }}
+        style={{ backgroundImage: `url(${CareersHero})` }}
       >
         <InsightHero title="Careers" />
       </div>
