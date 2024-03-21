@@ -1,6 +1,5 @@
 import { InsightHero } from "../../components/InsightComponents";
 import JobCard from "../../components/TalentComponents/JobCard";
-import CareersHero from "../../assets/CareersHero.png";
 import { useNavigate } from "react-router-dom";
 
 const jobCards = [
@@ -96,6 +95,10 @@ const jobCards = [
   }
 ];
 
+const api = {
+  heroImg: "/CareersHero.png",
+}
+
 export default function CareersPage() {
   const navigator = useNavigate();
 
@@ -107,7 +110,7 @@ export default function CareersPage() {
     <>
       <div
         id="hero-talent-img"
-        style={{ backgroundImage: `url(${CareersHero})` }}
+        style={{ backgroundImage: `url(${api.heroImg})` }}
       >
         <InsightHero title="Careers" />
       </div>
