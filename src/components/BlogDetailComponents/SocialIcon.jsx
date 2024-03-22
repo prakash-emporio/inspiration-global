@@ -69,7 +69,7 @@ export default function SocialIcon() {
             alt="social-icons"
           />
         </TwitterShareButton>
-        <MailruShareButton url="https://www.mail.ru/">
+        <MailruShareButton>
           <img
             className="object-fit-scale social-icon-img"
             width={50}

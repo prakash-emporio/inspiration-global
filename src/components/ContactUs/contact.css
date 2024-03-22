@@ -1,0 +1,15 @@
+.contact-us-header {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: var(--purple-color);
+}
+
+.contact-us-icon {
+  width: 5rem;
+  height: 2.5rem;
+}
+
+.contact-us-icon-detail {
+  font-size: 1.5rem;
+}

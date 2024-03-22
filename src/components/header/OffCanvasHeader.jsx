@@ -556,9 +556,9 @@ export default function OffcanvasNavbar() {
               </li>
               {/* Contact Us */}
               <li className="nav-item">
-                <a href="#contactForm" className="nav-link">
+                <NavLink to="/contact-us" className="nav-link">
                   Contact Us
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
