@@ -7,8 +7,8 @@ import { SharedCard } from "../../components/Shared/index.js";
 import { Form } from "../../components/home/index.js";
 import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
-import axios from "axios";
 import { useState } from "react";
+import { getServicePage } from "../../utils/index.js";
 
 const api = {
   id: "1267433412445",
@@ -168,16 +168,16 @@ export default function ServiceProductEngineeringPage() {
 
   const [pageData, setPageData] = useState({});
 
-  function getPageData(route) {
-    const backendpageData = import.meta.env.VITE_IG_BACKEND_API;
-    return `${backendpageData}services/${route}`;
-  }
 
-  async function downloadPageData(pageName) {
-    const response = await axios.get(getPageData(pageName));
-    console.log(response.data);
-    setPageData(response.data);
-  }
+  // async function downloadPageData() {
+  //   const response = await getServicePage("product-engineering");
+  //   console.log(response.data);
+  // }
+
+  // useEffect(() => {
+  //   downloadPageData();
+  // },[]);
+
 
 
   return (

@@ -1,7 +1,7 @@
 import "./insight.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import axios from "axios";
+import { getAllBlogs } from "../../utils";
 
 const InsightCard = ({ title, text, image, slug }) => {
   const navigator = useNavigate();
@@ -46,15 +46,14 @@ export default function InsightBlogSection() {
   const [loading, setLoading] = useState(true);
   const [blogData, setBlogData] = useState([]);
 
-  async function getAllBlogs() {
-    const backendAPI = import.meta.env.VITE_IG_BACKEND_API;
-    const response = await axios.get(`${backendAPI}get-all-posts`);
+  async function downloadAllBlogs() {
+    const response = await getAllBlogs();
     setBlogData(response.data);
     setLoading(false);
   }
 
   useEffect(() => {
-    getAllBlogs();
+    downloadAllBlogs();
   }, []);
 
   if (loading) {
