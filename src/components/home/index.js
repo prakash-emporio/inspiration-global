@@ -8,7 +8,6 @@ import BlogCaseStudyCard from "./BlogCaseStudyCard.jsx";
 import ServiceCard from "./ServiceCard.jsx";
 import CTA from "./CTA.jsx";
 import Form from "./Form.jsx";
-import Footer from "../footer/Footer.jsx";
 
 export {
   Hero,
@@ -21,5 +20,4 @@ export {
   ServiceCard,
   CTA,
   Form,
-  Footer,
 };

@@ -3,9 +3,8 @@ import {
   ServicesFeatureSection,
   ServiceSectionCard,
 } from "../../components/ServicesComponents/index.js";
-import { SharedCard } from "../../components/Shared/index.js";
+import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import { Form } from "../../components/home/index.js";
-import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
 
 const api = {
@@ -170,10 +169,13 @@ export default function ServiceCustomDevlopmentPage() {
           />
         ))}
       </div>
-      <ServiceSectionCard cards={api.servicesCards} heading="Custom Development Services" />
+      <ServiceSectionCard
+        cards={api.servicesCards}
+        heading="Custom Development Services"
+      />
       <ServicesFeatureSection />
       <SharedCard />
-      <SoftwareCTA />
+      <SharedCTA />
       <Form />
     </>
   );

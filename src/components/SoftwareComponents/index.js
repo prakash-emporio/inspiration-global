@@ -2,6 +2,12 @@ import FeatureSection from "./FeatureSection.jsx";
 import CardConsulting from "./CardConsulting.jsx";
 import CardTypeOne from "./CardTypeOne.jsx";
 import CardTypeTwo from "./CardTypeTwo.jsx";
-import SoftwareCTA from "./SoftwareCTA.jsx";
+import SoftwareHero from "./SoftwareHero.jsx";
 
-export { FeatureSection, CardConsulting, CardTypeOne, CardTypeTwo, SoftwareCTA };
+export {
+  SoftwareHero,
+  FeatureSection,
+  CardConsulting,
+  CardTypeOne,
+  CardTypeTwo,
+};

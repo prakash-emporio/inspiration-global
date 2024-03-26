@@ -2,8 +2,7 @@ import {
   TalentFeatureSection,
 } from "../components/TalentComponents/index.js";
 import { Form } from "../components/home/index.js";
-import { SharedCard } from "../components/Shared/index.js";
-import { SoftwareCTA } from "../components/SoftwareComponents/index.js";
+import { SharedCard, SharedCTA } from "../components/Shared/index.js";
 import TalentContent from "../components/TalentComponents/TalentContent.jsx";
 import TalentHeroNew from "../components/TalentComponents/TalentHeroNew.jsx";
 
@@ -54,7 +53,7 @@ export default function TalentPage() {
       ))}
       <TalentFeatureSection />
       <SharedCard />
-      <SoftwareCTA />
+      <SharedCTA />
       <Form />
     </>
   );

@@ -1,6 +1,6 @@
 import "./SoftwareHero.css";
 
-export default function NewSoftwareHero({ title, text, heroLogo }) {
+export default function SoftwareHero({ title, text, heroLogo }) {
   return (
     <section className="container-fluid mt-0 mb-0">
       <div className="container mt-0 mb-0">

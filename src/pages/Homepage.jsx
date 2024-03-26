@@ -1,5 +1,5 @@
+import { useState } from "react";
 import { SharedCard } from "../components/Shared/index.js";
-import NewHero from "../components/home/NewHero.jsx";
 import {
   Hero,
   CompanySection,
@@ -136,6 +136,29 @@ const homepage = {
 };
 
 export default function Homepage() {
+
+  const [homepageData, setHomepageData] = useState({});
+  const [isLoading, setIsLoading] = useState();
+  const [isError, setIsError] = useState();
+
+  // new implementation of homepage api
+  // async function downloadPageData() {
+  //   const response = await getHomepage();
+  //   console.log(response.data);
+  // }
+
+  // useEffect(() => {
+  //   downloadPageData();
+  // },[]);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (isError) {
+    return <div>Error: </div>;
+  }
+
   return (
     <>
       <div
@@ -143,7 +166,7 @@ export default function Homepage() {
         className="img-fluid"
         style={{ backgroundImage: `url(${homepage.hero.img})` }}
       >
-        <NewHero
+        <Hero
           heroTitle={homepage.hero.title}
           heroTitleMain={homepage.hero.main}
           heroTitleEnding={homepage.hero.ending}

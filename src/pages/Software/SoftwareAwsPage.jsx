@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { Form } from "../../components/home/index.js";
-import { SharedCard } from "../../components/Shared/index.js";
+import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import {
+  SoftwareHero,
   FeatureSection,
-  SoftwareCTA,
   CardConsulting,
   CardTypeOne,
   CardTypeTwo,
 } from "../../components/SoftwareComponents/index.js";
-import NewSoftwareHero from "../../components/SoftwareComponents/NewSoftwareHero.jsx";
+
 import { getSoftwarePage } from "../../utils/index.js";
 
 const api = {
@@ -89,7 +89,7 @@ export default function SoftwareAwsPage() {
         className="hero-background-img software-hero-background-img"
         style={{ backgroundImage: `url(${api.img})` }}
       >
-        <NewSoftwareHero
+        <SoftwareHero
           title={api.header.title}
           text={api.header.subtitle}
           heroLogo={api.header.logo}
@@ -126,7 +126,7 @@ export default function SoftwareAwsPage() {
         content={api.cardSection[4].content}
       />
       <SharedCard />
-      <SoftwareCTA />
+      <SharedCTA />
       <Form />
     </>
   );

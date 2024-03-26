@@ -3,9 +3,8 @@ import {
   ServicesFeatureSection,
   ServiceSectionCard,
 } from "../../components/ServicesComponents/index.js";
-import { SharedCard } from "../../components/Shared/index.js";
+import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import { Form } from "../../components/home/index.js";
-import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
 import { useState } from "react";
 import { getServicePage } from "../../utils/index.js";
@@ -165,9 +164,7 @@ const api = {
 };
 
 export default function ServiceProductEngineeringPage() {
-
   const [pageData, setPageData] = useState({});
-
 
   // async function downloadPageData() {
   //   const response = await getServicePage("product-engineering");
@@ -177,8 +174,6 @@ export default function ServiceProductEngineeringPage() {
   // useEffect(() => {
   //   downloadPageData();
   // },[]);
-
-
 
   return (
     <>
@@ -198,10 +193,13 @@ export default function ServiceProductEngineeringPage() {
           />
         ))}
       </div>
-      <ServiceSectionCard cards={api.servicesCards} heading="Product Engineering Services" />
+      <ServiceSectionCard
+        cards={api.servicesCards}
+        heading="Product Engineering Services"
+      />
       <ServicesFeatureSection />
       <SharedCard />
-      <SoftwareCTA />
+      <SharedCTA />
       <Form />
     </>
   );

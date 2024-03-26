@@ -1,6 +1,6 @@
-import "./SoftwareCTA.css";
+import "./SharedCTA.css";
 
-export default function SoftwareCTA() {
+export default function SharedCTA() {
   return (
     <div className="software-cta-card-color">
       <div className="container mt-0 mb-0">

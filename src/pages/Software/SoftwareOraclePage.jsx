@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Form } from "../../components/home/index.js";
-import { SharedCard } from "../../components/Shared/index.js";
+import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import {
+  SoftwareHero,
   FeatureSection,
-  SoftwareCTA,
   CardTypeOne,
   CardTypeTwo,
 } from "../../components/SoftwareComponents/index.js";
-import NewSoftwareHero from "../../components/SoftwareComponents/NewSoftwareHero.jsx";
+
 
 const api = {
   img: "/OracleHero.png",
@@ -68,7 +68,7 @@ export default function SoftwareOraclePage() {
         className="hero-background-img software-hero-background-img"
         style={{ backgroundImage: `url(${api.img})` }}
       >
-        <NewSoftwareHero
+        <SoftwareHero
           title={api.header.title}
           text={api.header.subtitle}
           heroLogo={api.header.logo}
@@ -99,7 +99,7 @@ export default function SoftwareOraclePage() {
         content={api.cardSection[3].content}
       />
       <SharedCard />
-      <SoftwareCTA />
+      <SharedCTA />
       <Form />
     </>
   );

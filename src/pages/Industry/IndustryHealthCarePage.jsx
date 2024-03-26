@@ -3,8 +3,7 @@ import {
   IndustryEngagementModelForHealthCare as IndustryEngagementModel,
 } from "../../components/IndustryComponents/index.js";
 import { Form } from "../../components/home/index.js";
-import { SharedCard } from "../../components/Shared/index.js";
-import { SoftwareCTA } from "../../components/SoftwareComponents/index.js";
+import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
 
 const api = {
@@ -105,7 +104,7 @@ export default function IndustryHealthCarePage() {
         </div>
       </div>
       <SharedCard />
-      <SoftwareCTA />
+      <SharedCTA />
       <Form />
     </>
   );
