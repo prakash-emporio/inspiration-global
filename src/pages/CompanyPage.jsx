@@ -1,7 +1,7 @@
 import {
+  CompanyTeam,
   CompanyTestimonial,
   NewCompanyHero,
-  CompanyTeam,
 } from "../components/CompanyComponents/index.js";
 import { Form } from "../components/home/index.js";
 
@@ -18,7 +18,7 @@ export default function CompanyPage() {
       >
         <NewCompanyHero title="About Us" subtitle="Our Core" />
       </div>
-        <CompanyTestimonial />
+      <CompanyTestimonial />
       <CompanyTeam />
       <Form />
     </div>

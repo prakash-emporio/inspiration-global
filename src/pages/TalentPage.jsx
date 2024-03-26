@@ -1,14 +1,12 @@
-import {
-  TalentFeatureSection,
-} from "../components/TalentComponents/index.js";
 import { Form } from "../components/home/index.js";
 import { SharedCard, SharedCTA } from "../components/Shared/index.js";
+import { TalentFeatureSection } from "../components/TalentComponents/index.js";
 import TalentContent from "../components/TalentComponents/TalentContent.jsx";
 import TalentHeroNew from "../components/TalentComponents/TalentHeroNew.jsx";
 
 const api = {
   imgUrl: "/talentHero.png",
-  content : [
+  content: [
     {
       id: 1,
       title: "",
@@ -29,8 +27,7 @@ const api = {
       title: "Holistic Evaluation",
       text: "Our comprehensive focus revolves around aligning with your company's strategy and culture while pinpointing the essential skills, competencies, and experiences required in individuals. We assess candidates based on their technical prowess, analytical capabilities, communication skills, ability to work in teams, cross-cultural adaptability, and results-oriented approach to ensure the perfect match. IG’s seasoned team makes sourcing and staffing simple. Clients look to us when faced with challenging resource issues for efficiency and reliability in finding the best qualified candidate for their jobs.",
     },
-  
-  ]
+  ],
 };
 
 export default function TalentPage() {
@@ -49,7 +46,6 @@ export default function TalentPage() {
           title={item.title}
           text={item.text}
         />
-      
       ))}
       <TalentFeatureSection />
       <SharedCard />

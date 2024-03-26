@@ -10,7 +10,7 @@ export function getServicePage(slug) {
 
 export function getTalentPage(slug) {
   return axiosInstance.get(`talent/${slug}`);
-}     
+}
 
 export function getIndustryPage(slug) {
   return axiosInstance.get(`industry/${slug}`);

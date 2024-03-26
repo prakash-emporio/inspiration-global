@@ -1,6 +1,6 @@
 import {
-  InsightHero,
   InsightBlogSection,
+  InsightHero,
 } from "../components/InsightComponents/index.js";
 import { Form } from "../components/home/index.js";
 

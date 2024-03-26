@@ -1,6 +1,6 @@
+import { useNavigate } from "react-router-dom";
 import { InsightHero } from "../../components/InsightComponents";
 import JobCard from "../../components/TalentComponents/JobCard";
-import { useNavigate } from "react-router-dom";
 
 const jobCards = [
   {
@@ -92,12 +92,12 @@ const jobCards = [
     title: "Supply Chain Manager",
     description:
       "We are looking for a Supply Chain Manager to be responsible for the overall supply chain management. Supply Chain Manager responsibilities include organizing and monitoring storage and distribution of goods. The goal is to manage the entire order cycle so as to enhance business development and ensure sustainability and customer satisfaction.",
-  }
+  },
 ];
 
 const api = {
   heroImg: "/CareersHero.png",
-}
+};
 
 export default function CareersPage() {
   const navigator = useNavigate();
@@ -121,7 +121,10 @@ export default function CareersPage() {
         <div className="row g-5">
           {jobCards &&
             jobCards.map((job) => (
-              <div className="col-md-6 py-2" onClick={() => handleClick(job.id)}>
+              <div
+                className="col-md-6 py-2"
+                onClick={() => handleClick(job.id)}
+              >
                 <JobCard
                   key={job.id}
                   title={job.title}

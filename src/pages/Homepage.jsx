@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { SharedCard } from "../components/Shared/index.js";
 import {
-  Hero,
-  CompanySection,
-  StatsSection,
-  TalentCard,
-  ImpactCard,
-  VideoCard,
   BlogCaseStudyCard,
-  ServiceCard,
+  CompanySection,
   CTA,
   Form,
+  Hero,
+  ImpactCard,
+  ServiceCard,
+  StatsSection,
+  TalentCard,
+  VideoCard,
 } from "../components/home/index.js";
 
 const homepage = {
@@ -136,7 +136,6 @@ const homepage = {
 };
 
 export default function Homepage() {
-
   const [homepageData, setHomepageData] = useState({});
   const [isLoading, setIsLoading] = useState();
   const [isError, setIsError] = useState();

@@ -1,9 +1,12 @@
-import { InsightHero, InsightBlogSection } from "../components/InsightComponents/index.js";
-import {Form} from "../components/home/index.js";
+import {
+  InsightBlogSection,
+  InsightHero,
+} from "../components/InsightComponents/index.js";
+import { Form } from "../components/home/index.js";
 
 const api = {
   imgUrl: "/insighthero.png",
-}
+};
 
 export default function InsightPage() {
   return (
@@ -17,5 +20,5 @@ export default function InsightPage() {
       <InsightBlogSection />
       <Form />
     </>
-  )
+  );
 }

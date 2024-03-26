@@ -1,7 +1,13 @@
+import CompanyTeam from "./CompanyTeam";
+import CompanyTeamCardAdv from "./CompanyTeamCardAdv.jsx";
+import CompanyTeamCardNew from "./CompanyTeamCardNew.jsx";
+import CompanyTestimonial from "./CompanyTestimonial.jsx";
 import NewCompanyHero from "./NewCompanyHero.jsx";
-import CompanyTestimonial from "./CompanyTestimonial.jsx"
-import CompanyTeam from './CompanyTeam';
-import CompanyTeamCardNew from './CompanyTeamCardNew.jsx';
-import CompanyTeamCardAdv from './CompanyTeamCardAdv.jsx';
 
-export { NewCompanyHero, CompanyTestimonial, CompanyTeam, CompanyTeamCardNew, CompanyTeamCardAdv};
+export {
+  CompanyTeam,
+  CompanyTeamCardAdv,
+  CompanyTeamCardNew,
+  CompanyTestimonial,
+  NewCompanyHero,
+};

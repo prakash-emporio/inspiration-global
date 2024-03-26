@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import { SocialIcon } from "../components/BlogDetailComponents/index.js";
-import { useParams } from "react-router-dom";
 import axios from "axios";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import BlogComponent from "../components/BlogDetailComponents/BlogComponent.jsx";
+import { SocialIcon } from "../components/BlogDetailComponents/index.js";
 import RecentBlogs from "../components/BlogDetailComponents/RecentBlogs.jsx";
 
 export default function BlogDetailPage() {

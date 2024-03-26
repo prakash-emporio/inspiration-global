@@ -1,4 +1,4 @@
-import TalentTestimonials from "./TalentTestimonials";
 import TalentFeatureSection from "./TalentFeatureSection";
+import TalentTestimonials from "./TalentTestimonials";
 
-export { TalentTestimonials, TalentFeatureSection };
+export { TalentFeatureSection, TalentTestimonials };

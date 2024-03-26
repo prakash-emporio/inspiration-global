@@ -1,8 +1,8 @@
+import { Form } from "../../components/home/index.js";
 import {
   IndustryContent,
   IndustryEngagementModelForHealthCare as IndustryEngagementModel,
 } from "../../components/IndustryComponents/index.js";
-import { Form } from "../../components/home/index.js";
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
 

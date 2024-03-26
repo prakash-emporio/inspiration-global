@@ -1,13 +1,13 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
 import { InsightHero } from "../../components/InsightComponents";
 import JobDetailCard from "../../components/TalentComponents/JobDetailCard";
 import JobForm from "../../components/TalentComponents/JobForm";
 
 const api = {
   heroImg: "/CareersHero.png",
-}
+};
 
 export default function CareersDetailPage() {
   const [jobDetails, setJobDetails] = useState();
@@ -53,7 +53,6 @@ export default function CareersDetailPage() {
         * Automation skills, including expertise in scripting and tools for streamlining operational processes and enhancing efficiency.
     `,
   };
-
 
   return (
     <>

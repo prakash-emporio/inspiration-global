@@ -1,6 +1,5 @@
-import SourcingHero from "/SourcingHero.png";
 import { InsightHero } from "../../components/InsightComponents";
-
+import SourcingHero from "/SourcingHero.png";
 
 export default function SourcingPage() {
   return (

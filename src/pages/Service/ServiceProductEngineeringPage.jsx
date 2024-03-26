@@ -1,13 +1,12 @@
+import { useState } from "react";
+import { Form } from "../../components/home/index.js";
 import {
   ServiceContent,
-  ServicesFeatureSection,
   ServiceSectionCard,
+  ServicesFeatureSection,
 } from "../../components/ServicesComponents/index.js";
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
-import { Form } from "../../components/home/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
-import { useState } from "react";
-import { getServicePage } from "../../utils/index.js";
 
 const api = {
   id: "1267433412445",

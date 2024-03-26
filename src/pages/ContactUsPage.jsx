@@ -19,7 +19,8 @@ export default function ContactUsPage() {
         <div className="row g-5 align-items-center">
           <div className="col">
             <h2 className="contact-us-header px-2">
-              Great projects starts with great relationships. Let's talk and start one.
+              Great projects starts with great relationships. Let's talk and
+              start one.
             </h2>
             <div className="d-flex align-items-center justify-content-start gap-3 my-5">
               <MailruShareButton>

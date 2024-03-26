@@ -1,4 +1,4 @@
-import InsightHero from "./InsightHero";
 import InsightBlogSection from "./InsightBlogSection";
+import InsightHero from "./InsightHero";
 
-export { InsightHero, InsightBlogSection };
+export { InsightBlogSection, InsightHero };

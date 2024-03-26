@@ -2,14 +2,12 @@ import { useState } from "react";
 import { Form } from "../../components/home/index.js";
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import {
-  SoftwareHero,
-  FeatureSection,
   CardConsulting,
   CardTypeOne,
   CardTypeTwo,
+  FeatureSection,
+  SoftwareHero,
 } from "../../components/SoftwareComponents/index.js";
-
-import { getSoftwarePage } from "../../utils/index.js";
 
 const api = {
   id: "21424124214",

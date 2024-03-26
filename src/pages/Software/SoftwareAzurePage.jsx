@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Form } from "../../components/home/index.js";
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import {
-  SoftwareHero,
-  FeatureSection,
   CardTypeOne,
   CardTypeTwo,
+  FeatureSection,
+  SoftwareHero,
 } from "../../components/SoftwareComponents/index.js";
 
 const api = {

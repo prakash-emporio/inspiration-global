@@ -1,44 +1,43 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import {
   Route,
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+import "./index.css";
 import Layout from "./Layout.jsx";
 
 import {
+  BlogDetailPage,
+  CareersDetailPage,
+  CareersPage,
+  CaseStudyPage,
+  CompanyPage,
+  ContactUsPage,
+  DEIPolicyPage,
   Homepage,
-  SoftwareAwsPage,
-  SoftwareAzurePage,
-  SoftwareOraclePage,
-  SoftwareSalesforcePage,
-  SoftwareShopifyPage,
-  ServiceProductEngineeringPage,
-  ServiceCustomDevlopmentPage,
-  ServiceCloudServicePage,
-  ServiceDataAnalyticsPage,
-  ServiceAIPage,
-  ServiceCIOAdvisoryPage,
-  ServicePMOPage,
-  ServiceSecurityPage,
-  TalentPage,
-  IndustryPublicSectorPage,
   IndustryHealthCarePage,
   IndustryHigherEdPage,
   IndustryInsurancePage,
   IndustryPEVCPage,
+  IndustryPublicSectorPage,
   InsightPage,
-  CompanyPage,
-  DEIPolicyPage,
-  BlogDetailPage,
-  CareersPage,
-  CareersDetailPage,
-  CaseStudyPage,
+  ServiceAIPage,
+  ServiceCIOAdvisoryPage,
+  ServiceCloudServicePage,
+  ServiceCustomDevlopmentPage,
+  ServiceDataAnalyticsPage,
+  ServicePMOPage,
+  ServiceProductEngineeringPage,
+  ServiceSecurityPage,
+  SoftwareAwsPage,
+  SoftwareAzurePage,
+  SoftwareOraclePage,
+  SoftwareSalesforcePage,
   SourcingPage,
-  ContactUsPage,
+  TalentPage,
 } from "./pages/index.js";
 
 const router = createBrowserRouter(
