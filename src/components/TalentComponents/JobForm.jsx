@@ -1,6 +1,6 @@
-import "./jobform.css";
-import { useForm } from "react-hook-form";
 import axios from "axios";
+import { useForm } from "react-hook-form";
+import "./jobform.css";
 
 export default function JobForm() {
   const {
@@ -12,7 +12,7 @@ export default function JobForm() {
   const onSubmit = async (data) => {
     // Submit the form data to the API
     const backendAPI = import.meta.env.VITE_IG_BACKEND_API;
-    const response = await axios.post(`${backendAPI}store_form_data`, data);
+    const response = await axios.post(`${backendAPI}submit-form`, data);
     // Handle the response
     if (response.status === 200) {
       console.log("Form submitted successfully");
@@ -26,13 +26,14 @@ export default function JobForm() {
     const fileName = input.files[0]?.name || "No file chosen";
     input.setAttribute("title", fileName);
   }
+
   return (
     <form
       id="jobForm"
       className="row job-form-wrapper"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="col-12 py-3 py-md-5">
+      <div className="py-3 col-12 py-md-5">
         <input
           type="text"
           className="form-control form-control-lg"
@@ -40,12 +41,12 @@ export default function JobForm() {
           placeholder="Name"
           maxLength={30}
           {...register("name", {
-            required: { value: true, message: "Name is Required" },
+            required: { value: true, message: "Name is required" },
           })}
         />
         {errors.name && <p className="error-message">{errors.name.message}</p>}
       </div>
-      <div className="col-12 py-3 py-md-5">
+      <div className="py-3 col-12 py-md-5">
         <input
           type="email"
           className="form-control form-control-lg"
@@ -53,26 +54,27 @@ export default function JobForm() {
           placeholder="Email"
           maxLength={30}
           {...register("email", {
-            required: { value: true, message: "Email is Required" },
+            required: { value: true, message: "Email is required" },
           })}
         />
         {errors.email && (
           <p className="error-message">{errors.email.message}</p>
         )}
       </div>
-      <div className="col-12 py-3 py-md-5">
+      <div className="py-3 col-12 py-md-5">
         <input
           className="form-control form-control-lg"
           id="resume"
           type="file"
           accept=".pdf"
-          name="Upload Resume"
-          title="Upload Resume"
           placeholder="Add Your Resume"
           onChange={handleOnChange}
+          {...register("resume", {
+            required: { value: true, message: "Resume is required" },
+          })}
         />
       </div>
-      <div className="col-12 py-3 py-md-5">
+      <div className="py-3 col-12 py-md-5">
         <label for="message" className="form-label job-form-label">
           Is there anything else you'd like to add in support of your
           application?

@@ -35,3 +35,7 @@ export function getAboutUsPage() {
 export function getContactUsPage() {
   return axiosInstance.get("contact-us");
 }
+
+export function getPolicyPage() {
+  return axiosInstance.get("get-deipolicy-page-content");
+}

@@ -1,4 +1,7 @@
+import { useState } from "react";
+import { getPolicyPage } from "../../utils";
 import "./DEIPolicyPage.css";
+import { useEffect } from "react";
 
 const api = {
   title: "Diversity, Equity and Inclusion Policy",
@@ -15,6 +18,29 @@ const api = {
 };
 
 export default function DEIPolicyPage({ title, content }) {
+
+  const [pageData, setPageData] = useState({});
+  const [isLoading, setIsLoading] = useState();
+  const [isError, setIsError] = useState();
+
+
+  // async function downloadPageData() {
+  //   const response = await getPolicyPage();
+  //   console.log(response.data);
+  //   setPageData(response.data);
+  // }
+
+  // useEffect(() => {
+  //   downloadPageData();
+  // },[]);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (isError) {
+    return <div>Error: </div>;
+  }
   return (
     <div className="policy-page-bcg-color">
       <div className="container mt-0 mb-0">
