@@ -33,13 +33,13 @@ import {
   InsightPage,
   CompanyPage,
   DEIPolicyPage,
+  BlogDetailPage,
+  CareersPage,
+  CareersDetailPage,
+  CaseStudyPage,
+  SourcingPage,
+  ContactUsPage,
 } from "./pages/index.js";
-import BlogDetailPage from "./pages/BlogDetailPage.jsx";
-import CareersPage from "./pages/Talent/CareersPage.jsx";
-import CareersDetailPage from "./pages/Talent/CareersDetailPage.jsx";
-import CaseStudyPage from "./pages/CaseStudyPage.jsx";
-import SourcingPage from "./pages/Talent/SourcingPage.jsx";
-import ContactUsPage from "./pages/ContactUsPage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -92,8 +92,8 @@ const router = createBrowserRouter(
       <Route path="policy" element={<DEIPolicyPage />} />
       <Route path="sourcing" element={<SourcingPage />} />
       <Route path="careers" element={<CareersPage />} />
-      <Route path="/careers/:id" element={<CareersDetailPage/>} />
-      <Route path="/contact-us" element={<ContactUsPage/>} />
+      <Route path="/careers/:id" element={<CareersDetailPage />} />
+      <Route path="/contact-us" element={<ContactUsPage />} />
     </Route>
   )
 );

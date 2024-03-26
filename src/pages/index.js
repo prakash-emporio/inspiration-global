@@ -21,6 +21,12 @@ import IndustryPEVCPage from "./Industry/IndustryPEVCPage.jsx";
 import InsightPage from "./InsightPage";
 import CompanyPage from "./CompanyPage";
 import DEIPolicyPage from "./Policy/DEIPolicyPage.jsx";
+import BlogDetailPage from "./BlogDetailPage.jsx";
+import CareersPage from "./Talent/CareersPage.jsx";
+import CareersDetailPage from "./Talent/CareersDetailPage.jsx";
+import CaseStudyPage from "./CaseStudyPage.jsx";
+import SourcingPage from "./Talent/SourcingPage.jsx";
+import ContactUsPage from "./ContactUsPage.jsx";
 export {
   Homepage,
   SoftwareAwsPage,
@@ -44,5 +50,11 @@ export {
   IndustryPEVCPage,
   InsightPage,
   CompanyPage,
-  DEIPolicyPage
+  DEIPolicyPage,
+  BlogDetailPage,
+  CareersPage,
+  CareersDetailPage,
+  CaseStudyPage,
+  SourcingPage,
+  ContactUsPage,
 };
