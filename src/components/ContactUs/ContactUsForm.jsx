@@ -9,22 +9,18 @@ export default function ContactUsForm() {
   } = useForm();
 
   const onSubmit = async (data) => {
-    // Submit the form data to the API
-    const backendAPI = import.meta.env.VITE_IG_BACKEND_API;
-    const response = await axios.post(`${backendAPI}store_form_data`, data);
-    // Handle the response
-    if (response.status === 200) {
-      console.log("Form submitted successfully");
-    } else {
-      console.log("Form submission failed");
-    }
+    // // Submit the form data to the API
+    // const backendAPI = import.meta.env.VITE_IG_BACKEND_API;
+    // const response = await axios.post(`${backendAPI}store_form_data`, data);
+    // // Handle the response
+    // if (response.status === 200) {
+    //   console.log("Form submitted successfully");
+    // } else {
+    //   console.log("Form submission failed");
+    // }
+    console.log(data);
   };
 
-  function handleOnChange(e) {
-    const input = e.target;
-    const fileName = input.files[0]?.name || "No file chosen";
-    input.setAttribute("title", fileName);
-  }
   return (
     <form
       id="jobForm"
@@ -37,9 +33,10 @@ export default function ContactUsForm() {
           className="form-control form-control-lg"
           id="name"
           placeholder="Full Name *"
-          maxLength={30}
           {...register("name", {
-            required: { value: true, message: "Name is Required" },
+            required: { value: true, message: "Name is required" },
+            minLength: 3,
+            maxLength: 20,
           })}
         />
         {errors.name && <p className="error-message">{errors.name.message}</p>}
@@ -50,9 +47,13 @@ export default function ContactUsForm() {
           className="form-control form-control-lg"
           id="inputEmail4"
           placeholder="Email Id *"
-          maxLength={30}
           {...register("email", {
-            required: { value: true, message: "Email is Required" },
+            required: { value: true, message: "Email is required" },
+            validate: {
+              matchPattern: (value) =>
+                /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
+                "Email address must be a valid address",
+            },
           })}
         />
         {errors.email && (
@@ -62,29 +63,41 @@ export default function ContactUsForm() {
       <div className="col-12 py-3 py-md-5">
         <input
           className="form-control form-control-lg"
-          id="tel"
+          id="phone"
           type="tel"
-          name="tel"
           placeholder="Phone *"
-          onChange={handleOnChange}
+          {...register("phone", {
+            required: { value: true, message: "Phone is Required" },
+            minLength: 10,
+            maxLength: 14,
+          })}
         />
+        {errors.email && (
+          <p className="error-message">{errors.phone.message}</p>
+        )}
       </div>
       <div className="col-12 py-3 py-md-5">
         <div>
-          <label for="message" className="form-label job-form-label">
+          <label htmlFor="message" className="form-label job-form-label">
             Message
           </label>
         </div>
         <textarea
-          name="message"
           id="message"
           cols="30"
           rows="3"
           aria-label="With textarea"
           placeholder="Type here..."
-          {...register("message", { required: true })}
+          {...register("message", {
+            required: {
+              value: true,
+              message: "Please write your message here",
+            },
+          })}
         />
-        {errors.message && <p>{errors.message.message}</p>}
+        {errors.message && (
+          <p className="error-message">{errors.message.message}</p>
+        )}
       </div>
       <div className="col-12">
         <button type="submit" className="btn job-card-btn-two">
