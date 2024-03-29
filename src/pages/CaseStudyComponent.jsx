@@ -1,4 +1,5 @@
 export default function CaseStudyComponent({ details }) {
+  const isFirst = false;
   return (
     <>
       {details.map((blogDetail) => (
@@ -7,7 +8,9 @@ export default function CaseStudyComponent({ details }) {
             <div className="row g-0">
               <div className="col">
                 <h5 className="blog-paragraph-title">{blogDetail.title}</h5>
-                <h5 className="blog-paragraph-subtitle">{blogDetail.subTitle}</h5>
+                <h5 className="blog-paragraph-subtitle">
+                  {blogDetail.subTitle}
+                </h5>
                 <section className="blog-paragraph">
                   {blogDetail.content.map((text, index) => (
                     <p key={index}>{text}</p>
@@ -23,8 +26,11 @@ export default function CaseStudyComponent({ details }) {
                   <img className="img-fluid" src={blogDetail.img} alt="" />
                 </div>
                 <div className="col-md-4 gap-2 blog-image-side-text flex-column">
+                  {blogDetail.img_content_title && (
+                    <h5 className="blog-paragraph-title">{blogDetail.img_content_title}</h5>
+                  )}
                   {blogDetail.image_side_text.map((text) => (
-                      <p className="">{text}</p>
+                    <p>{text}</p>
                   ))}
                 </div>
               </div>

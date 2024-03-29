@@ -25,7 +25,8 @@ export default function CaseStudyDetailPage() {
           content: [
             "Emerge’s team leverages several applications with Salesforce being their primary for prospects, leads, and applicants. A significant portion of their process was manual with little visibility into the status and workflows of their lifecycle. Additionally, there were neither executive views nor a predictable way of understanding the probability of final application and acceptance.",
           ],
-          img: "/BlogImgOne.png",
+          img: "/BlogImgTwo.png",
+          img_content_title: "Outcomes",
           image_side_text: [
             "Risk mitigation through readiness certification for leads and applicants",
             "Increased prospect-driven engagement through role-based dashboard views and data-driven insights",
@@ -49,7 +50,7 @@ export default function CaseStudyDetailPage() {
           content: [
             "After conducting a gap analysis, we focused our attention on the most pressing issues and began developing solutions based on those findings. We validated and prioritised the areas that need more attention and are the catalysts for the growth of Emerge Education, customer experience, and managing volume without compromising the quality which helped us to arrive at the Statement of Strategic Understanding",
           ],
-          img: "/BlogImgOne.png",
+          img: "/BlogImgThree.png",
           image_side_text: [
             "Improved lead funnels & insights by restructuring Salesforce workflow process",
             "Revised operations plan for higher efficiency and productivity",
@@ -61,15 +62,6 @@ export default function CaseStudyDetailPage() {
   };
 
   const caseStudyData = [
-    {
-      id: 205581,
-      title: "Emerge Edu – Student Recruiting",
-      excerpt:
-        "Emerge Education provides higher education solutions to colleges and universities by growing revenues through student enrollment services.",
-      featured_image:
-        "https://igapibuilder.brandsnarrative.com/wp-content/uploads/2022/12/11.jpg",
-      slug: "emerge-edu-student-recruiting",
-    },
     {
       id: 205581,
       title: "Large Vitamin Retailer",
