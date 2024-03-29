@@ -35,6 +35,7 @@ import {
   SourcingPage,
   TalentPage,
 } from "../pages/index.js";
+import CaseStudyDetailPage from "../pages/CaseStudyDetailPage.jsx";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -81,7 +82,8 @@ export const router = createBrowserRouter(
       <Route path="industry/pe-vc" element={<IndustryPEVCPage />} />
       <Route path="/insight/blog" element={<InsightPage />} />
       <Route path="/insight/blog/:slug" element={<BlogDetailPage />} />
-      <Route path="/insight/casestudy" element={<CaseStudyPage />} />
+      <Route path="/insight/case-study" element={<CaseStudyPage />} />
+      <Route path="/insight/case-study/emerge-edu-student-recruiting" element={<CaseStudyDetailPage />} />
       <Route path="company" element={<CompanyPage />} />
       <Route path="policy" element={<DEIPolicyPage />} />
       <Route path="sourcing" element={<SourcingPage />} />

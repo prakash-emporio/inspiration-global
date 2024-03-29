@@ -3,6 +3,7 @@ import {
   InsightHero,
 } from "../components/InsightComponents/index.js";
 import { Form } from "../components/home/index.js";
+import CaseStudySection from "./CaseStudySection.jsx";
 
 const api = {
   imgUrl: "/CaseStudyHero.png",
@@ -17,7 +18,8 @@ export default function CaseStudyPage() {
       >
         <InsightHero title="Case Study" />
       </div>
-      <InsightBlogSection />
+      {/* <InsightBlogSection /> */}
+      <CaseStudySection />
       <Form />
     </>
   );

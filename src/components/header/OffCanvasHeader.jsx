@@ -432,7 +432,7 @@ export default function OffcanvasNavbar() {
                           <DropdownCard
                             title="Case Studies"
                             buttonName="See All"
-                            route="/insight/casestudy"
+                            route="/insight/case-study"
                           />
                         </div>
                       </div>
@@ -478,14 +478,14 @@ export default function OffcanvasNavbar() {
                         </div> */}
                         <div className="d-flex flex-column text-left text-uppercase megamenu-sidebar-common-padding">
                           <NavLink
-                            to={"insight/blog"}
+                            to="insight/blog"
                             className="subMenuItems"
                             reloadDocument
                           >
                             Blog
                           </NavLink>
                           <NavLink
-                            to={"insight/casestudy"}
+                            to="insight/case-study"
                             className="subMenuItems"
                             reloadDocument
                           >
