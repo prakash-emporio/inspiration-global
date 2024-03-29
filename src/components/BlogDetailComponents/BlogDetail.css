@@ -49,6 +49,15 @@
   display: flex;
 }
 
+.case-study-image-side-text {
+  font-weight: 250;
+  font-size: 38px;
+  line-height: 46px;
+  color: #6522ed;
+  justify-content: center;
+  display: flex;
+}
+
 .blog-paragraph {
   font-weight: 300;
   font-size: 20px;
@@ -69,6 +78,14 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
+}
+
+.case-study-title {
+  color: #6522ed;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: -0.4px;
 }
 
 @media screen and (max-width: 576px) {

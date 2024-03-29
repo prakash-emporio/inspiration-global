@@ -25,12 +25,12 @@ export default function CaseStudyComponent({ details }) {
                 <div className="col-md-7">
                   <img className="img-fluid" src={blogDetail.img} alt="" />
                 </div>
-                <div className="col-md-4 gap-2 blog-image-side-text flex-column">
+                <div className="col-md-4 gap-2 case-study-image-side-text flex-column">
                   {blogDetail.img_content_title && (
-                    <h5 className="blog-paragraph-title">{blogDetail.img_content_title}</h5>
+                    <h5 className="case-study-title text-start">{blogDetail.img_content_title}</h5>
                   )}
                   {blogDetail.image_side_text.map((text) => (
-                    <p>{text}</p>
+                    <p className="opacity-75">{text}</p>
                   ))}
                 </div>
               </div>
