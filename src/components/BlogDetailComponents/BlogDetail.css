@@ -64,6 +64,13 @@
   letter-spacing: -0.4px;
 }
 
+.blog-paragraph-subtitle {
+  color: #6522ed;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
 @media screen and (max-width: 576px) {
   .blog-hero-img {
     height: 500px;
@@ -96,6 +103,11 @@
   }
 
   .blog-paragraph-title {
+    padding-left: 315px;
+    padding-right: 315px;
+  }
+
+  .blog-paragraph-subtitle {
     padding-left: 315px;
     padding-right: 315px;
   }

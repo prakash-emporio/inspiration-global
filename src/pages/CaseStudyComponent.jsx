@@ -7,6 +7,7 @@ export default function CaseStudyComponent({ details }) {
             <div className="row g-0">
               <div className="col">
                 <h5 className="blog-paragraph-title">{blogDetail.title}</h5>
+                <h5 className="blog-paragraph-subtitle">{blogDetail.subTitle}</h5>
                 <section className="blog-paragraph">
                   {blogDetail.content.map((text, index) => (
                     <p key={index}>{text}</p>

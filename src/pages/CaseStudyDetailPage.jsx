@@ -6,12 +6,9 @@ import CaseStudyComponent from "./CaseStudyComponent.jsx";
 export default function CaseStudyDetailPage() {
   const [blog, setBlog] = useState(null);
 
-  const caseStudy = {
-    title: "Emerge Edu - Student Recruiting",
-  };
-
   const singleBlog = {
     "emerge-edu-student-recruiting": {
+      title: "Bridging the Gap: Maximizing Salesforce’s Potential",
       hero_image: "",
       hero_heading: "Value Based Hiring",
       details: [
@@ -41,13 +38,14 @@ export default function CaseStudyDetailPage() {
           ],
         },
         {
-          title: "Discovery: Gap Identification Through Analysis",
+          title : "Solution",
+          subTitle: "Discovery: Gap Identification Through Analysis",
           content: [
             "In order to identify the gaps in Emerge Edu’s student acquisition process we conducted an ecosystem review of internal and external stakeholders along with data capturing in the student acquisition process, Salesforce infrastructure, and technology architecture analysis.",
           ],
         },
         {
-          title: "Strategy: Statement of Strategic Understanding",
+          subTitle: "Strategy: Statement of Strategic Understanding",
           content: [
             "After conducting a gap analysis, we focused our attention on the most pressing issues and began developing solutions based on those findings. We validated and prioritised the areas that need more attention and are the catalysts for the growth of Emerge Education, customer experience, and managing volume without compromising the quality which helped us to arrive at the Statement of Strategic Understanding",
           ],
@@ -62,6 +60,36 @@ export default function CaseStudyDetailPage() {
     },
   };
 
+  const caseStudyData = [
+    {
+      id: 205581,
+      title: "Emerge Edu – Student Recruiting",
+      excerpt:
+        "Emerge Education provides higher education solutions to colleges and universities by growing revenues through student enrollment services.",
+      featured_image:
+        "https://igapibuilder.brandsnarrative.com/wp-content/uploads/2022/12/11.jpg",
+      slug: "emerge-edu-student-recruiting",
+    },
+    {
+      id: 205581,
+      title: "Large Vitamin Retailer",
+      excerpt:
+        "A large vitamin retailer dedicated to helping individuals fulfill their health and wellness needs. The company is a leading omni-channel specialty retailer of nutritional products based in Secaucus, New Jersey. With over 700 stores throughout the United States and Puerto Rico.",
+      featured_image:
+        "https://igapibuilder.brandsnarrative.com/wp-content/uploads/2022/12/11.jpg",
+      slug: "emerge-edu-student-recruiting",
+    },
+    {
+      id: 205581,
+      title: "Global Water treatment Company",
+      excerpt:
+        "A global water treatment company with a network of dealers and direct operations spawned across 90 countries with 1,000 dealers, over 600 in North America alone, and over 7,500 employees.",
+      featured_image:
+        "https://igapibuilder.brandsnarrative.com/wp-content/uploads/2022/12/11.jpg",
+      slug: "emerge-edu-student-recruiting",
+    },
+  ];
+
   return (
     <>
       <section className="container-fluid g-0">
@@ -74,7 +102,7 @@ export default function CaseStudyDetailPage() {
           />
           <div className="blog-hero-heading-wrapper">
             <h1 className="blog-hero-heading">
-              {blog?.hero_heading || caseStudy.title}
+              {blog?.hero_heading || singleBlog["emerge-edu-student-recruiting"].title}
             </h1>
           </div>
         </div>
@@ -86,7 +114,7 @@ export default function CaseStudyDetailPage() {
         <img src="/emergeCS.png" alt="" />
       </div> */}
       <SocialIcon />
-      <RecentBlogs blogData={blog?.recent_posts} />
+      <RecentBlogs blogData={caseStudyData} />
     </>
   );
 }
