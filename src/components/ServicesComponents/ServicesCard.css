@@ -45,10 +45,6 @@
   font-size: 1.25rem;
 }
 
-.service-card-li {
-  list-style: disc;
-}
-
 .service-card-btn-color {
   background-color: #a1f157;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
