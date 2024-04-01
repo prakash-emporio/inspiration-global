@@ -224,8 +224,7 @@ export default function OffcanvasNavbar() {
               <li className="nav-item dropdown position-static">
                 <NavLink
                   className="nav-link dropdown-toggle"
-                  to={"/talent"}
-                  reloadDocument
+                  onClick={handleDisabledClick}
                 >
                   Talent
                 </NavLink>

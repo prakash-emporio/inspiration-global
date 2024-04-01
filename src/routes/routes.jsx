@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import Layout from "../Layout.jsx";
 
+import CaseStudyDetailPage from "../pages/CaseStudyDetailPage.jsx";
 import {
   BlogDetailPage,
   CareersDetailPage,
@@ -32,10 +33,8 @@ import {
   SoftwareAzurePage,
   SoftwareOraclePage,
   SoftwareSalesforcePage,
-  SourcingPage,
   TalentPage,
 } from "../pages/index.js";
-import CaseStudyDetailPage from "../pages/CaseStudyDetailPage.jsx";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -83,10 +82,13 @@ export const router = createBrowserRouter(
       <Route path="/insight/blog" element={<InsightPage />} />
       <Route path="/insight/blog/:slug" element={<BlogDetailPage />} />
       <Route path="/insight/case-study" element={<CaseStudyPage />} />
-      <Route path="/insight/case-study/emerge-edu-student-recruiting" element={<CaseStudyDetailPage />} />
+      <Route
+        path="/insight/case-study/emerge-edu-student-recruiting"
+        element={<CaseStudyDetailPage />}
+      />
       <Route path="company" element={<CompanyPage />} />
       <Route path="policy" element={<DEIPolicyPage />} />
-      <Route path="sourcing" element={<SourcingPage />} />
+      <Route path="sourcing" element={<TalentPage />} />
       <Route path="careers" element={<CareersPage />} />
       <Route path="/careers/:id" element={<CareersDetailPage />} />
       <Route path="/contact-us" element={<ContactUsPage />} />
