@@ -1,11 +1,10 @@
-import { NavLink } from "react-router-dom";
-import "../css/ThirdContent.css";
-import Video from "./Video";
 import { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import "../css/ThirdContent.css";
+import videoThumbnail from "/videothumbnail.png";
 
 export default function VideoCard({
   videoTitle,
-  videoLink,
   cardTitle,
   cardImage,
   cardDescription,
@@ -13,11 +12,29 @@ export default function VideoCard({
 }) {
   const [isHovered1, setIsHovered1] = useState(false);
 
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/industry/pe-vc");
+  }
+
   return (
     <div className="container-fluid g-0">
       <div className="row g-0">
-        <div className="card custom-video-card col-lg-9 gap-0">
-          <Video title={videoTitle} link={videoLink} />
+        <div
+          className="card custom-video-card col-lg-9 gap-0"
+          onClick={handleClick}
+        >
+          <div className="card-img-overlay">
+            <h5 className="card-title video-card-title text-center pt-lg-5">
+              {videoTitle}
+            </h5>
+          </div>
+          <img
+            className="third-content-img"
+            src={videoThumbnail}
+            alt="Thumbnail"
+          />
         </div>
         <div className="card col-lg-3 position-relative square">
           <img
