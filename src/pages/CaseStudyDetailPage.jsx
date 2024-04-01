@@ -4,13 +4,12 @@ import RecentBlogs from "../components/BlogDetailComponents/RecentBlogs.jsx";
 import CaseStudyComponent from "./CaseStudyComponent.jsx";
 
 export default function CaseStudyDetailPage() {
-  const [blog, setBlog] = useState(null);
+  const [caseStudies, setCaseStudies] = useState({});
 
-  const singleBlog = {
+  const caseStudy = {
     "emerge-edu-student-recruiting": {
-      title: "Bridging the Gap: Maximizing Salesforce’s Potential",
-      hero_image: "",
-      hero_heading: "Value Based Hiring",
+      hero_image: "/emerge.png",
+      hero_heading: "Bridging the Gap: Maximizing Salesforce’s Potential",
       details: [
         {
           title: "Background",
@@ -39,7 +38,7 @@ export default function CaseStudyDetailPage() {
           ],
         },
         {
-          title : "Solution",
+          title: "Solution",
           subTitle: "Discovery: Gap Identification Through Analysis",
           content: [
             "In order to identify the gaps in Emerge Edu’s student acquisition process we conducted an ecosystem review of internal and external stakeholders along with data capturing in the student acquisition process, Salesforce infrastructure, and technology architecture analysis.",
@@ -58,55 +57,113 @@ export default function CaseStudyDetailPage() {
           ],
         },
       ],
+      recent_case_studies: [
+        {
+          id: 205581,
+          title: "Large Vitamin Retailer",
+          excerpt:
+            "A large vitamin retailer dedicated to helping individuals fulfill their health and wellness needs. The company is a leading omni-channel specialty retailer of nutritional products based in Secaucus, New Jersey. With over 700 stores throughout the United States and Puerto Rico.",
+          featured_image:
+            "https://igapibuilder.brandsnarrative.com/wp-content/uploads/2022/12/11.jpg",
+          slug: "emerge-edu-student-recruiting",
+        },
+        {
+          id: 205581,
+          title: "Global Water treatment Company",
+          excerpt:
+            "A global water treatment company with a network of dealers and direct operations spawned across 90 countries with 1,000 dealers, over 600 in North America alone, and over 7,500 employees.",
+          featured_image:
+            "https://igapibuilder.brandsnarrative.com/wp-content/uploads/2022/12/11.jpg",
+          slug: "emerge-edu-student-recruiting",
+        },
+      ],
+    },
+    "integrating--online-ecommerce-personalization": {
+      hero_image: "/emerge.png",
+      hero_heading: "Integrating Online E-Commerce Personalization",
+      details: [
+        {
+          title: "Background",
+          content: [
+            "A large vitamin retailer dedicated to helping individuals fulfill their health and wellness needs. The company is a leading omni-channel specialty retailer of nutritional products based in Secaucus, New Jersey. With over 700 stores throughout the United States and Puerto Rico.",
+          ],
+        },
+        {
+          title: "Challenge",
+          content: [
+            "Retained by retailer to spearhead and oversee the acquisition of specialty company and the seamless integration of an online e-commerce personalization tool into the company's existing operations, complete with a fresh branding approach.",
+          ],
+          img: "/BlogImgTwo.png",
+          img_content_title: "",
+          image_side_text: [
+            "Risk mitigation through readiness certification for leads and applicants",
+            "Increased prospect-driven engagement through role-based dashboard views and data-driven insights",
+          ],
+        },
+        {
+          title: "Solution",
+          subTitle: "",
+          content: [
+            "The opportunity presented was to seamlessly integrate the new personalization engine and its capabilities into their established omnichannel business. This integration was to be achieved through a rebranding and relaunch of the new platform, aimed at delivering an exceptional customer experience. With an increasing number of competitors entering the personalization arena, The new platform offered the retailer a means to gain additional market share and stand out as a premier omnichannel destination.",
+          ],
+        },
+        {
+          subTitle: "",
+          content: [
+            "Recognizing the significance of customer data acquisition in staying competitive, particularly in meeting the expectations for personalization and individualized relationships, was crucial. By implementing the new program, the retailer aimed to not only expand its customer base but also drive increased wallet share and enhance brand traffic.",
+          ],
+          img: "/BlogImgThree.png",
+          image_side_text: [
+            "Improved lead funnels & insights by restructuring Salesforce workflow process",
+            "Revised operations plan for higher efficiency and productivity",
+            "Seamless Emerge Education User/Lead Journey Flow",
+          ],
+        },
+      ],
+      recent_case_studies: [
+        {
+          id: 205581,
+          title: "Large Vitamin Retailer",
+          excerpt:
+            "A large vitamin retailer dedicated to helping individuals fulfill their health and wellness needs. The company is a leading omni-channel specialty retailer of nutritional products based in Secaucus, New Jersey. With over 700 stores throughout the United States and Puerto Rico.",
+          featured_image:
+            "https://igapibuilder.brandsnarrative.com/wp-content/uploads/2022/12/11.jpg",
+          slug: "emerge-edu-student-recruiting",
+        },
+        {
+          id: 205581,
+          title: "Global Water treatment Company",
+          excerpt:
+            "A global water treatment company with a network of dealers and direct operations spawned across 90 countries with 1,000 dealers, over 600 in North America alone, and over 7,500 employees.",
+          featured_image:
+            "https://igapibuilder.brandsnarrative.com/wp-content/uploads/2022/12/11.jpg",
+          slug: "emerge-edu-student-recruiting",
+        },
+      ],
     },
   };
-
-  const caseStudyData = [
-    {
-      id: 205581,
-      title: "Large Vitamin Retailer",
-      excerpt:
-        "A large vitamin retailer dedicated to helping individuals fulfill their health and wellness needs. The company is a leading omni-channel specialty retailer of nutritional products based in Secaucus, New Jersey. With over 700 stores throughout the United States and Puerto Rico.",
-      featured_image:
-        "https://igapibuilder.brandsnarrative.com/wp-content/uploads/2022/12/11.jpg",
-      slug: "emerge-edu-student-recruiting",
-    },
-    {
-      id: 205581,
-      title: "Global Water treatment Company",
-      excerpt:
-        "A global water treatment company with a network of dealers and direct operations spawned across 90 countries with 1,000 dealers, over 600 in North America alone, and over 7,500 employees.",
-      featured_image:
-        "https://igapibuilder.brandsnarrative.com/wp-content/uploads/2022/12/11.jpg",
-      slug: "emerge-edu-student-recruiting",
-    },
-  ];
 
   return (
     <>
       <section className="container-fluid g-0">
         <div className="row g-0 position-relative">
           <img
-            height={600}
             className="blog-hero-img"
-            src={blog?.hero_image || "/emerge.png"}
+            src={caseStudy["emerge-edu-student-recruiting"].hero_image}
             alt="blog-hero-img"
           />
           <div className="blog-hero-heading-wrapper">
             <h1 className="blog-hero-heading">
-              {blog?.hero_heading || singleBlog["emerge-edu-student-recruiting"].title}
+              {caseStudy["emerge-edu-student-recruiting"].hero_heading}
             </h1>
           </div>
         </div>
       </section>
       <CaseStudyComponent
-        details={singleBlog["emerge-edu-student-recruiting"].details}
+        details={caseStudy["emerge-edu-student-recruiting"].details}
       />
-      {/* <div className="d-flex justify-content-center align-items-center">
-        <img src="/emergeCS.png" alt="" />
-      </div> */}
       <SocialIcon />
-      <RecentBlogs blogData={caseStudyData} />
+      <RecentBlogs blogData={caseStudy["emerge-edu-student-recruiting"].recent_case_studies} />
     </>
   );
 }
