@@ -1,20 +1,17 @@
 import { NavLink } from "react-router-dom";
 import "../css/Hero.css";
 
-export default function Hero({
-  heroTitle,
-  heroTitleMain,
-  heroTitleEnding,
-  heroButtonText,
-}) {
+export default function Hero({ heroTitle, heroButtonText }) {
+  const [heroTitleMain, heroTitleMiddle, heroTitleEnding] =
+    heroTitle.split("|");
   return (
     <section className="container-fluid mt-0 mb-0 g-0">
       <div className="container mt-0 mb-0">
         <div className="row justify-content-start align-items-center g-0">
           <div className="col-md-7 custom-hero-padding">
             <h2 className="text-light hero-header">
-              <span className="hero-main-text">{heroTitle}</span>{" "}
-              {heroTitleMain}
+              <span className="hero-main-text">{heroTitleMain}</span>{" "}
+              {heroTitleMiddle}
               <span className="hero-end-text">{heroTitleEnding}</span>
             </h2>
             <NavLink to="/company">

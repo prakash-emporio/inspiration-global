@@ -1,10 +1,10 @@
+import { NavLink } from "react-router-dom";
 import "../css/CTA.css";
 import aws from "/aws.svg";
+import azure from "/azure.svg";
 import oracle from "/oracle.svg";
 import salesforce from "/salesforce.svg";
-import azure from "/azure.svg";
 import shopify from "/shopify.svg";
-import { NavLink } from "react-router-dom";
 
 export default function CTA({ title, description }) {
   const splitIndex = description.indexOf("Our application services offer");
@@ -36,13 +36,7 @@ export default function CTA({ title, description }) {
             <NavLink reloadDocument to="/software/azure">
               <img className="azure cta-img" src={azure} alt="azure-logo" />
             </NavLink>
-            <NavLink reloadDocument to="/software/shopify">
-              <img
-                className="shopify cta-img"
-                src={shopify}
-                alt="shopify-logo"
-              />
-            </NavLink>
+            <img className="shopify cta-img" src={shopify} alt="shopify-logo" />
           </div>
         </div>
       </div>

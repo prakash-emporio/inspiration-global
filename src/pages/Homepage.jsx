@@ -18,9 +18,8 @@ const homepage = {
   hero: {
     id: "hero_557",
     img: "/heroImage.png",
-    title: "We Live",
-    main: "at the intersection of technology, talent & tomorrow",
-    ending: "...",
+    title:
+      "We Live | at the intersection of technology, talent & tomorrow | ...",
     buttonText: "LET’S GO",
   },
   companySection: [
@@ -167,8 +166,6 @@ export default function Homepage() {
       >
         <Hero
           heroTitle={homepage.hero.title}
-          heroTitleMain={homepage.hero.main}
-          heroTitleEnding={homepage.hero.ending}
           heroButtonText={homepage.hero.buttonText}
         />
       </div>
