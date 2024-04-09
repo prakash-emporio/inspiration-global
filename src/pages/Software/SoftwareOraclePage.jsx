@@ -9,6 +9,7 @@ import {
 	SoftwareHero,
 } from "../../components/SoftwareComponents/index.js";
 import { useSoftwarePage } from "../../hooks/useSoftwarePage.jsx";
+import SoftwareSkeletonPage from "./SoftwareSkeletonPage.jsx";
 
 export default function SoftwareOraclePage() {
 	const {
@@ -32,7 +33,7 @@ export default function SoftwareOraclePage() {
 	]);
 
 	if (isLoading) {
-		return <div></div>;
+		return <SoftwareSkeletonPage />;
 	}
 
 	if (isError) {
@@ -52,7 +53,6 @@ export default function SoftwareOraclePage() {
 				/>
 			</div>
 			<FeatureSection
-				key={api.featureSection.id}
 				title={featureSectionData.below_banner_software_details_heading}
 				subtitle={
 					featureSectionData.below_banner_software_details_sub_heading

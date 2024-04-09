@@ -8,7 +8,6 @@ import Layout from "../Layout.jsx";
 import CaseStudyDetailPage from "../pages/CaseStudyDetailPage.jsx";
 import {
   BlogDetailPage,
-  CareersDetailPage,
   CareersPage,
   CaseStudyPage,
   CompanyPage,

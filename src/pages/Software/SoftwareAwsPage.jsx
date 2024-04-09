@@ -9,6 +9,7 @@ import {
 	SoftwareHero,
 } from "../../components/SoftwareComponents/index.js";
 import { useSoftwarePage } from "../../hooks/useSoftwarePage.jsx";
+import SoftwareSkeletonPage from "./SoftwareSkeletonPage.jsx";
 
 export default function SoftwareAwsPage() {
 	const {
@@ -33,7 +34,7 @@ export default function SoftwareAwsPage() {
 	]);
 
 	if (isLoading) {
-		return <div></div>;
+		return <SoftwareSkeletonPage />;
 	}
 
 	if (isError) {

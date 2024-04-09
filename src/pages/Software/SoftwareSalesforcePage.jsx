@@ -2,13 +2,14 @@ import { useEffect } from "react";
 import { Form } from "../../components/home/index.js";
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import {
-  CardConsulting,
+	CardConsulting,
 	CardTypeOne,
 	CardTypeTwo,
 	FeatureSection,
 	SoftwareHero,
 } from "../../components/SoftwareComponents/index.js";
 import { useSoftwarePage } from "../../hooks/useSoftwarePage.jsx";
+import SoftwareSkeletonPage from "./SoftwareSkeletonPage.jsx";
 
 export default function SoftwareSalesforcePage() {
 	const {
@@ -32,7 +33,7 @@ export default function SoftwareSalesforcePage() {
 	]);
 
 	if (isLoading) {
-		return <div></div>;
+		return <SoftwareSkeletonPage />;
 	}
 
 	if (isError) {

@@ -154,7 +154,6 @@ export default function Homepage() {
 		setCard(response.data.below_counter_section_data);
 		setServices(response.data.services);
 		setCta(response.data.powering_enterprises);
-		setIsLoading(false);
 	}
 
 	useEffect(() => {

@@ -3,14 +3,14 @@ import { ServiceContent } from "../../components/ServicesComponents/index.js";
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
 import { useServicePage } from "../../hooks/useServicePage.jsx";
+import ServiceSkeletonPage from "./ServiceSkeletonPage.jsx";
 
 export default function ServiceCloudServicePage() {
-	const { data, details, quote, loading, error } = useServicePage(
-		"cloud-services"
-	);
+	const { data, details, quote, loading, error } =
+		useServicePage("cloud-services");
 
 	if (loading) {
-		return <div></div>;
+		return <ServiceSkeletonPage />;
 	}
 
 	if (error) {

@@ -180,7 +180,7 @@ export default function OffcanvasNavbar() {
                             Cloud Services
                           </NavLink>
                           <NavLink
-                            to={"services/data-analytics"}
+                            to={"services/data-and-analytics"}
                             className="subMenuItems"
                             reloadDocument
                           >

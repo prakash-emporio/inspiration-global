@@ -6,14 +6,15 @@ import {
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
 import { useIndustryPage } from "../../hooks/useIndustryPage.jsx";
+import IndustrySkeletonPage from "./IndustrySkeletonPage.jsx";
 
 export default function IndustryHigherEdPage() {
 	const { hero, details, quoteData, capabilities, loading, error } =
 		useIndustryPage("higher-ed");
 
-	if (loading) {
-		return <div></div>;
-	}
+		if (loading) {
+			return <IndustrySkeletonPage />;
+		}
 
 	if (error) {
 		return <div>Error: Unable to fetch data</div>;

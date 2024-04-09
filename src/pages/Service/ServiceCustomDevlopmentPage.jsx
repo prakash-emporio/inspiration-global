@@ -7,6 +7,7 @@ import {
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
 import { useServicePage } from "../../hooks/useServicePage.jsx";
+import ServiceSkeletonPage from "./ServiceSkeletonPage.jsx";
 
 const api = {
 	id: "1267433412322112445",
@@ -92,7 +93,7 @@ export default function ServiceCustomDevlopmentPage() {
 		useServicePage("custom-development");
 
 	if (loading) {
-		return <div></div>;
+		return <ServiceSkeletonPage />;
 	}
 
 	if (error) {

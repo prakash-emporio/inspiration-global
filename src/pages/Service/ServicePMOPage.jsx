@@ -3,14 +3,13 @@ import { ServiceContent } from "../../components/ServicesComponents/index.js";
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
 import { useServicePage } from "../../hooks/useServicePage.jsx";
+import ServiceSkeletonPage from "./ServiceSkeletonPage.jsx";
 
 export default function ServicePMOPage() {
-  const { data, details, quote, loading, error } = useServicePage(
-		"pmo"
-	);
+	const { data, details, quote, loading, error } = useServicePage("pmo");
 
 	if (loading) {
-		return <div></div>;
+		return <ServiceSkeletonPage />;
 	}
 
 	if (error) {
