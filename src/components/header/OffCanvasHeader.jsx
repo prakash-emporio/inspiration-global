@@ -159,56 +159,56 @@ export default function OffcanvasNavbar() {
                       <div className="col-lg-4 megamenu-sidebar">
                         <div className="d-flex flex-column text-left text-uppercase megamenu-sidebar-common-padding">
                           <NavLink
-                            to={"services/product-engineering"}
+                            to={"/services/product-engineering"}
                             className="subMenuItems"
                             reloadDocument
                           >
                             Product Engineering
                           </NavLink>
                           <NavLink
-                            to={"services/custom-development"}
+                            to={"/services/custom-development"}
                             className="subMenuItems"
                             reloadDocument
                           >
                             Custom Development
                           </NavLink>
                           <NavLink
-                            to={"services/cloud-services"}
+                            to={"/services/cloud-services"}
                             className="subMenuItems"
                             reloadDocument
                           >
                             Cloud Services
                           </NavLink>
                           <NavLink
-                            to={"services/data-and-analytics"}
+                            to={"/services/data-and-analytics"}
                             className="subMenuItems"
                             reloadDocument
                           >
                             Data & Analytics
                           </NavLink>
                           <NavLink
-                            to={"services/artificial-intelligence"}
+                            to={"/services/artificial-intelligence"}
                             className="subMenuItems"
                             reloadDocument
                           >
                             Artificial Intelligence
                           </NavLink>
                           <NavLink
-                            to={"services/cio-advisory"}
+                            to={"/services/cio-advisory"}
                             className="subMenuItems"
                             reloadDocument
                           >
                             CIO Advisory
                           </NavLink>
                           <NavLink
-                            to={"services/pmo"}
+                            to={"/services/pmo"}
                             className="subMenuItems"
                             reloadDocument
                           >
                             PMO
                           </NavLink>
                           <NavLink
-                            to={"services/security"}
+                            to={"/services/security"}
                             className="subMenuItems"
                             reloadDocument
                           >
@@ -362,35 +362,35 @@ export default function OffcanvasNavbar() {
                       <div className="col-lg-4 megamenu-sidebar">
                         <div className="d-flex flex-column text-left text-uppercase megamenu-sidebar-common-padding">
                           <NavLink
-                            to={"industry/public-sector"}
+                            to={"/industry/public-sector"}
                             className="subMenuItems"
                             reloadDocument
                           >
                             Public Sector
                           </NavLink>
                           <NavLink
-                            to={"industry/health-care"}
+                            to={"/industry/health-care"}
                             className="subMenuItems"
                             reloadDocument
                           >
                             Health Care
                           </NavLink>
                           <NavLink
-                            to={"industry/higher-ed"}
+                            to={"/industry/higher-ed"}
                             className="subMenuItems"
                             reloadDocument
                           >
                             Higher ED
                           </NavLink>
                           <NavLink
-                            to={"industry/insurance"}
+                            to={"/industry/insurance"}
                             className="subMenuItems"
                             reloadDocument
                           >
                             Insurance
                           </NavLink>
                           <NavLink
-                            to={"industry/pe-vc"}
+                            to={"/industry/pe-vc"}
                             className="subMenuItems"
                             reloadDocument
                           >
@@ -477,14 +477,14 @@ export default function OffcanvasNavbar() {
                         </div> */}
                         <div className="d-flex flex-column text-left text-uppercase megamenu-sidebar-common-padding">
                           <NavLink
-                            to="insight/blog"
+                            to="/insight/blog"
                             className="subMenuItems"
                             reloadDocument
                           >
                             Blog
                           </NavLink>
                           <NavLink
-                            to="insight/case-study"
+                            to="/insight/case-study"
                             className="subMenuItems"
                             reloadDocument
                           >
