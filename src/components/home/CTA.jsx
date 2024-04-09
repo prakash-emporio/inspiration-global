@@ -6,7 +6,7 @@ import oracle from "/oracle.svg";
 import salesforce from "/salesforce.svg";
 import shopify from "/shopify.svg";
 
-export default function CTA({ title, description }) {
+export default function CTA({ title, description, logos }) {
   const splitIndex = description.indexOf("Our application services offer");
   const part1 = description.slice(0, splitIndex);
   const part2 = description.slice(splitIndex);
@@ -20,6 +20,7 @@ export default function CTA({ title, description }) {
         </div>
         <div className="row">
           <div className="col g-5 text-center col">
+            {/* Logos here */}
             <NavLink reloadDocument to="/software/aws">
               <img className="aws cta-img" src={aws} alt="aws-logo" />
             </NavLink>

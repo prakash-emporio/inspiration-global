@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import companybtn from "/companybtn.png";
 
 export default function CompanyTeamCard({ member }) {
-  const { imageSrc, name, designation, bio, linkedin } = member;
+  const { image, name, designation, bio, linkedin } = member;
   const [showFullBio, setShowFullBio] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -21,7 +21,7 @@ export default function CompanyTeamCard({ member }) {
       <div className="row g-0">
         <div className="col-md-2 d-flex justify-content-center align-items-start">
           <img
-            src={imageSrc}
+            src={image}
             className="img-thumbnail rounded-start company-card-thumbnail"
             alt="..."
           />

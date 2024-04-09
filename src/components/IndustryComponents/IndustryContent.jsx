@@ -1,9 +1,8 @@
-import "./industry.css"
-
+import parse from "html-react-parser";
+import "./industry.css";
 
 export default function IndustryContent({ text, index, bodyImg }) {
-  const isThirdPosition = index === 2;
-  const even = index % 2 === 0;
+  const isThirdPosition = index === 1;
   const first = index === 1;
 
   return (
@@ -13,21 +12,7 @@ export default function IndustryContent({ text, index, bodyImg }) {
           first ? "service-content-custom-margin" : ""
         }`}
       >
-        <div
-          className={`row g-0 ${
-            even ? "justify-content-end" : "justify-content-between"
-          } `}
-        >
-          {text && (
-            <p
-              className={`${
-                first ? "col-md-6" : "col-lg-7"
-              } service-testimonial-text`}
-            >
-              {text}
-            </p>
-          )}
-        </div>
+        {parse(text)}
       </div>
       {isThirdPosition && (
         <div className="container mb-0 mt-0">

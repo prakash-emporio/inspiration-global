@@ -25,7 +25,6 @@ import SoftwareSalesforcePage from "./Software/SoftwareSalesforcePage";
 import SoftwareShopifyPage from "./Software/SoftwareShopifyPage";
 import CareersDetailPage from "./Talent/CareersDetailPage.jsx";
 import CareersPage from "./Talent/CareersPage.jsx";
-import SourcingPage from "./Talent/SourcingPage.jsx";
 import TalentPage from "./TalentPage";
 export {
   BlogDetailPage,
@@ -55,6 +54,5 @@ export {
   SoftwareOraclePage,
   SoftwareSalesforcePage,
   SoftwareShopifyPage,
-  SourcingPage,
   TalentPage,
 };

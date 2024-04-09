@@ -4,13 +4,13 @@ export default function SharedHero({ title, text }) {
       <div className="row justify-content-between g-0 custom-padding">
         <div className="col-md-5">
           <h1 className="text-white shared-hero-main-text">
-            {title ? title : "Title Goes Here"}
+            {title}
           </h1>
         </div>
         <div className="col-md-6 talent-hero-card custom-card-padding">
           <div className="service-card-color">
             <h2 className="service-hero-card-text">
-              {text ? text : "Text Goes Here"}
+              {text}
             </h2>
           </div>
         </div>

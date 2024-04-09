@@ -48,8 +48,8 @@ export default function TalentPage() {
         />
       ))}
       <TalentFeatureSection />
-      <SharedCard />
       <SharedCTA />
+      <SharedCard />
       <Form />
     </>
   );

@@ -5,11 +5,23 @@
     color: var(--purple-color);
 }
 
-.contact-us-icon {
-  width: 5rem;
-  height: 2.5rem;
+.contact-us-info {
+  font-size: 1.5rem;
 }
 
-.contact-us-icon-detail {
-  font-size: 1.5rem;
+.job-card-btn-two {
+  color: var(--purple-color);
+  background-color: rgba(161, 241, 87, 1);
+}
+
+.job-card-btn-two:hover {
+  transition: 0.3s all ease-in-out;
+  color: var(--green-color);
+  outline: 1.5px solid var(--green-color);
+}
+
+@media screen and (max-width: 992px) {
+  .contact-us-header {
+    font-size: 2rem;
+  }
 }

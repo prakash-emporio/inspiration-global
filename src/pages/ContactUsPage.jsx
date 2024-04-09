@@ -1,73 +1,50 @@
-import { MailruShareButton } from "react-share";
+import { useEffect, useState } from "react";
 import ContactUsForm from "../components/ContactUs/ContactUsForm";
 import ContactUsHero from "../components/ContactUs/ContactUsHero";
+import { getContactUsPage } from "../utils";
 
 const api = {
-  heroImg: "/ContactUsHero.png",
+	heroImg: "/ContactUsHero.png",
 };
 
 export default function ContactUsPage() {
-  return (
-    <>
-      <div
-        id="hero-talent-img"
-        style={{ backgroundImage: `url(${api.heroImg})` }}
-      >
-        <ContactUsHero title="Contact Us" />
-      </div>
-      <div className="container g-0">
-        <div className="row g-5 align-items-center">
-          <div className="col">
-            <h2 className="contact-us-header px-2">
-              Great projects starts with great relationships. Let's talk and
-              start one.
-            </h2>
-            <div className="d-flex align-items-center justify-content-start gap-3 my-5">
-              <MailruShareButton>
-                <img
-                  className="object-fit-scale"
-                  width={100}
-                  height={100}
-                  src="/MailBlog.png"
-                  alt="social-icons"
-                />
-              </MailruShareButton>
-              <span className="contact-us-icon-detail">
-                info@inspirationdigital.co
-              </span>
-            </div>
-            <div className="d-flex align-items-center justify-content-start gap-3 my-5">
-              <MailruShareButton>
-                <img
-                  className="object-fit-scale "
-                  width={100}
-                  height={100}
-                  src="/Phone.svg"
-                  alt="social-icons"
-                />
-              </MailruShareButton>
-              <span className="contact-us-icon-detail">+1 647 886 2190</span>
-            </div>
-            <div className="d-flex align-items-center justify-content-start gap-3 my-5">
-              <MailruShareButton>
-                <img
-                  className="object-fit-scale "
-                  width={100}
-                  height={100}
-                  src="/Location.svg"
-                  alt="social-icons"
-                />
-              </MailruShareButton>
-              <span className="contact-us-icon-detail">
-                1010 North 7th street suite 304-307 Harrisburg, PA 17102
-              </span>
-            </div>
-          </div>
-          <div className="col">
-            <ContactUsForm />
-          </div>
-        </div>
-      </div>
-    </>
-  );
+	const [data, setData] = useState({});
+
+	async function downloadPageData() {
+		const response = await getContactUsPage();
+		console.log(response.data);
+		setData(response.data);
+	}
+
+	useEffect(() => {
+		downloadPageData();
+	}, []);
+
+	return (
+		<>
+			<div
+				id="hero-talent-img"
+				style={{ backgroundImage: `url(${api.heroImg})` }}
+			>
+				<ContactUsHero title={data.title} />
+			</div>
+			<div className="container g-0">
+				<div className="row g-5 align-items-center">
+					<div className="col-md-6">
+						<h2 className="contact-us-header">
+							{data.contact_below_banner_heading}
+						</h2>
+						<div className="d-flex flex-column px-3 py-2">
+							<p className="contact-us-info">{data.email}</p>
+							<p className="contact-us-info">{data.phone}</p>
+							<p className="contact-us-info">{data.address}</p>
+						</div>
+					</div>
+					<div className="col-md-6">
+						<ContactUsForm />
+					</div>
+				</div>
+			</div>
+		</>
+	);
 }

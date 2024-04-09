@@ -36,6 +36,15 @@
   fill: #a1f157;
 }
 
+.footer-initial-text {
+  letter-spacing: 1.4px;
+}
+
+.footer-final-text {
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
 .footer-final-text:hover {
   color: #d1d5db;
   cursor: pointer;
@@ -45,11 +54,14 @@
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 576px) {
   .footer-main-text {
     font-size: 28px !important;
     line-height: 28px;
     letter-spacing: -0.4px;
+  }
+  .footer-mobile-alignment {
+    flex-direction: column;
   }
 }
 

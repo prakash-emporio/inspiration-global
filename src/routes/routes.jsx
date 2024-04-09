@@ -57,7 +57,7 @@ export const router = createBrowserRouter(
         element={<ServiceCloudServicePage />}
       />
       <Route
-        path="services/data-analytics"
+        path="services/data-and-analytics"
         element={<ServiceDataAnalyticsPage />}
       />
       <Route
@@ -90,7 +90,6 @@ export const router = createBrowserRouter(
       <Route path="policy" element={<DEIPolicyPage />} />
       <Route path="sourcing" element={<TalentPage />} />
       <Route path="careers" element={<CareersPage />} />
-      <Route path="/careers/:id" element={<CareersDetailPage />} />
       <Route path="/contact-us" element={<ContactUsPage />} />
     </Route>
   )

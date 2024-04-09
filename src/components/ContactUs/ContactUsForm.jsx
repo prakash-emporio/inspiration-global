@@ -9,16 +9,15 @@ export default function ContactUsForm() {
   } = useForm();
 
   const onSubmit = async (data) => {
-    // // Submit the form data to the API
-    // const backendAPI = import.meta.env.VITE_IG_BACKEND_API;
-    // const response = await axios.post(`${backendAPI}store_form_data`, data);
-    // // Handle the response
-    // if (response.status === 200) {
-    //   console.log("Form submitted successfully");
-    // } else {
-    //   console.log("Form submission failed");
-    // }
-    console.log(data);
+    // Submit the form data to the API
+    const backendAPI = import.meta.env.VITE_IG_BACKEND_API;
+    const response = await axios.post(`${backendAPI}store_form_data`, data);
+    // Handle the response
+    if (response.status === 200) {
+      console.log("Form submitted successfully");
+    } else {
+      console.log("Form submission failed");
+    }
   };
 
   return (
@@ -27,7 +26,7 @@ export default function ContactUsForm() {
       className="row job-form-wrapper"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="col-12 py-3 py-md-5">
+      <div className="col-12 py-3">
         <input
           type="text"
           className="form-control form-control-lg"
@@ -41,7 +40,7 @@ export default function ContactUsForm() {
         />
         {errors.name && <p className="error-message">{errors.name.message}</p>}
       </div>
-      <div className="col-12 py-3 py-md-5">
+      <div className="col-12 py-3">
         <input
           type="email"
           className="form-control form-control-lg"
@@ -60,7 +59,7 @@ export default function ContactUsForm() {
           <p className="error-message">{errors.email.message}</p>
         )}
       </div>
-      <div className="col-12 py-3 py-md-5">
+      <div className="col-12 py-3">
         <input
           className="form-control form-control-lg"
           id="phone"
@@ -76,18 +75,12 @@ export default function ContactUsForm() {
           <p className="error-message">{errors.phone.message}</p>
         )}
       </div>
-      <div className="col-12 py-3 py-md-5">
-        <div>
-          <label htmlFor="message" className="form-label job-form-label">
-            Message
-          </label>
-        </div>
+      <div className="col-12 py-5">
         <textarea
           id="message"
-          cols="30"
-          rows="3"
+          className="form-control form-control-lg"
           aria-label="With textarea"
-          placeholder="Type here..."
+          placeholder="Type your message here..."
           {...register("message", {
             required: {
               value: true,

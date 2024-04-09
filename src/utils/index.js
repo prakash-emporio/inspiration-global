@@ -1,5 +1,9 @@
 import { axiosInstance } from "../config/axiosInstance";
 
+export function getHomepage() {
+  return axiosInstance.get("get-homepage-content");
+}
+
 export function getSoftwarePage(slug) {
   return axiosInstance.get(`software/${slug}`);
 }
@@ -29,11 +33,11 @@ export function getCaseStudyPage(slug) {
 }
 
 export function getAboutUsPage() {
-  return axiosInstance.get("about-us");
+  return axiosInstance.get("get-aboutpage-content");
 }
 
 export function getContactUsPage() {
-  return axiosInstance.get("contact-us");
+  return axiosInstance.get("get-contactpage-content");
 }
 
 export function getPolicyPage() {

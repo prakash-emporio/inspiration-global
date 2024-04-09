@@ -17,19 +17,19 @@ export default function StatsSection({ title, description, statsData }) {
       {/* lower section */}
       <div className="text-center">
         <div className="row">
-          {statsData.map((data) => (
-            <div className="col-12 col-md-4" key={data.index}>
+          {statsData.map((data, index) => (
+            <div className="col-12 col-md-4" key={index}>
               <h1 className="testimonial-number">
                 <CountUp
                   start={0}
-                  end={data.value}
+                  end={data.counter_number}
                   duration={5}
                   enableScrollSpy
                   scrollSpyOnce
                 >{({ countUpRef }) => <span ref={countUpRef} />}</CountUp>
-                {data.sup && <sup className="testimonial-plus">+</sup>}
+                {data.counter_number && <sup className="testimonial-plus">+</sup>}
               </h1>
-              <p className="py-2 testimonial-last-text">{data.label}</p>
+              <p className="py-2 testimonial-last-text">{data.counter_heading}</p>
             </div>
           ))}
         </div>
