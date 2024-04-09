@@ -17,6 +17,7 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.49.3",
+    "react-hot-toast": "^2.4.1",
     "react-infinite-logo-slider": "^1.0.13",
     "react-loading-skeleton": "^3.4.0",
     "react-router-dom": "^6.21.1",

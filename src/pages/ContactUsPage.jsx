@@ -12,7 +12,6 @@ export default function ContactUsPage() {
 
 	async function downloadPageData() {
 		const response = await getContactUsPage();
-		console.log(response.data);
 		setData(response.data);
 	}
 
