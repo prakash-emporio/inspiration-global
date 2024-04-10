@@ -18,7 +18,7 @@ export default function DropdownCard({ title, buttonName, route }) {
           >
             {buttonName}
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"
               width="10"
               height="10"
               viewBox="0 0 10 10"

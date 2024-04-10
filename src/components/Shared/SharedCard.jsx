@@ -31,7 +31,7 @@ export default function SharedCard() {
               >
                 Read more
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="https://www.w3.org/2000/svg"
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
@@ -68,7 +68,7 @@ export default function SharedCard() {
               >
                 Read more
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="https://www.w3.org/2000/svg"
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"

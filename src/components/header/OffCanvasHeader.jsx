@@ -259,7 +259,7 @@ export default function OffcanvasNavbar() {
                                     Sourcing
                                   </NavLink>
                                   <svg
-                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns="https://www.w3.org/2000/svg"
                                     width="10"
                                     height="10"
                                     viewBox="0 0 10 10"
@@ -297,7 +297,7 @@ export default function OffcanvasNavbar() {
                                     Careers
                                   </NavLink>
                                   <svg
-                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns="https://www.w3.org/2000/svg"
                                     width="10"
                                     height="10"
                                     viewBox="0 0 10 10"
@@ -437,44 +437,6 @@ export default function OffcanvasNavbar() {
                       </div>
                       {/* dropdown menu side bar */}
                       <div className="col-lg-4 megamenu-sidebar">
-                        {/* removed this Blog Card Due to Mobile Navigation Issue */}
-                        {/* <div className="d-flex flex-column text-uppercase megamenu-sidebar-padding">
-                          <img
-                            className="blog-image"
-                            width={285}
-                            height={190}
-                            src={dropdownblogImage}
-                            alt="blog-image"
-                          />
-                          <div className="flex-start dropdown-card-margin">
-                            <p className="dropdown-blog">Blog</p>
-                            <p className="dropdown-blog-title">
-                              Value Based Hiring
-                            </p>
-                            <button
-                              className="btn mega-header-btn megamenu-sidebar-btn-top-margin"
-                              href="#"
-                              role="button"
-                            >
-                              Read More
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="10"
-                                height="10"
-                                viewBox="0 0 10 10"
-                                fill="none"
-                                className="icon-svg"
-                              >
-                                <path
-                                  fillRule="evenodd"
-                                  clipRule="evenodd"
-                                  d="M0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L8.5 2.56066L8.5 8.25C8.5 8.66421 8.83579 9 9.25 9C9.66421 9 10 8.66421 10 8.25L10 0.75C10 0.335787 9.66421 0 9.25 0L1.75 0C1.33579 0 1 0.335787 1 0.75C1 1.16421 1.33579 1.5 1.75 1.5L7.43934 1.5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033Z"
-                                  fill="#5912E4"
-                                />
-                              </svg>
-                            </button>
-                          </div>
-                        </div> */}
                         <div className="d-flex flex-column text-left text-uppercase megamenu-sidebar-common-padding">
                           <NavLink
                             to="/insight/blog"

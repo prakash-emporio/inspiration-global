@@ -15,7 +15,7 @@ export default function Footer() {
 				<div className="row justify-content-between">
 					<div className="mb-3 col-6 col-md-2">
 						<svg
-							xmlns="http://www.w3.org/2000/svg"
+							xmlns="https://www.w3.org/2000/svg"
 							width="130"
 							height="130"
 							viewBox="0 0 130 130"
@@ -85,7 +85,7 @@ export default function Footer() {
                 to="https://www.facebook.com/inspirationdigital1/"
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="https://www.w3.org/2000/svg"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -102,7 +102,7 @@ export default function Footer() {
                 to="https://www.linkedin.com/company/inspiration-global/"
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="https://www.w3.org/2000/svg"
                   width="18"
                   height="18"
                   viewBox="0 0 18 18"

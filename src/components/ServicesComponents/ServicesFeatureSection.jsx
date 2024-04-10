@@ -44,7 +44,7 @@ export default function ServicesFeatureSection() {
                 {step.number === 1 || step.number === 2 ? (
                   <button className="service-feature-section-card-btn">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns="https://www.w3.org/2000/svg"
                       width="30"
                       height="30"
                       viewBox="0 0 30 30"
