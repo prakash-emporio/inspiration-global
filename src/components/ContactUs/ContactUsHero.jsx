@@ -7,7 +7,7 @@ export default function ContactUsHero({title}) {
         <div className="row justify-content-between g-0 custom-padding">
           <div className="col-md-5">
             <h1 className="text-white shared-hero-main-text">
-              {title ? title : "Title Goes Here"}
+              {title}
             </h1>
           </div>
         </div>
