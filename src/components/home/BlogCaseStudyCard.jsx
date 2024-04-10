@@ -24,7 +24,7 @@ export default function BlogCaseStudyCard() {
             <h1 className="custom-card-title">
               Leveraging GenAI in your company
             </h1>
-            <NavLink reloadDocument to="/insight">
+            <NavLink reloadDocument to="/insight/blog">
               <button className="btn common-card-btn" href="#" role="button">
                 Read more
                 <svg
@@ -63,7 +63,7 @@ export default function BlogCaseStudyCard() {
             <h1 className="custom-card-title">
               How does AI help the Public Sector
             </h1>
-            <NavLink reloadDocument to="/insight">
+            <NavLink reloadDocument to="/insight/case-study">
               <button className="btn common-card-btn" href="#" role="button">
                 Read more
                 <svg
