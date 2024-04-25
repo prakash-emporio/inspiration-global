@@ -1,3 +1,4 @@
+import LoadingBar from "react-top-loading-bar";
 import { Form } from "../../components/home/index.js";
 import {
 	IndustryContent,
@@ -5,19 +6,21 @@ import {
 } from "../../components/IndustryComponents/index.js";
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
-import { useIndustryPage } from "../../hooks/useIndustryPage.jsx";
-import IndustrySkeletonPage from "./IndustrySkeletonPage.jsx";
+import { useIndustry } from "../../hooks/useIndustry.jsx";
 
 export default function IndustryPEVCPage() {
-	const { hero, details, quoteData, capabilities, loading, error } =
-		useIndustryPage("pe-vc");
+	const { data, loading, loadingRef } = useIndustry("pe-vc");
 
-		if (loading) {
-			return <IndustrySkeletonPage />;
-		}
+	const { hero, details, quoteData, capabilities } = data;
 
-	if (error) {
-		return <div>Error: Unable to fetch data</div>;
+	if (loading) {
+		return (
+			<LoadingBar
+				color="#8800FF"
+				ref={loadingRef}
+				height={5}
+			/>
+		);
 	}
 
 	return (

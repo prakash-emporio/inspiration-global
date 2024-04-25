@@ -22,12 +22,10 @@ import SoftwareAwsPage from "./Software/SoftwareAwsPage";
 import SoftwareAzurePage from "./Software/SoftwareAzurePage";
 import SoftwareOraclePage from "./Software/SoftwareOraclePage";
 import SoftwareSalesforcePage from "./Software/SoftwareSalesforcePage";
-import CareersDetailPage from "./Talent/CareersDetailPage.jsx";
 import CareersPage from "./Talent/CareersPage.jsx";
 import TalentPage from "./TalentPage";
 export {
   BlogDetailPage,
-  CareersDetailPage,
   CareersPage,
   CaseStudyPage,
   CompanyPage,

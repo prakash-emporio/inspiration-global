@@ -1,14 +1,8 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Footer.css";
 import logo from "/logo.png";
 
 export default function Footer() {
-	const navigate = useNavigate();
-
-	function handleClick() {
-		navigate("/policy");
-	}
-
 	return (
 		<footer className="pt-5 pb-1 main-footer">
 			<div className="container mt-0 mb-0">
@@ -65,58 +59,59 @@ export default function Footer() {
 				</div>
 
 				<div className="py-4 my-4 d-flex flex-column flex-sm-row justify-content-between text-center footer-last-text">
-          <div className="d-flex gap-4 footer-mobile-alignment">
-            <p className="footer-initial-text">
-              Copyright &copy; 2024 Inspiration Global | All rights
-              reserved
-            </p>
-            <p className="footer-final-text">Terms of Service</p>
-            <p
-              onClick={handleClick}
-              className="footer-final-text"
-            >
-              Dei Policy
-            </p>
-          </div>
-          <ul className="list-unstyled d-flex justify-content-end align-items-center">
-            <li className="ms-lg-3">
-              <NavLink
-                className="link-body-emphasis"
-                to="https://www.facebook.com/inspirationdigital1/"
-              >
-                <svg
-                  xmlns="https://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="footer-svg"
-                >
-                  <path d="M16.2 13.1L16.7 9.8H13.6V7.8C13.6 6.9 14 6 15.4 6H16.8V3.2C16.8 3.2 15.5 3 14.3 3C11.7 3 10 4.6 10 7.4V9.9H7.2V13.2H10V21H13.5V13.1H16.2Z" />
-                </svg>
-              </NavLink>
-            </li>
-            <li className="ms-lg-3">
-              <NavLink
-                className="link-body-emphasis"
-                to="https://www.linkedin.com/company/inspiration-global/"
-              >
-                <svg
-                  xmlns="https://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  className="footer-svg"
-                >
-                  <path d="M4 6.19995H0.300003V18H4V6.19995Z" />
-                  <path d="M4.3 2.1C4.3 1.8 4.2 1.5 4.1 1.3C4.1 1.1 3.9 0.8 3.7 0.6C3.5 0.4 3.3 0.3 3 0.2C2.8 0.1 2.5 0 2.2 0H2.1C1.6 0 1 0.2 0.6 0.6C0.2 1 0 1.6 0 2.1C0 2.7 0.2 3.2 0.6 3.6C1 4.1 1.6 4.3 2.1 4.3C2.4 4.3 2.7 4.3 2.9 4.2C3.2 4 3.5 3.9 3.7 3.7C3.9 3.5 4 3.3 4.1 3C4.2 2.8 4.3 2.5 4.3 2.1Z" />
-                  <path d="M18 10.7999C18 7.2999 15.7 5.8999 13.5 5.8999C12.8 5.8999 12 5.9999 11.4 6.3999C10.7 6.6999 10.2 7.1999 9.8 7.7999H9.7V6.1999H6.2V17.9999H9.9V11.6999C9.8 11.0999 10 10.3999 10.5 9.8999C10.9 9.3999 11.5 9.0999 12.1 8.9999H12.2C13.4 8.9999 14.2 9.6999 14.2 11.5999V17.9999H18V10.7999Z" />
-                </svg>
-              </NavLink>
-            </li>
-          </ul>
-        </div>
+					<div className="d-flex gap-4 footer-mobile-alignment">
+						<p className="footer-initial-text">
+							Copyright &copy; 2024 Inspiration Global | All
+							rights reserved
+						</p>
+						<p className="footer-final-text">Terms of Service</p>
+						<NavLink
+							to="/policy"
+							reloadDocument
+							className="footer-final-text"
+						>
+							Dei Policy
+						</NavLink>
+					</div>
+					<ul className="list-unstyled d-flex justify-content-end align-items-center">
+						<li className="ms-lg-3">
+							<NavLink
+								className="link-body-emphasis"
+								to="https://www.facebook.com/inspirationdigital1/"
+							>
+								<svg
+									xmlns="https://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									className="footer-svg"
+								>
+									<path d="M16.2 13.1L16.7 9.8H13.6V7.8C13.6 6.9 14 6 15.4 6H16.8V3.2C16.8 3.2 15.5 3 14.3 3C11.7 3 10 4.6 10 7.4V9.9H7.2V13.2H10V21H13.5V13.1H16.2Z" />
+								</svg>
+							</NavLink>
+						</li>
+						<li className="ms-lg-3">
+							<NavLink
+								className="link-body-emphasis"
+								to="https://www.linkedin.com/company/inspiration-global/"
+							>
+								<svg
+									xmlns="https://www.w3.org/2000/svg"
+									width="18"
+									height="18"
+									viewBox="0 0 18 18"
+									fill="none"
+									className="footer-svg"
+								>
+									<path d="M4 6.19995H0.300003V18H4V6.19995Z" />
+									<path d="M4.3 2.1C4.3 1.8 4.2 1.5 4.1 1.3C4.1 1.1 3.9 0.8 3.7 0.6C3.5 0.4 3.3 0.3 3 0.2C2.8 0.1 2.5 0 2.2 0H2.1C1.6 0 1 0.2 0.6 0.6C0.2 1 0 1.6 0 2.1C0 2.7 0.2 3.2 0.6 3.6C1 4.1 1.6 4.3 2.1 4.3C2.4 4.3 2.7 4.3 2.9 4.2C3.2 4 3.5 3.9 3.7 3.7C3.9 3.5 4 3.3 4.1 3C4.2 2.8 4.3 2.5 4.3 2.1Z" />
+									<path d="M18 10.7999C18 7.2999 15.7 5.8999 13.5 5.8999C12.8 5.8999 12 5.9999 11.4 6.3999C10.7 6.6999 10.2 7.1999 9.8 7.7999H9.7V6.1999H6.2V17.9999H9.9V11.6999C9.8 11.0999 10 10.3999 10.5 9.8999C10.9 9.3999 11.5 9.0999 12.1 8.9999H12.2C13.4 8.9999 14.2 9.6999 14.2 11.5999V17.9999H18V10.7999Z" />
+								</svg>
+							</NavLink>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</footer>
 	);

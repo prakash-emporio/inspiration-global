@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import LoadingBar from "react-top-loading-bar";
 import { Form } from "../../components/home/index.js";
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import {
@@ -8,36 +8,20 @@ import {
 	FeatureSection,
 	SoftwareHero,
 } from "../../components/SoftwareComponents/index.js";
-import { useSoftwarePage } from "../../hooks/useSoftwarePage.jsx";
-import SoftwareSkeletonPage from "./SoftwareSkeletonPage.jsx";
+import { useSoftware } from "../../hooks/useSoftware.jsx";
 
 export default function SoftwareAzurePage() {
-	const {
-		heroData,
-		featureSectionData,
-		softwareCardData,
-		quoteData,
-		isLoading,
-		isError,
-	} = useSoftwarePage("azure");
+	const { data, loading, loadingRef } = useSoftware("azure");
+	const { heroData, featureSectionData, softwareCardData, quoteData } = data;
 
-	useEffect(() => {
-		// Any additional logic you might want to perform when data changes
-	}, [
-		heroData,
-		featureSectionData,
-		softwareCardData,
-		quoteData,
-		isLoading,
-		isError,
-	]);
-
-	if (isLoading) {
-		return <SoftwareSkeletonPage />;
-	}
-
-	if (isError) {
-		return <div>Error: </div>;
+	if (loading) {
+		return (
+			<LoadingBar
+				color="#8800FF"
+				ref={loadingRef}
+				height={5}
+			/>
+		);
 	}
 
 	return (

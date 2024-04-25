@@ -1,3 +1,4 @@
+import LoadingBar from "react-top-loading-bar";
 import { Form } from "../../components/home/index.js";
 import {
 	IndustryContent,
@@ -5,19 +6,21 @@ import {
 } from "../../components/IndustryComponents/index.js";
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
-import { useIndustryPage } from "../../hooks/useIndustryPage.jsx";
-import IndustrySkeletonPage from "./IndustrySkeletonPage.jsx";
+import { useIndustry } from "../../hooks/useIndustry.jsx";
 
 export default function IndustryHealthCarePage() {
-	const { hero, details, quoteData, capabilities, loading, error } =
-		useIndustryPage("health-care");
+	const { data, loading, loadingRef } = useIndustry("health-care");
+
+	const { hero, details, quoteData, capabilities } = data;
 
 	if (loading) {
-		return <IndustrySkeletonPage />;
-	}
-
-	if (error) {
-		return <div>Error: Unable to fetch data</div>;
+		return (
+			<LoadingBar
+				color="#8800FF"
+				ref={loadingRef}
+				height={5}
+			/>
+		);
 	}
 
 	return (

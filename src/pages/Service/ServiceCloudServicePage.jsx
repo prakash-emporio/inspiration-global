@@ -1,31 +1,34 @@
+import LoadingBar from "react-top-loading-bar";
 import { Form } from "../../components/home/index.js";
 import { ServiceContent } from "../../components/ServicesComponents/index.js";
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
-import { useServicePage } from "../../hooks/useServicePage.jsx";
-import ServiceSkeletonPage from "./ServiceSkeletonPage.jsx";
+import { useService } from "../../hooks/useService.jsx";
 
 export default function ServiceCloudServicePage() {
-	const { data, details, quote, loading, error } =
-		useServicePage("cloud-services");
+	const { data, loading, loadingRef } = useService("cloud-services");
+
+	const { details, quote } = data;
 
 	if (loading) {
-		return <ServiceSkeletonPage />;
-	}
-
-	if (error) {
-		return <div>Error: Unable to fetch data</div>;
+		return (
+			<LoadingBar
+				color="#8800FF"
+				ref={loadingRef}
+				height={5}
+			/>
+		);
 	}
 
 	return (
 		<>
 			<div
 				className="hero-background-img"
-				style={{ backgroundImage: `url(${data.hero_image})` }}
+				style={{ backgroundImage: `url(${data.data.hero_image})` }}
 			>
 				<SharedHero
-					title={data.hero_heading}
-					text={data.banner_text}
+					title={data.data.hero_heading}
+					text={data.data.banner_text}
 				/>
 			</div>
 			<div className="container">

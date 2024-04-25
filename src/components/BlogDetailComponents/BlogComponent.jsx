@@ -1,22 +1,18 @@
-// import { useEffect } from "react";
+import parse from "html-react-parser";
 
 export default function BlogComponent({ details }) {
-  // useEffect(() => {
-  //   console.log(details);
-  // }, []);
-
+  console.log(details[0]);
+  const updatedDetails = details[0];
   return (
     <>
-      {details.map((blogDetail) => (
+      {details.map((blogDetail, index) => (
         <>
-          <div key={blogDetail.id} className="container g-5">
+          <div key={index} className="container g-5">
             <div className="row g-0">
               <div className="col">
                 <h5 className="blog-paragraph-title">{blogDetail.title}</h5>
                 <section className="blog-paragraph">
-                  {blogDetail.content.map((text, index) => (
-                    <p key={index}>{text}</p>
-                  ))}
+                  {parse(blogDetail?.content)}
                 </section>
               </div>
             </div>

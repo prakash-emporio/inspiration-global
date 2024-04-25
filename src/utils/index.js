@@ -25,11 +25,11 @@ export function getAllBlogs() {
 }
 
 export function getBlogPage(slug) {
-  return axiosInstance.get(`/insight/blog/${slug}`);
+  return axiosInstance.get(`/get-post-detail/${slug}`);
 }
 
 export function getCaseStudyPage(slug) {
-  return axiosInstance.get(`/insight/case-study/${slug}`);
+  return axiosInstance.get(`/case_study/${slug}`);
 }
 
 export function getAboutUsPage() {

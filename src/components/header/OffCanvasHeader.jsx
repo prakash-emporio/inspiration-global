@@ -496,7 +496,7 @@ export default function OffcanvasNavbar() {
                       <div className="col-lg-4 megamenu-sidebar">
                         <div className="d-flex flex-column text-left text-uppercase megamenu-sidebar-common-padding">
                           <NavLink
-                            to={"/company"}
+                            to="/company"
                             className="subMenuItems"
                             reloadDocument
                           >
@@ -517,7 +517,7 @@ export default function OffcanvasNavbar() {
               </li>
               {/* Contact Us */}
               <li className="nav-item">
-                <NavLink to="/contact-us" className="nav-link">
+                <NavLink to="/contact-us" reloadDocument className="nav-link">
                   Contact Us
                 </NavLink>
               </li>

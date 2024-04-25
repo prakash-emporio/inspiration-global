@@ -15,7 +15,7 @@ export default function ContactUsForm() {
 		const backendAPI = import.meta.env.VITE_IG_BACKEND_API;
 		try {
 			const response = await axios.post(
-				`${backendAPI}store_form_data`,
+				`${backendAPI}/store_form_data`,
 				data
 			);
 			// Handle the response

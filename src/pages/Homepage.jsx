@@ -130,6 +130,12 @@ const homepage = {
 		title: "Powering Enterprises",
 		description:
 			"For a lot of companies, managing complex application landscapes that include a mix of legacy systems, digital technologies, and SaaS solutions can be a daunting task. Such landscapes can consume a significant amount of IT resources, hampering the company's potential for growth Our application services offer an effective solution to this challenge, enabling you to streamline and optimize your application landscape with speed and efficiency. We prioritize agility and adaptability, and continuously introduce innovative solutions to ensure that your business gains the most value from the capabilities we provide.",
+		logos: [
+			{ id: "aws", img: "/AWS.png" },
+			{ id: "oracle", img: "/Oracle.png" },
+			{ id: "salesforce", img: "/Salesforce.png" },
+			{ id: "azure", img: "/Azure.png" },
+		],
 	},
 };
 
@@ -145,7 +151,6 @@ export default function Homepage() {
 
 	async function downloadPageData() {
 		const response = await getHomepage();
-		console.log(response.data);
 		setData(response.data);
 		setHeroData(response.data.banner);
 		setStats(response.data.counters);
@@ -210,7 +215,7 @@ export default function Homepage() {
 				key={homepage.ctaSection.id}
 				title={cta.powering_enterprises_heading}
 				description={homepage.ctaSection.description}
-        logos={cta.powering_enterprises_images}
+				logos={homepage.ctaSection.logos}
 			/>
 			<Form />
 		</>

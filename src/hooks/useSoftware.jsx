@@ -1,18 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { getSoftwarePage } from "../utils/index.js";
 
-export function useSoftwarePage(page) {
+export function useSoftware(page) {
 	const [data, setData] = useState({
 		heroData: {},
 		featureSectionData: {},
 		softwareCardData: [],
 		quoteData: {},
-		isLoading: true,
 	});
+	const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+	const loadingRef = useRef(null);
 
 	useEffect(() => {
-		async function fetchData() {
+		(async function fetchData() {
 			try {
+				loadingRef.current.continuousStart();
 				const response = await getSoftwarePage(page);
 				setData({
 					heroData: response.data,
@@ -20,20 +23,14 @@ export function useSoftwarePage(page) {
 						response.data.below_banner_software_content,
 					softwareCardData: response.data.software_details_data,
 					quoteData: response.data.quote_content,
-					isLoading: false,
 				});
 			} catch (error) {
 				console.log("Software Page", error);
+			} finally {
+				setLoading(false);
 			}
-		}
-
-		fetchData();
-
-		// Cleanup function to cancel the request if component unmounts or if page changes
-		return () => {
-			// perform cleanup here if necessary
-		};
+		})();
 	}, [page]);
 
-	return data;
+	return { data, loading, error, loadingRef };
 }

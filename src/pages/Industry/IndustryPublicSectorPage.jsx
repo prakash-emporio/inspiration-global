@@ -1,27 +1,30 @@
+import LoadingBar from "react-top-loading-bar";
 import { Form } from "../../components/home/index.js";
 import {
-  IndustryContent,
-  IndustryEngagementModel,
+	IndustryContent,
+	IndustryEngagementModel,
 } from "../../components/IndustryComponents/index.js";
 import { SharedCard, SharedCTA } from "../../components/Shared/index.js";
 import SharedHero from "../../components/Shared/SharedHero.jsx";
-import { useIndustryPage } from "../../hooks/useIndustryPage.jsx";
-import IndustrySkeletonPage from "./IndustrySkeletonPage.jsx";
+import { useIndustry } from "../../hooks/useIndustry.jsx";
 
 export default function IndustryPublicSectorPage() {
-  const { hero, details, quoteData, capabilities, loading, error } =
-		useIndustryPage("public-sector");
+	const { data, loading, loadingRef } = useIndustry("public-sector");
 
-		if (loading) {
-			return <IndustrySkeletonPage />;
-		}
+	const { hero, details, quoteData, capabilities } = data;
 
-	if (error) {
-		return <div>Error: Unable to fetch data</div>;
+	if (loading) {
+		return (
+			<LoadingBar
+				color="#8800FF"
+				ref={loadingRef}
+				height={5}
+			/>
+		);
 	}
 
-  return (
-    <>
+	return (
+		<>
 			<div
 				className="hero-background-img"
 				style={{ backgroundImage: `url(${hero.hero_image})` }}
@@ -65,5 +68,5 @@ export default function IndustryPublicSectorPage() {
 			<SharedCard />
 			<Form />
 		</>
-  );
+	);
 }

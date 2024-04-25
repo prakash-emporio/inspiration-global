@@ -1,76 +1,78 @@
 .footer-main-text {
-  font-weight: 900;
-  font-size: 40px;
-  text-align: right;
-  padding-top: 10px;
-  line-height: 40px;
-  background: linear-gradient(94deg, #763bef 28.57%, #5912e4 89.06%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	font-weight: 900;
+	font-size: 40px;
+	text-align: right;
+	padding-top: 10px;
+	line-height: 40px;
+	background: linear-gradient(94deg, #763bef 28.57%, #5912e4 89.06%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .main-footer {
-  background-color: #111827;
+	background-color: #111827;
 }
 
 .nav-link {
-  color: white;
-  text-transform: uppercase;
+	color: white;
+	text-transform: uppercase;
 }
 
 .active {
-  color: #a1f157;
+	color: #a1f157;
 }
 
 .footer-last-text {
-  color: #6b7280;
-  text-transform: uppercase;
+	color: #6b7280;
+	text-transform: uppercase;
 }
 
 .footer-svg {
-  fill: #6b7280;
+	fill: #6b7280;
 }
 
 .footer-svg:hover {
-  fill: #a1f157;
+	fill: #a1f157;
 }
 
 .footer-initial-text {
-  letter-spacing: 1.4px;
+	letter-spacing: 1.4px;
 }
 
 .footer-final-text {
-  font-weight: 700;
-  letter-spacing: 1.4px;
+	color: #6b7280;
+	font-weight: 700;
+	letter-spacing: 1.4px;
+	text-decoration: none;
 }
 
 .footer-final-text:hover {
-  color: #d1d5db;
-  cursor: pointer;
+	color: #d1d5db;
+	cursor: pointer;
 }
 
 .justify-content {
-  justify-content: flex-end;
+	justify-content: flex-end;
 }
 
 @media screen and (max-width: 576px) {
-  .footer-main-text {
-    font-size: 28px !important;
-    line-height: 28px;
-    letter-spacing: -0.4px;
-  }
-  .footer-mobile-alignment {
-    flex-direction: column;
-  }
+	.footer-main-text {
+		font-size: 28px !important;
+		line-height: 28px;
+		letter-spacing: -0.4px;
+	}
+	.footer-mobile-alignment {
+		flex-direction: column;
+	}
 }
 
 @media screen and (max-width: 991px) {
-  .footer-main-text {
-    font-size: 25px;
-    text-align: right;
-  }
-  .main-footer {
-    padding: 20px;
-  }
+	.footer-main-text {
+		font-size: 25px;
+		text-align: right;
+	}
+	.main-footer {
+		padding: 20px;
+	}
 }

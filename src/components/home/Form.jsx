@@ -13,7 +13,7 @@ export default function Form() {
 	const onSubmit = async (data) => {
 		// Submit the form data to the API
 		const backendAPI = import.meta.env.VITE_IG_BACKEND_API;
-		const response = await axios.post(`${backendAPI}store_form_data`, data);
+		const response = await axios.post(`${backendAPI}/store_form_data`, data);
 		// Handle the response
 		if (response.status === 200) {
 			toast.success("Form Submitted Successfully!");

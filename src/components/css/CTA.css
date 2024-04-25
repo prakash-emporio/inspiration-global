@@ -1,169 +1,125 @@
 .cta-card-color {
-  background-color: #5912e4;
-  border-bottom: 10px solid #a1f157;
+	background-color: #5912e4;
+	border-bottom: 10px solid #a1f157;
 }
 
 .cta-text {
-  color: white;
-  font-weight: 900;
-  font-size: 58px;
-  line-height: 60px;
-  letter-spacing: -1.45px;
+	color: white;
+	font-weight: 900;
+	font-size: 58px;
+	line-height: 60px;
+	letter-spacing: -1.45px;
 }
 
 .cta-paragraph {
-  font-weight: 300;
-  text-wrap: wrap;
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.gap-5 {
-  gap: 7rem !important;
+	font-weight: 300;
+	text-wrap: wrap;
+	font-size: 20px;
+	line-height: 28px;
 }
 
 .cta-img {
-  margin: 10px 50px;
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+	margin: 10px 50px;
+	width: 150px;
 }
 
 .cta-img:hover {
-  border-radius: 20px;
-  filter: brightness(1);
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	filter: brightness(1);
 }
 
 .oracle {
-  margin-bottom: -80px;
-  border-radius: 20px;
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
-  z-index: 2;
+	margin-bottom: -80px;
+	border-radius: 20px;
+	z-index: 2;
 }
 
 .azure {
-  margin-bottom: -80px;
-  border-radius: 20px;
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
-  z-index: 2;
+	margin-bottom: -80px;
+	border-radius: 20px;
+	z-index: 2;
 }
 
 .cta-img:hover {
-  transform: scale(1.1);
-  transition: 0.5s ease-in-out;
+	transform: scale(1.1);
+	transition: 0.5s ease-in-out;
 }
 
 .hero-cta {
-  z-index: 1;
+	z-index: 1;
 }
 
 @media screen and (max-width: 620px) {
-  .cta-img {
-    width: 40px !important;
-    margin: 5px 5px !important;
-  }
+	.cta-img {
+		width: 40px !important;
+		margin: 5px 5px !important;
+	}
 }
 
 @media screen and (max-width: 768px) {
-  .cta-img {
-    width: 80px;
-    margin: 5px 15px;
-  }
+	.cta-img {
+		width: 80px;
+		margin: 5px 15px;
+	}
 
-  .oracle {
-    margin-bottom: -80px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-  }
+	.oracle {
+		margin-bottom: -80px;
+		border-radius: 10px;  
+	}
 
-  .azure {
-    margin-bottom: -80px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-  }
+	.azure {
+		margin-bottom: -80px;
+		border-radius: 10px;  
+	}
 
-  .cta-text {
-    font-size: 30px !important;
-    line-height: 30px !important;
-  }
+	.cta-text {
+		font-size: 30px !important;
+		line-height: 30px !important;
+	}
 
-  .cta-paragraph {
-    font-size: 20px !important;
-  }
+	.cta-paragraph {
+		font-size: 20px !important;
+	}
 }
 
 @media screen and (min-width: 768px) {
-  .cta-img {
-    width: 80px;
-    margin: 5px 20px;
-  }
+	.cta-img {
+		width: 80px;
+		margin: 5px 20px;
+	}
 
-  .oracle {
-    margin-bottom: -80px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-  }
+	.oracle {
+		margin-bottom: -80px;
+		border-radius: 15px;  
+	}
 
-  .azure {
-    margin-bottom: -80px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .cta-img {
-    width: 90px;
-    margin: 10px 50px;
-  }
-  .oracle {
-    margin-bottom: -80px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-  }
-
-  .azure {
-    margin-bottom: -80px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-  }
+	.azure {
+		margin-bottom: -80px;
+		border-radius: 15px;  
+	}
 }
 
 @media screen and (max-width: 991px) {
-  .cta-text {
-    font-size: 40px;
-    line-height: 45px;
-  }
-  .cta-paragraph {
-    font-size: 16px;
-  }
-  .g-5,
-  .gy-5 {
-    --bs-gutter-y: 0rem;
-  }
+	.cta-text {
+		font-size: 40px;
+		line-height: 45px;
+	}
+	.cta-paragraph {
+		font-size: 16px;
+	}
 }
 
-@media screen and (min-width: 992px) and (max-width: 1024px) {
-  .cta-img {
-    width: 80px;
-    margin: 10px 50px;
-  }
-  .oracle {
-    margin-bottom: -80px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-  }
-
-  .azure {
-    margin-bottom: -80px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-  }
+@media screen and (min-width: 992px) {
+	.cta-img {
+		width: 150px;
+		margin: 10px 50px;
+	}
+	.oracle {
+		margin-bottom: -150px;
+		border-radius: 15px;  
+	}
+	.azure {
+		margin-bottom: -150px;
+		border-radius: 15px;  
+	}
 }
