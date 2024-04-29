@@ -1,15 +1,11 @@
 import { InsightHero } from "../../components/InsightComponents";
 
-const api = {
-	heroImg: "/CareersHero.png",
-};
-
 export default function CareersPage() {
 	return (
 		<>
 			<div
 				id="hero-talent-img"
-				style={{ backgroundImage: `url(${api.heroImg})` }}
+				style={{ backgroundImage: `url('/CareersHero.png')` }}
 			>
 				<InsightHero title="Careers" />
 			</div>
