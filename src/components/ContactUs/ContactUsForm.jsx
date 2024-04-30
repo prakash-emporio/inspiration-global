@@ -33,7 +33,7 @@ export default function ContactUsForm() {
 	return (
 		<form
 			id="jobForm"
-			className="row job-form-wrapper"
+			className="row job-form-wrapper py-lg-5"
 			onSubmit={handleSubmit(onSubmit)}
 		>
 			<div className="col-12 py-3">

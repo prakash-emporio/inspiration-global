@@ -20,6 +20,10 @@
   outline: 1.5px solid var(--green-color);
 }
 
+.job-form-wrapper {
+  background: linear-gradient(270deg, #5912e4 50%, rgba(89, 18, 228, 0.8) 100%);
+}
+
 @media screen and (max-width: 992px) {
   .contact-us-header {
     font-size: 2rem;
