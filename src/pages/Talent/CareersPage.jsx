@@ -5,7 +5,7 @@ export default function CareersPage() {
 		<>
 			<div
 				id="hero-talent-img"
-				style={{ backgroundImage: "url('/CAREERSHERO.png')" }}
+				style={{ backgroundImage: "url('/careershero.png')" }}
 			>
 				<InsightHero title="Careers" />
 			</div>
